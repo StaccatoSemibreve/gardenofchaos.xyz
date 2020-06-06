@@ -10,6 +10,10 @@ blockquote {
   border-radius: 10px;
 }
 
+li {
+  width: 100px;
+  height: 20px;
+}
 ul.navbar {
   list-style-type: none;
   margin: 0;
@@ -37,13 +41,13 @@ li.navbar a.navbar:hover {
 }
 
 li.logo {
-  display: block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   background-color: #000000;
   float: right;
   border-right: none;
-  text-align: center;
 }
 img.logo {
   height: 40px;
