@@ -1,0 +1,110 @@
+<html>
+<head>
+<title>The Garden of Chaos</title>
+<link rel="stylesheet" href="/style.css">
+<link rel="icon" type="image/png" href="FSgardenOfChao-196x196.png" sizes="196x196" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+</head>
+	
+<body>
+<ul class="navbar">
+  <li class="navbar"><a href="/index.html" class="navbar">Home</a></li>
+  <li class="navbar"><a href="/rules.html" class="navbar">Rules</a></li>
+  <li class="navbar"><a href="/styles.html" class="navbar">Formats</a></li>
+  <li class="navbar"><a href="/rulesets.html" class="navbar">Rulesets</a></li>
+  <li class="navbar"><a href="https://discord.gg/abWADS7" class="navbar">Discord</a></li>
+  <li class="navbar"><a href="https://challonge.com/FSGardenofChaos4" class="navbar">Bracket</a></li>
+  <li class="navbar"><a href="https://twitch.tv/danielstretulch" class="navbar">Stream</a></li>
+  <li class="navbar"><a href="/events.html" class="navbar">Events</a></li>
+  <li class="navbar"><a href="/commentators.html" class="navbar">Commentators</a></li>
+  <li class="logo"><img src="FSgardenOfChao-196x196.png" class="logo" title="logo" alt="A logo of a happy chao in a circle, in the colours of the Fantasy Strike logo."></li>
+</ul>
+<h1>Random Generator</h1>
+  <form id="rng" onsubmit='return false'>
+	<select id="operator">
+		<option value="Tournament Style">Tournament Style</option>
+		<option value="Character">Character</option>
+		<option value="Ruleset">Ruleset</option>
+		<option value="Ruleset (+ Mirrors)">Ruleset (+ Mirrors)</option>
+	</select>
+	<input type="text" id="result" placeholder="Result" size="42"></input>
+	<input type="submit" id="gen" value="Generate!" onclick='generate()'></input>
+  </form>
+</body>
+
+<script>
+var formats = [
+    'Deck',
+    'Choose Your Enemy, aka Cursed, aka Vice Versus',
+    'Roll the Dice',
+    'Democracy',
+    'Mirror Mayhem',
+    'The Many and the Few',
+    'Simplify',
+    'Lawful',
+    'Chaotic'
+];
+var characters = [
+  'Grave',
+  'Jaina',
+  'Geiger',
+  'Argagarg',
+  'Setsuki',
+  'Valerie',
+  'Rook',
+  'Midori',
+  'Lum',
+  'Degrey'
+];
+var rulesets = [
+  'Gravity',
+  'Holly\'s Motherboard',
+  'Jaywalking Is Illegal',
+  'I Would Simply Press All the Best Buttons',
+  'Play By Feel',
+  'Aerial Assault',
+  'Stop Spamming!!!',
+  'Combo Disgust',
+  '1, 2, 3, Charge!',
+  'I\'m Feeling Lucky!'
+];
+var rulesetsMirrors = [
+  'T♯',
+  'Rushdown',
+  'Low Charge',
+  'ArgagargGargArgagargGarg',
+  'Galaxy Brain Ninja',
+  'Out of Ink',
+  'Free Hugs',
+  'Midivekick',
+  'Clash of the Items',
+  'No U',
+  'Undeadly Debate'
+];
+function generate() {
+  var operator = document.getElementById("operator").value;
+  var result = document.getElementById("result");
+  var textArray;
+  switch(operator) {
+    case "Tournament Style":
+      textArray = formats;
+      break;
+    case "Character":
+      textArray = characters;
+      break;
+    case "Ruleset":
+      textArray = rulesets;
+      break;
+    case "Ruleset (+ Mirrors)":
+      textArray = rulesetsMirrors.concat(rulesets);
+      break;
+    default:
+      textArray = ["uhhhh"];
+  }
+  var randomNumber = Math.floor(Math.random()*textArray.length);
+  result.value = textArray[randomNumber];
+}
+</script
+</html>
