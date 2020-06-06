@@ -20,7 +20,6 @@ ul.navbar {
 }
 li.navbar {
   width: 120px;
-  height: 50px;
   float: left;
   border-left: 1px solid #DABA69;
 }
