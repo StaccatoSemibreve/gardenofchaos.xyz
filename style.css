@@ -44,5 +44,6 @@ li.logo {
   border-right: none;
 }
 img.logo {
-  max-height: 14px;
+  max-height: 30px;
+  background-color: #000000;
 }
