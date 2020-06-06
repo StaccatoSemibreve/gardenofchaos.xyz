@@ -32,3 +32,15 @@ li.navbar a.navbar {
 li.navbar a.navbar:hover {
   background-color: #1E1B19;
 }
+
+li.logo {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #000000;
+  float: right;
+  border-right: none;
+  list-style-image: url('https://gardenofchaos.xyz/FSgardenOfChao-192x192.png');
+  list-style-type: circle;
+}
