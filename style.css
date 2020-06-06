@@ -44,5 +44,5 @@ li.logo {
   border-right: none;
 }
 img.logo {
-  object-fit: scale-down;
+  max-height: 14px;
 }
