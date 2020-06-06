@@ -16,6 +16,7 @@ ul.navbar {
   padding: 0;
   overflow: hidden;
   background-color: #000000;
+  border-radius: 10px;
 }
 li.navbar {
   float: left;
