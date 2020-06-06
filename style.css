@@ -6,7 +6,7 @@
 blockquote {
   background-color: #000000;
   padding: 6px 8px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 ul.navbar {
@@ -44,5 +44,5 @@ li.logo {
   border-right: none;
 }
 img.logo {
-  object-fit: contain;
+  object-fit: scale-down;
 }
