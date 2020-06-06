@@ -42,9 +42,10 @@ li.logo {
   background-color: #000000;
   float: right;
   border-right: none;
+  text-align: center;
 }
 img.logo {
   max-height: 30px;
   background-color: #000000;
-  text-align: centre;
+  text-align: center;
 }
