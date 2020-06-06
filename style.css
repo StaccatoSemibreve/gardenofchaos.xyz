@@ -19,10 +19,10 @@ ul.navbar {
 }
 li.navbar {
   float: left;
-  border-right: 1px solid #DABA69;
+  border-left: 1px solid #DABA69;
 }
-li.navbar:last-child {
-  border-right: none;
+li.navbar:first-child {
+  border-left: none;
 }
 li.navbar a.navbar {
   display: block;
