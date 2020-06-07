@@ -64,3 +64,7 @@ select {
   padding: 6px 8px;
   border-radius: 10px;
 }
+
+hr {
+  border: 1px solid #DABA69;
+}
