@@ -76,6 +76,7 @@ function setTeam1Size() {
 			document.getElementById('team1').innerHTML += '<select id="team1Select'+count+'">'+charSelect;
   document.getElementById('team1').innerHTML += '<input type="button" value="Submit Team 1 Members" onclick="setTeam1Members()"/>';
 }
+
 function setTeam2Size() {
   team2Size = document.getElementById('team2Size').value;
   document.getElementById('team2').innerHTML = '';
@@ -114,13 +115,15 @@ function play() {
   else if(team2.length == 0)
     document.getElementById('teams').innerHTML += '<br>Team 2 wins!!!';
   else {
+    match++;
+    document.getElementById('teams').innerHTML += '<br>Match '+ match +': Team 1 Candidates: ' + team1Remaining.join(", ") + '; Team 2 Candidates: ' + team2Remaining.join(", ");
+    
     team1N = Math.floor(Math.random()*team1Remaining.length);
     team2N = Math.floor(Math.random()*team2Remaining.length);
     team1Member = team1Remaining.splice(team1N, 1)[0];
     team2Member = team2Remaining.splice(team2N, 1)[0];
     
-    match++;
-    document.getElementById('teams').innerHTML += '<br>Match '+ match +': Team 1 Member ' + (team1N+1) + ' (' + team1Member + ') vs Team 2 Member ' + (team2N+1) + ' (' + team2Member + ')<br>Winner: <select id="match'+match+'Winner"><option value="1">Team 1\'s ' + team1Member + '</option><option value="2">Team 2\'s ' + team2Member + '</option></select><input type="button" id="MatchButton" value="Submit Winner" onclick="win()"">';
+    document.getElementById('teams').innerHTML += '<br>Team 1 Candidate ' + (team1N+1) + ' (' + team1Member + ') vs Team 2 Camdidate ' + (team2N+1) + ' (' + team2Member + ')<br>Winner: <select id="match'+match+'Winner"><option value="1">Team 1\'s ' + team1Member + '</option><option value="2">Team 2\'s ' + team2Member + '</option></select><input type="button" id="MatchButton" value="Submit Winner" onclick="win()"">';
   }
 }
   
