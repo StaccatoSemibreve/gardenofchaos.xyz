@@ -9,6 +9,7 @@
 </head>
 
 <body>
+<body>
 <ul class="navbar">
   <li class="navbar"><a href="/index.html" class="navbar">Home</a></li>
   <li class="navbar"><a href="/rules.html" class="navbar">Rules</a></li>
@@ -22,12 +23,28 @@
   <li class="logo"><img src="FSgardenOfChao-196x196.png" class="logo" title="logo" alt="A logo of a happy chao in a circle, in the colours of the Fantasy Strike logo."></li>
 </ul>
 <h1>The Garden of Chaos</h1>
-  <div id="teams">
+  <form id="seeding" onsubmit 'return false'>
+    Seed (0 or No Submit = Random Seed): 
+    <input type="number" id="seed" placeholder="Randomiser Seed" value=0 min=0 />
+    <input type="button" value="Randomise Seed" onclick='randomiseSeed()'/>
+    <input type="button" value="Submit Seed" onclick='initSeed()'/>
+  </form>
+  <div id="teams" style="display:none">
     <div id="team1div">
     Team 1:
     <form id="team1" onsubmit='return false'>
       <input type="number" id="team1Size" placeholder="Team Size" min="1"/>
       <input type="button" value="Submit Team 1 Size" onclick="setTeam1Size()"/>
+      or
+      <select id="team1Presets">
+        <option value=0>Full Cast</option>
+        <option value=1>Zoners</option>
+        <option value=2>Rushdowns</option>
+        <option value=3>Grapplers</option>
+        <option value=4>Wildcards</option>
+        <option value="random">Random Team</option>
+      </select>
+      <input type="button" value="Submit Team 1 Preset" onclick="setTeam1Preset()"/>
     </form>
     </div>
 
@@ -38,6 +55,16 @@
     <form id="team2" onsubmit='return false'>
       <input type="number" id="team2Size" placeholder="Team Size" min="0"/>
       <input type="button" value="Submit Team 2 Size" onclick="setTeam2Size()"/>
+      or
+      <select id="team2Presets">
+        <option value=0>Full Cast</option>
+        <option value=1>Zoners</option>
+        <option value=2>Rushdowns</option>
+        <option value=3>Grapplers</option>
+        <option value=4>Wildcards</option>
+        <option value="random">Random Team</option>
+      </select>
+      <input type="button" value="Submit Team 2 Preset" onclick="setTeam2Preset()"/>
     </form>
     </div>
     
@@ -50,9 +77,14 @@
     </div>
   </div>
 </body>
+</body>
 
 <script>
 var charSelect = '<option value="Grave">Grave</option><option value="Jaina">Jaina</option><option value="Geiger">Geiger</option><option value="Argagarg">Argagarg</option><option value="Setsuki">Setsuki</option><option value="Valerie">Valerie</option><option value="Rook">Rook</option><option value="Midori">Midori</option><option value="Lum">Lum</option><option value="Degrey">Degrey</option></select>';
+var presets = [["Grave", "Jaina", "Geiger", "Argagarg", "Setsuki", "Valerie", "Rook", "Midori", "Lum", "Degrey"], ["Grave", "Jaina", "Geiger", "Argagarg"], ["Setsuki", "Valerie"], ["Rook", "Midori"], ["Lum", "Degrey"]];
+
+var seed = 0;
+var submit = false;
 
 var team1Size = 0;
 var team1 = [];
@@ -60,7 +92,6 @@ var team1Remaining = [];
 var team2Size = 0;
 var team2 = [];
 var team2Remaining = [];
-var submit = false;
 
 var match = 0;
 var team1Member = "";
@@ -68,22 +99,49 @@ var team1N = -1;
 var team2Member = "";
 var team2N = -1;
 
-function setTeam1Size() {
-  team1Size = document.getElementById('team1Size').value;
-  document.getElementById('team1').innerHTML = '';
-  
-  for(var count = 1; count <= team1Size; count++)
-			document.getElementById('team1').innerHTML += '<select id="team1Select'+count+'">'+charSelect;
-  document.getElementById('team1').innerHTML += '<input type="button" value="Submit Team 1 Members" onclick="setTeam1Members()"/>';
+function randomiseSeed() {
+  document.getElementById('seed').value = Math.floor(Math.random()*Number.MAX_SAFE_INTEGER);
+}
+function initSeed() {
+  seed = document.getElementById('seed').value;
+  var seed0 = (seed==0);
+  if(seed0)
+    seed = Math.floor(Math.random()*Number.MAX_SAFE_INTEGER);
+  if(seed0)
+    document.getElementById('seeding').outerHTML="<p>Seed: Random (" + seed + ")</p";
+  else
+    document.getElementById('seeding').outerHTML="<p>Seed: " + seed + "</p>";
+  document.getElementById('teams').style="";
+}
+function seededRandom(min, max) {
+  max = max || 1;
+  min = min || 0;
+ 
+  seed = (seed * 9301 + 49297) % 233280;
+  var rnd = seed / 233280;
+ 
+  return min + Math.floor(rnd * (max - min));
 }
 
+function setTeam1Size() {
+  team1Size = document.getElementById('team1Size').value;
+  if(team1Size > 0) {
+    document.getElementById('team1').innerHTML = '';
+
+    for(var count = 1; count <= team1Size; count++)
+        document.getElementById('team1').innerHTML += '<select id="team1Select'+count+'">'+charSelect;
+    document.getElementById('team1').innerHTML += '<input type="button" value="Submit Team 1 Members" onclick="setTeam1Members()"/>';
+  }
+}
 function setTeam2Size() {
   team2Size = document.getElementById('team2Size').value;
-  document.getElementById('team2').innerHTML = '';
-  
-  for(var count = 1; count <= team2Size; count++)
-			document.getElementById('team2').innerHTML += '<select id="team2Select'+count+'">'+charSelect;
-  document.getElementById('team2').innerHTML += '<input type="button" value="Submit Team 2 Members" onclick="setTeam2Members()"/>';
+  if(team2Size > 0) {
+    document.getElementById('team2').innerHTML = '';
+
+    for(var count = 1; count <= team2Size; count++)
+        document.getElementById('team2').innerHTML += '<select id="team2Select'+count+'">'+charSelect;
+    document.getElementById('team2').innerHTML += '<input type="button" value="Submit Team 2 Members" onclick="setTeam2Members()"/>';
+  }
 }
 
 function setTeam1Members() {
@@ -96,6 +154,45 @@ function setTeam1Members() {
 function setTeam2Members() {
   for(var count = 1; count <= team2Size; count++)
     team2 = team2.concat(document.getElementById('team2Select'+count).value);
+  document.getElementById('team2').outerHTML = team2.join(", ");
+  if(submit) {play();}
+  submit = true;
+}
+
+function setTeam1Preset() {
+  var preset = document.getElementById('team1Presets').value;
+  if(preset == "random") {
+    team1 = presets[0].slice(0);
+    var size = document.getElementById('team1Size').value;
+    if(size == 0)
+      size = seededRandom(1, team1.length+1);
+    while(team1.length < size)
+      team1 = team1.concat(team1.slice(0));
+    while(team1.length > size)
+      team1.splice(seededRandom(0, team1.length), 1);
+  }
+  else
+    team1 = presets[preset].slice(0);
+  
+  document.getElementById('team1').outerHTML = team1.join(", ");
+  if(submit) {play();}
+  submit = true;
+}
+function setTeam2Preset() {
+  var preset = document.getElementById('team2Presets').value;
+  if(preset == "random") {
+    team2 = presets[0].slice(0);
+    var size = document.getElementById('team2Size').value;
+    if(size == 0)
+      size = seededRandom(1, team2.length+1);
+    while(team2.length < size)
+      team2 = team2.concat(team2.slice(0));
+    while(team2.length > size)
+      team2.splice(seededRandom(0, team2.length), 1);
+  }
+  else
+    team2 = presets[preset].slice(0);
+  
   document.getElementById('team2').outerHTML = team2.join(", ");
   if(submit) {play();}
   submit = true;
@@ -116,10 +213,10 @@ function play() {
     document.getElementById('teams').innerHTML += '<br>Team 2 wins the match!!!';
   else {
     match++;
-    document.getElementById('teams').innerHTML += '<br>Match '+ match +': Team 1 Candidates: ' + team1Remaining.join(", ") + '; Team 2 Candidates: ' + team2Remaining.join(", ");
+    document.getElementById('teams').innerHTML += '<br><hr><br>Match '+ match +': Team 1 Candidates: ' + team1Remaining.join(", ") + '; Team 2 Candidates: ' + team2Remaining.join(", ");
     
-    team1N = Math.floor(Math.random()*team1Remaining.length);
-    team2N = Math.floor(Math.random()*team2Remaining.length);
+    team1N = seededRandom(0, team1Remaining.length);
+    team2N = seededRandom(0, team2Remaining.length);
     team1Member = team1Remaining.splice(team1N, 1)[0];
     team2Member = team2Remaining.splice(team2N, 1)[0];
     
@@ -130,7 +227,7 @@ function play() {
 function win() {
   var winner = document.getElementById("match"+match+"Winner").value;
   document.getElementById("MatchButton").outerHTML = "";
-  document.getElementById("match"+match+"Winner").outerHTML = "Team "+winner+" wins<br>";
+  document.getElementById("match"+match+"Winner").outerHTML = "Team "+winner+"<br>";
   if(winner == "1")
     team1.splice(team1N, 1);
   else
@@ -138,5 +235,4 @@ function win() {
   play();
 }
 </script>
-
 </html>
