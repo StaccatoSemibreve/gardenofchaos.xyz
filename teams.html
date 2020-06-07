@@ -111,9 +111,9 @@ function play() {
     team2Remaining = team2.slice(0);
   
   if(team1.length == 0)
-    document.getElementById('teams').innerHTML += '<br>Team 1 wins!!!';
+    document.getElementById('teams').innerHTML += '<br>Team 1 wins the match!!!';
   else if(team2.length == 0)
-    document.getElementById('teams').innerHTML += '<br>Team 2 wins!!!';
+    document.getElementById('teams').innerHTML += '<br>Team 2 wins the match!!!';
   else {
     match++;
     document.getElementById('teams').innerHTML += '<br>Match '+ match +': Team 1 Candidates: ' + team1Remaining.join(", ") + '; Team 2 Candidates: ' + team2Remaining.join(", ");
@@ -123,14 +123,14 @@ function play() {
     team1Member = team1Remaining.splice(team1N, 1)[0];
     team2Member = team2Remaining.splice(team2N, 1)[0];
     
-    document.getElementById('teams').innerHTML += '<br>Team 1 Candidate ' + (team1N+1) + ' (' + team1Member + ') vs Team 2 Camdidate ' + (team2N+1) + ' (' + team2Member + ')<br>Winner: <select id="match'+match+'Winner"><option value="1">Team 1\'s ' + team1Member + '</option><option value="2">Team 2\'s ' + team2Member + '</option></select><input type="button" id="MatchButton" value="Submit Winner" onclick="win()"">';
+    document.getElementById('teams').innerHTML += '<br>Team 1 Candidate ' + (team1N+1) + ' (' + team1Member + ') vs Team 2 Candidate ' + (team2N+1) + ' (' + team2Member + ')<br>Winner: <select id="match'+match+'Winner"><option value="1">Team 1\'s ' + team1Member + '</option><option value="2">Team 2\'s ' + team2Member + '</option></select><input type="button" id="MatchButton" value="Submit Winner" onclick="win()"">';
   }
 }
   
 function win() {
   var winner = document.getElementById("match"+match+"Winner").value;
   document.getElementById("MatchButton").outerHTML = "";
-  document.getElementById("match"+match+"Winner").outerHTML = "Team "+winner+" wins!<br>";
+  document.getElementById("match"+match+"Winner").outerHTML = "Team "+winner+" wins<br>";
   if(winner == "1")
     team1.splice(team1N, 1);
   else
