@@ -1,7 +1,8 @@
 body {
+  padding-left: 10px;
   background-color: #1E1B19;
   font-family: sans-serif;
-} 
+}
 * {
   color: #DABA69;
 }
@@ -13,11 +14,16 @@ blockquote {
 }
 hr {
   border: 1px solid #DABA69;
+  max-width: 1000px;
+  float: left;
 }
 p {
   max-width: 1000px;
 }
 
+ul {
+  max-width: 1000px;
+}
 ul.navbar {
   list-style-type: none;
   margin: 0;
@@ -25,6 +31,7 @@ ul.navbar {
   overflow: hidden;
   background-color: #000000;
   border-radius: 10px;
+  max-width: none;
 }
 li.navbar {
   width: 120px;
@@ -50,10 +57,6 @@ li.logo {
   align-items: center;
   float: right;
   height: 40px;
-}
-img.logo {
-  height: 40px;
-  width: 40px;
 }
 
 input {
