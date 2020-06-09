@@ -35,7 +35,8 @@ ul.navbar {
   max-width: none;
 }
 li.navbar {
-  width: 120px;
+  width: 130px;
+  text-align: center;
   float: left;
   border-left: 1px solid #DABA69;
   background-color: #000000;
@@ -45,7 +46,6 @@ li.navbar:first-child {
 }
 a.navbar {
   display: block;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
