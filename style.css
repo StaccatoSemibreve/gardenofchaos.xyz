@@ -5,6 +5,7 @@ body {
 }
 * {
   color: #DABA69;
+  line-height: 30px;
 }
 blockquote {
   background-color: #000000;
