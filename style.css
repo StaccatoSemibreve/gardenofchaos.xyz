@@ -58,6 +58,12 @@ li.logo {
   float: right;
   height: 40px;
 }
+img.logo {
+  justify-content: center;
+  align-items: center;
+  float: right;
+  height: 40px;
+}
 
 input {
   height: 40px;
