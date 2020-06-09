@@ -1,13 +1,21 @@
-* {
+body {
   background-color: #1E1B19;
-  color: #DABA69;
   font-family: sans-serif;
+} 
+* {
+  color: #DABA69;
 }
-
 blockquote {
   background-color: #000000;
   padding: 6px 8px;
   border-radius: 10px;
+  max-width: 800px;
+}
+hr {
+  border: 1px solid #DABA69;
+}
+p {
+  max-width: 1000px;
 }
 
 ul.navbar {
@@ -22,34 +30,26 @@ li.navbar {
   width: 120px;
   float: left;
   border-left: 1px solid #DABA69;
+  background-color: #000000;
 }
 li.navbar:first-child {
   border-left: none;
 }
-li.navbar a.navbar {
+a.navbar {
   display: block;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  background-color: #000000;
 }
-li.navbar a.navbar:hover {
+a.navbar:hover {
   background-color: #1E1B19;
 }
 
 li.logo {
-  display: flex;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
-  background-color: #000000;
   float: right;
-  border-right: none;
-}
-img.logo {
   height: 40px;
-  background-color: #000000;
-  text-align: center;
 }
 
 input {
@@ -63,8 +63,4 @@ select {
   background-color: #000000;
   padding: 6px 8px;
   border-radius: 10px;
-}
-
-hr {
-  border: 1px solid #DABA69;
 }
