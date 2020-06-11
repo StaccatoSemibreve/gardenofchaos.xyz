@@ -44,6 +44,8 @@
         <option value=3>Grapplers</option>
         <option value=4>Wildcards</option>
         <option value="random">Random Team</option>
+        <option value="5">The Left Side</option>
+        <option value="6">The Right Side</option>
       </select>
       <input type="button" value="Submit Team 1 Preset" onclick="setTeam1Preset()"/>
     </form>
@@ -64,6 +66,8 @@
         <option value=3>Grapplers</option>
         <option value=4>Wildcards</option>
         <option value="random">Random Team</option>
+        <option value="5">The Left Side</option>
+        <option value="6">The Right Side</option>
       </select>
       <input type="button" value="Submit Team 2 Preset" onclick="setTeam2Preset()"/>
     </form>
@@ -82,7 +86,7 @@
 
 <script>
 var charSelect = '<option value="Grave">Grave</option><option value="Jaina">Jaina</option><option value="Geiger">Geiger</option><option value="Argagarg">Argagarg</option><option value="Setsuki">Setsuki</option><option value="Valerie">Valerie</option><option value="Rook">Rook</option><option value="Midori">Midori</option><option value="Lum">Lum</option><option value="Degrey">Degrey</option></select>';
-var presets = [["Grave", "Jaina", "Geiger", "Argagarg", "Setsuki", "Valerie", "Rook", "Midori", "Lum", "Degrey"], ["Grave", "Jaina", "Geiger", "Argagarg"], ["Setsuki", "Valerie"], ["Rook", "Midori"], ["Lum", "Degrey"]];
+var presets = [["Grave", "Jaina", "Geiger", "Argagarg", "Setsuki", "Valerie", "Rook", "Midori", "Lum", "Degrey"], ["Grave", "Jaina", "Geiger", "Argagarg"], ["Setsuki", "Valerie"], ["Rook", "Midori"], ["Lum", "Degrey"], ["Grave", "Geiger", "Setsuki", "Rook", "Lum"], ["Jaina", "Argagarg", "Valerie", "Midori", "Degrey"]];
 
 var seed = 0;
 var submit = false;
