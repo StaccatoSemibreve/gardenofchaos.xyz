@@ -158,6 +158,7 @@ function setTeam1Members() {
     for(var count = 1; count <= team1Size; count++)
         team1 = team1.concat(document.getElementById('team1Select'+count).value);
     document.getElementById('team1').outerHTML = team1.join(", ");
+    team1 = team1.map(function(e, i) {return [e, i+1];});
     if(submit) {play();}
     submit = true;
 }
@@ -165,6 +166,7 @@ function setTeam2Members() {
     for(var count = 1; count <= team2Size; count++)
         team2 = team2.concat(document.getElementById('team2Select'+count).value);
     document.getElementById('team2').outerHTML = team2.join(", ");
+    team2 = team2.map(function(e, i) {return [e, i+1];});
     if(submit) {play();}
     submit = true;
 }
