@@ -86,7 +86,7 @@
     </body>
     
     <script>
-        var charSelect = '<option value="Grave">Grave</option><option value="Jaina">Jaina</option><option value="Geiger">Geiger</option><option value="Argagarg">Argagarg</option><option value="Setsuki">Setsuki</option><option value="Valerie">Valerie</option><option value="Rook">Rook</option><option value="Midori">Midori</option><option value="Lum">Lum</option><option value="Degrey">Degrey</option></select>';
+                var charSelect = '<option value="Grave">Grave</option><option value="Jaina">Jaina</option><option value="Geiger">Geiger</option><option value="Argagarg">Argagarg</option><option value="Setsuki">Setsuki</option><option value="Valerie">Valerie</option><option value="Rook">Rook</option><option value="Midori">Midori</option><option value="Lum">Lum</option><option value="Degrey">Degrey</option></select>';
         var presets = [["Grave", "Jaina", "Geiger", "Argagarg", "Setsuki", "Valerie", "Rook", "Midori", "Lum", "Degrey"], ["Grave", "Jaina", "Geiger", "Argagarg"], ["Setsuki", "Valerie"], ["Rook", "Midori"], ["Lum", "Degrey"], ["Grave", "Geiger", "Setsuki", "Rook", "Lum"], ["Jaina", "Argagarg", "Valerie", "Midori", "Degrey"]];
 
         var seed = 0;
@@ -127,6 +127,10 @@
             var rnd = seed / 233280;
             
             return min + Math.floor(rnd * (max - min));
+        }
+        
+        function zipped(arr) {
+            arr = arr.map(function(e, i) {return [e, i+1];});
         }
 
         function setTeam1Size() {
@@ -173,14 +177,15 @@
                 if(size == 0)
                 size = seededRandom(1, team1.length+1);
                 while(team1.length < size)
-                team1 = team1.concat(team1.slice(0));
+                    team1 = team1.concat(team1.slice(0));
                 while(team1.length > size)
-                team1.splice(seededRandom(0, team1.length), 1);
+                    team1.splice(seededRandom(0, team1.length), 1);
+                team1 = team1.map(function(e, i) {return [e, i+1];});
             }
             else
-                team1 = presets[preset].slice(0);
+                team1 = presets[preset].map(function(e, i) {return [e, i+1];});;
             
-            document.getElementById('team1').outerHTML = team1.join(", ");
+            document.getElementById('team1').outerHTML = team1.map(function(e) {return e[0]}).join(", ");
             if(submit) {play();}
             submit = true;
         }
@@ -192,21 +197,22 @@
                 if(size == 0)
                 size = seededRandom(1, team2.length+1);
                 while(team2.length < size)
-                team2 = team2.concat(team2.slice(0));
+                    team2 = team2.concat(team2.slice(0));
                 while(team2.length > size)
-                team2.splice(seededRandom(0, team2.length), 1);
+                    team2.splice(seededRandom(0, team2.length), 1);
+                team2 = team2.map(function(e, i) {return [e, i+1];});
             }
             else
-                team2 = presets[preset].slice(0);
+                team2 = presets[preset].map(function(e, i) {return [e, i+1];});;
             
-            document.getElementById('team2').outerHTML = team2.join(", ");
+            document.getElementById('team2').outerHTML = team2.map(function(e) {return e[0]}).join(", ");
             if(submit) {play();}
             submit = true;
         }
 
         function play() {
-            document.getElementById('team1Remaining').innerHTML = 'Team 1 Remaining: '+team1.join(", ");
-            document.getElementById('team2Remaining').innerHTML = 'Team 2 Remaining: '+team2.join(", ");
+            document.getElementById('team1Remaining').innerHTML = 'Team 1 Remaining: '+team1.map(function(e) {return e[0]}).join(", ");
+            document.getElementById('team2Remaining').innerHTML = 'Team 2 Remaining: '+team2.map(function(e) {return e[0]}).join(", ");
             
             if(team1Remaining.length == 0)
                 team1Remaining = team1.slice(0);
@@ -219,14 +225,14 @@
                 document.getElementById('teams').innerHTML += '<br>Team 2 wins the match!!!';
             else {
                 match++;
-                document.getElementById('teams').innerHTML += '<br><hr><br>Match '+ match +': Team 1 Candidates: ' + team1Remaining.join(", ") + '; Team 2 Candidates: ' + team2Remaining.join(", ");
+                document.getElementById('teams').innerHTML += '<br><hr><br>Match '+ match +': Team 1 Candidates: ' + team1Remaining.map(function(e) {return e[0]}).join(", ") + '; Team 2 Candidates: ' + team2Remaining.map(function(e) {return e[0]}).join(", ");
                 
                 team1N = seededRandom(0, team1Remaining.length);
+                team1Member = team1Remaining.splice(, 1)[0];
                 team2N = seededRandom(0, team2Remaining.length);
-                team1Member = team1Remaining.splice(team1N, 1)[0];
-                team2Member = team2Remaining.splice(team2N, 1)[0];
+                team2Member = team2Remaining.splice(seededRandom(0, team2Remaining.length), 1)[0];
                 
-                document.getElementById('teams').innerHTML += '<br>Team 1 Candidate ' + (team1N+1) + ' (' + team1Member + ') vs Team 2 Candidate ' + (team2N+1) + ' (' + team2Member + ')<br>Winner: <select id="match'+match+'Winner"><option value="1">Team 1\'s ' + team1Member + '</option><option value="2">Team 2\'s ' + team2Member + '</option></select><input type="button" id="MatchButton" value="Submit Winner" onclick="win()"">';
+                document.getElementById('teams').innerHTML += '<br>Team 1 Member ' + (team1Member[1]) + ' (' + team1Member[0] + ') vs Team 2 Member ' + (team2Member[1]) + ' (' + team2Member[0] + ')<br>Winner: <select id="match'+match+'Winner"><option value="1">Team 1\'s ' + team1Member[0] + '</option><option value="2">Team 2\'s ' + team2Member[0] + '</option></select><input type="button" id="MatchButton" value="Submit Winner" onclick="win()"">';
             }
         }
         
