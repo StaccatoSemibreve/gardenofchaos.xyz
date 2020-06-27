@@ -13,8 +13,8 @@
             <width>98</width>
             <height>98</height>
         </image>
-        <pubDate>Sat, 27 Jun 2020 17:30:00 +0100</pubDate>
-        <lastBuildDate>Sat, 27 Jun 2020 17:30:00 +0100</lastBuildDate>
+        <pubDate>Sat, 27 Jun 2020 17:50:00 +0100</pubDate>
+        <lastBuildDate>Sat, 27 Jun 2020 17:50:00 +0100</lastBuildDate>
         <atom:link href="https://gardenofchaos.xyz/events.rss" rel="self" type="application/rss+xml" />
         
         <item>
@@ -22,18 +22,10 @@
             <link>https://discord.gg/FantasyStrike</link>
             <category>Monday Night Strike</category>
             <category>Regular Events</category>
-            <description><![CDATA[<p>Monday Night Strike, a commentary stream run by Remy AKA Agoners</p><p>At 19:00 UTC / 20:00 BST / 12:00 PDT / 15:00 EDT, join the casual and ranked queues for a chance that your match will be spectated and commentated on stream!</p><p><a href="https://twitch.tv/agoners">Stream here!</a></p>]]></description>
+            <description><![CDATA[<p>Monday Night Strike, a commentary stream run by Remy AKA Agoners</p><p>At 19:00 UTC / 20:00 BST / 12:00 PDT / 15:00 EDT, join the casual and ranked queues for a chance that your match will be spectated and commentated on stream!</p><p><a href="https://twitch.tv/agoners">Stream here!</a></p>
+                ]]></description>
             <pubDate>Sat, 27 Jun 2020 16:00:00 +0100</pubDate>
-            <guid isPermaLink="false">MondayNightStrikeTest2</guid>
-        </item>
-        <item>
-            <title>Monday Night Strike Test</title>
-            <link>https://discord.gg/FantasyStrike</link>
-            <category>Monday Night Strike</category>
-            <category>Regular Events</category>
-            <description>Monday Night Strike, a commentary stream run by Remy AKA Agoners - at 19:00 UTC / 20:00 BST / 12:00 PDT / 15:00 EDT, join the casual and ranked queues for a chance that your match will be spectated and commentated on stream! https://twitch.tv/agoners</description>
-            <pubDate>Sat, 27 Jun 2020 15:30:00 +0100</pubDate>
-            <guid isPermaLink="false">MondayNightStrikeTest</guid>
+            <guid isPermaLink="false">MondayNightStrikeTest3</guid>
         </item>
         
         <item>
@@ -44,7 +36,7 @@
             <category>Irregular Events</category>
             <description><![CDATA[
                 <p>A Garden of Chaos tournament to celebrate the big update, in the Teams style - one team will play the original characters of Fantasy Strike, one team will play the new ones!</p><p>To be held shortly after the big update (whenever that happens) at 20:00 UTC / 21:00 BST / 16:00 PDT / 15:00 EDT</p>
-                <p><a href="https://challonge.com/FSGardenofChaosUpdate">Bracket</a> <a href="https://twitch.tv/danielstretulch">Stream</a></p>
+                <p><a href="https://challonge.com/FSGardenofChaosUpdate">Bracket</a> / <a href="https://twitch.tv/danielstretulch">Stream</a></p>
                 ]]></description>
             <pubDate>Sat, 27 Jun 2020 14:30:00 +0100</pubDate>
             <guid isPermaLink="false">FSGardenofChaosUpdate</guid>
@@ -58,7 +50,7 @@
             <description><![CDATA[
                 <p>TPK Esports - Fantasy Strike Weekly Tournament #33!</p>
                 <p>Saturday the 4th of July 2020 at 20:00 UTC / 21:00 BST / 16:00 PDT / 15:00 EDT</p>
-                <p><a href="https://challonge.com/TPKEsportsFSWeekly33">Bracket</a> <a href="https://twitch.tv/thypirateking">Stream</a></p>
+                <p><a href="https://challonge.com/TPKEsportsFSWeekly33">Bracket</a> / <a href="https://twitch.tv/thypirateking">Stream</a></p>
                 ]]></description>
             <pubDate>Sat, 27 Jun 2020 14:30:00 +0100</pubDate>
             <guid isPermaLink="false">TPKEsportsFSWeekly33</guid>
@@ -73,7 +65,7 @@
             <description><![CDATA[
                 <p>The sixth Garden of Chaos tournament, in the Many and the Few style!</p>
                 <p>To be held on Thursday the 2nd of July 2020 at 20:00 UTC / 21:00 BST / 16:00 PDT / 15:00 EDT</p>
-                <p><a href="https://challonge.com/FSGardenofChaos6">Bracket</a> <a href="https://twitch.tv/danielstretulch">Stream</a></p>
+                <p><a href="https://challonge.com/FSGardenofChaos6">Bracket</a> / <a href="https://twitch.tv/danielstretulch">Stream</a></p>
                 ]]></description>
             <pubDate>Sat, 27 Jun 2020 14:30:00 +0100</pubDate>
             <enclosure url="https://gardenofchaos.xyz/announcements/FSGardenofChaos6.png" length="1162442" type="image/png" />
@@ -87,7 +79,7 @@
             <category>Regular Events</category>
             <description><![CDATA[
                 <p>A Garden of Chaos tournament to celebrate the big update, in the Teams style - one team will play the original characters of Fantasy Strike, one team will play the new ones!</p><p>To be held shortly after the big update (whenever that happens) at 20:00 UTC / 21:00 BST / 16:00 PDT / 15:00 EDT</p>
-                <p><a href="https://challonge.com/FSGardenofChaosUpdate">Bracket</a> <a href="https://twitch.tv/danielstretulch">Stream</a></p>
+                <p><a href="https://challonge.com/FSGardenofChaosUpdate">Bracket</a> / <a href="https://twitch.tv/danielstretulch">Stream</a></p>
                 ]]></description>
             <pubDate>Sat, 27 Jun 2020 14:30:00 +0100</pubDate>
             <guid isPermaLink="false">MondayNightStrike1</guid>
@@ -115,7 +107,7 @@
             <description><![CDATA[
                 <p>The fifth weekly Garden of Chaos tournament, in the Oops, All Vals! style (a modification of Teams where all players use Valerie)!</p>
                 <p>To be held on Thursday the 25th of June 2020 at 20:00 UTC / 21:00 BST / 16:00 PDT / 15:00 EDT (yes, this has already happened as of this RSS feed being made, but ah well :D )</p>
-                <p><a href="https://challonge.com/FSGardenofChaos5">Bracket</a> <a href="https://twitch.tv/danielstretulch">Stream</a>
+                <p><a href="https://challonge.com/FSGardenofChaos5">Bracket</a> / <a href="https://twitch.tv/danielstretulch">Stream</a>
                     ]]></description>
             <pubDate>Thu, 25 Jun 2020 21:00:00 +0100</pubDate>
             <enclosure url="https://gardenofchaos.xyz/announcements/FSGardenofChaos5.png" length="1327309" type="image/png" />
@@ -131,7 +123,7 @@
             <description><![CDATA[
                 <p>The fourth weekly Garden of Chaos tournament, in the Cursed AKA Choose Your Enemy AKA Vice Versus style!</p>
                 <p>To be held on Thursday the 11th of June 2020 at 20:00 UTC / 21:00 BST / 16:00 PDT / 15:00 EDT (yes, this has already happened as of this RSS feed being made, but ah well :D )</p>
-                <p><a href="https://challonge.com/FSGardenofChaos4">Bracket</a> <a href="https://twitch.tv/danielstretulch">Stream</a>
+                <p><a href="https://challonge.com/FSGardenofChaos4">Bracket</a> / <a href="https://twitch.tv/danielstretulch">Stream</a>
                     ]]></description>
             <enclosure url="https://gardenofchaos.xyz/announcements/FSGardenofChaos4Update.png" length="1168305" type="image/png" />
             <guid isPermaLink="false">FSGardenofChaos4</guid>
@@ -146,7 +138,7 @@
             <description><![CDATA[
                 <p>The third weekly Garden of Chaos tournament, in the Mirror Mayhem style!</p>
                 <p>To be held on Thursday the 4th of June 2020 at 20:00 UTC / 21:00 BST / 16:00 PDT / 15:00 EDT (yes, this has already happened as of this RSS feed being made, but ah well :D )</p>
-                <p><a href="https://challonge.com/FSGardenofChaos3">Bracket</a> <a href="https://twitch.tv/danielstretulch">Stream</a>
+                <p><a href="https://challonge.com/FSGardenofChaos3">Bracket</a> / <a href="https://twitch.tv/danielstretulch">Stream</a>
                     ]]></description>
             <pubDate>Thu, 04 Jun 2020 21:00:00 +0100</pubDate>
             <enclosure url="https://gardenofchaos.xyz/announcements/FSGardenofChaos3.png" length="1297577" type="image/png" />
@@ -162,7 +154,7 @@
             <description><![CDATA[
                 <p>The second weekly Garden of Chaos tournament, in the Democracy style!</p>
                 <p>To be held on Thursday the 28th of May 2020 at 20:00 UTC / 21:00 BST / 16:00 PDT / 15:00 EDT (yes, this has already happened as of this RSS feed being made, but ah well :D )</p>
-                <p><a href="https://challonge.com/FSGardenofChaos2">Bracket</a> <a href="https://twitch.tv/danielstretulch">Stream</a>
+                <p><a href="https://challonge.com/FSGardenofChaos2">Bracket</a> / <a href="https://twitch.tv/danielstretulch">Stream</a>
                     ]]></description>
             <pubDate>Thu, 28 May 2020 21:00:00 +0100</pubDate>
             <enclosure url="https://gardenofchaos.xyz/announcements/FSGardenofChaos2.png" length="1313682" type="image/png" />
@@ -178,7 +170,7 @@
             <description><![CDATA[
                 <p>The first weekly Garden of Chaos tournament, in the Roll the Dice style!</p>
                 <p>To be held on Thursday the 21st of May 2020 at 20:00 UTC / 21:00 BST / 16:00 PDT / 15:00 EDT (yes, this has already happened as of this RSS feed being made, but ah well :D )</p>
-                <p><a href="https://challonge.com/FSGardenofChaos1">Bracket</a> <a href="https://twitch.tv/danielstretulch">Stream</a>
+                <p><a href="https://challonge.com/FSGardenofChaos1">Bracket</a> / <a href="https://twitch.tv/danielstretulch">Stream</a>
                     ]]></description>
             <pubDate>Thu, 21 May 2020 21:00:00 +0100</pubDate>
             <enclosure url="https://gardenofchaos.xyz/announcements/FSGardenofChaos1.png" length="1188445" type="image/png" />
