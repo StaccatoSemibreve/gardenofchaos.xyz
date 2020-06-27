@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+   <channel>
+      <title>Garden of Chaos: Fantasy Strike Events</title>
+      <link>https://gardenofchaos.xyz/events</link>
+      <description>Events happening in Fantasy Strike, compiled by the Garden of Chaos.</description>
+      <language>en-us</language>
+      <pubDate>Sat, 27 Jun 2020 16:00:00 BST</pubDate>
+      <lastBuildDate>Sat, 27 Jun 2020 16:00:00 BST</lastBuildDate>
+      <docs>https://www.rssboard.org/rss-specification</docs>
+      <item>
+         <title>Garden of Chaos 6</title>
+         <link>https://gardenofchaos.xyz</link>
+         <source url="https://gardenofchaos.xyz/events.rss">Garden of Chaos Events</source>
+         <category>Garden of Chaos Tournaments</category>
+         <description>The sixth Garden of Chaos tournament, in the Many and the Few style! To be held on Thursday the 2nd of July 2020 at 21:00 BST\nBracket: https://challonge.com/FSGardenofChaos6</description>
+         <pubDate>Thu, 27 June 2020 21:00:00 BST</pubDate>
+         <enclosure url="https://gardenofchaos.xyz/announcements/FSGardenofChaos6.png" length="1162442" type="image/png" />
+         <guid>FSGardenofChaos3</guid>
+      </item>
+      <item>
+         <title>Garden of Chaos B</title>
+         <link>https://gardenofchaos.xyz</link>
+         <source url="https://gardenofchaos.xyz/events.rss">Garden of Chaos Events</source>
+         <category>Garden of Chaos Tournaments</category>
+         <description>The fifth weekly Garden of Chaos tournament, in the Oops, All Vals! style (a modification of Teams where all players use Valerie)! To be held on Thursday the 25th of June 2020 at 21:00 BST (yes, this has already happened as of this RSS feed being made, but ah well :D )\nBracket: https://challonge.com/FSGardenofChaos5</description>
+         <pubDate>Thu, 25 June 2020 21:00:00 BST</pubDate>
+         <enclosure url="https://gardenofchaos.xyz/announcements/FSGardenofChaos5.png" length="1327309" type="image/png" />
+         <guid>FSGardenofChaos5</guid>
+      </item>
+      <item>
+         <title>Garden of the 4saken</title>
+         <link>https://gardenofchaos.xyz</link>
+         <source url="https://gardenofchaos.xyz/events.rss">Garden of Chaos Events</source>
+         <category>Garden of Chaos Tournaments</category>
+         <description>The fourth weekly Garden of Chaos tournament, in the Cursed, AKA Choose Your Enemy, AKA Vice Versus style! To be held on Thursday the 11th of June 2020 at 21:00 BST (yes, this has already happened as of this RSS feed being made, but ah well :D )\nBracket: https://challonge.com/FSGardenofChaos4</description>
+         <pubDate>Thu, 11 June 2020 21:00:00 BST</pubDate>
+         <enclosure url="https://gardenofchaos.xyz/announcements/FSGardenofChaos4Update.png" length="1168305" type="image/png" />
+         <guid>FSGardenofChaos4</guid>
+      </item>
+      <item>
+         <title>Garden of Chaos 3</title>
+         <link>https://gardenofchaos.xyz</link>
+         <source url="https://gardenofchaos.xyz/events.rss">Garden of Chaos Events</source>
+         <category>Garden of Chaos Tournaments</category>
+         <description>The third weekly Garden of Chaos tournament, in the Mirror Mayhem style! To be held on Thursday the 4th of June 2020 at 21:00 BST (yes, this has already happened as of this RSS feed being made, but ah well :D )\nBracket: https://challonge.com/FSGardenofChaos3</description>
+         <pubDate>Thu, 04 June 2020 21:00:00 BST</pubDate>
+         <enclosure url="https://gardenofchaos.xyz/announcements/FSGardenofChaos3.png" length="1297577" type="image/png" />
+         <guid>FSGardenofChaos3</guid>
+      </item>
+      <item>
+         <title>Garden of Chaos 2</title>
+         <link>https://gardenofchaos.xyz</link>
+         <source url="https://gardenofchaos.xyz/events.rss">Garden of Chaos Events</source>
+         <category>Garden of Chaos Tournaments</category>
+         <description>The second weekly Garden of Chaos tournament, in the Democracy style! To be held on Thursday the 28th of May 2020 at 21:00 BST (yes, this has already happened as of this RSS feed being made, but ah well :D )\nBracket: https://challonge.com/FSGardenofChaos2</description>
+         <pubDate>Thu, 28 May 2020 21:00:00 BST</pubDate>
+         <enclosure url="https://gardenofchaos.xyz/announcements/FSGardenofChaos2.png" length="1313682" type="image/png" />
+         <guid>FSGardenofChaos2</guid>
+      </item>
+      <item>
+         <title>Garden of Chaos 1</title>
+         <link>https://gardenofchaos.xyz</link>
+         <source url="https://gardenofchaos.xyz/events.rss">Garden of Chaos Events</source>
+         <category>Garden of Chaos Tournaments</category>
+         <description>The first weekly Garden of Chaos tournament, in the Roll the Dice style! To be held on Thursday the 21st of May 2020 at 21:00 BST (yes, this has already happened as of this RSS feed being made, but ah well :D )\nBracket: https://challonge.com/FSGardenofChaos1</description>
+         <pubDate>Thu, 21 May 2020 21:00:00 BST</pubDate>
+         <enclosure url="https://gardenofchaos.xyz/announcements/FSGardenofChaos1.png" length="1188445" type="image/png" />
+         <guid>FSGardenofChaos1</guid>
+      </item>
+   </channel>
+</rss>
