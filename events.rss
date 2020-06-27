@@ -1,23 +1,31 @@
 <?xml version="1.0"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
    <channel>
       <title>Garden of Chaos: Fantasy Strike Events</title>
       <link>https://gardenofchaos.xyz/events</link>
       <description>Events happening in Fantasy Strike, compiled by the Garden of Chaos.</description>
       <language>en-us</language>
-      <pubDate>Sat, 27 Jun 2020 16:00:00 +0100</pubDate>
-      <lastBuildDate>Sat, 27 Jun 2020 16:00:00 +0100</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
+      <image>
+          <link>https://gardenofchaos.xyz/events</link>
+          <title>The Garden of Chaos logo</title>
+          <url>https://gardenofchaos.xyz/FSgardenOfChao-196x196.png</url>
+          <width>98</width>
+          <height>98</height>
+      </image>
+      <atom:link href="http://dallas.example.com/rss.xml" rel="self" type="application/rss+xml" />
+      
       <item>
          <title>Garden of Chaos 6</title>
          <link>https://gardenofchaos.xyz</link>
          <source url="https://gardenofchaos.xyz/events.rss">Garden of Chaos Events</source>
          <category>Garden of Chaos Tournaments</category>
          <description>The sixth Garden of Chaos tournament, in the Many and the Few style! To be held on Thursday the 2nd of July 2020 at 21:00 BST\nBracket: https://challonge.com/FSGardenofChaos6</description>
-         <pubDate>Thu, 27 Jun 2020 21:00:00 +0100</pubDate>
+         <pubDate>Sat, 27 Jun 2020 14:30:00 +0100</pubDate>
          <enclosure url="https://gardenofchaos.xyz/announcements/FSGardenofChaos6.png" length="1162442" type="image/png" />
          <guid>https://challonge.com/FSGardenofChaos6</guid>
       </item>
+      
       <item>
          <title>Garden of Chaos B</title>
          <link>https://gardenofchaos.xyz</link>
@@ -28,6 +36,7 @@
          <enclosure url="https://gardenofchaos.xyz/announcements/FSGardenofChaos5.png" length="1327309" type="image/png" />
          <guid>https://challonge.com/FSGardenofChaos5</guid>
       </item>
+      
       <item>
          <title>Garden of the 4saken</title>
          <link>https://gardenofchaos.xyz</link>
@@ -38,6 +47,7 @@
          <enclosure url="https://gardenofchaos.xyz/announcements/FSGardenofChaos4Update.png" length="1168305" type="image/png" />
          <guid>https://challonge.com/FSGardenofChaos4</guid>
       </item>
+      
       <item>
          <title>Garden of Chaos 3</title>
          <link>https://gardenofchaos.xyz</link>
@@ -48,6 +58,7 @@
          <enclosure url="https://gardenofchaos.xyz/announcements/FSGardenofChaos3.png" length="1297577" type="image/png" />
          <guid>https://challonge.com/FSGardenofChaos3</guid>
       </item>
+      
       <item>
          <title>Garden of Chaos 2</title>
          <link>https://gardenofchaos.xyz</link>
@@ -58,6 +69,7 @@
          <enclosure url="https://gardenofchaos.xyz/announcements/FSGardenofChaos2.png" length="1313682" type="image/png" />
          <guid>https://challonge.com/FSGardenofChaos2</guid>
       </item>
+      
       <item>
          <title>Garden of Chaos 1</title>
          <link>https://gardenofchaos.xyz</link>
