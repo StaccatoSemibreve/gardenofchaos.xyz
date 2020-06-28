@@ -13,9 +13,23 @@
             <width>98</width>
             <height>98</height>
         </image>
-        <pubDate>Sat, 27 Jun 2020 19:50:00 +0100</pubDate>
-        <lastBuildDate>Sat, 27 Jun 2020 19:50:00 +0100</lastBuildDate>
+        <pubDate>Sat, 29 Jun 2020 00:20:00 +0100</pubDate>
+        <lastBuildDate>Sat, 29 Jun 2020 00:20:00 +0100</lastBuildDate>
         <atom:link href="https://gardenofchaos.xyz/events.rss" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>TPK Weekly Fantasy Strike Tournament #33 (Correction!)</title>
+            <link>https://challonge.com/TPKEsportsFSWeekly33</link>
+            <category>TPK Weekly Tournaments</category>
+            <category>Regular Events</category>
+            <description><![CDATA[
+                <p>TPK Esports - Fantasy Strike Weekly Tournament #33!</p>
+                <p>Actually Friday the 3rd of July 2020, not Saturday! At 20:00 UTC / 21:00 BST / 16:00 PDT / 15:00 EDT</p>
+                <p><a href="https://challonge.com/TPKEsportsFSWeekly33">Bracket</a> / <a href="https://twitch.tv/thypirateking">Stream</a></p>
+                ]]></description>
+            <pubDate>Sat, 29 Jun 2020 00:20:00 +0100</pubDate>
+            <guid isPermaLink="false">TPKEsportsFSWeekly33Correction</guid>
+        </item>
         
         <item>
             <title>Garden of Chaos Big Update Tournament</title>
