@@ -2,10 +2,13 @@
         <h1>Commentators</h1>
         <p>A bunch of self-description and self-promotion for any present or past commentators on Garden of Chaos.</p>
         
-        <p><strong>Janet:</strong> (she/her) I can be found on Discord at Janet#3389! I'm just someone doing her best to make the world a kinder place.
-        <br>I started the Garden of Chaos, and have the following things to say: trans rights, black lives matter, and ACAB! :D</p>
+        <p><strong>Janet:</strong> (she/her) I'm just someone doing her best to be kind.
+        <br>I started the Garden of Chaos, and have the following things to say: trans rights, black lives matter, and ACAB! :D
+        <br>My mains are Degrey, Lum, and Midori, though I've previously also mained Valerie and Geiger, and dabbled in Jaina.
+        <br>You can find me at @janet@isacutie.net on the fediverse, @staccato.semibreve:matrix.org on matrix, or Janet#3389 on discord.</p>
         
-        <p><strong>Daniel Stretulch:</strong> (he/him) I'm a mathematician, punster, and (Sporatic) Fantasy Strike commentator.
+        <p>Danielizabeth Stretulch: (he/she)  I'm a mathematician, punster, and (Sporatic) Fantasy Strike commentator.
+        <br>Feel free to use Dan, Liz, or Beth or any other nickname you can find in my name. 
         <br>You can find me as @DanielStretulch on Twitter, twitch.tv/danielstretulch on twitch, and Daniel Stretulch on YouTube.
         <br>My FS mains are Geiger, Setsuki, and DeGrey. Jaina, Midori, and Rook are my secondaries.</p>
     </main>
