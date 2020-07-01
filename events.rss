@@ -13,9 +13,22 @@
             <width>98</width>
             <height>98</height>
         </image>
-        <pubDate>Sat, 29 Jun 2020 00:20:00 +0100</pubDate>
-        <lastBuildDate>Sat, 29 Jun 2020 00:20:00 +0100</lastBuildDate>
+        <pubDate>Thu, 02 Jul 2020 00:30:00 +0100</pubDate>
+        <lastBuildDate>Thu, 02 Jun 2020 00:30:00 +0100</lastBuildDate>
         <atom:link href="https://gardenofchaos.xyz/events.rss" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>AnimEVO</title>
+            <link>https://twitter.com/Anime_EVO/status/1277801126566309888</link>
+            <category>Majors</category>
+            <category>Irregular Events</category>
+            <description><![CDATA[
+                <p>Fantasy Strike will be a part of AnimEVO!</p>
+                <p>On Saturday the 8th of August 2020, ish.</p>
+                ]]></description>
+            <pubDate>Thu, 02 Jun 2020 00:30:00 +0100</pubDate>
+            <guid isPermaLink="false">AnimEVOnline2020</guid>
+        </item>
         
         <item>
             <title>TPK Weekly Fantasy Strike Tournament #33 (Correction!)</title>
