@@ -20,3 +20,5 @@ cat website/template.txt            >   tournaments.html
 cat website/tournaments.txt         >>  tournaments.html
 cat website/template.txt            >   thoughts/throws.html
 cat website/thoughts/throws.txt     >>  thoughts/throws.html
+cat website/template.txt            >   thoughts.html
+cat website/thoughts.txt            >>  thoughts.html

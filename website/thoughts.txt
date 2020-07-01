@@ -1,0 +1,10 @@
+    <main>
+        <h1>Janet's Thoughts on Stuff (hosted on Garden of Chaos for convenience)</h1>
+        <p>Hopefully eventually a bunch of useful documents where I summarise some useful stuff!</p>
+        <ul>
+            <li><a href="/thoughts/throws">Throws:</a> the fundamentals of the strategy behind throwing - when you should, why you should, how often you should, and when it's a bad idea.</li>
+        </ul>
+    </main>
+    <footer></footer>
+  </body>
+</html>
