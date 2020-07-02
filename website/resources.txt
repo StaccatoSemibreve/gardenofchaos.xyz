@@ -9,6 +9,7 @@
             <li><a href="https://discord.gg/FantasyStrike">The Discord:</a> The official Fantasy Strike Discord server.</li>
             <li><a href="https://www.reddit.com/r/FantasyStrike">The Subreddit:</a> The Fantasy Strike subreddit.</li>
             <li><a href="https://gardenofchaos.xyz/teams">Custom Team Battle Manager:</a> A tool for managing Team Battles between custom teams of Fantasy Strike characters, including any number of non-unique characters, based on <a href="https://danielstretulch.github.io/">Daniel Stretulch's similar tool for all Yomi characters.</a> If you need a version that requires less organisation, <a href="https://gardenofchaos.xyz/teams2">here's one!</a></li>
+            <li><a href="https://github.com/undergroundmonorail/fs_stats">monorail's fs_stats:</a> A python tool for tracking your win-rate.
         </ul>
 
         <br>
