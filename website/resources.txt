@@ -8,8 +8,8 @@
             <li><a href="https://forums.fantasystrike.com/">The Forum:</a> The official Fantasy Strike forum.</li>
             <li><a href="https://discord.gg/FantasyStrike">The Discord:</a> The official Fantasy Strike Discord server.</li>
             <li><a href="https://www.reddit.com/r/FantasyStrike">The Subreddit:</a> The Fantasy Strike subreddit.</li>
-            <li><a href="https://gardenofchaos.xyz/teams">Custom Team Battle Manager:</a> A tool for managing Team Battles between custom teams of Fantasy Strike characters, including any number of non-unique characters, based on <a href="https://danielstretulch.github.io/">Daniel Stretulch's similar tool for all Yomi characters.</a> If you need a version that requires less organisation, <a href="https://gardenofchaos.xyz/teams2">here's one!</a></li>
-            <li><a href="https://github.com/undergroundmonorail/fs_stats">monorail's fs_stats:</a> A python tool for tracking your win-rate.
+            <li><a href="https://gardenofchaos.xyz/teams">Custom Team Battle manager:</a> A tool for managing Team Battles between custom teams of Fantasy Strike characters, including any number of non-unique characters, based on <a href="https://danielstretulch.github.io/">Daniel Stretulch's similar tool for all Yomi characters.</a> If you need a version that requires less organisation, <a href="https://gardenofchaos.xyz/teams2">here's one!</a></li>
+            <li><a href="https://github.com/undergroundmonorail/fs_stats">monorail's fs_stats:</a> A python tool for tracking your win-rate.</li>
         </ul>
 
         <br>
@@ -48,7 +48,7 @@
             <li><a href="https://www.youtube.com/mrmikelproductions">Mr Mkl:</a> A Youtube channel owned by mrmkl, a prominent member of the Fantasy Strike community, especially in the Toronto TopTiers local fighting game community - notably containing a <a href="https://www.youtube.com/watch?v=qwtf2dlQR1A">really cool combo video!</a> (But also check out the playlists)</li>
             <li><a href="https://www.youtube.com/channel/UCpj9deH_-JE-_DskWe2z7Lw">CWheezy:</a> A Youtube channel owned by CWheezy, a prominent and extremely experienced member of the Fantasy Strike community and tournament commentator - notably containing a <a href="https://www.youtube.com/watch?v=ufCC4YvEoyQ">video explaining the Grave vs Valerie matchup in a minute.</a></li>
             <li><a href="https://www.youtube.com/channel/UCRBSZBLV2dNF7KScF46usZw">Shobbs:</a> A Youtube channel owned by shobbs (aka the rook hugger), a prominent and extremely experienced member of the Fantasy Strike community - notably containing a <a href="https://www.youtube.com/watch?v=fE079_lLiRU">video tutorial on playing Rook.</a></li>
-            <li><a href="https://www.youtube.com/channel/UCIy3dZDnDgqlfS_HfEzK3iA">Simon Braendli:</a> A Youtube channel owned by mysticjuicer, a notable member of the Fantasy Strike community - containing a <a href="https://www.youtube.com/watch?v=k78JUCNarW4>video guide on safe jumping as Rook.</a>
+            <li><a href="https://www.youtube.com/channel/UCIy3dZDnDgqlfS_HfEzK3iA">Simon Braendli:</a> A Youtube channel owned by mysticjuicer, a notable member of the Fantasy Strike community - containing a <a href="https://www.youtube.com/watch?v=k78JUCNarW4">video guide on safe jumping as Rook.</a>
         </ul>
     </main>
     <footer></footer>
