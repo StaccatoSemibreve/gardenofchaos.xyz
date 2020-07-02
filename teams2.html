@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>The Garden of Chaos</title>
+    <link rel="stylesheet" href="https://gardenofchaos.xyz/style.css">
+    <link rel="icon" type="image/png" href="https://gardenofchaos.xyz/FSgardenOfChao-196x196.png" sizes="196x196" />
+  </head>
+  <body>
+    <header>
+        <ul class="navbar">
+            <li class="navbar"><a href="https://gardenofchaos.xyz" class="navbar">                              Home</a></li>
+            <li class="navbar"><a href="https://gardenofchaos.xyz/rules" class="navbar">                        Rules</a></li>
+            <li class="navbar"><a href="https://gardenofchaos.xyz/styles" class="navbar">                       Formats</a></li>
+            <li class="navbar"><a href="https://gardenofchaos.xyz/rulesets" class="navbar">                     Rulesets</a></li>
+            <li class="navbar"><a href="https://gardenofchaos.xyz/https://discord.gg/abWADS7" class="navbar">   Discord</a></li>
+            <li class="navbar"><a href="https://gardenofchaos.xyz/bracket" class="navbar">                      Signup</a></li>
+            <li class="navbar"><a href="https://gardenofchaos.xyz/stream" class="navbar">                       Stream</a></li>
+            <li class="navbar"><a href="https://gardenofchaos.xyz/events" class="navbar">                       Events</a></li>
+            <li class="navbar"><a href="https://gardenofchaos.xyz/resources" class="navbar">                    Resources</a></li>
+            <li class="navbar"><a href="https://gardenofchaos.xyz/commentators" class="navbar">                 Commentators</a></li>
+            <li class="logo"><img src="https://gardenofchaos.xyz/FSgardenOfChao-196x196.png" class="logo" title="logo" alt="A logo of a happy chao in a circle, in the colours of the Fantasy Strike logo."></li>
+        </ul>
+    </header>
+    <main>
+        <h1>The Garden of Chaos</h1>
+        <p><strong>Usage:</strong> Enter your list of characters and how many characters your opponent has. You will receive a list of characters to play - go through this list one by one to find your character for each game in the match, skipping any characters you have already won with.</p>
+        <p>Number of opponent's characters: <input id="size" type="number" /></p>
+        <p>Your characters: </p><textarea id="team"></textarea>
+        <br><input type="button" value="Submit Team" onclick="submit()"/>
+        <p id="result">Result: </p>
+    </main>
+    <footer></footer>
+  </body>
+  <script>
+    function shuffle(a) {
+        var j, x, i;
+        for (i = a.length - 1; i > 0; i--) {
+            j = Math.floor(Math.random() * (i + 1));
+            x = a[i];
+            a[i] = a[j];
+            a[j] = x;
+        }
+        return a;
+    }
+    
+    function submit() {
+        var team = document.getElementById("team").value.split("\n");
+        var size = document.getElementById("size").value;
+        var result = [];
+        while(result.length < team.length*size)
+            result = result.concat(shuffle(team.slice(0)));
+        document.getElementById("result").innerHTML = "Result: " + result;
+    }
+  </script>
+</html>

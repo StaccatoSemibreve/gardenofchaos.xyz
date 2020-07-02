@@ -16,6 +16,8 @@ cat website/template.txt            >   random.html
 cat website/random.txt              >>  random.html
 cat website/template.txt            >   teams.html
 cat website/teams.txt               >>  teams.html
+cat website/template.txt            >   teams2.html
+cat website/teams2.txt              >>  teams2.html
 cat website/template.txt            >   tournaments.html
 cat website/tournaments.txt         >>  tournaments.html
 cat website/template.txt            >   thoughts/throws.html
