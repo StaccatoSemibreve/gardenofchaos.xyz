@@ -13,9 +13,25 @@
             <width>98</width>
             <height>98</height>
         </image>
-        <pubDate>Thu, 02 Jul 2020 00:30:00 +0100</pubDate>
-        <lastBuildDate>Thu, 02 Jun 2020 00:30:00 +0100</lastBuildDate>
+        <pubDate>Fri, 03 Jul 2020 14:30:00 +0100</pubDate>
+        <lastBuildDate>Fri, 03 Jul 2020 14:30:00 +0100</lastBuildDate>
         <atom:link href="https://gardenofchaos.xyz/events.rss" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Garden of Chaos 7</title>
+            <link>https://gardenofchaos.xyz</link>
+            <source url="https://gardenofchaos.xyz/events.rss">Garden of Chaos Events</source>
+            <category>Garden of Chaos Tournaments</category>
+            <category>Regular Events</category>
+            <description><![CDATA[
+                <p>The seventh Garden of Chaos tournament, in the Roll the Dice style!</p>
+                <p>To be held on Thursday the 9th of July 2020 at 20:00 UTC / 21:00 BST / 16:00 PDT / 15:00 EDT</p>
+                <p><a href="https://challonge.com/FSGardenofChaos7">Bracket</a> / <a href="https://twitch.tv/danielstretulch">Stream</a></p>
+                ]]></description>
+            <pubDate>Fri, 03 Jul 2020 14:30:00 +0100</pubDate>
+            <enclosure url="https://gardenofchaos.xyz/announcements/FSGardenofChaos7.png" length="1162442" type="image/png" />
+            <guid isPermaLink="false">FSGardenofChaos7</guid>
+        </item>
         
         <item>
             <title>AnimEVO</title>
