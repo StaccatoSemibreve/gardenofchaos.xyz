@@ -1,6 +1,6 @@
     <main>
         <h1>Fun Rules</h1>
-        <p>The full tournament will follow a particular tournament style out of those listed on the Formats page, usually selected at the end of the previous tournament. Each player may, for any match in the tournament, choose to follow a particular ruleset out of those listed on the Rulesets page. Should their opponent agree, then the ruleset is prioritised over the rules of the character pick, should they contradict. A tournament style may lead to certain rulesets being forbidden for some or all matches.</p>
+        <p>The full tournament will follow a particular tournament style out of those listed on the Formats page, usually selected at the end of the previous tournament. Each player may, for any match in the tournament, choose to follow a particular ruleset out of those listed on the Rulesets page. They may also choose to use the ruleset for, say, the first game of the match, or the third. Should their opponent agree, then the ruleset is prioritised over the rules of the character pick, should they contradict. A tournament style may lead to certain rulesets being forbidden for some or all matches.</p>
         <p>Any failure to follow a ruleset constitutes a foul, and the player responsible must forfeit a single round, unless their opponent signals otherwise by immediately also committing a foul in response. Remember, the goal of this tournament is just some silly fun!</p>
 
         <h1>Boring Rules</h1>
