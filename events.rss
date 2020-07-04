@@ -13,9 +13,23 @@
             <width>98</width>
             <height>98</height>
         </image>
-        <pubDate>Sat, 04 Jul 2020 02:30:00 +0100</pubDate>
-        <lastBuildDate>Sat, 04 Jul 2020 02:30:00 +0100</lastBuildDate>
+        <pubDate>Sat, 04 Jul 2020 14:40:00 +0100</pubDate>
+        <lastBuildDate>Sat, 04 Jul 2020 14:40:00 +0100</lastBuildDate>
         <atom:link href="https://gardenofchaos.xyz/events.rss" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>TPK Weekly Fantasy Strike Tournament #34</title>
+            <link>https://challonge.com/TPKEsportsFSWeekly34</link>
+            <category>TPK Weekly Tournaments</category>
+            <category>Regular Events</category>
+            <description><![CDATA[
+                <p>TPK Esports - Fantasy Strike Weekly Tournament #34!</p>
+                <p>Saturday the 11th of July 2020 at 20:00 UTC / 21:00 BST / 13:00 PDT / 16:00 EDT</p>
+                <p><a href="https://challonge.com/TPKEsportsFSWeekly34">Bracket</a> / <a href="https://twitch.tv/thypirateking">Stream</a></p>
+                ]]></description>
+            <pubDate>Sat, 04 Jul 2020 14:40:00 +0100</pubDate>
+            <guid isPermaLink="false">TPKEsportsFSWeekly34</guid>
+        </item>
         
         <item>
             <title>Cyber Stun City Week 17</title>
