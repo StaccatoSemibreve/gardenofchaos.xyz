@@ -16,6 +16,7 @@
             <li><strong>I&#39;m Feeling Lucky:</strong> Pick a ruleset at random using <a href="/random">a randomiser</a> and play that. If the ruleset is disallowed by the tournament style, reroll.</li>
             <li><strong>I Have the High Ground:</strong> One player can only use ground moves, the other air moves. At the end of each round, they switch roles. [Source: Daniel Stretulch]</li>
             <li><strong>The Floor Is Lava:</strong> Each player must hold the jump button at all times. [Source: ErickDRedd]</li>
+            <li><strong>Gauge Overcharge:</strong> Whenever either player yomi counters, they must immediately use their gS or jS. [Source: AgentAPM]</li>
         </ul>
         
         <p><strong>Mirror Rulesets (a subcategory of rulesets - always single battle, best of 3):</strong></p>
