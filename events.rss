@@ -13,9 +13,21 @@
             <width>98</width>
             <height>98</height>
         </image>
-        <pubDate>Mon, 06 Jul 2020 11:00:00 +0100</pubDate>
-        <lastBuildDate>Mon, 06 Jul 2020 11:00:00 +0100</lastBuildDate>
+        <pubDate>Tue, 14 Jul 2020 16:50:00 +0100</pubDate>
+        <lastBuildDate>Tue, 14 Jul 2020 16:50:00 +0100</lastBuildDate>
         <atom:link href="https://gardenofchaos.xyz/events.rss" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Monday Night Strike</title>
+            <link>https://discord.gg/FantasyStrike</link>
+            <category>Monday Night Strike</category>
+            <category>Regular Events</category>
+            <description><![CDATA[
+                <p>Join the casual or ranked queues from 19:00 UTC / 20:00 BST onwards for a chance that Remy (AKA Agoners) will commentate your match <a href="https://twitch.tv/agoners">on stream!</a></p>
+                ]]></description>
+            <pubDate>Tue, 14 Jul 2020 16:50:00 +0100</pubDate>
+            <guid isPermaLink="false">MondayNightStrike3</guid>
+        </item>
         
         <item>
             <title>Monday Night Strike</title>
