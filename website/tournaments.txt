@@ -1,12 +1,12 @@
     <main>
         <h1>Record of Past Tournaments</h1>
         <ol>
-            <li><strong><a href="https://www.youtube.com/watch?v=zlEVTEpSjqc">Garden of Chaos 1:</a></strong> A 5-player Roll the Dice style tournament held on the 21st of May 2020, won by <div class="spoiler">fee bee</div>!</li>
-            <li><strong><a href="https://www.youtube.com/watch?v=6wjjNGn0BUU">Garden of Chaos 2:</a></strong> A 5-person Democracy style tournament held on the 28th of May 2020, won by fee bee!</li>
-            <li><strong><a href="https://www.youtube.com/watch?v=xjYWbMFEFhU">Garden of Chaos 3:</a></strong> A 7-player Mirror Mayhem style tournament held on the 4th of June 2020, won by EmiSocks!</li>
-            <li><strong><a href="https://www.youtube.com/watch?v=f9kotVUEsPU">Garden of the 4saken:</a></strong> A 5-player Cursed style tournament held on the 11th of June 2020, won by Remy!</li>
-            <li><strong><a href="https://www.youtube.com/watch?v=6fvWzxkILjc">Garden of Chaos B:</a></strong> A 7-player Oops, All Vals! style tournament (a variant of Teams where all players played Valerie to celebrate pride month!) held on the 25th of June 2020, won by Mitarashi Dango, EmiSocks, and Lil_morn! Ended with <a href="https://www.youtube.com/watch?v=gtFaeNma3GM">a Ft10 exhibition match</a> between Organous's Rook and aeronico's Jaina, won by Organous!</li>
-            <li><strong><a href="https://www.youtube.com/watch?v=yvk-IAjarh0">Garden of Chaos 6:</a></strong> A 6-player Many and the Few tournament held on the 2nd of July 2020, won by Thelo! Ended with a Ft5 exhibition match between Frostilyte's Valerie and hypergrav's Grave. won by Frostilyte!</li>
+            <li><strong><a href="https://www.youtube.com/watch?v=zlEVTEpSjqc">Garden of Chaos 1:</a></strong> A 5-player Roll the Dice style tournament held on the 21st of May 2020, won by <span class="spoiler">fee bee</span>!</li>
+            <li><strong><a href="https://www.youtube.com/watch?v=6wjjNGn0BUU">Garden of Chaos 2:</a></strong> A 5-person Democracy style tournament held on the 28th of May 2020, won by <span class="spoiler">fee bee</span>!</li>
+            <li><strong><a href="https://www.youtube.com/watch?v=xjYWbMFEFhU">Garden of Chaos 3:</a></strong> A 7-player Mirror Mayhem style tournament held on the 4th of June 2020, won by <span class="spoiler">EmiSocks</span>!</li>
+            <li><strong><a href="https://www.youtube.com/watch?v=f9kotVUEsPU">Garden of the 4saken:</a></strong> A 5-player Cursed style tournament held on the 11th of June 2020, won by <span class="spoiler">Remy</span>!</li>
+            <li><strong><a href="https://www.youtube.com/watch?v=6fvWzxkILjc">Garden of Chaos B:</a></strong> A 7-player Oops, All Vals! style tournament (a variant of Teams where all players played Valerie to celebrate pride month!) held on the 25th of June 2020, won by <span class="spoiler">Mitarashi Dango, EmiSocks, and Lil_morn</span>! Ended with <a href="https://www.youtube.com/watch?v=gtFaeNma3GM">a Ft10 exhibition match</a> between Organous's Rook and aeronico's Jaina, won by <span class="spoiler">Organous</span>!</li>
+            <li><strong><a href="https://www.youtube.com/watch?v=yvk-IAjarh0">Garden of Chaos 6:</a></strong> A 6-player Many and the Few tournament held on the 2nd of July 2020, won by <span class="spoiler">Thelo</span>! Ended with a Ft5 exhibition match between Frostilyte's Valerie and hypergrav's Grave. won by <span class="spoiler">Frostilyte</span>!</li>
         </ol>
     </main>
     <footer></footer>
