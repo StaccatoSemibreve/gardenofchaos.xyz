@@ -6,7 +6,8 @@
         <blockquote>
             <strong>Roll the Dice:</strong> Single battle, best of 3, standard counterpick. At the start of the tournament, select six characters and number them from 1 to 6. Each match, roll a d6 (physical or digital) to select your character. The loser of a game can &quot;counterpick&quot; by repeating the process.
         </blockquote>
-        <p>It will be run on Thursday the 9th of July at 21:00 BST (20:00 UTC, 13:00 PDT, 16:00 EDT). This week it will yet again be commentated by Janet and Danielizabeth! ^_^</p>
+        <p>It will be run on Thursday the 16th of July at 21:00 BST (20:00 UTC, 13:00 PDT, 16:00 EDT). This week it will be commentated by Janet and Remy! ^_^</p>
+        <p>A steam code for FTL will be given to a random participant, courtesy of ErickDRedd!</p>
         <p>Past tournaments can be found <a href="tournaments">here!</a></p>
     </main>
     <footer></footer>
