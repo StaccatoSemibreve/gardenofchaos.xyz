@@ -13,9 +13,53 @@
             <width>98</width>
             <height>98</height>
         </image>
-        <pubDate>Tue, 14 Jul 2020 16:50:00 +0100</pubDate>
-        <lastBuildDate>Tue, 14 Jul 2020 16:50:00 +0100</lastBuildDate>
+        <pubDate>Sat, 11 Jul 2020 01:00:00 +0100</pubDate>
+        <lastBuildDate>Sat, 11 Jul 2020 01:00:00 +0100</lastBuildDate>
         <atom:link href="https://gardenofchaos.xyz/events.rss" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>AnimEVO</title>
+            <link>https://twitter.com/FantasyStrike/status/1281682691813806080</link>
+            <category>Majors</category>
+            <category>Irregular Events</category>
+            <description><![CDATA[
+                <pRegistration link for the Fantasy Strike Tournament at AnimEVOnline is now live! Head over to <a href="https://smash.gg/tournament/animevo-2020/event/fantasy-strike/overview">https://smash.gg/tournament/animevo-2020/event/fantasy-strike/overview</a> and sign up now.</p>
+                <p>Tournament is August 22nd, exact pool times are tentative but will most likely be around 3pm or 4pm Eastern.</p>
+                <p>(Announcement text copied from the Fantasy Strike discord server's announcement section)</p>
+                ]]></description>
+            <pubDate>Sat, 11 Jul 2020 01:00:00 +0100</pubDate>
+            <guid isPermaLink="false">AnimEVOnline2020Update</guid>
+        </item>
+        
+        <item>
+            <title>Cyber Stun City Week 18</title>
+            <link>https://smash.gg/tournament/cyber-stun-city-week-18-july-13th-16th-2020/event/fantasy-strike-singles-tournament/overview</link>
+            <category>Cyber Stun City</category>
+            <category>Regular Events</category>
+            <description><![CDATA[
+                <p>Cyber Stun City week 18, hosted by TorontoTopTiers!</p>
+                <p>Wednesday the 15th of July 2020 at 23:00 UTC / 00:00 BST / 16:00 PDT / 19:00 EDT</p>
+                <p><a href="https://smash.gg/tournament/cyber-stun-city-week-18-july-13th-16th-2020/event/fantasy-strike-singles-tournament/overview">Bracket</a> / <a href="https://twitch.tv/torontotoptiers2">Stream</a></p>
+                ]]></description>
+            <pubDate>Sat, 11 Jul 2020 01:00:00 +0100</pubDate>
+            <guid isPermaLink="false">CyberStunCity17</guid>
+        </item>
+        
+        <item>
+            <title>Garden of Chaos 7</title>
+            <link>https://gardenofchaos.xyz</link>
+            <source url="https://gardenofchaos.xyz/events.rss">Garden of Chaos Events</source>
+            <category>Garden of Chaos Tournaments</category>
+            <category>Regular Events</category>
+            <description><![CDATA[
+                <p>The seventh Garden of Chaos tournament, in the Roll the Dice style! Moved to next week.</p>
+                <p>To be held on Thursday the 16th of July 2020 at 20:00 UTC / 21:00 BST / 13:00 PDT / 15:00 EDT</p>
+                <p><a href="https://challonge.com/FSGardenofChaos7">Bracket</a> / <a href="https://twitch.tv/danielstretulch">Stream</a></p>
+                ]]></description>
+            <pubDate>Sat, 11 Jul 2020 01:00:00 +0100</pubDate>
+            <enclosure url="https://gardenofchaos.xyz/announcements/FSGardenofChaos7.2.png" length="1162442" type="image/png" />
+            <guid isPermaLink="false">FSGardenofChaos7Update</guid>
+        </item>
         
         <item>
             <title>Monday Night Strike</title>
@@ -25,7 +69,7 @@
             <description><![CDATA[
                 <p>Join the casual or ranked queues from 19:00 UTC / 20:00 BST onwards for a chance that Remy (AKA Agoners) will commentate your match <a href="https://twitch.tv/agoners">on stream!</a></p>
                 ]]></description>
-            <pubDate>Tue, 14 Jul 2020 16:50:00 +0100</pubDate>
+            <pubDate>Tue, 7 Jul 2020 16:50:00 +0100</pubDate>
             <guid isPermaLink="false">MondayNightStrike3</guid>
         </item>
         
