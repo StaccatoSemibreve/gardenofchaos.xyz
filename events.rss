@@ -13,9 +13,23 @@
             <width>98</width>
             <height>98</height>
         </image>
-        <pubDate>Sat, 11 Jul 2020 01:00:00 +0100</pubDate>
-        <lastBuildDate>Sat, 11 Jul 2020 01:00:00 +0100</lastBuildDate>
+        <pubDate>Sat, 11 Jul 2020 15:30:00 +0100</pubDate>
+        <lastBuildDate>Sat, 11 Jul 2020 15:30:00 +0100</lastBuildDate>
         <atom:link href="https://gardenofchaos.xyz/events.rss" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>AnimEVO (sorry about that last one)</title>
+            <link>https://twitter.com/FantasyStrike/status/1281682691813806080</link>
+            <category>Majors</category>
+            <category>Irregular Events</category>
+            <description><![CDATA[
+                <p>Registration link for the Fantasy Strike Tournament at AnimEVOnline is now live! Head over to <a href="https://smash.gg/tournament/animevo-2020/event/fantasy-strike/overview">https://smash.gg/tournament/animevo-2020/event/fantasy-strike/overview</a> and sign up now.</p>
+                <p>Tournament is August 22nd, exact pool times are tentative but will most likely be around 3pm or 4pm Eastern.</p>
+                <p>(Announcement text copied from the Fantasy Strike discord server's announcement section, and this time I didn't accidentally break the HTML)</p>
+                ]]></description>
+            <pubDate>Sat, 11 Jul 2020 15:30:00 +0100</pubDate>
+            <guid isPermaLink="false">AnimEVOnline2020Update2</guid>
+        </item>
         
         <item>
             <title>AnimEVO</title>
@@ -23,7 +37,7 @@
             <category>Majors</category>
             <category>Irregular Events</category>
             <description><![CDATA[
-                <pRegistration link for the Fantasy Strike Tournament at AnimEVOnline is now live! Head over to <a href="https://smash.gg/tournament/animevo-2020/event/fantasy-strike/overview">https://smash.gg/tournament/animevo-2020/event/fantasy-strike/overview</a> and sign up now.</p>
+                <p>Registration link for the Fantasy Strike Tournament at AnimEVOnline is now live! Head over to <a href="https://smash.gg/tournament/animevo-2020/event/fantasy-strike/overview">https://smash.gg/tournament/animevo-2020/event/fantasy-strike/overview</a> and sign up now.</p>
                 <p>Tournament is August 22nd, exact pool times are tentative but will most likely be around 3pm or 4pm Eastern.</p>
                 <p>(Announcement text copied from the Fantasy Strike discord server's announcement section)</p>
                 ]]></description>
