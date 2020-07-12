@@ -13,9 +13,23 @@
             <width>98</width>
             <height>98</height>
         </image>
-        <pubDate>Sat, 11 Jul 2020 15:30:00 +0100</pubDate>
-        <lastBuildDate>Sat, 11 Jul 2020 15:30:00 +0100</lastBuildDate>
+        <pubDate>Sun, 12 Jul 2020 18:30:00 +0100</pubDate>
+        <lastBuildDate>Sun, 12 Jul 2020 18:30:00 +0100</lastBuildDate>
         <atom:link href="https://gardenofchaos.xyz/events.rss" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>TPK Weekly Fantasy Strike Tournament #35</title>
+            <link>https://challonge.com/TPKEsportsFSWeekly35</link>
+            <category>TPK Weekly Tournaments</category>
+            <category>Regular Events</category>
+            <description><![CDATA[
+                <p>TPK Esports - Fantasy Strike Weekly Tournament #34!</p>
+                <p>Saturday the 18th of July 2020 at 20:00 UTC / 21:00 BST / 13:00 PDT / 16:00 EDT</p>
+                <p><a href="https://challonge.com/TPKEsportsFSWeekly35">Bracket</a> / <a href="https://twitch.tv/thypirateking">Stream</a></p>
+                ]]></description>
+            <pubDate>Sun, 12 Jul 2020 18:30:00 +0100</pubDate>
+            <guid isPermaLink="false">TPKEsportsFSWeekly35</guid>
+        </item>
         
         <item>
             <title>AnimEVO (sorry about that last one)</title>
