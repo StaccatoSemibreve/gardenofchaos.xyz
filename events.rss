@@ -13,9 +13,27 @@
             <width>98</width>
             <height>98</height>
         </image>
-        <pubDate>Sun, 12 Jul 2020 18:30:00 +0100</pubDate>
-        <lastBuildDate>Sun, 12 Jul 2020 18:30:00 +0100</lastBuildDate>
+        <pubDate>Fri, 17 Jul 2020 04:45:00 +0100</pubDate>
+        <lastBuildDate>Fri, 17 Jul 2020 04:45:00 +0100</lastBuildDate>
         <atom:link href="https://gardenofchaos.xyz/events.rss" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Veiled Threat II</title>
+            <link>https://smash.gg/veiledthreat2</link>
+            <category>Irregular Events</category>
+            <description><![CDATA[
+                <p>(Description taken from the <a href="https://smash.gg/veiledthreat2">bracket details page</a>.</p>
+                <p><strong>Veiled Threat II</strong></p>
+                <p>Coming off the heels of our first event, safety_man and MrMKL are back once again to bring you Veiled Threat II</p>
+                <p>The featured game is Fantasy Strike - available on PS4, PC/Steam and Nintendo Switch with full crossplay support.</p>
+                <p>Our goal once again is to highlight hidden talents within the community and uncover Veiled Threats that lurk just below the highest ranks, some of whom are fully capable of taking them out.</p>
+                <p><strong>Dates & Times</p></strong>
+                <p>The tournament will take place on Sunday August 2nd at 3PM EDT (GMT-4)</p>
+                <p>(Janet's time zone translation: 20:00 BST / 19:00 UTC / 12:00 PDT / 15:00 EDT)</p>
+                ]]></description>
+            <pubDate>Fri, 17 Jul 2020 04:45:00 +0100</pubDate>
+            <guid isPermaLink="false">VeiledThreat2</guid>
+        </item>
         
         <item>
             <title>TPK Weekly Fantasy Strike Tournament #35</title>
