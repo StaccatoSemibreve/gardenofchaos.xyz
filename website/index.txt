@@ -1,13 +1,13 @@
     <main>
         <h1>The Garden of Chaos</h1>
-        <p>A low-stakes weekly <a href="https://www.fantasystrike.com/">Fantasy Strike</a> tournament based around following silly rulesets at every step, run by Janet (you know, from the Fantasy Strike Discord server) with logos and general design by Daniel Stretulch (who is awesome btw)! If you wish to participate or watch, please use the bracket or stream links respectively from the navigation bar. You can also find a list of upcoming Fantasy Strike events in the Events page.</p>
+        <p>A low-stakes weekly <a href="https://www.fantasystrike.com/">Fantasy Strike</a> tournament based around following silly rulesets at every step, run by Janet (you know, from the Fantasy Strike Discord server) with logos and general design by Danielizabeth Stretulch (who is awesome btw)! If you wish to participate or watch, please use the bracket or stream links respectively from the navigation bar. You can also find a list of upcoming Fantasy Strike events in the Events page.</p>
         
-        <p>This week&#39;s tournament format is: <b>Roll the Dice!</b>:</p>
+        <p>This week&#39;s tournament format is: <b>You Are What You Beat!</b>:</p>
         <blockquote>
-            <strong>Roll the Dice:</strong> Single battle, best of 3, standard counterpick. At the start of the tournament, select six characters and number them from 1 to 6. Each match, roll a d6 (physical or digital) to select your character. The loser of a game can &quot;counterpick&quot; by repeating the process.
+            <strong>You Are What You Beat:</strong> Single battle, best of 3, no counterpick. Each player's starting character is chosen at random. Upon completing a match, the player that wins will change to their opponent's character and colour for the next match, and the player that loses rerolls a new character. [Source: fuu buu]
         </blockquote>
-        <p>It will be run on Thursday the 16th of July at 21:00 BST (20:00 UTC, 13:00 PDT, 16:00 EDT). This week it will be commentated by Janet and Remy! ^_^</p>
-        <p>A steam code for FTL will be given to a random participant, courtesy of ErickDRedd!</p>
+        <p>It will be run on Thursday the 23rd of July at 21:00 BST (20:00 UTC, 13:00 PDT, 16:00 EDT). This week it will be commentated by Janet and Danielizabeth! ^_^</p>
+        <p>A steam code for Half Minute Hero will be given to a random participant, courtesy of ErickDRedd!</p>
         <p>Past tournaments can be found <a href="tournaments">here!</a></p>
     </main>
     <footer></footer>
