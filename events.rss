@@ -13,9 +13,23 @@
             <width>98</width>
             <height>98</height>
         </image>
-        <pubDate>Fri, 17 Jul 2020 04:45:00 +0100</pubDate>
-        <lastBuildDate>Fri, 17 Jul 2020 04:45:00 +0100</lastBuildDate>
+        <pubDate>Sat, 18 Jul 2020 01:00:00 +0100</pubDate>
+        <lastBuildDate>Sat, 18 Jul 2020 01:00:00 +0100</lastBuildDate>
         <atom:link href="https://gardenofchaos.xyz/events.rss" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Cyber Stun City Week 19</title>
+            <link>https://smash.gg/tournament/cyber-stun-city-week-19-july-20th-23rd-2020/event/fantasy-strike-singles-tournament/overview</link>
+            <category>Cyber Stun City</category>
+            <category>Regular Events</category>
+            <description><![CDATA[
+                <p>Cyber Stun City week 19, hosted by TorontoTopTiers!</p>
+                <p>Wednesday the 22nd of July 2020 at 23:00 UTC / 00:00 BST / 16:00 PDT / 19:00 EDT</p>
+                <p><a href="https://smash.gg/tournament/cyber-stun-city-week-19-july-20th-23rd-2020/event/fantasy-strike-singles-tournament/overview">Bracket</a> / <a href="https://twitch.tv/torontotoptiers2">Stream</a></p>
+                ]]></description>
+            <pubDate>Sat, 18 Jul 2020 01:00:00 +0100</pubDate>
+            <guid isPermaLink="false">CyberStunCity19</guid>
+        </item>
         
         <item>
             <title>Veiled Threat II</title>
@@ -88,7 +102,7 @@
                 <p><a href="https://smash.gg/tournament/cyber-stun-city-week-18-july-13th-16th-2020/event/fantasy-strike-singles-tournament/overview">Bracket</a> / <a href="https://twitch.tv/torontotoptiers2">Stream</a></p>
                 ]]></description>
             <pubDate>Sat, 11 Jul 2020 01:00:00 +0100</pubDate>
-            <guid isPermaLink="false">CyberStunCity17</guid>
+            <guid isPermaLink="false">CyberStunCity18</guid>
         </item>
         
         <item>
