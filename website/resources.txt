@@ -36,6 +36,11 @@
                 <li><a href="https://forums.fantasystrike.com/t/random-rook-thoughts">Random Rook Thoughts</a></li>
             </ul>
             <li><a href="https://gardenofchaos.xyz/thoughts">Janet's Thoughts on Stuff:</a> A (currently very small) collection of brief guides on miscellaneous concepts in Fantasy Strike, put together by Janet who is also the person who made this page!</li>
+            <ul>
+                <li><a href="/thoughts/throws">Janet's Thoughts on Throw Strategy</a></li>
+                <li><a href="/thoughts/dice">Janet's Thoughts on How to Dice</a></li>
+                <li><a href="/thoughts/advantage">Janet's Thoughts on Advantage</a></li>
+            </ul>
         </ul>
 
         <br>

@@ -30,6 +30,7 @@
             <li><strong>Low Charge:</strong> Geiger mirror; gC, jC, and gB may not be used.</li>
             <li><strong>ArgagargGargArgagargGarg:</strong> Argagarg mirror; only gB, [gB], and jS may be used. [Source: hypergrav and fishdog]</li>
             <li><strong>Divefish:</strong> Argagarg mirror; only jB may be used. [Source: TurboTaco]</li>
+            <li><strong>Godhand Fish Dive:</strong> Argagarg Mirror; only bA, gB, jB, and throws may be used. If a player gets a knockdown, they can use [gB] (poison fish) until their opponent wakes up.</li>
             <li><strong>Galaxy Brain Ninja:</strong> Setsuki mirror; only gC (and its followups) may be used. [Source: Daniel Stretulch]</li>
             <li><strong>Out of Ink:</strong> Valerie mirror; gB may not be used. [Source: ErickDRedd]</li>
             <li><strong>Free Hugs:</strong> Rook mirror; only gC, jC, and throw may be used.</li>
