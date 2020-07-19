@@ -25,4 +25,6 @@ cat website/thoughts/throws.txt     >>  thoughts/throws.html
 cat website/template.txt            >   thoughts.html
 cat website/thoughts.txt            >>  thoughts.html
 cat website/template.txt            >   thoughts/dice.html
-cat website/thoughts/dice.txt       >>   thoughts/dice.html
+cat website/thoughts/dice.txt       >>  thoughts/dice.html
+cat website/template.txt            >   thoughts/advantage.html
+cat website/thoughts/advantage.txt  >>  thoughts/advantage.html

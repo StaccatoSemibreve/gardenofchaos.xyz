@@ -1,5 +1,5 @@
     <main>
-        <h1>Janet's Thoughts on How to Dice:</h1>
+        <h1>Janet's Thoughts on How to Dice</h1>
         <p><strong>Using dice:</strong></p>
         <ul>
             <li>Use nA (claw) to get one into the air to cover an item throw, if you aren't actively being pressured - this can be looped for as long as they let you! Note that zoners can clear out individual airborne dice with projectiles, but the item setups and super meter gain can make this worthwhile. Letting you do this is a mistake from your opponent, but it's often safe to do this at least once without them having a chance to stop you! Also use nA to anti-air your opponent, if they're trying to very bravely jump in, hoping to catch you out.</li>
