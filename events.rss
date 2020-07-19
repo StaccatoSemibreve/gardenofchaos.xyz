@@ -13,9 +13,39 @@
             <width>98</width>
             <height>98</height>
         </image>
-        <pubDate>Sat, 18 Jul 2020 01:00:00 +0100</pubDate>
-        <lastBuildDate>Sat, 18 Jul 2020 01:00:00 +0100</lastBuildDate>
+        <pubDate>Sat, 19 Jul 2020 16:15:00 +0100</pubDate>
+        <lastBuildDate>Sat, 19 Jul 2020 16:15:00 +0100</lastBuildDate>
         <atom:link href="https://gardenofchaos.xyz/events.rss" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>TPK Weekly Fantasy Strike Tournament #35</title>
+            <link>https://challonge.com/TPKEsportsFSWeekly35</link>
+            <category>TPK Weekly Tournaments</category>
+            <category>Regular Events</category>
+            <description><![CDATA[
+                <p>TPK Esports - Fantasy Strike Weekly Tournament #34! Moved to the next week.</p>
+                <p>Saturday the 25th of July 2020 at 20:00 UTC / 21:00 BST / 13:00 PDT / 16:00 EDT</p>
+                <p><a href="https://challonge.com/TPKEsportsFSWeekly35">Bracket</a> / <a href="https://twitch.tv/thypirateking">Stream</a></p>
+                ]]></description>
+            <pubDate>Sat, 19 Jul 2020 16:15:00 +0100</pubDate>
+            <guid isPermaLink="false">TPKEsportsFSWeekly35Update</guid>
+        </item>
+        
+        <item>
+            <title>Garden of Chaos 8</title>
+            <link>https://gardenofchaos.xyz</link>
+            <source url="https://gardenofchaos.xyz/events.rss">Garden of Chaos Events</source>
+            <category>Garden of Chaos Tournaments</category>
+            <category>Regular Events</category>
+            <description><![CDATA[
+                <p>The seventh Garden of Chaos tournament, in the You Are What You Beat style!.</p>
+                <p>To be held on Thursday the 23rd of July 2020 at 20:00 UTC / 21:00 BST / 13:00 PDT / 15:00 EDT</p>
+                <p><a href="https://challonge.com/FSGardenofChaos8">Bracket</a> / <a href="https://twitch.tv/danielstretulch">Stream</a></p>
+                ]]></description>
+            <pubDate>Sat, 19 Jul 2020 16:15:00 +0100</pubDate>
+            <enclosure url="https://gardenofchaos.xyz/announcements/FSGardenofChaos8.png" length="1182028" type="image/png" />
+            <guid isPermaLink="false">FSGardenofChaos8</guid>
+        </item>
         
         <item>
             <title>Cyber Stun City Week 19</title>
