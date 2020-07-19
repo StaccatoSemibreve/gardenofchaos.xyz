@@ -13,9 +13,24 @@
             <width>98</width>
             <height>98</height>
         </image>
-        <pubDate>Sat, 19 Jul 2020 16:15:00 +0100</pubDate>
-        <lastBuildDate>Sat, 19 Jul 2020 16:15:00 +0100</lastBuildDate>
+        <pubDate>Sun, 19 Jul 2020 23:10:00 +0100</pubDate>
+        <lastBuildDate>Sun, 19 Jul 2020 23:10:00 +0100</lastBuildDate>
         <atom:link href="https://gardenofchaos.xyz/events.rss" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>CGL Fantasy Strike Invitational #2</title>
+            <link>https://twitter.com/consolegaminglg/status/1284636764645265420</link>
+            <category>Irregular Events</category>
+            <description><![CDATA[
+                <p>(Description taken from the <a href="https://www.fantasystrike.com/events">official Sirlin Games events page</a>.</p>
+                <p><strong>CGL Fantasy Strike Invitational #2</strong></p>
+                <p>Console Gaming League (CGL) is running their second Fantasy Strike Invitational July 21st at 4PM Pacific.  More information about the Console Combat Series can be found <a href="https://www.consolegamingleague.com/console-combat">here</a>.</p>
+                <p>Watch the live stream, <a href="https://www.twitch.tv/CGL1">here</a>!</p>
+                <p>(Janet's time zone translation: 00:00 BST / 23:00 UTC / 16:00 PDT / 19:00 EDT)</p>
+                ]]></description>
+            <pubDate>Sun, 19 Jul 2020 23:10:00 +0100</pubDate>
+            <guid isPermaLink="false">CGLInvitational2</guid>
+        </item>
         
         <item>
             <title>TPK Weekly Fantasy Strike Tournament #35</title>
