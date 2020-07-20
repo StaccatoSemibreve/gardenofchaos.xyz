@@ -41,7 +41,7 @@
         </ul>
         <p><strong>Additional random stuff:</strong></p>
         <ul>
-            <li>The distance from the dice when you hit them with nA will affect the speed and trajectory - the further back you stand, the faster and further forward the dice will fly. You can use this in conjunction with the ability to hit dice in midair with jA and jB to do… something. (I have yet to have much success using this trick well, but it’s cool that it’s possible!)</li>
+            <li>The distance from the dice when you hit them with nA will affect the speed and trajectory - the further back you stand, the faster and further forward the dice will fly. You can use this in conjunction with the ability to hit dice in midair with jA and jB to do… something. You can also hit a dice in midair with nA to redirect it towards the opponent, which is useful after propelling them upwards with nA to surprise the opponent (potentially after an item toss, and in the process potentially hitting another dice up), and can also catch dice that bounce back to push them forward.</li>
             <li>Dice don't like to occupy the same space! If they do, they will push each other away and thus roll apart over time.</li>
         </ul>
         <p>(Thanks Sirlin for helping out with this!)</p>
