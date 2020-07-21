@@ -13,9 +13,25 @@
             <width>98</width>
             <height>98</height>
         </image>
-        <pubDate>Sun, 19 Jul 2020 23:10:00 +0100</pubDate>
-        <lastBuildDate>Sun, 19 Jul 2020 23:10:00 +0100</lastBuildDate>
+        <pubDate>Tue, 21 Jul 2020 23:15:00 +0100</pubDate>
+        <lastBuildDate>Tue, 21 Jul 2020 23:15:00 +0100</lastBuildDate>
         <atom:link href="https://gardenofchaos.xyz/events.rss" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Garden of Chaos Big Update Tournament!!!</title>
+            <link>https://gardenofchaos.xyz</link>
+            <source url="https://gardenofchaos.xyz/events.rss">Garden of Chaos Events</source>
+            <category>Garden of Chaos Tournaments</category>
+            <category>Irregular Events</category>
+            <description><![CDATA[
+                <p>A Garden of Chaos tournament to celebrate the big update, in the Teams style - one team will play the original characters of Fantasy Strike, one team will play the new ones!</p>
+                <p>To be held on Thursday the 23rd of July at 20:00 UTC / 21:00 BST / 16:00 PDT / 15:00 EDT</p>
+                <p><a href="https://challonge.com/FSGardenofChaosUpdate">Bracket</a> / <a href="https://twitch.tv/danielstretulch">Stream</a></p>
+                ]]></description>
+            <pubDate>Tue, 21 Jul 2020 23:15:00 +0100</pubDate>
+            <enclosure url="https://gardenofchaos.xyz/announcements/FSGardenofChaosUpdate.png" length="1160550" type="image/png" />
+            <guid isPermaLink="false">FSGardenofChaosUpdateUpdate</guid>
+        </item>
         
         <item>
             <title>CGL Fantasy Strike Invitational #2</title>
