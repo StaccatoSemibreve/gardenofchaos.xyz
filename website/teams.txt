@@ -62,8 +62,8 @@
     </body>
     
     <script>
-var charSelect = '<option value="Grave">Grave</option><option value="Jaina">Jaina</option><option value="Geiger">Geiger</option><option value="Argagarg">Argagarg</option><option value="Setsuki">Setsuki</option><option value="Valerie">Valerie</option><option value="Rook">Rook</option><option value="Midori">Midori</option><option value="Lum">Lum</option><option value="Degrey">Degrey</option></select>';
-var presets = [["Grave", "Jaina", "Geiger", "Argagarg", "Setsuki", "Valerie", "Rook", "Midori", "Lum", "Degrey"], ["Grave", "Jaina", "Geiger", "Argagarg"], ["Setsuki", "Valerie"], ["Rook", "Midori"], ["Lum", "Degrey"], ["Grave", "Geiger", "Setsuki", "Rook", "Lum"], ["Jaina", "Argagarg", "Valerie", "Midori", "Degrey"]];
+var charSelect = '<option value="Grave">Grave</option><option value="Jaina">Jaina</option><option value="Geiger">Geiger</option><option value="Argagarg">Argagarg</option><option value="Setsuki">Setsuki</option><option value="Valerie">Valerie</option><option value="Rook">Rook</option><option value="Midori">Midori</option><option value="Lum">Lum</option><option value="Degrey">Degrey</option><option value="Quince">Quince</option><option value="Onimaru">Onimaru</option></select>';
+var presets = [["Grave", "Jaina", "Geiger", "Argagarg", "Setsuki", "Valerie", "Rook", "Midori", "Lum", "Degrey", "Quince", "Onimaru"], ["Grave", "Jaina", "Geiger", "Argagarg"], ["Setsuki", "Valerie"], ["Rook", "Midori"], ["Lum", "Degrey", "Quince", "Onimaru"], ["Grave", "Geiger", "Setsuki", "Rook", "Lum", "Quince"], ["Jaina", "Argagarg", "Valerie", "Midori", "Degrey", "Onimaru"]];
 
 var seed = 0;
 var submit = false;

@@ -40,7 +40,9 @@
             'Rook',
             'Midori',
             'Lum',
-            'Degrey'
+            'Degrey',
+            'Quince',
+            'Onimaru'
         ];
         var rulesets = [
             'Gravity',
