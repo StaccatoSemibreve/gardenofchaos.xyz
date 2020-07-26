@@ -13,9 +13,20 @@
             <width>98</width>
             <height>98</height>
         </image>
-        <pubDate>Tue, 21 Jul 2020 23:15:00 +0100</pubDate>
-        <lastBuildDate>Tue, 21 Jul 2020 23:15:00 +0100</lastBuildDate>
+        <pubDate>Sun, 26 Jul 2020 21:50 +0100</pubDate>
+        <lastBuildDate>Sun, 26 Jul 2020 21:50 +0100</lastBuildDate>
         <atom:link href="https://gardenofchaos.xyz/events.rss" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Notice of Cancellation</title>
+            <link>https://fantasystrike.com/events</link>
+            <description><![CDATA[
+                <p>Unfortunately, due to the huge uptick in community events (what a terrible problem to have!) I am unable to keep up with updating this RSS feed (nor the Garden of Chaos events page).</p>
+                <p>As such, I recommend using the <a href="https://fantasystrike.com/events">official events page</a> or the <a href="https://reddit.com/r/fantasystrike/about/sticky?num=1">community-managed weekly events post on the subreddit</a> instead!</p>
+                ]]></description>
+            <pubDate>Sun, 26 Jul 2020 21:50 +0100</pubDate>
+            <guid isPermaLink="false">NoticeOfCancellation</guid>
+        </guid>
         
         <item>
             <title>Garden of Chaos Big Update Tournament!!!</title>

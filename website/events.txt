@@ -1,25 +1,6 @@
     <main>
         <h1>Events</h1>
-        <p><a href="events.rss"><img src="rss-icon.png" alt="RSS Logo" width="16" height="16"/>RSS Feed!</a></p>
-        <p><a href="https://www.fantasystrike.com/events">Here's an official list of events</a> maintained by Leontes of Sirlin Games, and you can find another unofficial list of events <a href="https://reddit.com/r/fantasystrike/about/sticky?num=1">posted weekly on the Fantasy Strike subreddit</a> maintained by the event organisers!</p>
-        <p>Note that any dates listed are for the earliest time zone listed, even if the BST time zone happens to be past midnight at that time.</p>
-        
-        <p><strong>Regular:</strong></p>
-        <ul>
-            <li><strong>Mondays:</strong> Monday Night Strike, a commentary stream run by Remy AKA Agoners - at 20:00 BST / 19:00 UTC / 12:00 PDT / 15:00 EDT, join the casual and ranked queues for a chance that your match will be spectated and commentated <a href="https://twitch.tv/agoners">on stream</a>!</li>
-            <li><strong>Wednesdays:</strong> Cyber Stun City, a commentated 1v1 tournament run by Toronto Top Tiers - at 00:00 BST / 23:00 UTC / 16:00 PDT / 19:00 EDT, next bracket <a href="https://smash.gg/tournament/cyber-stun-city-week-19-july-20th-23rd-2020/event/fantasy-strike-singles-tournament/overview">here</a>, stream <a href="https://twitch.tv/torontotoptiers2">here</a>!</li> 
-            <li><strong>Thursdays:</strong> Garden of Chaos, a commentated weird tournament run by us - at 21:00 BST / 20:00 UTC / 13:00 PDT / 16:00 EDT, next bracket <a href="/bracket">here</a>, stream <a href="/stream">here</a>!</li>
-            <li><strong>Saturdays:</strong> ThyPirateKing&#39;s weekly, a commentated 3v3 tournament run by ThyPirateKing - at 21:00 BST / 20:00 UTC / 13:00 PDT / 16:00 EDT, next bracket <a href="https://challonge.com/TPKEsportsFSWeekly35">here</a>, stream <a href="https://twitch.tv/thypirateking">here</a>!</li>
-            <li><strong>Also Saturdays:</strong> Rank Up Night, a time when everyone comes online in the ranked queue, sometimes streamed by Leontes (streams are on hiatus for now) - at around 03:00 BST / 02:00 UTC / 19:00 PDT / 22:00 EDT</li>
-        </ul>
-        
-        <p><strong>One-Time:</strong></p>
-        <ul>
-            <li><strong>Thursday this week!!!!,</strong> 21:00 BST / 20:00 UTC / 13:00 PDT / 16:00 EDT, the Garden of Chaos Big Update streamed tournament! A battle between two teams of players, one playing the original cast and one playing the new characters, bracket <a href="https://challonge.com/FSGardenofChaosUpdate">here</a>!</li>
-            <li><strong>Saturday the 22nd of August,</strong> somewhere around 20:00 or 21:00 BST / 19:00 or 20:00 UTC / 12:00 or 13:00 PDT / 15:00 or 16:00 EDT, Fantasy Strike will be a part of AnimEVO! Announcement <a href="https://twitter.com/FantasyStrike/status/1281682691813806080">here</a>, bracket <a href="https://smash.gg/tournament/animevo-2020/event/fantasy-strike/overview">here</a>!</li>
-            <li><strong>Sunday the 2nd of August,</strong> 20:00 BST / 19:00 UTC / 12:00 PDT / 15:00 EDT, Veiled Threat II will be happening! It will be run by safety_man and MrMkl, bracket and details <a href="https://smash.gg/veiledthreat2">here</a>!</li>
-            <li><strong>Tuesday the 21st of July,</strong> at 00:00 BST / 23:00 UTC / 16:00 PDT / 19:00 EDT, the Console Gaming League will be running an invitational North American Fantasy Strike tournament with a $500 prize pool! Details <a href="https://twitter.com/consolegaminglg/status/1284636764645265420">here</a>, stream <a href="https://www.twitch.tv/CGL1">here</a>!</li>
-        </ul>
+        <p>Apologies, this page is no longer being updated, try the <a href="https://www.fantasystrike.com/events">official events page</a>, the official discord server's events channel, or the <a href="https://reddit.com/r/fantasystrike/about/sticky?num=1">weekly events post on the Fantasy Strike subreddit</a> instead!</p>
     </main>
     <footer></footer>
     </body>
