@@ -236,16 +236,16 @@
             document.getElementById("match"+match+"Winner").outerHTML = "Team "+winner+"<br>";
 
             if(winner == "1") {
-                var char = team1Sequence[0][0];
+                var char = team1Sequence[0];
                 console.log(char+" wins")
-                team1Sequence = team1Sequence.filter(member => member[0] != char);
+                team1Sequence = team1Sequence.filter(member => member != char);
                 team2Sequence = team2Sequence.splice(1);
             }
             else {
-                var char = team2Sequence[0][0];
+                var char = team2Sequence[0];
                 console.log(char+" wins")
                 team1Sequence = team1Sequence.splice(1);
-                team2Sequence = team2Sequence.filter(member => member[0] != char);
+                team2Sequence = team2Sequence.filter(member => member != char);
             }
             play();
         }
