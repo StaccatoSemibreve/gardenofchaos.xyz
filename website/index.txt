@@ -1,13 +1,13 @@
     <main>
         <h1>The Garden of Chaos</h1>
-        <p>A low-stakes weekly <a href="https://www.fantasystrike.com/">Fantasy Strike</a> tournament based around following silly rulesets at every step, run by Janet (you know, from the Fantasy Strike Discord server) with logos and general design by Danielizabeth Stretulch (who is awesome btw)! If you wish to participate or watch, please use the bracket or stream links respectively from the navigation bar. You can also find a list of upcoming Fantasy Strike events in the Events page.</p>
+        <p>A low-stakes weekly <a href="https://www.fantasystrike.com/">Fantasy Strike</a> tournament based around following silly rulesets at every step, run by Janet (you know, from the Fantasy Strike Discord server) with logos and general design by Danielizabeth Stretulch (who is awesome btw)! If you wish to watch, please use the stream link from the navigation bar, and if you wish to participate, please use the bracket and discord links.</p>
         
-        <p>This week&#39;s tournament format is: <b>You Are What You Beat</b>:</p>
+        <p>This week&#39;s tournament format is: <b>Partners</b>:</p>
         <blockquote>
-            <strong>You Are What You Beat:</strong> Single battle, best of 3, no counterpick. Each player's starting character is chosen at random. Upon completing a match, the player that wins will change to their opponent's character and colour for the next match, and the player that loses rerolls a new character. [Source: fuu buu]
+            Single battle, best of 3, standard counterpick. Players sign up in pairs or are otherwise put into pairs, and these pairs will proceed through the bracket such that, for each match, a random player from each pair is chosen to start, and the losing pair will switch player and get a chance to share advice before the next game.
         </blockquote>
-        <p>It will be run on Thursday the 30th of July at 21:00 BST (20:00 UTC, 13:00 PDT, 16:00 EDT). This week it will be commentated by Janet and Remy! ^_^</p>
-        <p>A steam code for Jackbox Party Pack 4 will be given to a random participant, courtesy of ErickDRedd!</p>
+        <p>It will be run on Thursday the 6th of August at 21:00 BST (20:00 UTC, 13:00 PDT, 16:00 EDT). This week it will be commentated by Janet and Danielizabeth Stretulch! ^_^</p>
+        <p>A steam code for Knights of Pen & Paper 2 will be given to a random participant, courtesy of ErickDRedd!</p>
         <p>Past tournaments can be found <a href="tournaments">here!</a></p>
     </main>
     <footer></footer>

@@ -9,6 +9,7 @@
             <li><strong><a href="https://www.youtube.com/watch?v=yvk-IAjarh0">Garden of Chaos 6:</a></strong> A 6-player Many and the Few style tournament held on the 2nd of July 2020, won by <span class="spoiler">Thelo</span>! Ended with a Ft5 exhibition match between Frostilyte's Valerie and hypergrav's Grave. won by <span class="spoiler">Frostilyte</span>!</li>
             <li><strong><a href="https://www.youtube.com/watch?v=CDHoIMLJ7Q0">Garden of Chaos 7:</a></strong> A 6-player Roll the Dice style tournament held on the 16th of July 2020, won by <span class="spoiler">EmiSocks</span>! Hosted by Agoners.</li>
             <li><strong><a>The Big Update Tournament:</a></strong> A 9-player Battle of Flagstone style tournament held on the 23rd of July 2020, won by <span class="spoiler">Darkness, EmiSocks, Mozzarella, and ThyPirateKing</span>!
+            <li><strong><a>Garden of Chaos 8:</a></strong> A 7-player You Are What You Beat style tournament held on the 30th of July 2020, won by <span class="spoiler">ThyPirateKing</span>! Hosted by Agoners.</li>
         </ol>
     </main>
     <footer></footer>
