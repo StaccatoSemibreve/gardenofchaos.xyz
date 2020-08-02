@@ -1,6 +1,6 @@
     <main>
         <h1>The Garden of Chaos</h1>
-        <p>A low-stakes weekly <a href="https://www.fantasystrike.com/">Fantasy Strike</a> tournament based around following silly rulesets at every step, run by Janet (you know, from the Fantasy Strike Discord server) with logos and general design by Danielizabeth Stretulch (who is awesome btw)! If you wish to watch, please use the stream link from the navigation bar, and if you wish to participate, please use the bracket and discord links.</p>
+        <p>A low-stakes weekly <a href="https://www.fantasystrike.com/">Fantasy Strike</a> tournament based around following silly rulesets at every step, run by Janet (you know, from the Fantasy Strike Discord server) with logos and general design by Danielizabeth Stretulch (who is awesome btw)! If you wish to watch, please use the stream link from the navigation bar, and if you wish to participate, please use the signup and discord links.</p>
         
         <p>This week&#39;s tournament format is: <b>Partners</b>:</p>
         <blockquote>
