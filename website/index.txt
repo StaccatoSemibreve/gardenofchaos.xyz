@@ -7,7 +7,7 @@
             Team battle, best of 1. You must play with a ruleset for at least game in each match, and decide ahead of time which game(s) (by number - eg, game 1, game 3). The rulesets are then chosen at random using <a href="/random">a random selector</a> - if the players do not agree on the ruleset selections they may reroll up to 3 times.
         </blockquote>
         <p>It will be run on Thursday the 13th of August at 21:00 BST (20:00 UTC, 13:00 PDT, 16:00 EDT). This week it will be commentated by Janet and Danielizabeth Stretulch! ^_^</p>
-        <p>Skill Coin Prize: A steam code for Knights of Pen & Paper 2 will be given to a random participant, courtesy of ErickDRedd!</p>
+        <p>Skill Coin Prize: A Steam code for XCOM 2, plus the Reinforcement Pack and Resistance Warrior Pack, courtesy of ErickDRedd!</p>
         <p>A record of past tournaments, along with links to the videos, can be found <a href="https://gardenofchaos.xyz/tournaments">here!</a></p>
     </main>
     <footer></footer>
