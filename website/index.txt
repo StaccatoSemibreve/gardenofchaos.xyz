@@ -1,14 +1,14 @@
     <main>
         <h1>The Garden of Chaos</h1>
-        <p>A low-stakes weekly <a href="https://www.fantasystrike.com/">Fantasy Strike</a> tournament based around following silly rulesets at every step, run by Janet (you know, from the Fantasy Strike Discord server) with logos and general design by Danielizabeth Stretulch (who is awesome btw)! If you wish to watch, please use the stream link from the navigation bar, and if you wish to participate, please use the signup and discord links.</p>
+        <p>A low-stakes weekly <a href="https://www.fantasystrike.com/">Fantasy Strike</a> tournament based around following silly rulesets at every step, run by Janet (you know, from the Fantasy Strike Discord server, also other places) with logos and general design by Danielizabeth Stretulch (who is awesome btw)! If you wish to watch, please use the stream link from the navigation bar, and if you wish to participate, please use the signup and discord links.</p>
         
-        <p>This week&#39;s tournament format is: <b>Partners</b>:</p>
+        <p>This week&#39;s tournament format is: <b>Chaotic</b>:</p>
         <blockquote>
-            Single battle, best of 3, standard counterpick. Players sign up in pairs or are otherwise put into pairs, and these pairs will proceed through the bracket such that, for each match, a random player from each pair is chosen to start, and the losing pair will switch player and get a chance to share advice before the next game.
+            Team battle, best of 1. You must play with a ruleset for at least game in each match, and decide ahead of time which game(s) (by number - eg, game 1, game 3). The rulesets are then chosen at random using <a href="/random">a random selector</a> - if the players do not agree on the ruleset selections they may reroll up to 3 times.
         </blockquote>
-        <p>It will be run on Thursday the 6th of August at 21:00 BST (20:00 UTC, 13:00 PDT, 16:00 EDT). This week it will be commentated by Janet and Danielizabeth Stretulch! ^_^</p>
-        <p>A steam code for Knights of Pen & Paper 2 will be given to a random participant, courtesy of ErickDRedd!</p>
-        <p>Past tournaments can be found <a href="tournaments">here!</a></p>
+        <p>It will be run on Thursday the 13th of August at 21:00 BST (20:00 UTC, 13:00 PDT, 16:00 EDT). This week it will be commentated by Janet and Danielizabeth Stretulch! ^_^</p>
+        <p>Skill Coin Prize: A steam code for Knights of Pen & Paper 2 will be given to a random participant, courtesy of ErickDRedd!</p>
+        <p>A record of past tournaments, along with links to the videos, can be found <a href="https://gardenofchaos.xyz/tournaments">here!</a></p>
     </main>
     <footer></footer>
   </body>
