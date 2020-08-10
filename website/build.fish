@@ -28,3 +28,5 @@ cat website/template.txt            >   thoughts/dice.html
 cat website/thoughts/dice.txt       >>  thoughts/dice.html
 cat website/template.txt            >   thoughts/advantage.html
 cat website/thoughts/advantage.txt  >>  thoughts/advantage.html
+cat website/template.txt            >   thoughts/lumoki.html
+cat website/thoughts/lumoki.txt     >>  thoughts/lumoki.html
