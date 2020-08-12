@@ -150,7 +150,7 @@
         <p><strong>Whiff roll oki:</strong></p>
         <p>Next, we have the whiff roll oki, or as Remy calls it, the "Janet special", because I adore using this one against people. It is mathematically eh, but it makes use of mental advantage (see my <a href="https://gardenofchaos.xyz/thoughts/advantage">thoughts on advantage</a>) to be extremely powerful.</p>
 
-        <p>After a forward throw or a yomi counter, just press roll. Immediately. Do nothing else. From there, stand still and wait. Many opponents will try to throw you, either because they throw when they panic or because they reacted as if you hit them, because throwing is the correct response to a crossup roll. Now you've just got a free yomi counter, giving you a free 1 damage, oki, and full super meter. Mix and match with other oki tools to make sure they never get the hang of this, or use it lots to show off, annoy them, and give them a chance to learn.</p>
+        <p>After a forward throw or a yomi counter, just press roll. Immediately. Do nothing else. From there, stand still and wait. Many opponents will try to throw you, either because they throw when they panic or because they reacted as if you hit them, because throwing is the correct response to a crossup roll. Now you've just got a free yomi counter, giving you a free 1 damage, oki, and full super meter. Mix and match with other oki tools to make sure they never get the hang of this, or use it lots to show off, annoy them, and give them a chance to learn. Note that technically, it's probably better to go for HR here if you expect a throw, which will counterhit the throw, but you don't get to loop it, you don't get free super meter, and you don't get the style points. Also, versus exclusively human Midori, if they try to throw you can neutral jump into jA into HR, for 3 damage!</p>
 
         <p>There is, of course, more to it - of course there is, it's psychological! I'll describe the likely responses per-character per-type-of-person here, but note that if they respond correctly then you should stop using it immediately.</p>
 
@@ -169,6 +169,9 @@
 
         <p><strong>Ambiguous crossup jA:</strong></p>
         <p>After a forward throw or yomi counter, walk forward for X amount of time, forward jump, and use jA - this is an ambiguous crossup! They have to guess right or you'll combo for 3 damage, if they do you can deal 1 chip or throw out an item if you don't expect them to punish the item toss. I admit, I barely use this one as it can never loop, it's kinda hard to space right, and a skilled opponent is often very good at blocking ambiguous crossups consistently, but it's good if you've got items around to confuse them or make it more powerful.</p>
+        
+        <p><strong>Safemelon:</strong></p>
+        <p>After a forward throw or yomi counter, wait a brief moment, jump, and immediately throw a melon. They have to block it! If they reversal, you will land and be able to block them, then punish accordingly. This means you can always get 1 free chip.</p>
     </main>
     <footer></footer>
     </body>
