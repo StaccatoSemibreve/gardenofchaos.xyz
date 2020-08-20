@@ -185,10 +185,10 @@
                 team1 = team1.map(function(e, i) {return [e, i+1];});
             }
             else {
-                team1 = presets[preset].map(function(e, i) {return [e, i+1];});;
-                team1Size = team1.length;
+                team1 = presets[preset].map(function(e, i) {return [e, i+1];});
             }
 
+            team1Size = team1.length;
             console.log("Team 1: "+team1.map(function(e) {return e[0]}).join(", "));
             document.getElementById('team1').outerHTML = team1.map(function(e) {return e[0]}).join(", ");
             if(submit) {play();}
@@ -209,10 +209,10 @@
                 team2 = team2.map(function(e, i) {return [e, i+1];});
             }
             else {
-                team2 = presets[preset].map(function(e, i) {return [e, i+1];});;
-                team2Size = team2.length;
+                team2 = presets[preset].map(function(e, i) {return [e, i+1];});
             }
 
+            team2Size = team2.length;
             console.log("Team 2: "+team2.map(function(e) {return e[0]}).join(", "));
             document.getElementById('team2').outerHTML = team2.map(function(e) {return e[0]}).join(", ");
             if(submit) {play();}
