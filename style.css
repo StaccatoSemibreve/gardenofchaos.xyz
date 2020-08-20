@@ -74,6 +74,12 @@ input {
     padding: 6px 8px;
     border-radius: 10px;
 }
+button {
+    height: 40px;
+    background-color: #000000;
+    padding: 6px 8px;
+    border-radius: 10px;
+}
 select {
     height: 40px;
     background-color: #000000;
@@ -95,4 +101,76 @@ textarea {
 .spoiler:hover {
     background-color: #1E1B19;
     color: #DABA69;
+}
+
+
+
+
+image.char {
+	width: 100%;
+	height: auto;
+}
+.container_char {
+	position: relative;
+	width: 90px;
+	height: 99px;
+}
+.overlay_char {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .3s ease;
+	background-color: green;
+}
+.overlay_char:hover {
+	opacity:60%;
+}
+.overlay_char_team {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .3s ease;
+	background-color: red;
+}
+.overlay_char_team:hover {
+	opacity:60%;
+}
+.icon {
+	color: white;
+	font-size: 100px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+.plus:hover {
+    color: #000000;
+}
+div.teams {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	max-width: 1000px;
+}
+div.teamicons {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	max-width: 360px;
+}
+div.submit {
+	align-self: center;
 }
