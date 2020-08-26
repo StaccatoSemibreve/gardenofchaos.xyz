@@ -113,7 +113,7 @@ textarea {
 .container_char {
 	position: relative;
 	width: 100px;
-	height: auto;
+	height: 110px;
 }
 .overlay_char {
 	position: absolute;
