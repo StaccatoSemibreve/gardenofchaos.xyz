@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="101.78" width="101.78">
+    <defs><linearGradient id="g" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#daba69" stop-opacity="1" /><stop offset="10%" stop-color="#daba69" stop-opacity="1" /><stop offset="25%" stop-color="#daba69" stop-opacity="0.75" /><stop offset="60%" stop-color="#daba69" stop-opacity="0" /></linearGradient></defs>
+    <circle stroke-width="1.78" fill="black" stroke="none" r="48.22" cy="50.89" cx="50.89" />
+    <path fill="url(#g)" stroke="#daba69" stroke-width="2" d="M 20.35,80 C 22.25,41.65 37.7,54.69 50.89,33.4 C 64.08,54.69 79.53,41.65 81.43,80" />
+    <ellipse stroke="#daba69" stroke-width="4" fill="none" rx="6.6" ry="9.7" cx="37.4" cy="74.6" />
+    <path stroke="#daba69" stroke-width="4" fill="none" d="m 31,74.8 13,0"/>
+    <ellipse stroke="#daba69" stroke-width="4" fill="none" rx="6.6" ry="9.7" cx="64.38" cy="74.6" />
+    <path stroke="#daba69" stroke-width="4" fill="none" d="m 70.78,74.8 -13,0"/>
+    <path fill="#daba69" stroke="#daba69" stroke-width="1.2" d="m 55.89,84.28 c -1.5,8.5 -8.5,8.5 -10,0 3.5,2 6.5,2 10,0 z" />
+    <g stroke-width="1.2">
+        <path fill="#daba69" stroke="black" d="m 16,84 c 8.2,-12.93 14.23,0.44 20.5,9 L 35.14,96.92 A 50 50 0 0 1 16,84 z" />
+        <path fill="#daba69" stroke="black" d="m 85.78,84 c -8.2,-12.93 -14.23,0.44 -20.5,9 L 66.64,96.92 A 50 50 0 0 0 85.78,84 z" />
+        <path fill="#daba69" stroke="black" d="m 35.14,96.72 1.51,-3.59 28.48,0 1.51,3.59 A 50 50 0 0 1 35.14,96.72 z" />
+    </g>
+    <path fill="#daba69" stroke="#daba69" stroke-width="1.19232" d="m 50.89,32 c -24.919548,-11.801421 -19.737767,-38.7892848 0,-21.846821 c 19.737767,-16.9424638 24.919548,10.0454 0,21.846821 z"/>
+    <circle stroke-width="1.78" fill="none" stroke="black" cx="50.89" cy="50.89" r="50" />
+    <circle stroke-width="1.78" fill="none" stroke="#daba69" r="48.22" cy="50.89" cx="50.89" />
+</svg>
