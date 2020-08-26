@@ -112,8 +112,8 @@ textarea {
 }
 .container_char {
 	position: relative;
-	width: 90px;
-	height: 99px;
+	width: 100px;
+	height: auto;
 }
 .overlay_char {
 	position: absolute;
@@ -169,7 +169,7 @@ div.teamicons {
 	flex-flow: row wrap;
 	justify-content: flex-start;
 	align-items: flex-start;
-	max-width: 360px;
+	max-width: 400px;
 }
 div.submit {
 	align-self: center;
