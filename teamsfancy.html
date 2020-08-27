@@ -22,403 +22,419 @@
         </ul>
     </header>
     <main>
-        <div style="margin:auto; width:1000px;">
-			<h1 style="text-align:center; max-width:1000px;">The Garden of Chaos</h1>
-			<h1 style="text-align:center; max-width:1000px;">Team Battle Tool</h1>
-			<div id="teams" class="teams">
-				<div>
-					<h2 style="text-align:center;">Team 1 Character Select:</h2>
-					<div id="team1select" style="display: flex; flex-flow: row wrap; justify-content: flex-start; max-width: 400px;">
-						<div class="container_char" id="container_grave">
-							<image class="char" src="https://gardenofchaos.xyz/media/grave.png" alt="Grave" id="1grave" />
-							<div class="overlay_char">
-								<a href="javascript:void(0);" title="Add Grave to Team 1." onclick='addChar("Grave",1)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100 height=100 id="plus"/>
-								</a>
+		<div style="display:none;">
+			<image style="width:100px;" src="https://gardenofchaos.xyz/media/delete.svg" alt="X" />
+			<image style="width:100px;" src="https://gardenofchaos.xyz/media/random.svg" alt="?" />
+			<image style="width:100px;" src="https://gardenofchaos.xyz/media/zoners.svg" alt="Cloud" />
+			<image style="width:100px;" src="https://gardenofchaos.xyz/media/rushdowns.svg" alt="Paintbrush" />
+			<image style="width:100px;" src="https://gardenofchaos.xyz/media/grapplers.svg" alt="Hug" />
+			<image style="width:100px;" src="https://gardenofchaos.xyz/media/wildcards.svg" alt="Dice" />
+			<image style="width:100px;" src="https://gardenofchaos.xyz/media/flagstone.svg" alt="Crown" />
+			<image style="width:100px;" src="https://gardenofchaos.xyz/media/all.svg" alt="100%" />
+			<image style="width:100px;" src="https://gardenofchaos.xyz/media/left.svg" alt="Left Arrow" />
+			<image style="width:100px;" src="https://gardenofchaos.xyz/media/right.svg" alt="Right Arrow" />
+			<image style="width:100px;" src="https://gardenofchaos.xyz/media/grave.png" alt="Grave" id="grave" />
+			<image style="width:100px;" src="https://gardenofchaos.xyz/media/jaina.png" alt="Jaina" id="jaina" />
+			<image style="width:100px;" src="https://gardenofchaos.xyz/media/geiger.png" alt="Geiger" id="geiger" />
+			<image style="width:100px;" src="https://gardenofchaos.xyz/media/argagarg.png" alt="Argagarg" id="argagarg" />
+			<image style="width:100px;" src="https://gardenofchaos.xyz/media/setsuki.png" alt="Setsuki" id="setsuki" />
+			<image style="width:100px;" src="https://gardenofchaos.xyz/media/valerie.png" alt="Valerie" id="valerie" />
+			<image style="width:100px;" src="https://gardenofchaos.xyz/media/rook.png" alt="Rook" id="rook" />
+			<image style="width:100px;" src="https://gardenofchaos.xyz/media/midori.png" alt="Midori" id="midori" />
+			<image style="width:100px;" src="https://gardenofchaos.xyz/media/lum.png" alt="Lum" id="lum" />
+			<image style="width:100px;" src="https://gardenofchaos.xyz/media/degrey.png" alt="Degrey" id="degrey" />
+			<image style="width:100px;" src="https://gardenofchaos.xyz/media/quince.png" alt="Quince" id="quince" />
+			<image style="width:100px;" src="https://gardenofchaos.xyz/media/onimaru.png" alt="Onimaru" id="onimaru" />
+			<image src="https://gardenofchaos.xyz/media/minus.svg" id="minus" />
+			<image src="https://gardenofchaos.xyz/media/plus.svg" id="plus" />
+		</div>
+		<div style="margin:auto; max-width:1000px;">
+			<h1 style="text-align:center;">The Garden of Chaos<br>Team Battle Tool</h1>
+			<div style="display:flex; flex-direction:row; justify-content:space-around; max-width:1000px;">
+				<div style="flex-direction:column; max-width:400px;">
+					<h2 style="text-align:center;">Team 1 Character Select</h1>
+					<div style="display: flex; flex-flow: row wrap; justify-content:center;">
+							<div style="position: relative; width: 100px; height: 110px;" id="container_grave">
+								<image style="width:100px;" src="https://gardenofchaos.xyz/media/grave.png" alt="Grave" />
+								<div class="overlay_char">
+									<a href="javascript:void(0);" title="Add Grave to Team 1." onclick='addChar("Grave",1)'>
+										<image src="https://gardenofchaos.xyz/media/plus.svg" width=100 height=110/>
+									</a>
+								</div>
 							</div>
-						</div>
-						<div class="container_char" id="container_jaina">
-							<image class="char" src="https://gardenofchaos.xyz/media/jaina.png" alt="Jaina" id="1jaina" />
-							<div class="overlay_char">
-								<a href="javascript:void(0);" title="Add Jaina to Team 1." onclick='addChar("Jaina",1)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100 height=100 />
-								</a>
+							<div style="position: relative; width: 100px; height: 110px;" id="container_jaina">
+								<image style="width:100px;" src="https://gardenofchaos.xyz/media/jaina.png" alt="Jaina" />
+								<div class="overlay_char">
+									<a href="javascript:void(0);" title="Add Jaina to Team 1." onclick='addChar("Jaina",1)'>
+										<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=110px />
+									</a>
+								</div>
 							</div>
-						</div>
-						<div class="container_char" id="container_geiger">
-							<image class="char" src="https://gardenofchaos.xyz/media/geiger.png" alt="Geiger" id="1geiger" />
-							<div class="overlay_char">
-								<a href="javascript:void(0);" title="Add Geiger to Team 1." onclick='addChar("Geiger",1)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100 height=100 />
-								</a>
+							<div style="position: relative; width: 100px; height: 110px;" id="container_geiger">
+								<image style="width:100px;" src="https://gardenofchaos.xyz/media/geiger.png" alt="Geiger" />
+								<div class="overlay_char">
+									<a href="javascript:void(0);" title="Add Geiger to Team 1." onclick='addChar("Geiger",1)'>
+										<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=110px />
+									</a>
+								</div>
 							</div>
-						</div>
-						<div class="container_char" id="container_argagarg">
-							<image class="char" src="https://gardenofchaos.xyz/media/argagarg.png" alt="Argagarg" id="1argagarg" />
-							<div class="overlay_char">
-								<a href="javascript:void(0);" title="Add Argagarg to Team 1." onclick='addChar("Argagarg",1)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100 height=100 />
-								</a>
+							<div style="position: relative; width: 100px; height: 110px;" id="container_argagarg">
+								<image style="width:100px;" src="https://gardenofchaos.xyz/media/argagarg.png" alt="Argagarg" />
+								<div class="overlay_char">
+									<a href="javascript:void(0);" title="Add Argagarg to Team 1." onclick='addChar("Argagarg",1)'>
+										<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=110px />
+									</a>
+								</div>
 							</div>
-						</div>
-						<div class="container_char" id="container_setsuki">
-							<image class="char" src="https://gardenofchaos.xyz/media/setsuki.png" alt="Setsuki" id="1setsuki" />
-							<div class="overlay_char">
-								<a href="javascript:void(0);" title="Add Setsuki to Team 1." onclick='addChar("Setsuki",1)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100 height=100 />
-								</a>
+							<div style="position: relative; width: 100px; height: 110px;" id="container_setsuki">
+								<image style="width:100px;" src="https://gardenofchaos.xyz/media/setsuki.png" alt="Setsuki" />
+								<div class="overlay_char">
+									<a href="javascript:void(0);" title="Add Setsuki to Team 1." onclick='addChar("Setsuki",1)'>
+										<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=110px />
+									</a>
+								</div>
 							</div>
-						</div>
-						<div class="container_char" id="container_valerie">
-							<image class="char" src="https://gardenofchaos.xyz/media/valerie.png" alt="Valerie" id="1valerie" />
-							<div class="overlay_char">
-								<a href="javascript:void(0);" title="Add Valerie to Team 1." onclick='addChar("Valerie",1)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100 height=100 />
-								</a>
+							<div style="position: relative; width: 100px; height: 110px;" id="container_valerie">
+								<image style="width:100px;" src="https://gardenofchaos.xyz/media/valerie.png" alt="Valerie" />
+								<div class="overlay_char">
+									<a href="javascript:void(0);" title="Add Valerie to Team 1." onclick='addChar("Valerie",1)'>
+										<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=110px />
+									</a>
+								</div>
 							</div>
-						</div>
-						<div class="container_char" id="container_rook">
-							<image class="char" src="https://gardenofchaos.xyz/media/rook.png" alt="Rook" id="1rook" />
-							<div class="overlay_char">
-								<a href="javascript:void(0);" title="Add Rook to Team 1." onclick='addChar("Rook",1)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100 height=100 />
-								</a>
+							<div style="position: relative; width: 100px; height: 110px;" id="container_rook">
+								<image style="width:100px;" src="https://gardenofchaos.xyz/media/rook.png" alt="Rook" />
+								<div class="overlay_char">
+									<a href="javascript:void(0);" title="Add Rook to Team 1." onclick='addChar("Rook",1)'>
+										<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=110px />
+									</a>
+								</div>
 							</div>
-						</div>
-						<div class="container_char" id="container_midori">
-							<image class="char" src="https://gardenofchaos.xyz/media/midori.png" alt="Midori" id="1midori" />
-							<div class="overlay_char">
-								<a href="javascript:void(0);" title="Add Midori to Team 1." onclick='addChar("Midori",1)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100 height=100 />
-								</a>
+							<div style="position: relative; width: 100px; height: 110px;" id="container_midori">
+								<image style="width:100px;" src="https://gardenofchaos.xyz/media/midori.png" alt="Midori" />
+								<div class="overlay_char">
+									<a href="javascript:void(0);" title="Add Midori to Team 1." onclick='addChar("Midori",1)'>
+										<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=110px />
+									</a>
+								</div>
 							</div>
-						</div>
-						<div class="container_char" id="container_lum">
-							<image class="char" src="https://gardenofchaos.xyz/media/lum.png" alt="Lum" id="1lum" />
-							<div class="overlay_char">
-								<a href="javascript:void(0);" title="Add Lum to Team 1." onclick='addChar("Lum",1)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100 height=100 />
-								</a>
+							<div style="position: relative; width: 100px; height: 110px;" id="container_lum">
+								<image style="width:100px;" src="https://gardenofchaos.xyz/media/lum.png" alt="Lum" id="1lum" />
+								<div class="overlay_char">
+									<a href="javascript:void(0);" title="Add Lum to Team 1." onclick='addChar("Lum",1)'>
+										<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=110px />
+									</a>
+								</div>
 							</div>
-						</div>
-						<div class="container_char" id="container_degrey">
-							<image class="char" src="https://gardenofchaos.xyz/media/degrey.png" alt="DeGrey" id="1degrey" />
-							<div class="overlay_char">
-								<a href="javascript:void(0);" title="Add DeGrey to Team 1." onclick='addChar("DeGrey",1)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100 height=100 />
-								</a>
+							<div style="position: relative; width: 100px; height: 110px;" id="container_degrey">
+								<image style="width:100px;" src="https://gardenofchaos.xyz/media/degrey.png" alt="DeGrey" />
+								<div class="overlay_char">
+									<a href="javascript:void(0);" title="Add DeGrey to Team 1." onclick='addChar("DeGrey",1)'>
+										<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=110px />
+									</a>
+								</div>
 							</div>
-						</div>
-						<div class="container_char" id="container_quince">
-							<image class="char" src="https://gardenofchaos.xyz/media/quince.png" alt="Quince" id="1quince" />
-							<div class="overlay_char">
-								<a href="javascript:void(0);" title="Add Quince to Team 1." onclick='addChar("Quince",1)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100 height=100 />
-								</a>
+							<div style="position: relative; width: 100px; height: 110px;" id="container_quince">
+								<image style="width:100px;" src="https://gardenofchaos.xyz/media/quince.png" alt="Quince" />
+								<div class="overlay_char">
+									<a href="javascript:void(0);" title="Add Quince to Team 1." onclick='addChar("Quince",1)'>
+										<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=110px />
+									</a>
+								</div>
 							</div>
-						</div>
-						<div class="container_char" id="container_onimaru">
-							<image class="char" src="https://gardenofchaos.xyz/media/onimaru.png" alt="Onimaru" id="1onimaru" />
-							<div class="overlay_char">
-								<a href="javascript:void(0);" title="Add Onimaru to Team 1." onclick='addChar("Onimaru",1)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100 height=100 />
-								</a>
+							<div style="position: relative; width: 100px; height: 110px;" id="container_onimaru">
+								<image style="width:100px;" src="https://gardenofchaos.xyz/media/onimaru.png" alt="Onimaru" />
+								<div class="overlay_char">
+									<a href="javascript:void(0);" title="Add Onimaru to Team 1." onclick='addChar("Onimaru",1)'>
+										<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=110px />
+									</a>
+								</div>
 							</div>
-						</div>
 					</div>
 					<h2 style="text-align:center;">Team 1 Presets:</h2>
-				</div>
-				
-				<div style="align-self: center;"><a id="submitlink" href="javascript:void(0);"><button style="width:80px;height:80px;"><strong>Submit<br>Teams</strong></button></a></div>
-				
-				<div>
-					<h2 style="text-align:center;">Team 2 Character Select:</h2>
-					<div id="team2select" style="display: flex; flex-flow: row-reverse wrap; justify-content: flex-start; max-width: 400px;">
-						<div class="container_char" id="container_grave">
-							<image class="char" src="https://gardenofchaos.xyz/media/grave.png" alt="Grave" id="2grave" />
-							<div class="overlay_char">
-								<a href="javascript:void(0);" title="Add Grave to Team 2." onclick='addChar("Grave",2)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100 height=100 />
-								</a>
-							</div>
-						</div>
-						<div class="container_char" id="container_jaina">
-							<image class="char" src="https://gardenofchaos.xyz/media/jaina.png" alt="Jaina" id="2jaina" />
-							<div class="overlay_char">
-								<a href="javascript:void(0);" title="Add Jaina to Team 2." onclick='addChar("Jaina",2)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100 height=100 />
-								</a>
-							</div>
-						</div>
-						<div class="container_char" id="container_geiger">
-							<image class="char" src="https://gardenofchaos.xyz/media/geiger.png" alt="Geiger" id="2geiger" />
-							<div class="overlay_char">
-								<a href="javascript:void(0);" title="Add Geiger to Team 2." onclick='addChar("Geiger",2)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100 height=100 />
-								</a>
-							</div>
-						</div>
-						<div class="container_char" id="container_argagarg">
-							<image class="char" src="https://gardenofchaos.xyz/media/argagarg.png" alt="Argagarg" id="2argagarg" />
-							<div class="overlay_char">
-								<a href="javascript:void(0);" title="Add Argagarg to Team 2." onclick='addChar("Argagarg",2)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100 height=100 />
-								</a>
-							</div>
-						</div>
-						<div class="container_char" id="container_setsuki">
-							<image class="char" src="https://gardenofchaos.xyz/media/setsuki.png" alt="Setsuki" id="2setsuki" />
-							<div class="overlay_char">
-								<a href="javascript:void(0);" title="Add Setsuki to Team 2." onclick='addChar("Setsuki",2)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100 height=100 />
-								</a>
-							</div>
-						</div>
-						<div class="container_char" id="container_valerie">
-							<image class="char" src="https://gardenofchaos.xyz/media/valerie.png" alt="Valerie" id="2valerie" />
-							<div class="overlay_char">
-								<a href="javascript:void(0);" title="Add Valerie to Team 2." onclick='addChar("Valerie",2)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100 height=100 />
-								</a>
-							</div>
-						</div>
-						<div class="container_char" id="container_rook">
-							<image class="char" src="https://gardenofchaos.xyz/media/rook.png" alt="Rook" id="2rook" />
-							<div class="overlay_char">
-								<a href="javascript:void(0);" title="Add Rook to Team 2." onclick='addChar("Rook",2)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100 height=100 />
-								</a>
-							</div>
-						</div>
-						<div class="container_char" id="container_midori">
-							<image class="char" src="https://gardenofchaos.xyz/media/midori.png" alt="Midori" id="2midori" />
-							<div class="overlay_char">
-								<a href="javascript:void(0);" title="Add Midori to Team 2." onclick='addChar("Midori",2)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100 height=100 />
-								</a>
-							</div>
-						</div>
-						<div class="container_char" id="container_lum">
-							<image class="char" src="https://gardenofchaos.xyz/media/lum.png" alt="Lum" id="2lum" />
-							<div class="overlay_char">
-								<a href="javascript:void(0);" title="Add Lum to Team 2." onclick='addChar("Lum",2)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100 height=100 />
-								</a>
-							</div>
-						</div>
-						<div class="container_char" id="container_degrey">
-							<image class="char" src="https://gardenofchaos.xyz/media/degrey.png" alt="DeGrey" id="2degrey" />
-							<div class="overlay_char">
-								<a href="javascript:void(0);" title="Add DeGrey to Team 2." onclick='addChar("DeGrey",2)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100 height=100 />
-								</a>
-							</div>
-						</div>
-						<div class="container_char" id="container_quince">
-							<image class="char" src="https://gardenofchaos.xyz/media/quince.png" alt="Quince" id="2quince" />
-							<div class="overlay_char">
-								<a href="javascript:void(0);" title="Add Quince to Team 2." onclick='addChar("Quince",2)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100 height=100 />
-								</a>
-							</div>
-						</div>
-						<div class="container_char" id="container_onimaru">
-							<image class="char" src="https://gardenofchaos.xyz/media/onimaru.png" alt="Onimaru" id="2onimaru" />
-							<div class="overlay_char">
-								<a href="javascript:void(0);" title="Add Onimaru to Team 2." onclick='addChar("Onimaru",2)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100 height=100 />
-								</a>
-							</div>
-						</div>
-					</div>
-					<h2 style="text-align:center;">Team 2 Presets:</h2>
-				</div>
-			</div>
-			<div id="teamsPresets" class="teams">
-				<div style="float:left;">
-					<div style="display: flex; flex-flow: row wrap; justify-content: flex-start; align-items: flex-start; width: 400px;">
-						<div class="container_char" id="1container_delete" style="max-height:100px;">
-							<image class="char" src="https://gardenofchaos.xyz/media/delete.svg" alt="Clear" id="1clear" />
+					<div style="display: flex; flex-flow: row wrap; justify-content: center;">
+						<div style="position: relative; width: 100px; height: 100px;">
+							<image style="width:100px;" src="https://gardenofchaos.xyz/media/delete.svg" alt="X" />
 							<div class="overlay_char_team">
 								<a href="javascript:void(0);" title="Clear all characters from Team 1." onclick='clearTeam(1)'>
-									<image src="https://gardenofchaos.xyz/media/minus.svg" width=100 height=100 id="minus" />
+									<image src="https://gardenofchaos.xyz/media/minus.svg" width=100px height=100px />
 								</a>
 							</div>
 						</div>
-						<div class="container_char" id="1container_random" style="max-height:100px;">
-							<image class="char" src="https://gardenofchaos.xyz/media/random.svg" alt="Random" id="1random" />
+						<div style="position: relative; width: 100px; height: 100px;">
+							<image style="width:100px;" src="https://gardenofchaos.xyz/media/random.svg" alt="?" />
 							<div class="overlay_char">
 								<a href="javascript:void(0);" title="Add a random character to Team 1." onclick='addChar(new Array("Grave","Jaina","Geiger","Argagarg","Setsuki","Valerie","Rook","Midori","Lum","Degrey","Quince","Onimaru")[Math.floor(Math.random()*12)],1)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100 height=100 id="plus" />
+									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
 								</a>
 							</div>
 						</div>
-						<div class="container_char" id="1container_zoners" style="max-height:100px;">
-							<image class="char" src="https://gardenofchaos.xyz/media/zoners.svg" alt="Zoners" id="1zoners" />
+						<div style="position: relative; width: 100px; height: 100px;">
+							<image style="width:100px;" src="https://gardenofchaos.xyz/media/zoners.svg" alt="Cloud" />
 							<div class="overlay_char">
 								<a href="javascript:void(0);" title="Add the zoners to Team 1." onclick='addChar("Grave",1);addChar("Jaina",1);addChar("Geiger",1);addChar("Argagarg",1)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px id="plus"/>
+									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px/>
 								</a>
 							</div>
 						</div>
-						<div class="container_char" id="1container_rushdowns" style="max-height:100px;">
-							<image class="char" src="https://gardenofchaos.xyz/media/rushdowns.svg" alt="Rushdowns" id="1rushdowns" />
+						<div style="position: relative; width: 100px; height: 100px;">
+							<image style="width:100px;" src="https://gardenofchaos.xyz/media/rushdowns.svg" alt="Paintbrush" />
 							<div class="overlay_char">
 								<a href="javascript:void(0);" title="Add the rushdowns to Team 1." onclick='addChar("Setsuki",1);addChar("Valerie",1)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px id="plus"/>
+									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
 								</a>
 							</div>
 						</div>
-						<div class="container_char" id="1container_grapplers" style="max-height:100px;">
-							<image class="char" src="https://gardenofchaos.xyz/media/grapplers.svg" alt="Grapplers" id="1grapplers" />
+						<div style="position: relative; width: 100px; height: 100px;">
+							<image style="width:100px;" src="https://gardenofchaos.xyz/media/grapplers.svg" alt="Hug" />
 							<div class="overlay_char">
 								<a href="javascript:void(0);" title="Add the grapplers to Team 1." onclick='addChar("Rook",1);addChar("Midori",1)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px id="plus"/>
+									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
 								</a>
 							</div>
 						</div>
-						<div class="container_char" id="1container_wildcards" style="max-height:100px;">
-							<image class="char" src="https://gardenofchaos.xyz/media/wildcards.svg" alt="Wildcards" id="1wildcards" />
+						<div style="position: relative; width: 100px; height: 100px;">
+							<image style="width:100px;" src="https://gardenofchaos.xyz/media/wildcards.svg" alt="Dice" />
 							<div class="overlay_char">
 								<a href="javascript:void(0);" title="Add the wildcards to Team 1." onclick='addChar("Lum",1);addChar("Degrey",1);addChar("Quince",1);addChar("Onimaru",1)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px id="plus"/>
+									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
 								</a>
 							</div>
 						</div>
-						<div class="container_char" id="1container_flagstone" style="max-height:100px;">
-							<image class="char" src="https://gardenofchaos.xyz/media/flagstone.svg" alt="Flagstone" id="1flagstone" />
+						<div style="position: relative; width: 100px; height: 100px;">
+							<image style="width:100px;" src="https://gardenofchaos.xyz/media/flagstone.svg" alt="Crown" />
 							<div class="overlay_char">
 								<a href="javascript:void(0);" title="Add the flagstone tyrants to Team 1." onclick='addChar("Quince",1);addChar("Onimaru",1)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px id="plus"/>
+									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
 								</a>
 							</div>
 						</div>
-						<div class="container_char" id="1container_full" style="max-height:100px;">
-							<image class="char" src="https://gardenofchaos.xyz/media/all.svg" alt="Full Cast" id="1full" />
+						<div style="position: relative; width: 100px; height: 100px;">
+							<image style="width:100px;" src="https://gardenofchaos.xyz/media/all.svg" alt="100%" />
 							<div class="overlay_char">
 								<a href="javascript:void(0);" title="Add every character to Team 1." onclick='addChar("Grave",1);addChar("Jaina",1);addChar("Geiger",1);addChar("Argagarg",1);addChar("Setsuki",1);addChar("Valerie",1);addChar("Rook",1);addChar("Midori",1);addChar("Lum",1);addChar("Degrey",1);addChar("Quince",1);addChar("Onimaru",1)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px id="plus"/>
+									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
 								</a>
 							</div>
 						</div>
-						<div class="container_char" id="1container_full" style="max-height:100px;">
-							<image class="char" src="https://gardenofchaos.xyz/media/left.svg" alt="Left Side" id="1left" />
-							<div class="overlay_char">
-								<a href="javascript:void(0);" title="Add the characters from the left/top of the in-game selector to Team 1." onclick='addChar("Grave",1);addChar("Geiger",1);addChar("Setsuki",1);addChar("Rook",1);addChar("Lum",1);addChar("Quince",1)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px id="plus"/>
-								</a>
+						<div style="display:flex; flex-flow: row wrap; justify-content: center;">
+							<div style="position: relative; width: 100px; height: 100px;">
+								<image style="width:100px;" src="https://gardenofchaos.xyz/media/left.svg" alt="Left Arrow" />
+								<div class="overlay_char">
+									<a href="javascript:void(0);" title="Add the characters from the left/top of the in-game selector to Team 1." onclick='addChar("Grave",1);addChar("Geiger",1);addChar("Setsuki",1);addChar("Rook",1);addChar("Lum",1);addChar("Quince",1)'>
+										<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
+									</a>
+								</div>
 							</div>
-						</div>
-						<div class="container_char" id="1container_full" style="max-height:100px;">
-							<image class="char" src="https://gardenofchaos.xyz/media/right.svg" alt="Right Side" id="1right" />
-							<div class="overlay_char">
-								<a href="javascript:void(0);" title="Add the characters from the right/bottom of the in-game selector to Team 1." onclick='addChar("Jaina",1);addChar("Argagarg",1);addChar("Valerie",1);addChar("Midori",1);addChar("Degrey",1);addChar("Onimaru",1)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px id="plus"/>
-								</a>
+							<div style="position: relative; width: 100px; height: 100px;">
+								<image style="width:100px;" src="https://gardenofchaos.xyz/media/right.svg" alt="Right Arrow" />
+								<div class="overlay_char">
+									<a href="javascript:void(0);" title="Add the characters from the right/bottom of the in-game selector to Team 1." onclick='addChar("Jaina",1);addChar("Argagarg",1);addChar("Valerie",1);addChar("Midori",1);addChar("Degrey",1);addChar("Onimaru",1)'>
+										<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
+					<h2 style="text-align:center;">Team 1:</h2>
+					<div id="team1div" style="display: flex; flex-flow: row wrap; justify-content: center;"></div>
 				</div>
-				<div style="width:80px;align-self: center;"></div>
-				<div style="float:right;width:400px;">
-					<div style="display: flex; flex-flow: row-reverse wrap; justify-content: flex-start; align-items: flex-start; width: 400px;">
-						<div class="container_char" id="2container_delete" style="max-height:100px;">
-							<image class="char" src="https://gardenofchaos.xyz/media/delete.svg" alt="Clear" id="2clear" />
+				<div style="width:80px;">
+					<div style="margin-left:40px; margin-right:40px; margin-top:190px;"></div>
+					<a id="submitlink" href="javascript:void(0);"><button style="width:80px;height:80px;"><strong>Submit<br>Teams</strong></button></a>
+				</div>
+				<div style="flex-direction:column; max-width:400px;">
+					<h2 style="text-align:center;">Team 2 Character Select</h1>
+					<div style="display: flex; flex-flow: row-reverse wrap; margin:auto; justify-content:center;">
+							<div style="position: relative; width: 100px; height: 110px;" id="container_grave">
+								<image style="width:100px;" src="https://gardenofchaos.xyz/media/grave.png" alt="Grave" />
+								<div class="overlay_char">
+									<a href="javascript:void(0);" title="Add Grave to Team 2." onclick='addChar("Grave",2)'>
+										<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=110px />
+									</a>
+								</div>
+							</div>
+							<div style="position: relative; width: 100px; height: 110px;" id="container_jaina">
+								<image style="width:100px;" src="https://gardenofchaos.xyz/media/jaina.png" alt="Jaina" />
+								<div class="overlay_char">
+									<a href="javascript:void(0);" title="Add Jaina to Team 2." onclick='addChar("Jaina",2)'>
+										<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=110px />
+									</a>
+								</div>
+							</div>
+							<div style="position: relative; width: 100px; height: 110px;" id="container_geiger">
+								<image style="width:100px;" src="https://gardenofchaos.xyz/media/geiger.png" alt="Geiger" />
+								<div class="overlay_char">
+									<a href="javascript:void(0);" title="Add Geiger to Team 2." onclick='addChar("Geiger",2)'>
+										<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=110px />
+									</a>
+								</div>
+							</div>
+							<div style="position: relative; width: 100px; height: 110px;" id="container_argagarg">
+								<image style="width:100px;" src="https://gardenofchaos.xyz/media/argagarg.png" alt="Argagarg" />
+								<div class="overlay_char">
+									<a href="javascript:void(0);" title="Add Argagarg to Team 2." onclick='addChar("Argagarg",2)'>
+										<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=110px />
+									</a>
+								</div>
+							</div>
+							<div style="position: relative; width: 100px; height: 110px;" id="container_setsuki">
+								<image style="width:100px;" src="https://gardenofchaos.xyz/media/setsuki.png" alt="Setsuki" />
+								<div class="overlay_char">
+									<a href="javascript:void(0);" title="Add Setsuki to Team 2." onclick='addChar("Setsuki",2)'>
+										<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=110px />
+									</a>
+								</div>
+							</div>
+							<div style="position: relative; width: 100px; height: 110px;" id="container_valerie">
+								<image style="width:100px;" src="https://gardenofchaos.xyz/media/valerie.png" alt="Valerie" />
+								<div class="overlay_char">
+									<a href="javascript:void(0);" title="Add Valerie to Team 2." onclick='addChar("Valerie",2)'>
+										<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=110px />
+									</a>
+								</div>
+							</div>
+							<div style="position: relative; width: 100px; height: 110px;" id="container_rook">
+								<image style="width:100px;" src="https://gardenofchaos.xyz/media/rook.png" alt="Rook" />
+								<div class="overlay_char">
+									<a href="javascript:void(0);" title="Add Rook to Team 2." onclick='addChar("Rook",2)'>
+										<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=110px />
+									</a>
+								</div>
+							</div>
+							<div style="position: relative; width: 100px; height: 110px;" id="container_midori">
+								<image style="width:100px;" src="https://gardenofchaos.xyz/media/midori.png" alt="Midori" />
+								<div class="overlay_char">
+									<a href="javascript:void(0);" title="Add Midori to Team 2." onclick='addChar("Midori",2)'>
+										<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=110px />
+									</a>
+								</div>
+							</div>
+							<div style="position: relative; width: 100px; height: 110px;" id="container_lum">
+								<image style="width:100px;" src="https://gardenofchaos.xyz/media/lum.png" alt="Lum" id="1lum" />
+								<div class="overlay_char">
+									<a href="javascript:void(0);" title="Add Lum to Team 2." onclick='addChar("Lum",2)'>
+										<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=110px />
+									</a>
+								</div>
+							</div>
+							<div style="position: relative; width: 100px; height: 110px;" id="container_degrey">
+								<image style="width:100px;" src="https://gardenofchaos.xyz/media/degrey.png" alt="DeGrey" />
+								<div class="overlay_char">
+									<a href="javascript:void(0);" title="Add DeGrey to Team 2." onclick='addChar("DeGrey",2)'>
+										<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=110px />
+									</a>
+								</div>
+							</div>
+							<div style="position: relative; width: 100px; height: 110px;" id="container_quince">
+								<image style="width:100px;" src="https://gardenofchaos.xyz/media/quince.png" alt="Quince" />
+								<div class="overlay_char">
+									<a href="javascript:void(0);" title="Add Quince to Team 2." onclick='addChar("Quince",2)'>
+										<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=110px />
+									</a>
+								</div>
+							</div>
+							<div style="position: relative; width: 100px; height: 110px;" id="container_onimaru">
+								<image style="width:100px;" src="https://gardenofchaos.xyz/media/onimaru.png" alt="Onimaru" />
+								<div class="overlay_char">
+									<a href="javascript:void(0);" title="Add Onimaru to Team 2." onclick='addChar("Onimaru",2)'>
+										<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=110px />
+									</a>
+								</div>
+							</div>
+					</div>
+					<h2 style="text-align:center;">Team 2 Presets:</h2>
+					<div style="display: flex; flex-flow: row-reverse wrap; justify-content: center;">
+						<div style="position: relative; width: 100px; height: 100px;">
+							<image style="width:100px;" src="https://gardenofchaos.xyz/media/delete.svg" alt="X" />
 							<div class="overlay_char_team">
 								<a href="javascript:void(0);" title="Clear all characters from Team 2." onclick='clearTeam(2)'>
-									<image src="https://gardenofchaos.xyz/media/minus.svg" width=100 height=100 id="minus" />
+									<image src="https://gardenofchaos.xyz/media/minus.svg" width=100px height=100px />
 								</a>
 							</div>
 						</div>
-						<div class="container_char" id="2container_random" style="max-height:100px;">
-							<image class="char" src="https://gardenofchaos.xyz/media/random.svg" alt="Random" id="2random" />
+						<div style="position: relative; width: 100px; height: 100px;">
+							<image style="width:100px;" src="https://gardenofchaos.xyz/media/random.svg" alt="?" />
 							<div class="overlay_char">
 								<a href="javascript:void(0);" title="Add a random character to Team 2." onclick='addChar(new Array("Grave","Jaina","Geiger","Argagarg","Setsuki","Valerie","Rook","Midori","Lum","Degrey","Quince","Onimaru")[Math.floor(Math.random()*12)],2)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100 height=100 id="plus" />
+									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
 								</a>
 							</div>
 						</div>
-						<div class="container_char" id="2container_zoners" style="max-height:100px;">
-							<image class="char" src="https://gardenofchaos.xyz/media/zoners.svg" alt="Zoners" id="2zoners" />
+						<div style="position: relative; width: 100px; height: 100px;">
+							<image style="width:100px;" src="https://gardenofchaos.xyz/media/zoners.svg" alt="Cloud" />
 							<div class="overlay_char">
 								<a href="javascript:void(0);" title="Add the zoners to Team 2." onclick='addChar("Grave",2);addChar("Jaina",2);addChar("Geiger",2);addChar("Argagarg",2)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px id="plus"/>
+									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px/>
 								</a>
 							</div>
 						</div>
-						<div class="container_char" id="2container_rushdowns" style="max-height:100px;">
-							<image class="char" src="https://gardenofchaos.xyz/media/rushdowns.svg" alt="Rushdowns" id="2rushdowns" />
+						<div style="position: relative; width: 100px; height: 100px;">
+							<image style="width:100px;" src="https://gardenofchaos.xyz/media/rushdowns.svg" alt="Paintbrush" />
 							<div class="overlay_char">
 								<a href="javascript:void(0);" title="Add the rushdowns to Team 2." onclick='addChar("Setsuki",2);addChar("Valerie",2)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px id="plus"/>
+									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
 								</a>
 							</div>
 						</div>
-						<div class="container_char" id="2container_grapplers" style="max-height:100px;">
-							<image class="char" src="https://gardenofchaos.xyz/media/grapplers.svg" alt="Grapplers" id="2grapplers" />
+						<div style="position: relative; width: 100px; height: 100px;">
+							<image style="width:100px;" src="https://gardenofchaos.xyz/media/grapplers.svg" alt="Hug" />
 							<div class="overlay_char">
 								<a href="javascript:void(0);" title="Add the grapplers to Team 2." onclick='addChar("Rook",2);addChar("Midori",2)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px id="plus"/>
+									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
 								</a>
 							</div>
 						</div>
-						<div class="container_char" id="1container_wildcards" style="max-height:100px;">
-							<image class="char" src="https://gardenofchaos.xyz/media/wildcards.svg" alt="Wildcards" id="2wildcards" />
+						<div style="position: relative; width: 100px; height: 100px;">
+							<image style="width:100px;" src="https://gardenofchaos.xyz/media/wildcards.svg" alt="Dice" />
 							<div class="overlay_char">
 								<a href="javascript:void(0);" title="Add the wildcards to Team 2." onclick='addChar("Lum",2);addChar("Degrey",2);addChar("Quince",2);addChar("Onimaru",2)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px id="plus"/>
+									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
 								</a>
 							</div>
 						</div>
-						<div class="container_char" id="2container_flagstone" style="max-height:100px;">
-							<image class="char" src="https://gardenofchaos.xyz/media/flagstone.svg" alt="Flagstone" id="2flagstone" />
+						<div style="position: relative; width: 100px; height: 100px;">
+							<image style="width:100px;" src="https://gardenofchaos.xyz/media/flagstone.svg" alt="Crown" />
 							<div class="overlay_char">
 								<a href="javascript:void(0);" title="Add the flagstone tyrants to Team 2." onclick='addChar("Quince",2);addChar("Onimaru",2)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px id="plus"/>
+									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
 								</a>
 							</div>
 						</div>
-						<div class="container_char" id="2container_full" style="max-height:100px;">
-							<image class="char" src="https://gardenofchaos.xyz/media/all.svg" alt="Full Cast" id="2full" />
+						<div style="position: relative; width: 100px; height: 100px;">
+							<image style="width:100px;" src="https://gardenofchaos.xyz/media/all.svg" alt="100%" />
 							<div class="overlay_char">
 								<a href="javascript:void(0);" title="Add every character to Team 2." onclick='addChar("Grave",2);addChar("Jaina",2);addChar("Geiger",2);addChar("Argagarg",2);addChar("Setsuki",2);addChar("Valerie",2);addChar("Rook",2);addChar("Midori",2);addChar("Lum",2);addChar("Degrey",2);addChar("Quince",2);addChar("Onimaru",2)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px id="plus"/>
+									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
 								</a>
 							</div>
 						</div>
-						<div class="container_char" id="2container_full" style="max-height:100px;">
-							<image class="char" src="https://gardenofchaos.xyz/media/right.svg" alt="Right Side" id="2right" />
-							<div class="overlay_char">
-								<a href="javascript:void(0);" title="Add the characters from the right/bottom of the in-game selector to Team 2." onclick='addChar("Jaina",2);addChar("Argagarg",2);addChar("Valerie",2);addChar("Midori",2);addChar("Degrey",2);addChar("Onimaru",2)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px id="plus"/>
-								</a>
+						<div style="display:flex; flex-flow: row wrap; justify-content: center;">
+							<div style="position: relative; width: 100px; height: 100px;">
+								<image style="width:100px;" src="https://gardenofchaos.xyz/media/left.svg" alt="Left Arrow" />
+								<div class="overlay_char">
+									<a href="javascript:void(0);" title="Add the characters from the left/top of the in-game selector to Team 2." onclick='addChar("Grave",2);addChar("Geiger",2);addChar("Setsuki",2);addChar("Rook",2);addChar("Lum",2);addChar("Quince",2)'>
+										<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
+									</a>
+								</div>
 							</div>
-						</div>
-						<div class="container_char" id="2container_full" style="max-height:100px;">
-							<image class="char" src="https://gardenofchaos.xyz/media/left.svg" alt="Left Side" id="2left" />
-							<div class="overlay_char">
-								<a href="javascript:void(0);" title="Add the characters from the left/top of the in-game selector to Team 2." onclick='addChar("Grave",2);addChar("Geiger",2);addChar("Setsuki",2);addChar("Rook",2);addChar("Lum",2);addChar("Quince",2)'>
-									<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px id="plus"/>
-								</a>
+							<div style="position: relative; width: 100px; height: 100px;">
+								<image style="width:100px;" src="https://gardenofchaos.xyz/media/right.svg" alt="Right Arrow" />
+								<div class="overlay_char">
+									<a href="javascript:void(0);" title="Add the characters from the right/bottom of the in-game selector to Team 2." onclick='addChar("Jaina",2);addChar("Argagarg",2);addChar("Valerie",2);addChar("Midori",2);addChar("Degrey",2);addChar("Onimaru",2)'>
+										<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-			<div id="teamsSelected" class="teams">
-				<div style="float:left;width:400px;">
-					<h2 style="text-align:center;">Team 1:</h2>
-					<div id="team1div" style="display: flex; flex-flow: row wrap; justify-content: flex-start; max-width: 400px;"></div>
-				</div>
-				<div style="width:80px;align-self:center;"></div>
-				<div style="float:left;width:400px;">
 					<h2 style="text-align:center;">Team 2:</h2>
-					<div id="team2div" style="display: flex; flex-flow: row-reverse wrap; justify-content: flex-start; max-width: 400px;"></div>
+					<div id="team2div" style="display: flex; flex-flow: row-reverse wrap; justify-content: center;"></div>
 				</div>
 			</div>
 		</div>
     </main>
-    <footer><div style="display:none;"><image src="https://gardenofchaos.xyz/media/minus.svg" width=100 height=100 id="minus" /></div></footer>
+    <footer></footer>
     </body>
     <script>
         var teams = [[],[]];
@@ -431,7 +447,7 @@
             div.setAttribute("class","container_char");
             div.setAttribute("id","char"+i)
             
-            div.appendChild(document.getElementById("1"+charName.toLowerCase()).cloneNode());
+            div.appendChild(document.getElementById(charName.toLowerCase()).cloneNode());
             
             overlay = document.createElement("DIV");
             overlay.setAttribute("class", "overlay_char_team");

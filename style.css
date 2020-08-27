@@ -106,10 +106,6 @@ textarea {
 
 
 
-.char {
-	width: 100px;
-	height: auto;
-}
 .container_char {
 	position: relative;
 	width: 100px;
@@ -145,22 +141,9 @@ textarea {
 .overlay_char_team:hover {
 	opacity:60%;
 }
-.icon {
-	color: white;
-	font-size: 100px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	text-align: center;
-}
 .plus:hover {
     color: #000000;
 }
 div.teams {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	max-width: 1000px;
+	display: flex; flex-direction: row; justify-content: space-around; max-width: 1000px;
 }
