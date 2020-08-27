@@ -104,13 +104,6 @@ textarea {
 }
 
 
-
-
-.container_char {
-	position: relative;
-	width: 100px;
-	height: 110px;
-}
 .overlay_char {
 	position: absolute;
 	top: 0;
@@ -143,7 +136,4 @@ textarea {
 }
 .plus:hover {
     color: #000000;
-}
-div.teams {
-	display: flex; flex-direction: row; justify-content: space-around; max-width: 1000px;
 }
