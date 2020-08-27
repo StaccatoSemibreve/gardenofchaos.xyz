@@ -20,6 +20,8 @@ cat website/template.html           >   teams2.html
 cat website/teams2.html             >>  teams2.html
 cat website/template.html           >   teamsfancy.html
 cat website/teamsfancy.html         >>  teamsfancy.html
+cat website/template.html           >   teamdisplay.html
+cat website/teamdisplay.html        >>  teamdisplay.html
 cat website/template.html           >   tournaments.html
 cat website/tournaments.html        >>  tournaments.html
 cat website/template.html           >   thoughts.html
