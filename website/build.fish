@@ -18,7 +18,8 @@ cat website/template.html           >   teams.html
 cat website/teams.html              >>  teams.html
 cat website/template.html           >   teams2.html
 cat website/teams2.html             >>  teams2.html
-cat website/template.html           >   teamsfancy.html
+cat website/teamsfancy1.html        >   teamsfancy.html
+cat website/navbar.html         	>>  teamsfancy.html
 cat website/teamsfancy.html         >>  teamsfancy.html
 cat website/template.html           >   teamdisplay.html
 cat website/teamdisplay.html        >>  teamdisplay.html

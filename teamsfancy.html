@@ -2,9 +2,156 @@
 <html lang="">
   <head>
     <meta charset="utf-8">
-    <title>The Garden of Chaos</title>
+    <title>Garden of Chaos: Teams Selector</title>
     <link rel="stylesheet" href="https://gardenofchaos.xyz/style.css">
     <link rel="icon" type="image/png" href="https://gardenofchaos.xyz/FSgardenOfChao-196x196.png" sizes="196x196" />
+    <style>
+		@media only screen and (min-width:1050px) {
+			div.grid {
+				display: grid;
+				max-width: 1000px;
+				grid-gap: 10px;
+				grid-template-columns: 400px 180px 400px;
+				grid-template-rows: 100px 40px 300px 40px 300px 40px;
+				grid-template-areas: "title				title	title"
+									 "team1selectTitle	.		team2selectTitle"
+									 "team1select		submit	team2select"
+									 "team1presetTitle	.		team2presetTitle"
+									 "team1preset		.		team2preset"
+									 "team1Title		.		team2Title"
+									 "team1				.		team2";
+				margin:auto;
+			}
+		}
+		@media only screen and (min-width:850px) and (max-width:1050px) {
+			div.grid {
+				display: grid;
+				max-width: 800px;
+				grid-gap: 10px;
+				grid-template-columns: 300px 180px 300px;
+				grid-template-rows: 100px 40px 400px 40px 400px 40px;
+				grid-template-areas: "title				title	title"
+									 "team1selectTitle	.		team2selectTitle"
+									 "team1select		submit	team2select"
+									 "team1presetTitle	.		team2presetTitle"
+									 "team1preset		.		team2preset"
+									 "team1Title		.		team2Title"
+									 "team1				.		team2";
+				margin:auto;
+			}
+		}
+		@media only screen and (min-width:650px) and (max-width:850px) {
+			div.grid {
+				display: grid;
+				max-width: 600px;
+				grid-gap: 10px;
+				grid-template-columns: 200px 180px 200px;
+				grid-template-rows: 150px 40px 600px 40px 500px 40px;
+				grid-template-areas: "title				title	title"
+									 "team1selectTitle	.		team2selectTitle"
+									 "team1select		submit	team2select"
+									 "team1presetTitle	.		team2presetTitle"
+									 "team1preset		.		team2preset"
+									 "team1Title		.		team2Title"
+									 "team1				.		team2";
+				margin:auto;
+			}
+		}
+		@media only screen and (min-width:450px) and (max-width:650px) {
+			div.grid {
+				display: grid;
+				max-width: 400px;
+				grid-gap: 10px;
+				grid-template-columns: 100px 180px 100px;
+				grid-template-rows: 150px 80px 1200px 80px 1000px 80px;
+				grid-template-areas: "title				title	title"
+									 "team1selectTitle	.		team2selectTitle"
+									 "team1select		submit	team2select"
+									 "team1presetTitle	.		team2presetTitle"
+									 "team1preset		.		team2preset"
+									 "team1Title		.		team2Title"
+									 "team1				.		team2";
+				margin:auto;
+			}
+		}
+		@media only screen and (min-width:350px) and (max-width:450px) {
+			div.grid {
+				display: grid;
+				max-width: 300px;
+				grid-gap: 10px;
+				grid-template-columns: 300px;
+				grid-template-rows: 150px 80px 80px 400px 80px 400px 80px 400px 80px 400px;
+				grid-template-areas: "title"
+									 "submit"
+									 "team1selectTitle"
+									 "team1select"
+									 "team1presetTitle"
+									 "team1preset"
+									 "team2selectTitle"
+									 "team2select"
+									 "team2presetTitle"
+									 "team2preset"
+									 "team1Title"
+									 "team1"
+									 "team2Title"
+									 "team2";
+				margin:auto;
+			}
+		}
+		@media only screen and (min-width:250px) and (max-width:350px) {
+			div.grid {
+				display: grid;
+				max-width: 200px;
+				grid-gap: 10px;
+				grid-template-columns: 200px;
+				grid-template-rows: 150px 80px 80px 600px 80px 500px 80px 600px 80px 500px;
+				grid-template-areas: "title"
+									 "submit"
+									 "team1selectTitle"
+									 "team1select"
+									 "team1presetTitle"
+									 "team1preset"
+									 "team2selectTitle"
+									 "team2select"
+									 "team2presetTitle"
+									 "team2preset"
+									 "team1Title"
+									 "team1"
+									 "team2Title"
+									 "team2";
+				margin:auto;
+			}
+		}
+		@media only screen and (min-width:150px) and (max-width:250px) {
+			div.grid {
+				display: grid;
+				max-width: 100px;
+				grid-gap: 10px;
+				grid-template-columns: 100px;
+				grid-template-rows: 250px 80px 100px 1200px 80px 1000px 100px 1200px 80px 1000px;
+				grid-template-areas: "title"
+									 "submit"
+									 "team1selectTitle"
+									 "team1select"
+									 "team1presetTitle"
+									 "team1preset"
+									 "team2selectTitle"
+									 "team2select"
+									 "team2presetTitle"
+									 "team2preset"
+									 "team1Title"
+									 "team1"
+									 "team2Title"
+									 "team2";
+				margin:auto;
+			}
+		}
+		@media only screen and (max-width:150px) {
+			div.grid {
+				display:none;
+			}
+		}
+    </style>
   </head>
   <body>
     <header>
@@ -52,7 +199,7 @@
 		
 		
 		<!--grid-->
-		<div style="display: grid; grid-gap: 10px; grid-template-columns: 400px 180px 400px; grid-template-rows: 80px 40px 300px 40px 300px 40px; margin:auto; max-width:1000px; grid-template-areas: 'title title title' 'team1selectTitle . team2selectTitle' 'team1select submit team2select' 'team1presetTitle . team2presetTitle' 'team1preset . team2preset' 'team1Title . team2Title' 'team1 . team2'">
+		<div class="grid">
 			<h1 style="text-align:center; grid-area:title;">The Garden of Chaos<br>Team Battle Tool</h1>
 			
 			<h2 style="text-align:center; grid-area:team1selectTitle; margin:0; align-self:end;">Team 1 Character Select</h2>
