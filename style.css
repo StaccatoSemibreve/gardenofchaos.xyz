@@ -102,38 +102,3 @@ textarea {
     background-color: #1E1B19;
     color: #DABA69;
 }
-
-
-.overlay_char {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	transition: .3s ease;
-	background-color: green;
-}
-.overlay_char:hover {
-	opacity:60%;
-}
-.overlay_char_team {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	transition: .3s ease;
-	background-color: red;
-}
-.overlay_char_team:hover {
-	opacity:60%;
-}
-.plus:hover {
-    color: #000000;
-}
