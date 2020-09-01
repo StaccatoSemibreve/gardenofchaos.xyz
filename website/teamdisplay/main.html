@@ -1,0 +1,44 @@
+		<main>
+			<div id="chars" style="display:none;">
+				<image src="https://gardenofchaos.xyz/media/grave.png" alt="Grave" id="grave" />
+				<image src="https://gardenofchaos.xyz/media/jaina.png" alt="Jaina" id="jaina" width="100px" />
+				<image src="https://gardenofchaos.xyz/media/geiger.png" alt="Geiger" id="geiger" />
+				<image src="https://gardenofchaos.xyz/media/argagarg.png" alt="Argagarg" id="argagarg" />
+				<image src="https://gardenofchaos.xyz/media/setsuki.png" alt="Setsuki" id="setsuki" />
+				<image src="https://gardenofchaos.xyz/media/valerie.png" alt="Valerie" id="valerie" />
+				<image src="https://gardenofchaos.xyz/media/rook.png" alt="Rook" id="rook" />
+				<image src="https://gardenofchaos.xyz/media/midori.png" alt="Midori" id="midori" />
+				<image src="https://gardenofchaos.xyz/media/lum.png" alt="Lum" id="lum" />
+				<image src="https://gardenofchaos.xyz/media/degrey.png" alt="DeGrey" id="degrey" />
+				<image src="https://gardenofchaos.xyz/media/quince.png" alt="Quince" id="quince" />
+				<image src="https://gardenofchaos.xyz/media/onimaru.png" alt="Onimaru" id="onimaru" />
+			</div>
+
+			<div style="display:flex; flex-flow:column nowrap; margin:auto; place-items:center center; width:1000px;">
+				<h1 style="text-align:center;">The Garden of Chaos<br>Team Battle Tool</h1>
+				<!-- team 1, on the top -->
+				<div style="display:flex; flex-flow:row;">
+					<div id="team1winners"></div>
+					<div style="display:flex; flex-flow:column nowrap; justify-content:center; margin:auto;">
+						<h2 style="text-align:center;">Team 1</h2>
+						<div id="team1" style="display:flex; flex-flow:row wrap; justify-content:space-around; width:550px;"></div>
+					</div>
+					<div id="team1losers"></div>
+				</div>
+				<h2 style="text-align:center;">vs</h2>
+				<!-- team 2, on the bottom -->
+				<div style="display:flex; flex-flow:row;">
+					<div id="team2winners"></div>
+					<div style="display:flex; flex-flow:column nowrap; margin:auto;">
+						<h2 style="text-align:center;">Team 2</h2>
+						<div id="team2" style="display:flex; flex-flow:row wrap; justify-content:space-around; width:550px; gap:40px;"></div>
+					</div>
+					<div id="team2losers"></div>
+				</div>
+				<!-- 	button and logs -->
+				<div style="display:flex; flex-flow:column nowrap;align-items:center;">
+					<button onclick="start()"><strong>Start Match</strong></button>
+					<p style="width:400px; text-align:center;">Click start when you're ready.<br>For each round play the matchup given and<br>select the winning character's icon.</p>
+				</div>
+			</div>
+		</main>

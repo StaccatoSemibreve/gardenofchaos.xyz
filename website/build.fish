@@ -1,37 +1,57 @@
-cat website/template.html           >   index.html
-cat website/index.html              >>  index.html
-cat website/template.html           >   rules.html
-cat website/rules.html              >>  rules.html
-cat website/template.html           >   styles.html
-cat website/styles.html             >>  styles.html
-cat website/template.html           >   rulesets.html
-cat website/rulesets.html           >>  rulesets.html
-cat website/template.html           >   events.html
-cat website/events.html             >>  events.html
-cat website/template.html           >   resources.html
-cat website/resources.html          >>  resources.html
-cat website/template.html           >   commentators.html
-cat website/commentators.html       >>  commentators.html
-cat website/template.html           >   random.html
-cat website/random.html             >>  random.html
-cat website/template.html           >   teams.html
-cat website/teams.html              >>  teams.html
-cat website/template.html           >   teams2.html
-cat website/teams2.html             >>  teams2.html
-cat website/teamsfancy1.html        >   teamsfancy.html
-cat website/navbar.html         	>>  teamsfancy.html
-cat website/teamsfancy.html         >>  teamsfancy.html
-cat website/template.html           >   teamdisplay.html
-cat website/teamdisplay.html        >>  teamdisplay.html
-cat website/template.html           >   tournaments.html
-cat website/tournaments.html        >>  tournaments.html
-cat website/template.html           >   thoughts.html
-cat website/thoughts.html           >>  thoughts.html
-cat website/template.html           >   thoughts/throws.html
-cat website/thoughts/throws.html    >>  thoughts/throws.html
-cat website/template.html           >   thoughts/dice.html
-cat website/thoughts/dice.html      >>  thoughts/dice.html
-cat website/template.html           >   thoughts/advantage.html
-cat website/thoughts/advantage.html >>  thoughts/advantage.html
-cat website/template.html           >   thoughts/lumoki.html
-cat website/thoughts/lumoki.html    >>  thoughts/lumoki.html
+function build
+	echo "<!DOCTYPE html>
+<html lang=\"\">
+	<head>"
+	cat $argv[1]/head.html	
+	echo "		<style>"
+	cat $argv[1]/style.css
+	cat navbar/style.css
+	echo "		</style>
+	</head>
+	<body>"
+	cat navbar/main.html
+	cat $argv[1]/main.html
+	echo "		<footer></footer>
+	</body>
+	<script>"
+	cat $argv[1]/script.js
+	echo "	</script>
+</html>"
+end
+
+function build-static
+	echo "<!DOCTYPE html>
+<html lang=\"\">
+	<head>"
+	cat $argv[1]/head.html	
+	echo "		<style>"
+	cat $argv[1]/style.css
+	cat navbar/style.css
+	echo "		</style>
+	</head>
+	<body>"
+	cat navbar/main.html
+	cat $argv[1]/main.html
+	echo "		<footer></footer>
+	</body>
+</html>"
+end
+
+
+build-static index					> ../index.html
+build-static rules					> ../rules.html
+build-static styles				> ../styles.html
+build-static rulesets				> ../rulesets.html
+build-static resources				> ../resources.html
+build-static commentators			> ../commentators.html
+build-static tournaments			> ../tournaments.html
+build random				> ../random.html
+build teams					> ../teams.html
+build teams2				> ../teams2.html
+build teamsfancy			> ../teamsfancy.html
+build teamdisplay			> ../teamdisplay.html
+build-static thoughts				> ../thoughts.html
+build-static thoughts-throws		> ../thoughts-throws.html
+build-static thoughts-dice			> ../thoughts-dice.html
+build-static thoughts-advantage	> ../thoughts-advantage.html
+build-static thoughts-lumoki		> ../thoughts-lumoki.html

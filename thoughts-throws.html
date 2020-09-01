@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<title>Janet's Thoughts on Throws</title>
+		<link rel="icon" type="image/png" href="FSgardenOfChao-196x196.png" sizes="196x196">
+		<style>
+			p, h1, ul, a {
+				font-family: sans-serif;
+				color: #daba69;
+				line-height: 30px;
+			}
+			
+			@media only screen and (min-width:1000px) {
+				div#center-div {
+					max-width: 1000px;
+					margin: auto;
+				}
+				body {
+					background: linear-gradient(90deg, #0f0d0c, #0f0d0c calc(50% - 525px), #1e1b19 calc(50% - 525px), #1e1b19 calc(50% + 525px), #0f0d0c calc(50% + 525px));
+				}
+			}
+			@media only screen and (min-width:650px) and (max-width:1000px) {
+				div#center-div {
+					max-width: 600px;
+					margin: auto;
+				}
+				body {
+					background: linear-gradient(90deg, #0f0d0c, #0f0d0c calc(50% - 325px), #1e1b19 calc(50% - 325px), #1e1b19 calc(50% + 325px), #0f0d0c calc(50% + 325px));
+				}
+			}
+			@media only screen and (min-width:500px) and (max-width:650px) {
+				div#center-div {
+					max-width: 450px;
+					margin: auto;
+				}
+				body {
+					background: linear-gradient(90deg, #0f0d0c, #0f0d0c calc(50% - 250px), #1e1b19 calc(50% - 250px), #1e1b19 calc(50% + 250px), #0f0d0c calc(50% + 250px));
+				}
+			}
+			@media only screen and (min-width:350px) and (max-width:500px) {
+				div#center-div {
+					max-width: 300px;
+					margin: auto;
+				}
+				body {
+					background: linear-gradient(90deg, #0f0d0c, #0f0d0c calc(50% - 175px), #1e1b19 calc(50% - 175px), #1e1b19 calc(50% + 175px), #0f0d0c calc(50% + 175px));
+				}
+			}
+			@media only screen and (max-width:350px) {
+				div#center-div {
+					max-width: 90%;
+					margin: auto;
+				}
+				body {
+					background-color: #1e1b19;
+				}
+			}
+			@media only screen and (min-width:650px) {
+				body {
+					display: grid;
+					grid-template-rows: 150px;
+					grid-template-areas:	"navbar"
+											"main";
+					max-width: 2000px;
+					margins: auto;
+				}
+				main {
+					grid-area: main;
+					max-width: 2000px;
+					margin: auto;
+				}
+				
+				.navbar-div {
+					display: grid;
+					background-color: black;
+					width: 600px;
+					grid-template-columns: 150px 150px 150px 150px;
+					grid-template-rows: 60px 59px;
+					border-radius: 10px;
+					align-content: center center;
+					grid-template-areas:	"home	signup		discord	stream"
+											"rules	rulesets	formats	resources";
+					margin: auto;
+					border: 1px solid #daba69;
+				}
+				.navbar-item {
+					width: 148px;
+					height: 30px;
+					padding-top: 15px;
+					text-align: center;
+					text-decoration: none;
+					line-height: 30px;
+					font-weight: bold;
+					margin: auto;
+					font-family: sans-serif;
+					color: #daba69;
+				}
+				span.navbar-item {
+					position: relative;
+					top: -10px;
+				}
+				.navbar-item-container {
+					width: 150px;
+					height: 59px;
+					position: relative;
+					border-top: 1px solid #daba69;
+					border-left: 1px solid #daba69;
+					position: relative;
+					top: -1px;
+					left: -1px;
+				}
+				.navbar-icon {
+					width: 45px;
+					height: 45px;
+					position: relative;
+					left: -5px;
+					top: 8px;
+				}
+				.navbar-icon#goc-logo {
+					left: -10px;
+				}
+				.navbar-item-container#navbar-home {
+					border-radius: 10px 0px 0px 0px;
+				}
+				.navbar-item-container#navbar-stream {
+					border-radius: 0px 10px 0px 0px;
+				}
+				.navbar-item-container#navbar-resources {
+					border-radius: 0px 0px 10px 0px;
+				}
+				.navbar-item-container#navbar-rules {
+					border-radius: 0px 0px 0px 10px;
+				}
+				.navbar-item-container#navbar-commentators {
+					display: none;
+				}
+			}
+			
+			@media only screen and (min-width:500px) and (max-width: 650px) {
+				body {
+					display: grid;
+					grid-template-rows: 210px;
+					grid-template-areas:	"navbar"
+											"main";
+					max-width: 2000px;
+					margins: auto;
+				}
+				main {
+					grid-area: main;
+					max-width: 2000px;
+					margins: auto;
+				}
+				
+				.navbar-div {
+					display: grid;
+					background-color: black;
+					width: 450px;
+					grid-template-columns: 150px 150px 150px;
+					grid-template-rows: 60px 60px 59px;
+					border-radius: 10px;
+					align-content: center center;
+					grid-template-areas:	"home	rulesets	resources"
+											"rules	formats		commentators"
+											"signup	discord		stream";
+					margin: auto;
+					border: 1px solid #daba69;
+				}
+				.navbar-item {
+					width: 150px;
+					height: 30px;
+					padding-top: 15px;
+					text-align: center;
+					text-decoration: none;
+					line-height: 30px;
+					font-weight: bold;
+					margin: auto;
+					font-family: sans-serif;
+					color: #daba69;
+				}
+				span.navbar-item {
+					position: relative;
+					top: -10px;
+				}
+				span.navbar-item-no-logo {
+					position: relative;
+					top: 20px;
+				}
+				.navbar-item-container {
+					width: 150px;
+					height: 59px;
+					position: relative;
+					border-top: 1px solid #daba69;
+					border-left: 1px solid #daba69;
+					position: relative;
+					top: -1px;
+					left: -1px;
+				}
+				.navbar-icon {
+					width: 45px;
+					height: 45px;
+					position: relative;
+					left: -5px;
+					top: 8px;
+				}
+				.navbar-icon#goc-logo {
+					left: -10px;
+				}
+				.navbar-item-container#navbar-home {
+					border-radius: 10px 0px 0px 0px;
+				}
+				.navbar-item-container#navbar-resources {
+					border-radius: 0px 10px 0px 0px;
+				}
+				.navbar-item-container#navbar-stream {
+					border-radius: 0px 0px 10px 0px;
+				}
+				.navbar-item-container#navbar-signup {
+					border-radius: 0px 0px 0px 10px;
+				}
+				.navbar-item-container#navbar-commentators {
+					display: block;
+				}
+			}
+			
+			@media only screen and (min-width:350px) and (max-width: 500px) {
+				body {
+					display: grid;
+					grid-template-rows: 270px;
+					grid-template-areas:	"navbar"
+											"main";
+					max-width: 2000px;
+					margins: auto;
+				}
+				main {
+					grid-area: main;
+					max-width: 2000px;
+					margins: auto;
+				}
+				
+				.navbar-div {
+					display: grid;
+					background-color: black;
+					width: 300px;
+					grid-template-columns: 150px 150px;
+					grid-template-rows: 60px 60px 60px 60px;
+					border-radius: 10px;
+					align-content: center center;
+					grid-template-areas:	"home	rulesets"
+											"rules	formats"
+											"signup	discord"
+											"stream resources";
+					margin: auto;
+					border: 1px solid #daba69;
+				}
+				.navbar-item {
+					width: 148px;
+					height: 30px;
+					padding-top: 15px;
+					text-align: center;
+					text-decoration: none;
+					line-height: 30px;
+					font-weight: bold;
+					margin: auto;
+					font-family: sans-serif;
+					color: #daba69;
+				}
+				span.navbar-item {
+					position: relative;
+					top: -10px;
+				}
+				span.navbar-item-no-logo {
+					position: relative;
+					top: 20px;
+				}
+				.navbar-item-container {
+					width: 150px;
+					height: 60px;
+					position: relative;
+					border-top: 1px solid #daba69;
+					border-left: 1px solid #daba69;
+					position: relative;
+					top: -1px;
+					left: -1px;
+				}
+				.navbar-icon {
+					width: 45px;
+					height: 45px;
+					position: relative;
+					left: -5px;
+					top: 8px;
+				}
+				.navbar-icon#goc-logo {
+					left: -10px;
+				}
+				.navbar-item-container#navbar-home {
+					border-radius: 10px 0px 0px 0px;
+				}
+				.navbar-item-container#navbar-rulesets {
+					border-radius: 0px 10px 0px 0px;
+				}
+				.navbar-item-container#navbar-resources {
+					border-radius: 0px 0px 10px 0px;
+				}
+				.navbar-item-container#navbar-stream {
+					border-radius: 0px 0px 0px 10px;
+				}
+				.navbar-item-container#navbar-commentators {
+					display: none;
+				}
+			}
+			
+			@media only screen and (max-width: 350px) {
+				body {
+					display: grid;
+					grid-template-areas: "main";
+					max-width: 2000px;
+					margins: auto;
+				}
+				main {
+					grid-area: main;
+					max-width: 2000px;
+					margins: auto;
+				}
+				
+				.navbar-div {
+					display: none;
+				}
+			}
+			
+			.navbar-item-container:hover {
+				background-color: #1E1B19;
+			}
+			.navbar-item-container#navbar-home {
+				grid-area: home;
+			}
+			.navbar-item-container#navbar-rules {
+				grid-area: rules;
+			}
+			.navbar-item-container#navbar-rulesets {
+				grid-area: rulesets;
+			}
+			.navbar-item-container#navbar-formats {
+				grid-area: formats;
+			}
+			.navbar-item-container#navbar-signup {
+				grid-area: signup;
+			}
+			.navbar-item-container#navbar-discord {
+				grid-area: discord;
+			}
+			.navbar-item-container#navbar-stream {
+				grid-area: stream;
+			}
+			.navbar-item-container#navbar-resources {
+				grid-area: resources;
+			}
+			.navbar-item-container#navbar-commentators {
+				grid-area: commentators;
+			}
+			.navbar-icon#goc-logo {
+				grid-area: home;
+			}
+			.navbar-icon#discord-logo {
+				grid-area: discord;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="navbar-div">
+			<div class="navbar-item-container" id="navbar-home"><a href="/" class="navbar-item" title="Return unto the home page!!!"><div class="navbar-item-container" id="navbar-home"><image id="goc-logo" class="navbar-icon" src="media/logo-optimised.svg" alt="A logo of a happy chao in a circle, in the colours of the Fantasy Strike logo."><span class="navbar-item">Home</span></div></a></div>
+			<div class="navbar-item-container" id="navbar-rules"><a href="rules" class="navbar-item" title="View the tournament rules!"><div class="navbar-item-container" id="navbar-rules"><div class="navbar-item">Rules</div></div></a></div>
+			<div class="navbar-item-container" id="navbar-rulesets"><a href="rulesets" class="navbar-item" title="View the silly rulesets you can choose to play under!"><div class="navbar-item-container" id="navbar-rulesets"><div class="navbar-item">Rulesets</div></div></a></div>
+			<div class="navbar-item-container" id="navbar-formats"><a href="styles" class="navbar-item" title="View potential future tournament formats!"><div class="navbar-item-container" id="navbar-formats"><div class="navbar-item">Formats</div></div></a></div>
+			<div class="navbar-item-container" id="navbar-signup"><a href="bracket" class="navbar-item" title="Join this week's tournament bracket!"><div class="navbar-item-container" id="navbar-signup"><image id="discord-logo" class="navbar-icon" src="media/challonge.svg" alt="The challonge logo in a circle, in the colours of the Fantasy Strike logo."><span class="navbar-item">Signup</span></div></a></div>
+			<div class="navbar-item-container" id="navbar-discord"><a href="https://discord.gg/abWADS7" class="navbar-item" title="Join the discord server!"><div class="navbar-item-container" id="navbar-discord"><image id="discord-logo" class="navbar-icon" src="media/discord.svg" alt="The Discord logo in a circle, in the colours of the Fantasy Strike logo."><span class="navbar-item">Discord</span></div></a></div>
+			<div class="navbar-item-container" id="navbar-stream"><a href="stream" class="navbar-item" title="Watch the tournament live!"><div class="navbar-item-container" id="navbar-stream"><image id="twitch-logo" class="navbar-icon" src="media/twitch.svg" alt="The Twitch logo in a circle, in the colours of the Fantasy Strike logo."><span class="navbar-item">Stream</span></div></a></div>
+			<div class="navbar-item-container" id="navbar-resources"><a href="resources" class="navbar-item" title="Read up on a bunch of useful Fantasy Strike knowledge!"><div class="navbar-item-container" id="navbar-resources"><div class="navbar-item">Resources</div></div></a></div>
+			<div class="navbar-item-container" id="navbar-commentators"><a href="commentators" class="navbar-item" title="See who our commentators are and what else they do!"><div class="navbar-item-container" id="navbar-commentators"><div class="navbar-item">Commentators</div></div></a></div>
+		</header>
+    <main>
+		<div id="center-div">
+			<h1>Janet's Thoughts on Throw Strategy</h1>
+			<p>There are three types of throws: mixup, punish, and neither. You should only throw if it is a mixup or a punish, never otherwise.</p>
+			<p><strong>Throw punishes:</strong><br>A punish is certain to work, and will hit during the startup or recovery of an opponent's move, so unless there's some better option (such as a combo) that's also certain to work then you should always throw.</p>
+			<p><strong>Throw mixups:</strong><br>A mixup isn't certain to work, but if your opponent has clear patterns then you can utilise that to influence your decisions (for example, they might always throw after you crossup with an empty jump, giving you a free yomi opportunity - also, many players will always throw on wakeup vs lum's whiffed crossup roll).</p>
+			<p><strong>Advanced throw mixups:</strong><br>The ideal pattern of throws vs not throws is based on two things: expected value, and the opponent's habits. If an option is three times as good as a throw, then you should do it three times as often as a baseline, then adjust for how often your opponent expects it (if they expect it too often, then do it less, and vice versa). For instance, if your opponent always yomi counters then you should always go for a combo, and if your opponent always blocks then you should always go for a throw. If you throw too often then you get yomi countered too often, and if you don't throw enough then your opponent will give you fewer openings to attack.</p>
+			<p><strong>Fuzzy guarding:</strong><br>If a throw is neither a punish nor a mixup, then it's possible for them to "fuzzy guard" against it - this means that they wait before they start blocking, because you threw at a time when you couldn't possibly hit them with anything else. The way to stop doing this is to delay such throws until they become a mixup, but this gives the opponent an opportunity to escape, so really you should avoid creating this situation in the first place. The short answer is that you shouldn't do this, but it's possible to adjust it so that it's only risky instead of always a mistake, which I'll explain shortly through by example.</p>
+			<p><strong>Fuzzy guarding scenario:</strong><br>By far the most common example of a fuzzyable throw is if you throw on your wakeup - this beats two uncommon options from your opponent: a whiffed meaty (if you know they often mess up timing), or blocking (if they expect and want to punish a reversal, otherwise they would safejump). In the case of a whiffed meaty, they already made a mistake and it's their fault, but in the case of a reversal they can adapt: they know the earliest moment you can start the reversal (because it's on wakeup), and how long the reversal's startup takes!</p>
+			<p>So they can yomi counter until that point, thus defeating the throw option while still defeating the reversal option. This can easily be defeated by just delaying the throw until the reversal would hit, forcing them to actually guess, but leaves you vulnerable to being hit by a meaty before you do anything. You can also just run away if they're fuzzy guarding.</p>
+			<p><strong>Fuzzy guarding TLDR:</strong><br>In short, a throw on wakeup is such a bad idea that you need to consider the nature of frame data to make it into a mixup, while leaving yourself vulnerable at the same time. It's still worth including in your reportoire, but only if you play a reversal character (who doesn't have a cutscene before the reversal!), and only rarely versus anyone who handles it correctly.</p>
+		</div>
+    </main>
+		<footer></footer>
+	</body>
+</html>

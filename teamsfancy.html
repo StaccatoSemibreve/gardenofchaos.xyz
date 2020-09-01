@@ -35,6 +35,9 @@
 			}
 
 			@media only screen and (min-width:1050px) {
+				body {
+					background: linear-gradient(90deg, #0f0d0c, #0f0d0c calc(50% - 550px), #1e1b19 calc(50% - 550px), #1e1b19 calc(50% + 550px), #0f0d0c calc(50% + 550px));
+				}
 				div.grid {
 					display: grid;
 					grid-gap: 10px;
@@ -436,7 +439,7 @@
 					grid-auto-rows: 100px;
 				}
 			}
-			@media only screen and (min-width:225px) and (max-width:325px) {
+			@media only screen and (min-width:225px) and (max-width:335px) {
 				div.grid {
 					display: grid;
 					grid-gap: 10px;
@@ -679,7 +682,7 @@
 				main {
 					grid-area: main;
 					max-width: 2000px;
-					margins: auto;
+					margin: auto;
 				}
 				
 				.navbar-div {
@@ -701,6 +704,7 @@
 					padding-top: 15px;
 					text-align: center;
 					text-decoration: none;
+					line-height: 30px;
 					font-weight: bold;
 					margin: auto;
 					font-family: sans-serif;
@@ -709,10 +713,6 @@
 				span.navbar-item {
 					position: relative;
 					top: -10px;
-				}
-				span.navbar-item-no-logo {
-					position: relative;
-					top: 20px;
 				}
 				.navbar-item-container {
 					width: 150px;
@@ -786,12 +786,19 @@
 					padding-top: 15px;
 					text-align: center;
 					text-decoration: none;
+					line-height: 30px;
 					font-weight: bold;
 					margin: auto;
+					font-family: sans-serif;
+					color: #daba69;
 				}
 				span.navbar-item {
 					position: relative;
 					top: -10px;
+				}
+				span.navbar-item-no-logo {
+					position: relative;
+					top: 20px;
 				}
 				.navbar-item-container {
 					width: 150px;
@@ -866,12 +873,19 @@
 					padding-top: 15px;
 					text-align: center;
 					text-decoration: none;
+					line-height: 30px;
 					font-weight: bold;
 					margin: auto;
+					font-family: sans-serif;
+					color: #daba69;
 				}
 				span.navbar-item {
 					position: relative;
 					top: -10px;
+				}
+				span.navbar-item-no-logo {
+					position: relative;
+					top: 20px;
 				}
 				.navbar-item-container {
 					width: 150px;
@@ -969,14 +983,14 @@
 	<body>
 		<header class="navbar-div">
 			<div class="navbar-item-container" id="navbar-home"><a href="/" class="navbar-item" title="Return unto the home page!!!"><div class="navbar-item-container" id="navbar-home"><image id="goc-logo" class="navbar-icon" src="media/logo-optimised.svg" alt="A logo of a happy chao in a circle, in the colours of the Fantasy Strike logo."><span class="navbar-item">Home</span></div></a></div>
-			<div class="navbar-item-container" id="navbar-rules"><a href="rules" class="navbar-item" title="View the tournament rules!"><div class="navbar-item-container" id="navbar-rules"><span class="navbar-item navbar-item-no-logo">Rules</span></div></a></div>
-			<div class="navbar-item-container" id="navbar-rulesets"><a href="rulesets" class="navbar-item" title="View the silly rulesets you can choose to play under!"><div class="navbar-item-container" id="navbar-rulesets"><span class="navbar-item navbar-item-no-logo">Rulesets</span></div></a></div>
-			<div class="navbar-item-container" id="navbar-formats"><a href="styles" class="navbar-item" title="View potential future tournament formats!"><div class="navbar-item-container" id="navbar-formats"><span class="navbar-item navbar-item-no-logo">Formats</span></div></a></div>
+			<div class="navbar-item-container" id="navbar-rules"><a href="rules" class="navbar-item" title="View the tournament rules!"><div class="navbar-item-container" id="navbar-rules"><div class="navbar-item">Rules</div></div></a></div>
+			<div class="navbar-item-container" id="navbar-rulesets"><a href="rulesets" class="navbar-item" title="View the silly rulesets you can choose to play under!"><div class="navbar-item-container" id="navbar-rulesets"><div class="navbar-item">Rulesets</div></div></a></div>
+			<div class="navbar-item-container" id="navbar-formats"><a href="styles" class="navbar-item" title="View potential future tournament formats!"><div class="navbar-item-container" id="navbar-formats"><div class="navbar-item">Formats</div></div></a></div>
 			<div class="navbar-item-container" id="navbar-signup"><a href="bracket" class="navbar-item" title="Join this week's tournament bracket!"><div class="navbar-item-container" id="navbar-signup"><image id="discord-logo" class="navbar-icon" src="media/challonge.svg" alt="The challonge logo in a circle, in the colours of the Fantasy Strike logo."><span class="navbar-item">Signup</span></div></a></div>
 			<div class="navbar-item-container" id="navbar-discord"><a href="https://discord.gg/abWADS7" class="navbar-item" title="Join the discord server!"><div class="navbar-item-container" id="navbar-discord"><image id="discord-logo" class="navbar-icon" src="media/discord.svg" alt="The Discord logo in a circle, in the colours of the Fantasy Strike logo."><span class="navbar-item">Discord</span></div></a></div>
 			<div class="navbar-item-container" id="navbar-stream"><a href="stream" class="navbar-item" title="Watch the tournament live!"><div class="navbar-item-container" id="navbar-stream"><image id="twitch-logo" class="navbar-icon" src="media/twitch.svg" alt="The Twitch logo in a circle, in the colours of the Fantasy Strike logo."><span class="navbar-item">Stream</span></div></a></div>
-			<div class="navbar-item-container" id="navbar-resources"><a href="resources" class="navbar-item" title="Read up on a bunch of useful Fantasy Strike knowledge!"><div class="navbar-item-container" id="navbar-resources"><span class="navbar-item navbar-item-no-logo">Resources</span></div></a></div>
-			<div class="navbar-item-container" id="navbar-commentators"><a href="commentators" class="navbar-item" title="See who our commentators are and what else they do!"><div class="navbar-item-container" id="navbar-commentators"><span class="navbar-item navbar-item-no-logo">Commentators</span></div></a></div>
+			<div class="navbar-item-container" id="navbar-resources"><a href="resources" class="navbar-item" title="Read up on a bunch of useful Fantasy Strike knowledge!"><div class="navbar-item-container" id="navbar-resources"><div class="navbar-item">Resources</div></div></a></div>
+			<div class="navbar-item-container" id="navbar-commentators"><a href="commentators" class="navbar-item" title="See who our commentators are and what else they do!"><div class="navbar-item-container" id="navbar-commentators"><div class="navbar-item">Commentators</div></div></a></div>
 		</header>
 		<main>
 			<div style="display:none;">
