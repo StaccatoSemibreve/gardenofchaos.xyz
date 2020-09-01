@@ -1,15 +1,7 @@
-			p, ul, a {
+			p, h1, ul, a {
 				font-family: sans-serif;
 				color: #daba69;
 				line-height: 30px;
-				font-size: 16px;
-			}
-			
-			h1 {
-				font-family: sans-serif;
-				color: #daba69;
-				line-height: 30px;
-				font-size: 32px;
 			}
 			
 			@media only screen and (min-width:1000px) {
