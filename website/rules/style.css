@@ -4,7 +4,7 @@
 				line-height: 30px;
 			}
 			
-			@media only screen and (min-width:1000px) {
+			@media only screen and (min-width:1050px) {
 				div#center-div {
 					max-width: 1000px;
 					margin: auto;
@@ -13,7 +13,16 @@
 					background: linear-gradient(90deg, #0f0d0c, #0f0d0c calc(50% - 525px), #1e1b19 calc(50% - 525px), #1e1b19 calc(50% + 525px), #0f0d0c calc(50% + 525px));
 				}
 			}
-			@media only screen and (min-width:650px) and (max-width:1000px) {
+			@media only screen and (min-width:850px) and (max-width:1050px) {
+				div#center-div {
+					max-width: 800px;
+					margin: auto;
+				}
+				body {
+					background: linear-gradient(90deg, #0f0d0c, #0f0d0c calc(50% - 425px), #1e1b19 calc(50% - 425px), #1e1b19 calc(50% + 425px), #0f0d0c calc(50% + 425px));
+				}
+			}
+			@media only screen and (min-width:650px) and (max-width:850px) {
 				div#center-div {
 					max-width: 600px;
 					margin: auto;
