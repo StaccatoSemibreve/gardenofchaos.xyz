@@ -1,602 +1,1214 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
-    <meta charset="utf-8">
-    <title>Garden of Chaos: Teams Selector</title>
-    <link rel="stylesheet" href="https://gardenofchaos.xyz/style.css">
-    <link rel="icon" type="image/png" href="https://gardenofchaos.xyz/FSgardenOfChao-196x196.png" sizes="196x196" />
-    <style>
-		@media only screen and (min-width:1050px) {
-			div.grid {
-				display: grid;
-				max-width: 1000px;
-				grid-gap: 10px;
-				grid-template-columns: 400px 180px 400px;
-				grid-template-rows: 100px 40px 300px 40px 300px 40px;
-				grid-template-areas: "title				title	title"
-									 "team1selectTitle	.		team2selectTitle"
-									 "team1select		submit	team2select"
-									 "team1presetTitle	.		team2presetTitle"
-									 "team1preset		.		team2preset"
-									 "team1Title		.		team2Title"
-									 "team1				.		team2";
-				margin:auto;
+	<head>
+		<meta charset="utf-8">
+		<title>Garden of Chaos: Teams Selector</title>
+		<link rel="icon" type="image/png" href="FSgardenOfChao-196x196.png" sizes="196x196" />
+		<link rel="preload" href="media/grave.png" as="image" type="image/png">
+		<link rel="preload" href="media/jaina.png" as="image" type="image/png">
+		<link rel="preload" href="media/geiger.png" as="image" type="image/png">
+		<link rel="preload" href="media/argagarg.png" as="image" type="image/png">
+		<link rel="preload" href="media/setsuki.png" as="image" type="image/png">
+		<link rel="preload" href="media/valerie.png" as="image" type="image/png">
+		<link rel="preload" href="media/rook.png" as="image" type="image/png">
+		<link rel="preload" href="media/midori.png" as="image" type="image/png">
+		<link rel="preload" href="media/lum.png" as="image" type="image/png">
+		<link rel="preload" href="media/degrey.png" as="image" type="image/png">
+		<link rel="preload" href="media/quince.png" as="image" type="image/png">
+		<link rel="preload" href="media/onimaru.png" as="image" type="image/png">
+		<style>
+			body {
+				background-color: #1e1b19;
 			}
-		}
-		@media only screen and (min-width:850px) and (max-width:1050px) {
-			div.grid {
-				display: grid;
-				max-width: 800px;
-				grid-gap: 10px;
-				grid-template-columns: 300px 180px 300px;
-				grid-template-rows: 100px 40px 400px 40px 400px 40px;
-				grid-template-areas: "title				title	title"
-									 "team1selectTitle	.		team2selectTitle"
-									 "team1select		submit	team2select"
-									 "team1presetTitle	.		team2presetTitle"
-									 "team1preset		.		team2preset"
-									 "team1Title		.		team2Title"
-									 "team1				.		team2";
-				margin:auto;
-			}
-		}
-		@media only screen and (min-width:650px) and (max-width:850px) {
-			div.grid {
-				display: grid;
-				max-width: 600px;
-				grid-gap: 10px;
-				grid-template-columns: 200px 180px 200px;
-				grid-template-rows: 150px 40px 600px 40px 500px 40px;
-				grid-template-areas: "title				title	title"
-									 "team1selectTitle	.		team2selectTitle"
-									 "team1select		submit	team2select"
-									 "team1presetTitle	.		team2presetTitle"
-									 "team1preset		.		team2preset"
-									 "team1Title		.		team2Title"
-									 "team1				.		team2";
-				margin:auto;
-			}
-		}
-		@media only screen and (min-width:450px) and (max-width:650px) {
-			div.grid {
-				display: grid;
-				max-width: 400px;
-				grid-gap: 10px;
-				grid-template-columns: 100px 180px 100px;
-				grid-template-rows: 150px 80px 1200px 80px 1000px 80px;
-				grid-template-areas: "title				title	title"
-									 "team1selectTitle	.		team2selectTitle"
-									 "team1select		submit	team2select"
-									 "team1presetTitle	.		team2presetTitle"
-									 "team1preset		.		team2preset"
-									 "team1Title		.		team2Title"
-									 "team1				.		team2";
-				margin:auto;
-			}
-		}
-		@media only screen and (min-width:350px) and (max-width:450px) {
-			div.grid {
-				display: grid;
-				max-width: 300px;
-				grid-gap: 10px;
-				grid-template-columns: 300px;
-				grid-template-rows: 150px 80px 80px 400px 80px 400px 80px 400px 80px 400px;
-				grid-template-areas: "title"
-									 "submit"
-									 "team1selectTitle"
-									 "team1select"
-									 "team1presetTitle"
-									 "team1preset"
-									 "team2selectTitle"
-									 "team2select"
-									 "team2presetTitle"
-									 "team2preset"
-									 "team1Title"
-									 "team1"
-									 "team2Title"
-									 "team2";
-				margin:auto;
-			}
-		}
-		@media only screen and (min-width:250px) and (max-width:350px) {
-			div.grid {
-				display: grid;
-				max-width: 200px;
-				grid-gap: 10px;
-				grid-template-columns: 200px;
-				grid-template-rows: 150px 80px 80px 600px 80px 500px 80px 600px 80px 500px;
-				grid-template-areas: "title"
-									 "submit"
-									 "team1selectTitle"
-									 "team1select"
-									 "team1presetTitle"
-									 "team1preset"
-									 "team2selectTitle"
-									 "team2select"
-									 "team2presetTitle"
-									 "team2preset"
-									 "team1Title"
-									 "team1"
-									 "team2Title"
-									 "team2";
-				margin:auto;
-			}
-		}
-		@media only screen and (min-width:150px) and (max-width:250px) {
-			div.grid {
-				display: grid;
-				max-width: 100px;
-				grid-gap: 10px;
-				grid-template-columns: 100px;
-				grid-template-rows: 250px 80px 100px 1200px 80px 1000px 100px 1200px 80px 1000px;
-				grid-template-areas: "title"
-									 "submit"
-									 "team1selectTitle"
-									 "team1select"
-									 "team1presetTitle"
-									 "team1preset"
-									 "team2selectTitle"
-									 "team2select"
-									 "team2presetTitle"
-									 "team2preset"
-									 "team1Title"
-									 "team1"
-									 "team2Title"
-									 "team2";
-				margin:auto;
-			}
-		}
-		@media only screen and (max-width:150px) {
-			div.grid {
-				display:none;
-			}
-		}
-    </style>
-  </head>
-  <body>
-    <header>
-        <ul class="navbar">
-            <li class="navbar"><a href="https://gardenofchaos.xyz" class="navbar">                              Home</a></li>
-            <li class="navbar"><a href="https://gardenofchaos.xyz/rules" class="navbar">                        Rules</a></li>
-            <li class="navbar"><a href="https://gardenofchaos.xyz/styles" class="navbar">                       Formats</a></li>
-            <li class="navbar"><a href="https://gardenofchaos.xyz/rulesets" class="navbar">                     Rulesets</a></li>
-            <li class="navbar"><a href="https://discord.gg/abWADS7" class="navbar">                             Discord</a></li>
-            <li class="navbar"><a href="https://gardenofchaos.xyz/bracket" class="navbar">                      Signup</a></li>
-            <li class="navbar"><a href="https://gardenofchaos.xyz/stream" class="navbar">                       Stream</a></li>
-            <li class="navbar"><a href="https://gardenofchaos.xyz/resources" class="navbar">                    Resources</a></li>
-            <li class="navbar"><a href="https://gardenofchaos.xyz/commentators" class="navbar">                 Commentators</a></li>
-            <li class="logo"><img src="https://gardenofchaos.xyz/FSgardenOfChao-196x196.png" title="logo" alt="A logo of a happy chao in a circle, in the colours of the Fantasy Strike logo." height="58px"></li>
-        </ul>
-    </header>
-    <main>
-		<!--loads the images in the most efficient order-->
-		<div style="display:none;">
-			<image src="https://gardenofchaos.xyz/media/delete.svg" alt="X" />
-			<image src="https://gardenofchaos.xyz/media/random.svg" alt="?" />
-			<image src="https://gardenofchaos.xyz/media/zoners.svg" alt="Cloud" />
-			<image src="https://gardenofchaos.xyz/media/rushdowns.svg" alt="Paintbrush" />
-			<image src="https://gardenofchaos.xyz/media/grapplers.svg" alt="Hug" />
-			<image src="https://gardenofchaos.xyz/media/wildcards.svg" alt="Dice" />
-			<image src="https://gardenofchaos.xyz/media/flagstone.svg" alt="Crown" />
-			<image src="https://gardenofchaos.xyz/media/all.svg" alt="100%" />
-			<image src="https://gardenofchaos.xyz/media/left.svg" alt="Left Arrow" />
-			<image src="https://gardenofchaos.xyz/media/right.svg" alt="Right Arrow" />
-			<image style="width:100px;" src="https://gardenofchaos.xyz/media/grave.png" alt="Grave" id="grave" />
-			<image style="width:100px;" src="https://gardenofchaos.xyz/media/jaina.png" alt="Jaina" id="jaina" />
-			<image style="width:100px;" src="https://gardenofchaos.xyz/media/geiger.png" alt="Geiger" id="geiger" />
-			<image style="width:100px;" src="https://gardenofchaos.xyz/media/argagarg.png" alt="Argagarg" id="argagarg" />
-			<image style="width:100px;" src="https://gardenofchaos.xyz/media/setsuki.png" alt="Setsuki" id="setsuki" />
-			<image style="width:100px;" src="https://gardenofchaos.xyz/media/valerie.png" alt="Valerie" id="valerie" />
-			<image style="width:100px;" src="https://gardenofchaos.xyz/media/rook.png" alt="Rook" id="rook" />
-			<image style="width:100px;" src="https://gardenofchaos.xyz/media/midori.png" alt="Midori" id="midori" />
-			<image style="width:100px;" src="https://gardenofchaos.xyz/media/lum.png" alt="Lum" id="lum" />
-			<image style="width:100px;" src="https://gardenofchaos.xyz/media/degrey.png" alt="Degrey" id="degrey" />
-			<image style="width:100px;" src="https://gardenofchaos.xyz/media/quince.png" alt="Quince" id="quince" />
-			<image style="width:100px;" src="https://gardenofchaos.xyz/media/onimaru.png" alt="Onimaru" id="onimaru" />
-			<image src="https://gardenofchaos.xyz/media/minus.svg" id="minus" />
-			<image src="https://gardenofchaos.xyz/media/plus.svg" id="plus" />
-		</div>
-		
-		
-		<!--grid-->
-		<div class="grid">
-			<h1 style="text-align:center; grid-area:title;">The Garden of Chaos<br>Team Battle Tool</h1>
 			
-			<h2 style="text-align:center; grid-area:team1selectTitle; margin:0; align-self:end;">Team 1 Character Select</h2>
-			<div style="display: flex; flex-flow: row wrap; justify-content:center; grid-area:team1select;">
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/grave.png" alt="Grave" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add Grave to Team 1." onclick='addChar("Grave",1)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px/>
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/jaina.png" alt="Jaina" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add Jaina to Team 1." onclick='addChar("Jaina",1)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/geiger.png" alt="Geiger" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add Geiger to Team 1." onclick='addChar("Geiger",1)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/argagarg.png" alt="Argagarg" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add Argagarg to Team 1." onclick='addChar("Argagarg",1)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/setsuki.png" alt="Setsuki" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add Setsuki to Team 1." onclick='addChar("Setsuki",1)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/valerie.png" alt="Valerie" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add Valerie to Team 1." onclick='addChar("Valerie",1)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/rook.png" alt="Rook" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add Rook to Team 1." onclick='addChar("Rook",1)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/midori.png" alt="Midori" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add Midori to Team 1." onclick='addChar("Midori",1)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/lum.png" alt="Lum" id="1lum" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add Lum to Team 1." onclick='addChar("Lum",1)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/degrey.png" alt="DeGrey" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add DeGrey to Team 1." onclick='addChar("DeGrey",1)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/quince.png" alt="Quince" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add Quince to Team 1." onclick='addChar("Quince",1)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/onimaru.png" alt="Onimaru" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add Onimaru to Team 1." onclick='addChar("Onimaru",1)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-			</div>
-			<h2 style="text-align:center; grid-area:team2selectTitle; margin:0; align-self:end;">Team 2 Character Select</h2>
-			<div style="display:flex; flex-flow:row-reverse wrap; justify-content:center; grid-area:team2select;">
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/grave.png" alt="Grave" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add Grave to Team 2." onclick='addChar("Grave",2)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/jaina.png" alt="Jaina" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add Jaina to Team 2." onclick='addChar("Jaina",2)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/geiger.png" alt="Geiger" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add Geiger to Team 2." onclick='addChar("Geiger",2)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/argagarg.png" alt="Argagarg" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add Argagarg to Team 2." onclick='addChar("Argagarg",2)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/setsuki.png" alt="Setsuki" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add Setsuki to Team 2." onclick='addChar("Setsuki",2)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/valerie.png" alt="Valerie" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add Valerie to Team 2." onclick='addChar("Valerie",2)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/rook.png" alt="Rook" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add Rook to Team 2." onclick='addChar("Rook",2)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/midori.png" alt="Midori" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add Midori to Team 2." onclick='addChar("Midori",2)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/lum.png" alt="Lum" id="1lum" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add Lum to Team 2." onclick='addChar("Lum",2)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/degrey.png" alt="DeGrey" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add DeGrey to Team 2." onclick='addChar("DeGrey",2)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/quince.png" alt="Quince" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add Quince to Team 2." onclick='addChar("Quince",2)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/onimaru.png" alt="Onimaru" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add Onimaru to Team 2." onclick='addChar("Onimaru",2)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-			</div>
+			h1, h2 {
+				font-family: sans-serif;
+				color: #daba69;
+				line-height: 30px;
+			}
 			
-			<h2 style="text-align:center; grid-area:team1presetTitle; margin:0; align-self:end;">Team 1 Presets</h2>
-			<div style="display:flex; flex-flow:row wrap; justify-content:center; grid-area:team1preset">
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/delete.svg" alt="X" />
-					<div class="overlay_char_team">
-						<a href="javascript:void(0);" title="Clear all characters from Team 1." onclick='clearTeam(1)'>
-							<image src="https://gardenofchaos.xyz/media/minus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/random.svg" alt="?" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add a random character to Team 1." onclick='addChar(new Array("Grave","Jaina","Geiger","Argagarg","Setsuki","Valerie","Rook","Midori","Lum","Degrey","Quince","Onimaru")[Math.floor(Math.random()*12)],1)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/zoners.svg" alt="Cloud" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add the zoners to Team 1." onclick='addChar("Grave",1);addChar("Jaina",1);addChar("Geiger",1);addChar("Argagarg",1)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px/>
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/rushdowns.svg" alt="Paintbrush" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add the rushdowns to Team 1." onclick='addChar("Setsuki",1);addChar("Valerie",1)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/grapplers.svg" alt="Hug" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add the grapplers to Team 1." onclick='addChar("Rook",1);addChar("Midori",1)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/wildcards.svg" alt="Dice" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add the wildcards to Team 1." onclick='addChar("Lum",1);addChar("Degrey",1);addChar("Quince",1);addChar("Onimaru",1)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/flagstone.svg" alt="Crown" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add the flagstone tyrants to Team 1." onclick='addChar("Quince",1);addChar("Onimaru",1)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/all.svg" alt="100%" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add every character to Team 1." onclick='addChar("Grave",1);addChar("Jaina",1);addChar("Geiger",1);addChar("Argagarg",1);addChar("Setsuki",1);addChar("Valerie",1);addChar("Rook",1);addChar("Midori",1);addChar("Lum",1);addChar("Degrey",1);addChar("Quince",1);addChar("Onimaru",1)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-				<div style="display:flex; flex-flow: row wrap; justify-content: center;">
-					<div style="position: relative; width: 100px; height: 100px;">
-						<image style="width:100px;" src="https://gardenofchaos.xyz/media/left.svg" alt="Left Arrow" />
-						<div class="overlay_char">
-							<a href="javascript:void(0);" title="Add the characters from the left/top of the in-game selector to Team 1." onclick='addChar("Grave",1);addChar("Geiger",1);addChar("Setsuki",1);addChar("Rook",1);addChar("Lum",1);addChar("Quince",1)'>
-								<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-							</a>
-						</div>
-					</div>
-					<div style="position: relative; width: 100px; height: 100px;">
-						<image style="width:100px;" src="https://gardenofchaos.xyz/media/right.svg" alt="Right Arrow" />
-						<div class="overlay_char">
-							<a href="javascript:void(0);" title="Add the characters from the right/bottom of the in-game selector to Team 1." onclick='addChar("Jaina",1);addChar("Argagarg",1);addChar("Valerie",1);addChar("Midori",1);addChar("Degrey",1);addChar("Onimaru",1)'>
-								<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<h2 style="text-align:center; grid-area:team2presetTitle; margin:0; align-self:end;">Team 2 Presets</h2>
-			<div style="display:flex; flex-flow:row wrap; justify-content:center; grid-area:team2preset">
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/delete.svg" alt="X" />
-					<div class="overlay_char_team">
-						<a href="javascript:void(0);" title="Clear all characters from Team 2." onclick='clearTeam(2)'>
-							<image src="https://gardenofchaos.xyz/media/minus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/random.svg" alt="?" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add a random character to Team 2." onclick='addChar(new Array("Grave","Jaina","Geiger","Argagarg","Setsuki","Valerie","Rook","Midori","Lum","Degrey","Quince","Onimaru")[Math.floor(Math.random()*12)],2)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/zoners.svg" alt="Cloud" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add the zoners to Team 2." onclick='addChar("Grave",2);addChar("Jaina",2);addChar("Geiger",2);addChar("Argagarg",2)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px/>
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/rushdowns.svg" alt="Paintbrush" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add the rushdowns to Team 2." onclick='addChar("Setsuki",2);addChar("Valerie",2)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/grapplers.svg" alt="Hug" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add the grapplers to Team 2." onclick='addChar("Rook",2);addChar("Midori",2)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/wildcards.svg" alt="Dice" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add the wildcards to Team 2." onclick='addChar("Lum",2);addChar("Degrey",2);addChar("Quince",2);addChar("Onimaru",2)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/flagstone.svg" alt="Crown" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add the flagstone tyrants to Team 2." onclick='addChar("Quince",2);addChar("Onimaru",2)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-				<div style="position: relative; width: 100px; height: 100px;">
-					<image style="width:100px;" src="https://gardenofchaos.xyz/media/all.svg" alt="100%" />
-					<div class="overlay_char">
-						<a href="javascript:void(0);" title="Add every character to Team 2." onclick='addChar("Grave",2);addChar("Jaina",2);addChar("Geiger",2);addChar("Argagarg",2);addChar("Setsuki",2);addChar("Valerie",2);addChar("Rook",2);addChar("Midori",2);addChar("Lum",2);addChar("Degrey",2);addChar("Quince",2);addChar("Onimaru",2)'>
-							<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-						</a>
-					</div>
-				</div>
-				<div style="display:flex; flex-flow: row wrap; justify-content: center;">
-					<div style="position: relative; width: 100px; height: 100px;">
-						<image style="width:100px;" src="https://gardenofchaos.xyz/media/left.svg" alt="Left Arrow" />
-						<div class="overlay_char">
-							<a href="javascript:void(0);" title="Add the characters from the left/top of the in-game selector to Team 2." onclick='addChar("Grave",2);addChar("Geiger",2);addChar("Setsuki",2);addChar("Rook",2);addChar("Lum",2);addChar("Quince",2)'>
-								<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-							</a>
-						</div>
-					</div>
-					<div style="position: relative; width: 100px; height: 100px;">
-						<image style="width:100px;" src="https://gardenofchaos.xyz/media/right.svg" alt="Right Arrow" />
-						<div class="overlay_char">
-							<a href="javascript:void(0);" title="Add the characters from the right/bottom of the in-game selector to Team 2." onclick='addChar("Jaina",2);addChar("Argagarg",2);addChar("Valerie",2);addChar("Midori",2);addChar("Degrey",2);addChar("Onimaru",2)'>
-								<image src="https://gardenofchaos.xyz/media/plus.svg" width=100px height=100px />
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
+			button {
+				font-family: sans-serif;
+				background-color: #000000;
+				color: #daba69;
+				border-radius: 10px;
+			}
+
+			@media only screen and (min-width:1050px) {
+				div.grid {
+					display: grid;
+					grid-gap: 10px;
+					grid-template-columns: 400px 180px 400px;
+					grid-template-rows: 80px 50px 300px 40px 300px 40px;
+					grid-template-areas:	"title				title	title"
+											"team1selectTitle	.		team2selectTitle"
+											"team1select		submit	team2select"
+											"team1presetTitle	.		team2presetTitle"
+											"team1preset		.		team2preset"
+											"team1Title			.		team2Title"
+											"team1				.		team2";
+					width: 1000px;
+					margin: auto;
+				}
+				
+				div.charSelectGrid1 {
+					grid-area: team1select;
+					display: grid;
+					grid-template-columns: 100px 100px 100px 100px;
+					grid-template-rows: 100px 100px 100px;
+					grid-template-areas:	"grave jaina geiger argagarg"
+											"setsuki valerie rook midori"
+											"lum degrey quince onimaru";
+				}
+				div.charSelectGrid2 {
+					grid-area: team2select;
+					display: grid;
+					grid-template-columns: 100px 100px 100px 100px;
+					grid-template-rows: 100px 100px 100px;
+					grid-template-areas:	"argagarg geiger jaina grave"
+											"midori rook valerie setsuki"
+											"onimaru quince degrey lum";
+				}
+				
+				div.presetGrid1 {
+					grid-area: team1preset;
+					display: grid;
+					grid-template-columns: 100px 100px 100px 100px;
+					grid-template-rows: 100px 100px 100px;
+					grid-template-areas:	"delete random zoners rushdowns"
+											"grapplers wildcards flagstone all"
+											". left right .";
+				}
+				div.presetGrid2 {
+					grid-area: team2preset;
+					display: grid;
+					grid-template-columns: 100px 100px 100px 100px;
+					grid-template-rows: 100px 100px 100px;
+					grid-template-areas:	"rushdowns zoners random delete"
+											"all flagstone wildcards grapplers"
+											". left right .";
+				}
+				
+				div.teamGrid1 {
+					grid-area: team1;
+					display: grid;
+					grid-template-columns: 100px 100px 100px 100px;
+					grid-auto-rows: 100px;
+				}
+				div.teamGrid2 {
+					grid-area: team2;
+					display: grid;
+					grid-template-columns: 100px 100px 100px 100px;
+					grid-auto-rows: 100px;
+					direction: rtl;
+				}
+			}
+			@media only screen and (min-width:850px) and (max-width:1050px) {
+				div.grid {
+					display: grid;
+					grid-gap: 10px;
+					grid-template-columns: 300px 180px 300px;
+					grid-template-rows: 70px 80px 400px 40px 400px 40px;
+					grid-template-areas:	"title				title	title"
+											"team1selectTitle	.		team2selectTitle"
+											"team1select		submit	team2select"
+											"team1presetTitle	.		team2presetTitle"
+											"team1preset		.		team2preset"
+											"team1Title			.		team2Title"
+											"team1				.		team2";
+					width: 800px;
+					margin: auto;
+				}
+				
+				div.charSelectGrid1 {
+					grid-area: team1select;
+					display: grid;
+					grid-template-columns: 100px 100px 100px;
+					grid-template-rows: 100px 100px 100px 100px;
+					grid-template-areas:	"grave jaina valerie"
+											"geiger argagarg setsuki"
+											"rook degrey quince"
+											"midori lum onimaru";
+				}
+				div.charSelectGrid2 {
+					grid-area: team2select;
+					display: grid;
+					grid-template-columns: 100px 100px 100px;
+					grid-template-rows: 100px 100px 100px 100px;
+					grid-template-areas:	"valerie jaina grave"
+											"setsuki argagarg geiger"
+											"quince degrey rook"
+											"onimaru lum midori";
+				}
+				
+				div.presetGrid1 {
+					grid-area: team1preset;
+					display: grid;
+					grid-template-columns: 50px 50px 50px 50px 50px 50px;
+					grid-template-rows: 100px 100px 100px 100px;
+					grid-template-areas:	". delete delete random random ."
+											"zoners zoners rushdowns rushdowns grapplers grapplers"
+											"wildcards wildcards flagstone flagstone all all"
+											". left left right right .";
+				}
+				div.presetGrid2 {
+					grid-area: team2preset;
+					display: grid;
+					grid-template-columns: 50px 50px 50px 50px 50px 50px;
+					grid-template-rows: 100px 100px 100px 100px;
+					grid-template-areas:	". random random delete delete ."
+											"grapplers grapplers rushdowns rushdowns zoners zoners"
+											"all all flagstone flagstone wildcards wildcards"
+											". left left right right .";
+				}
+				
+				div.teamGrid1 {
+					grid-area: team1;
+					display: grid;
+					grid-template-columns: 100px 100px 100px;
+					grid-auto-rows: 100px;
+				}
+				div.teamGrid2 {
+					grid-area: team2;
+					display: grid;
+					grid-template-columns: 100px 100px 100px;
+					grid-auto-rows: 100px;
+					direction: rtl;
+				}
+			}
+			@media only screen and (min-width:550px) and (max-width:850px) {
+				div.grid {
+					display: grid;
+					grid-gap: 10px;
+					grid-template-columns: 200px 80px 200px;
+					grid-template-rows: 80px 110px 600px 40px 500px 40px;
+					grid-template-areas:	"title				title	title"
+											"team1selectTitle	.		team2selectTitle"
+											"team1select		submit	team2select"
+											"team1presetTitle	.		team2presetTitle"
+											"team1preset		.		team2preset"
+											"team1Title			.		team2Title"
+											"team1				.		team2";
+					width: 500px;
+					margin: auto;
+				}
+				
+				div.charSelectGrid1 {
+					grid-area: team1select;
+					display: grid;
+					grid-template-columns: 100px 100px;
+					grid-template-rows: 100px 100px 100px 100px 100px 100px;
+					grid-template-areas:	"grave jaina"
+											"geiger argagarg"
+											"setsuki valerie"
+											"rook midori"
+											"lum degrey"
+											"quince onimaru";
+				}
+				div.charSelectGrid2 {
+					grid-area: team2select;
+					display: grid;
+					grid-template-columns: 100px 100px;
+					grid-template-rows: 100px 100px 100px 100px 100px 100px;
+					grid-template-areas:	"jaina grave"
+											"argagarg geiger"
+											"valerie setsuki"
+											"midori rook"
+											"degrey lum"
+											"onimaru quince";
+				}
+				
+				div.presetGrid1 {
+					grid-area: team1preset;
+					display: grid;
+					grid-template-columns: 100px 100px;
+					grid-template-rows: 100px 100px 100px 100px 100px;
+					grid-template-areas:	"delete random"
+											"zoners rushdowns"
+											"grapplers wildcards"
+											"flagstone all"
+											"left right";
+				}
+				div.presetGrid2 {
+					grid-area: team2preset;
+					display: grid;
+					grid-template-columns: 100px 100px;
+					grid-template-rows: 100px 100px 100px 100px 100px;
+					grid-template-areas:	"random delete"
+											"rushdowns zoners"
+											"wildcards grapplers"
+											"all flagstone"
+											"left right";
+				}
+				
+				div.teamGrid1 {
+					grid-area: team1;
+					display: grid;
+					grid-template-columns: 100px 100px;
+					grid-auto-rows: 100px;
+				}
+				div.teamGrid2 {
+					grid-area: team2;
+					display: grid;
+					grid-template-columns: 100px 100px;
+					grid-auto-rows: 100px;
+					direction: rtl;
+				}
+			}
+			@media only screen and (min-width:350px) and (max-width:550px) {
+				div.grid {
+					display: grid;
+					width: 300px;
+					grid-gap: 10px;
+					grid-template-columns: 100px 80px 100px;
+					grid-template-rows: 120px 120px 1200px 80px 1000px 80px;
+					grid-template-areas: "title				title	title"
+										"team1selectTitle	.		team2selectTitle"
+										"team1select		submit	team2select"
+										"team1presetTitle	.		team2presetTitle"
+										"team1preset		.		team2preset"
+										"team1Title			.		team2Title"
+										"team1				.		team2";
+					width: 300px;
+					margin: auto;
+				}
+				
+				div.charSelectGrid1 {
+					grid-area: team1select;
+					display: grid;
+					grid-template-columns: 100px;
+					grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+					grid-template-areas:	"grave"
+											"jaina"
+											"geiger"
+											"argagarg"
+											"setsuki"
+											"valerie"
+											"rook"
+											"midori"
+											"lum"
+											"degrey"
+											"quince"
+											"onimaru";
+				}
+				div.charSelectGrid2 {
+					grid-area: team2select;
+					display: grid;
+					grid-template-columns: 100px;
+					grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+					grid-template-areas:	"grave"
+											"jaina"
+											"geiger"
+											"argagarg"
+											"setsuki"
+											"valerie"
+											"rook"
+											"midori"
+											"lum"
+											"degrey"
+											"quince"
+											"onimaru";
+				}
+				
+				div.presetGrid1 {
+					grid-area: team1preset;
+					display: grid;
+					grid-template-columns: 100px;
+					grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+					grid-template-areas:	"delete"
+											"random"
+											"zoners"
+											"rushdowns"
+											"grapplers"
+											"wildcards"
+											"flagstone"
+											"all"
+											"left"
+											"right";
+				}
+				div.presetGrid2 {
+					grid-area: team2preset;
+					display: grid;
+					grid-template-columns: 100px;
+					grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+					grid-template-areas:	"delete"
+											"random"
+											"zoners"
+											"rushdowns"
+											"grapplers"
+											"wildcards"
+											"flagstone"
+											"all"
+											"left"
+											"right";
+				}
+				
+				div.teamGrid1 {
+					grid-area: team1;
+					display: grid;
+					grid-template-columns: 100px;
+					grid-auto-rows: 100px;
+				}
+				div.teamGrid2 {
+					grid-area: team2;
+					display: grid;
+					grid-template-columns: 100px;
+					grid-auto-rows: 100px;
+					direction: rtl;
+				}
+			}
+			@media only screen and (min-width:335px) and (max-width:350px) {
+				div.grid {
+					display: grid;
+					grid-gap: 10px;
+					grid-template-columns: 300px;
+					grid-template-rows: 120px 80px 80px 400px 40px 400px 80px 400px 40px 400px;
+					grid-template-areas: "title"
+										"submit"
+										"team1selectTitle"
+										"team1select"
+										"team1presetTitle"
+										"team1preset"
+										"team2selectTitle"
+										"team2select"
+										"team2presetTitle"
+										"team2preset"
+										"team1Title"
+										"team1"
+										"team2Title"
+										"team2";
+					width: 300px;
+					margin: auto;
+				}
+				
+				div.charSelectGrid1 {
+					grid-area: team1select;
+					display: grid;
+					grid-template-columns: 100px 100px 100px;
+					grid-template-rows: 100px 100px 100px 100px;
+					grid-template-areas:	"grave jaina valerie"
+											"geiger argagarg setsuki"
+											"rook degrey quince"
+											"midori lum onimaru";
+				}
+				div.charSelectGrid2 {
+					grid-area: team2select;
+					display: grid;
+					grid-template-columns: 100px 100px 100px;
+					grid-template-rows: 100px 100px 100px 100px;
+					grid-template-areas:	"grave jaina valerie"
+											"geiger argagarg setsuki"
+											"rook degrey quince"
+											"midori lum onimaru";
+				}
+				
+				div.presetGrid1 {
+					grid-area: team1preset;
+					display: grid;
+					grid-template-columns: 50px 50px 50px 50px 50px 50px;
+					grid-template-rows: 100px 100px 100px 100px;
+					grid-template-areas:	". delete delete random random ."
+											"zoners zoners rushdowns rushdowns grapplers grapplers"
+											"wildcards wildcards flagstone flagstone all all"
+											". left left right right .";
+				}
+				div.presetGrid2 {
+					grid-area: team2preset;
+					display: grid;
+					grid-template-columns: 50px 50px 50px 50px 50px 50px;
+					grid-template-rows: 100px 100px 100px 100px;
+					grid-template-areas:	". delete delete random random ."
+											"zoners zoners rushdowns rushdowns grapplers grapplers"
+											"wildcards wildcards flagstone flagstone all all"
+											". left left right right .";
+				}
+				
+				div.teamGrid1 {
+					grid-area: team1;
+					display: grid;
+					grid-template-columns: 100px 100px 100px;
+					grid-auto-rows: 100px;
+				}
+				div.teamGrid2 {
+					grid-area: team2;
+					display: grid;
+					grid-template-columns: 100px 100px 100px;
+					grid-auto-rows: 100px;
+				}
+			}
+			@media only screen and (min-width:225px) and (max-width:325px) {
+				div.grid {
+					display: grid;
+					grid-gap: 10px;
+					grid-template-columns: 200px;
+					grid-template-rows: 150px 80px 120px 600px 40px 500px 120px 600px 40px 500px;
+					grid-template-areas: "title"
+										"submit"
+										"team1selectTitle"
+										"team1select"
+										"team1presetTitle"
+										"team1preset"
+										"team2selectTitle"
+										"team2select"
+										"team2presetTitle"
+										"team2preset"
+										"team1Title"
+										"team1"
+										"team2Title"
+										"team2";
+					width: 200px;
+					margin: auto;
+				}
+				
+				div.charSelectGrid1 {
+					grid-area: team1select;
+					display: grid;
+					grid-template-columns: 100px 100px;
+					grid-template-rows: 100px 100px 100px 100px 100px 100px;
+					grid-template-areas:	"grave jaina"
+											"geiger argagarg"
+											"setsuki valerie"
+											"rook midori"
+											"lum degrey"
+											"quince onimaru";
+				}
+				div.charSelectGrid2 {
+					grid-area: team2select;
+					display: grid;
+					grid-template-columns: 100px 100px;
+					grid-template-rows: 100px 100px 100px 100px 100px 100px;
+					grid-template-areas:	"jaina grave"
+											"argagarg geiger"
+											"valerie setsuki"
+											"midori rook"
+											"degrey lum"
+											"onimaru quince";
+				}
+				
+				div.presetGrid1 {
+					grid-area: team1preset;
+					display: grid;
+					grid-template-columns: 100px 100px;
+					grid-template-rows: 100px 100px 100px 100px 100px;
+					grid-template-areas:	"delete random"
+											"zoners rushdowns"
+											"grapplers wildcards"
+											"flagstone all"
+											"left right";
+				}
+				div.presetGrid2 {
+					grid-area: team2preset;
+					display: grid;
+					grid-template-columns: 100px 100px;
+					grid-template-rows: 100px 100px 100px 100px 100px;
+					grid-template-areas:	"random delete"
+											"rushdowns zoners"
+											"wildcards grapplers"
+											"all flagstone"
+											"left right";
+				}
+				
+				div.teamGrid1 {
+					grid-area: team1;
+					display: grid;
+					grid-template-columns: 100px 100px;
+					grid-auto-rows: 100px;
+				}
+				div.teamGrid2 {
+					grid-area: team2;
+					display: grid;
+					grid-template-columns: 100px 100px;
+					grid-auto-rows: 100px;
+				}
+			}
+			@media only screen and (min-width:125px) and (max-width:225px) {
+				div.grid {
+					display: grid;
+					grid-gap: 10px;
+					grid-template-columns: 100px;
+					grid-template-rows: 250px 80px 100px 1200px 80px 1000px 100px 1200px 80px 1000px;
+					grid-template-areas:	"title"
+											"submit"
+											"team1selectTitle"
+											"team1select"
+											"team1presetTitle"
+											"team1preset"
+											"team2selectTitle"
+											"team2select"
+											"team2presetTitle"
+											"team2preset"
+											"team1Title"
+											"team1"
+											"team2Title"
+											"team2";
+					width: 100px;
+					margin: auto;
+				}
+				
+				div.charSelectGrid1 {
+					grid-area: team1select;
+					display: grid;
+					grid-template-columns: 100px;
+					grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+					grid-template-areas:	"grave"
+											"jaina"
+											"geiger"
+											"argagarg"
+											"setsuki"
+											"valerie"
+											"rook"
+											"midori"
+											"lum"
+											"degrey"
+											"quince"
+											"onimaru";
+				}
+				div.charSelectGrid2 {
+					grid-area: team2select;
+					display: grid;
+					grid-template-columns: 100px;
+					grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+					grid-template-areas:	"grave"
+											"jaina"
+											"geiger"
+											"argagarg"
+											"setsuki"
+											"valerie"
+											"rook"
+											"midori"
+											"lum"
+											"degrey"
+											"quince"
+											"onimaru";
+				}
+				
+				div.presetGrid1 {
+					grid-area: team1preset;
+					display: grid;
+					grid-template-columns: 100px;
+					grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+					grid-template-areas:	"delete"
+											"random"
+											"zoners"
+											"rushdowns"
+											"grapplers"
+											"wildcards"
+											"flagstone"
+											"all"
+											"left"
+											"right";
+				}
+				div.presetGrid2 {
+					grid-area: team2preset;
+					display: grid;
+					grid-template-columns: 100px;
+					grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+					grid-template-areas:	"delete"
+											"random"
+											"zoners"
+											"rushdowns"
+											"grapplers"
+											"wildcards"
+											"flagstone"
+											"all"
+											"left"
+											"right";
+				}
+				
+				div.teamGrid1 {
+					grid-area: team1;
+					display: grid;
+					grid-template-columns: 100px;
+					grid-auto-rows: 100px;
+				}
+				div.teamGrid2 {
+					grid-area: team2;
+					display: grid;
+					grid-template-columns: 100px;
+					grid-auto-rows: 100px;
+				}
+			}
+			@media only screen and (max-width:125px) {
+				main {
+					display: none;
+				}
+			}
 			
-			<h2 style="text-align:center; grid-area:team1Title; margin:0; align-self:end;">Team 1:</h2>
-			<div id="team1div" style="display:flex; flex-flow:row wrap; justify-content:center; grid-area:team1; margin:auto; margin-top:0;"></div>
-			<h2 style="text-align:center; grid-area:team2Title; margin:0; align-self:end;">Team 2:</h2>
-			<div id="team2div" style="display:flex; flex-flow:row wrap; justify-content:center; grid-area:team2; margin:auto; margin-top:0;"></div>
+			@media only screen and (min-width:125px) {
+				.title {
+					text-align:center;
+				}
+				.icon {
+					width:100px;
+					height:100px;
+				}
+				.overlay_char {
+					position: relative;
+					width: 100px;
+					height: 100px;
+					opacity: 0;
+					transition: .3s ease;
+					background-color: green;
+					color: white;
+				}
+				.overlay_char#minus {
+					background-color: red;
+					top: -104px;
+				}
+				.overlay_char:hover {
+					opacity:60%;
+				}
 			
-			<a id="submitlink" href="javascript:void(0);" style="grid-area:submit; align-self:center; justify-self:center;"><button style="width:80px; height:80px;"><strong>Submit<br>Teams</strong></button></a>
-		</div>
-		
-		
-		<h1 style="text-align:center; display: none;">The Garden of Chaos<br>Team Battle Tool</h1>
-		<!--div to centre the tool-->
-		<div style="margin:auto; max-width:1000px; display: none;">
-			<!--div to manage all three sections of the page - team 1, team 2, and the submit button / empty space in the middle-->
-			<div style="display:flex; flex-direction:row; justify-content:space-around; max-width:1000px;">
-				<!--team 2-->
-				<div style="flex-direction:column; max-width:400px;">
-					<h2 style="text-align:center;">Team 2 Presets:</h2>
-					
-				</div>
+				.submit {
+					line-height: 20px;
+					width: 80px;
+					height: 80px;
+					align-self: center;
+					justify-self: center;
+				}
+			}
+			@media only screen and (min-width:650px) {
+				body {
+					display: grid;
+					grid-template-rows: 150px;
+					grid-template-areas:	"navbar"
+											"main";
+					max-width: 2000px;
+					margins: auto;
+				}
+				main {
+					grid-area: main;
+					max-width: 2000px;
+					margins: auto;
+				}
+				
+				.navbar-div {
+					display: grid;
+					background-color: black;
+					width: 600px;
+					grid-template-columns: 150px 150px 150px 150px;
+					grid-template-rows: 60px 59px;
+					border-radius: 10px;
+					align-content: center center;
+					grid-template-areas:	"home	signup		discord	stream"
+											"rules	rulesets	formats	resources";
+					margin: auto;
+					border: 1px solid #daba69;
+				}
+				.navbar-item {
+					width: 148px;
+					height: 30px;
+					padding-top: 15px;
+					text-align: center;
+					text-decoration: none;
+					font-weight: bold;
+					margin: auto;
+					font-family: sans-serif;
+					color: #daba69;
+				}
+				span.navbar-item {
+					position: relative;
+					top: -10px;
+				}
+				span.navbar-item-no-logo {
+					position: relative;
+					top: 20px;
+				}
+				.navbar-item-container {
+					width: 150px;
+					height: 59px;
+					position: relative;
+					border-top: 1px solid #daba69;
+					border-left: 1px solid #daba69;
+					position: relative;
+					top: -1px;
+					left: -1px;
+				}
+				.navbar-icon {
+					width: 45px;
+					height: 45px;
+					position: relative;
+					left: -5px;
+					top: 8px;
+				}
+				.navbar-icon#goc-logo {
+					left: -10px;
+				}
+				.navbar-item-container#navbar-home {
+					border-radius: 10px 0px 0px 0px;
+				}
+				.navbar-item-container#navbar-stream {
+					border-radius: 0px 10px 0px 0px;
+				}
+				.navbar-item-container#navbar-resources {
+					border-radius: 0px 0px 10px 0px;
+				}
+				.navbar-item-container#navbar-rules {
+					border-radius: 0px 0px 0px 10px;
+				}
+				.navbar-item-container#navbar-commentators {
+					display: none;
+				}
+			}
+			
+			@media only screen and (min-width:500px) and (max-width: 650px) {
+				body {
+					display: grid;
+					grid-template-rows: 210px;
+					grid-template-areas:	"navbar"
+											"main";
+					max-width: 2000px;
+					margins: auto;
+				}
+				main {
+					grid-area: main;
+					max-width: 2000px;
+					margins: auto;
+				}
+				
+				.navbar-div {
+					display: grid;
+					background-color: black;
+					width: 450px;
+					grid-template-columns: 150px 150px 150px;
+					grid-template-rows: 60px 60px 59px;
+					border-radius: 10px;
+					align-content: center center;
+					grid-template-areas:	"home	rulesets	resources"
+											"rules	formats		commentators"
+											"signup	discord		stream";
+					margin: auto;
+					border: 1px solid #daba69;
+				}
+				.navbar-item {
+					width: 150px;
+					height: 30px;
+					padding-top: 15px;
+					text-align: center;
+					text-decoration: none;
+					font-weight: bold;
+					margin: auto;
+				}
+				span.navbar-item {
+					position: relative;
+					top: -10px;
+				}
+				.navbar-item-container {
+					width: 150px;
+					height: 59px;
+					position: relative;
+					border-top: 1px solid #daba69;
+					border-left: 1px solid #daba69;
+					position: relative;
+					top: -1px;
+					left: -1px;
+				}
+				.navbar-icon {
+					width: 45px;
+					height: 45px;
+					position: relative;
+					left: -5px;
+					top: 8px;
+				}
+				.navbar-icon#goc-logo {
+					left: -10px;
+				}
+				.navbar-item-container#navbar-home {
+					border-radius: 10px 0px 0px 0px;
+				}
+				.navbar-item-container#navbar-resources {
+					border-radius: 0px 10px 0px 0px;
+				}
+				.navbar-item-container#navbar-stream {
+					border-radius: 0px 0px 10px 0px;
+				}
+				.navbar-item-container#navbar-signup {
+					border-radius: 0px 0px 0px 10px;
+				}
+				.navbar-item-container#navbar-commentators {
+					display: block;
+				}
+			}
+			
+			@media only screen and (min-width:350px) and (max-width: 500px) {
+				body {
+					display: grid;
+					grid-template-rows: 270px;
+					grid-template-areas:	"navbar"
+											"main";
+					max-width: 2000px;
+					margins: auto;
+				}
+				main {
+					grid-area: main;
+					max-width: 2000px;
+					margins: auto;
+				}
+				
+				.navbar-div {
+					display: grid;
+					background-color: black;
+					width: 300px;
+					grid-template-columns: 150px 150px;
+					grid-template-rows: 60px 60px 60px 60px;
+					border-radius: 10px;
+					align-content: center center;
+					grid-template-areas:	"home	rulesets"
+											"rules	formats"
+											"signup	discord"
+											"stream resources";
+					margin: auto;
+					border: 1px solid #daba69;
+				}
+				.navbar-item {
+					width: 148px;
+					height: 30px;
+					padding-top: 15px;
+					text-align: center;
+					text-decoration: none;
+					font-weight: bold;
+					margin: auto;
+				}
+				span.navbar-item {
+					position: relative;
+					top: -10px;
+				}
+				.navbar-item-container {
+					width: 150px;
+					height: 60px;
+					position: relative;
+					border-top: 1px solid #daba69;
+					border-left: 1px solid #daba69;
+					position: relative;
+					top: -1px;
+					left: -1px;
+				}
+				.navbar-icon {
+					width: 45px;
+					height: 45px;
+					position: relative;
+					left: -5px;
+					top: 8px;
+				}
+				.navbar-icon#goc-logo {
+					left: -10px;
+				}
+				.navbar-item-container#navbar-home {
+					border-radius: 10px 0px 0px 0px;
+				}
+				.navbar-item-container#navbar-rulesets {
+					border-radius: 0px 10px 0px 0px;
+				}
+				.navbar-item-container#navbar-resources {
+					border-radius: 0px 0px 10px 0px;
+				}
+				.navbar-item-container#navbar-stream {
+					border-radius: 0px 0px 0px 10px;
+				}
+				.navbar-item-container#navbar-commentators {
+					display: none;
+				}
+			}
+			
+			@media only screen and (max-width: 350px) {
+				body {
+					display: grid;
+					grid-template-areas: "main";
+					max-width: 2000px;
+					margins: auto;
+				}
+				main {
+					grid-area: main;
+					max-width: 2000px;
+					margins: auto;
+				}
+				
+				.navbar-div {
+					display: none;
+				}
+			}
+			
+			.navbar-item-container:hover {
+				background-color: #1E1B19;
+			}
+			.navbar-item-container#navbar-home {
+				grid-area: home;
+			}
+			.navbar-item-container#navbar-rules {
+				grid-area: rules;
+			}
+			.navbar-item-container#navbar-rulesets {
+				grid-area: rulesets;
+			}
+			.navbar-item-container#navbar-formats {
+				grid-area: formats;
+			}
+			.navbar-item-container#navbar-signup {
+				grid-area: signup;
+			}
+			.navbar-item-container#navbar-discord {
+				grid-area: discord;
+			}
+			.navbar-item-container#navbar-stream {
+				grid-area: stream;
+			}
+			.navbar-item-container#navbar-resources {
+				grid-area: resources;
+			}
+			.navbar-item-container#navbar-commentators {
+				grid-area: commentators;
+			}
+			.navbar-icon#goc-logo {
+				grid-area: home;
+			}
+			.navbar-icon#discord-logo {
+				grid-area: discord;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="navbar-div">
+			<div class="navbar-item-container" id="navbar-home"><a href="" class="navbar-item" title="Return unto the home page!!!"><div class="navbar-item-container" id="navbar-home"><image id="goc-logo" class="navbar-icon" src="media/logo-optimised.svg" alt="A logo of a happy chao in a circle, in the colours of the Fantasy Strike logo."><span class="navbar-item">Home</span></div></a></div>
+			<div class="navbar-item-container" id="navbar-rules"><a href="rules" class="navbar-item" title="View the tournament rules!"><div class="navbar-item-container" id="navbar-rules"><span class="navbar-item navbar-item-no-logo">Rules</span></div></a></div>
+			<div class="navbar-item-container" id="navbar-rulesets"><a href="rulesets" class="navbar-item" title="View the silly rulesets you can choose to play under!"><div class="navbar-item-container" id="navbar-rulesets"><span class="navbar-item navbar-item-no-logo">Rulesets</span></div></a></div>
+			<div class="navbar-item-container" id="navbar-formats"><a href="styles" class="navbar-item" title="View potential future tournament formats!"><div class="navbar-item-container" id="navbar-formats"><span class="navbar-item navbar-item-no-logo">Formats</span></div></a></div>
+			<div class="navbar-item-container" id="navbar-signup"><a href="bracket" class="navbar-item" title="Join this week's tournament bracket!"><div class="navbar-item-container" id="navbar-signup"><image id="discord-logo" class="navbar-icon" src="media/challonge.svg" alt="The challonge logo in a circle, in the colours of the Fantasy Strike logo."><span class="navbar-item">Signup</span></div></a></div>
+			<div class="navbar-item-container" id="navbar-discord"><a href="https://discord.gg/abWADS7" class="navbar-item" title="Join the discord server!"><div class="navbar-item-container" id="navbar-discord"><image id="discord-logo" class="navbar-icon" src="media/discord.svg" alt="The Discord logo in a circle, in the colours of the Fantasy Strike logo."><span class="navbar-item">Discord</span></div></a></div>
+			<div class="navbar-item-container" id="navbar-stream"><a href="stream" class="navbar-item" title="Watch the tournament live!"><div class="navbar-item-container" id="navbar-stream"><image id="twitch-logo" class="navbar-icon" src="media/twitch.svg" alt="The Twitch logo in a circle, in the colours of the Fantasy Strike logo."><span class="navbar-item">Stream</span></div></a></div>
+			<div class="navbar-item-container" id="navbar-resources"><a href="resources" class="navbar-item" title="Read up on a bunch of useful Fantasy Strike knowledge!"><div class="navbar-item-container" id="navbar-resources"><span class="navbar-item navbar-item-no-logo">Resources</span></div></a></div>
+			<div class="navbar-item-container" id="navbar-commentators"><a href="commentators" class="navbar-item" title="See who our commentators are and what else they do!"><div class="navbar-item-container" id="navbar-commentators"><span class="navbar-item navbar-item-no-logo">Commentators</span></div></a></div>
+		</header>
+		<main>
+			<div style="display:none;">
+				<image src="media/delete.svg" alt="X" />
+				<image src="media/random.svg" alt="?" />
+				<image src="media/zoners.svg" alt="Cloud" />
+				<image src="media/rushdowns.svg" alt="Paintbrush" />
+				<image src="media/grapplers.svg" alt="Hug" />
+				<image src="media/wildcards.svg" alt="Dice" />
+				<image src="media/flagstone.svg" alt="Crown" />
+				<image src="media/all.svg" alt="100%" />
+				<image src="media/left.svg" alt="Left Arrow" />
+				<image src="media/right.svg" alt="Right Arrow" />
+				<image class="icon" src="media/grave.png" alt="Grave" id="grave" />
+				<image class="icon" src="media/jaina.png" alt="Jaina" id="jaina" />
+				<image class="icon" src="media/geiger.png" alt="Geiger" id="geiger" />
+				<image class="icon" src="media/argagarg.png" alt="Argagarg" id="argagarg" />
+				<image class="icon" src="media/setsuki.png" alt="Setsuki" id="setsuki" />
+				<image class="icon" src="media/valerie.png" alt="Valerie" id="valerie" />
+				<image class="icon" src="media/rook.png" alt="Rook" id="rook" />
+				<image class="icon" src="media/midori.png" alt="Midori" id="midori" />
+				<image class="icon" src="media/lum.png" alt="Lum" id="lum" />
+				<image class="icon" src="media/degrey.png" alt="Degrey" id="degrey" />
+				<image class="icon" src="media/quince.png" alt="Quince" id="quince" />
+				<image class="icon" src="media/onimaru.png" alt="Onimaru" id="onimaru" />
+				<image class="overlay_char" src="media/minus.svg" id="minus" />
+				<image src="media/plus.svg" id="plus" />
 			</div>
-		</div>
-    </main>
-    <footer></footer>
-    </body>
-    <script>
+			<div class="grid">
+				<h1 class="title" style="grid-area:title">The Garden of Chaos<br>Team Battle Tool</h1>
+				
+				<h2 class="title" style="grid-area:team1selectTitle">Team 1 Character Select</h2>
+				<div class="charSelectGrid1">
+					<image class="icon" style="grid-area:grave;" src="media/grave.png" alt="Grave" />
+					<a href="javascript:void(0);" style="grid-area:grave;" title="Add Grave to Team 1." onclick='addChar("Grave",1)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:jaina;" src="media/jaina.png" alt="Jaina" />
+					<a href="javascript:void(0);" style="grid-area:jaina;" title="Add Jaina to Team 1." onclick='addChar("Jaina",1)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:geiger;" src="media/geiger.png" alt="Jaina" />
+					<a href="javascript:void(0);" style="grid-area:geiger;" title="Add Geiger to Team 1." onclick='addChar("Geiger",1)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:argagarg;" src="media/argagarg.png" alt="Jaina" />
+					<a href="javascript:void(0);" style="grid-area:argagarg;" title="Add Argagarg to Team 1." onclick='addChar("Argagarg",1)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:setsuki;" src="media/setsuki.png" alt="Setsuki" />
+					<a href="javascript:void(0);" style="grid-area:setsuki;" title="Add Setsuki to Team 1." onclick='addChar("Setsuki",1)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:valerie;" src="media/valerie.png" alt="Valerie" />
+					<a href="javascript:void(0);" style="grid-area:valerie;" title="Add Valerie to Team 1." onclick='addChar("Valerie",1)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:rook;" src="media/rook.png" alt="Rook" />
+					<a href="javascript:void(0);" style="grid-area:rook;" title="Add Rook to Team 1." onclick='addChar("Rook",1)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:midori;" src="media/midori.png" alt="Midori" />
+					<a href="javascript:void(0);" style="grid-area:midori;" title="Add Midori to Team 1." onclick='addChar("Midori",1)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:lum;" src="media/lum.png" alt="Lum" />
+					<a href="javascript:void(0);" style="grid-area:lum;" title="Add Lum to Team 1." onclick='addChar("Lum",1)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:degrey;" src="media/degrey.png" alt="Degrey" />
+					<a href="javascript:void(0);" style="grid-area:degrey;" title="Add Degrey to Team 1." onclick='addChar("Degrey",1)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:quince;" src="media/quince.png" alt="Quince" />
+					<a href="javascript:void(0);" style="grid-area:quince;" title="Add Quince to Team 1." onclick='addChar("Quince",1)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:onimaru;" src="media/onimaru.png" alt="Onimaru" />
+					<a href="javascript:void(0);" style="grid-area:onimaru;" title="Add Onimaru to Team 1." onclick='addChar("Onimaru",1)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+				</div>
+				<h2 class="title" style="grid-area:team2selectTitle;">Team 2 Character Select</h2>
+				<div class="charSelectGrid2">
+					<image class="icon" style="grid-area:grave;" src="media/grave.png" alt="Grave" />
+					<a href="javascript:void(0);" style="grid-area:grave;" title="Add Grave to Team 2." onclick='addChar("Grave",2)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:jaina;" src="media/jaina.png" alt="Jaina" />
+					<a href="javascript:void(0);" style="grid-area:jaina;" title="Add Jaina to Team 2." onclick='addChar("Jaina",2)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:geiger;" src="media/geiger.png" alt="Jaina" />
+					<a href="javascript:void(0);" style="grid-area:geiger;" title="Add Geiger to Team 2." onclick='addChar("Geiger",2)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:argagarg;" src="media/argagarg.png" alt="Jaina" />
+					<a href="javascript:void(0);" style="grid-area:argagarg;" title="Add Argagarg to Team 2." onclick='addChar("Argagarg",2)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:setsuki;" src="media/setsuki.png" alt="Setsuki" />
+					<a href="javascript:void(0);" style="grid-area:setsuki;" title="Add Setsuki to Team 2." onclick='addChar("Setsuki",2)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:valerie;" src="media/valerie.png" alt="Valerie" />
+					<a href="javascript:void(0);" style="grid-area:valerie;" title="Add Valerie to Team 2." onclick='addChar("Valerie",2)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:rook;" src="media/rook.png" alt="Rook" />
+					<a href="javascript:void(0);" style="grid-area:rook;" title="Add Rook to Team 2." onclick='addChar("Rook",2)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:midori;" src="media/midori.png" alt="Midori" />
+					<a href="javascript:void(0);" style="grid-area:midori;" title="Add Midori to Team 2." onclick='addChar("Midori",2)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:lum;" src="media/lum.png" alt="Lum" />
+					<a href="javascript:void(0);" style="grid-area:lum;" title="Add Lum to Team 2." onclick='addChar("Lum",2)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:degrey;" src="media/degrey.png" alt="Degrey" />
+					<a href="javascript:void(0);" style="grid-area:degrey;" title="Add Degrey to Team 2." onclick='addChar("Degrey",2)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:quince;" src="media/quince.png" alt="Quince" />
+					<a href="javascript:void(0);" style="grid-area:quince;" title="Add Quince to Team 2." onclick='addChar("Quince",2)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:onimaru;" src="media/onimaru.png" alt="Onimaru" />
+					<a href="javascript:void(0);" style="grid-area:onimaru;" title="Add Onimaru to Team 2." onclick='addChar("Onimaru",2)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+				</div>
+				
+				<h2 class="title" style="grid-area:team1presetTitle;">Team 1 Presets</h2>
+				<div class="presetGrid1">
+					<image class="icon" style="grid-area:delete;" src="media/delete.svg" alt="X" />
+					<a href="javascript:void(0);" style="grid-area:delete;" title="Clear all characters from Team 1." onclick='clearTeam(1)'>
+						<image class="overlay_char" src="media/minus.svg" style="background-color:red" />
+					</a>
+					<image class="icon" style="grid-area:random;" src="media/random.svg" alt="?" />
+					<a href="javascript:void(0);" style="grid-area:random;" title="Add a random character to Team 1." onclick='addChar(new Array("Grave","Jaina","Geiger","Argagarg","Setsuki","Valerie","Rook","Midori","Lum","Degrey","Quince","Onimaru")[Math.floor(Math.random()*11)],1)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:zoners" src="media/zoners.svg" alt="Cloud" />
+					<a href="javascript:void(0);" style="grid-area:zoners" title="Add the zoners to Team 1." onclick='addChar("Grave",1);addChar("Jaina",1);addChar("Geiger",1);addChar("Argagarg",1)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:rushdowns" src="media/rushdowns.svg" alt="Paintbrush" />
+					<a href="javascript:void(0);" style="grid-area:rushdowns" title="Add the rushdowns to Team 1." onclick='addChar("Setsuki",1);addChar("Valerie",1)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:grapplers" src="media/grapplers.svg" alt="Hug" />
+					<a href="javascript:void(0);" style="grid-area:grapplers" title="Add the grapplers to Team 1." onclick='addChar("Rook",1);addChar("Midori",1)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:wildcards" src="media/wildcards.svg" alt="Dice" />
+					<a href="javascript:void(0);" style="grid-area:wildcards" title="Add the wildcards to Team 1." onclick='addChar("Lum",1);addChar("Degrey",1);addChar("Quince",1);addChar("Onimaru",1)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:flagstone" src="media/flagstone.svg" alt="Crown" />
+					<a href="javascript:void(0);" style="grid-area:flagstone" title="Add the flagstone tyrants to Team 1." onclick='addChar("Quince",1);addChar("Onimaru",1)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:all" src="media/all.svg" alt="100%" />
+					<a href="javascript:void(0);" style="grid-area:all" title="Add every character to Team 1." onclick='addChar("Grave",1);addChar("Jaina",1);addChar("Geiger",1);addChar("Argagarg",1);addChar("Setsuki",1);addChar("Valerie",1);addChar("Rook",1);addChar("Midori",1);addChar("Lum",1);addChar("Degrey",1);addChar("Quince",1);addChar("Onimaru",1)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:left" src="media/left.svg" alt="Left Arrow" />
+					<a href="javascript:void(0);" style="grid-area:left" title="Add the characters from the left/top of the in-game selector to Team 1." onclick='addChar("Grave",1);addChar("Geiger",1);addChar("Setsuki",1);addChar("Rook",1);addChar("Lum",1);addChar("Quince",1)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:right" src="media/right.svg" alt="Right Arrow" />
+					<a href="javascript:void(0);" style="grid-area:right" title="Add the characters from the right/bottom of the in-game selector to Team 1." onclick='addChar("Jaina",1);addChar("Argagarg",1);addChar("Valerie",1);addChar("Midori",1);addChar("Degrey",1);addChar("Onimaru",1)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+				</div>
+				<h2 class="title" style="grid-area:team2presetTitle;">Team 2 Presets</h2>
+				<div class="presetGrid2">
+					<image class="icon" style="grid-area:delete;" src="media/delete.svg" alt="X" />
+					<a href="javascript:void(0);" style="grid-area:delete;" title="Clear all characters from Team 2." onclick='clearTeam(2)'>
+						<image class="overlay_char" src="media/minus.svg" style="background-color:red" />
+					</a>
+					<image class="icon" style="grid-area:random;" src="media/random.svg" alt="?" />
+					<a href="javascript:void(0);" style="grid-area:random;" title="Add a random character to Team 2." onclick='addChar(new Array("Grave","Jaina","Geiger","Argagarg","Setsuki","Valerie","Rook","Midori","Lum","Degrey","Quince","Onimaru")[Math.floor(Math.random()*22)],2)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:zoners" src="media/zoners.svg" alt="Cloud" />
+					<a href="javascript:void(0);" style="grid-area:zoners" title="Add the zoners to Team 2." onclick='addChar("Grave",2);addChar("Jaina",2);addChar("Geiger",2);addChar("Argagarg",2)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:rushdowns" src="media/rushdowns.svg" alt="Paintbrush" />
+					<a href="javascript:void(0);" style="grid-area:rushdowns" title="Add the rushdowns to Team 2." onclick='addChar("Setsuki",2);addChar("Valerie",2)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:grapplers" src="media/grapplers.svg" alt="Hug" />
+					<a href="javascript:void(0);" style="grid-area:grapplers" title="Add the grapplers to Team 2." onclick='addChar("Rook",2);addChar("Midori",2)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:wildcards" src="media/wildcards.svg" alt="Dice" />
+					<a href="javascript:void(0);" style="grid-area:wildcards" title="Add the wildcards to Team 2." onclick='addChar("Lum",2);addChar("Degrey",2);addChar("Quince",2);addChar("Onimaru",2)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:flagstone" src="media/flagstone.svg" alt="Crown" />
+					<a href="javascript:void(0);" style="grid-area:flagstone" title="Add the flagstone tyrants to Team 2." onclick='addChar("Quince",2);addChar("Onimaru",2)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:all" src="media/all.svg" alt="200%" />
+					<a href="javascript:void(0);" style="grid-area:all" title="Add every character to Team 2." onclick='addChar("Grave",2);addChar("Jaina",2);addChar("Geiger",2);addChar("Argagarg",2);addChar("Setsuki",2);addChar("Valerie",2);addChar("Rook",2);addChar("Midori",2);addChar("Lum",2);addChar("Degrey",2);addChar("Quince",2);addChar("Onimaru",2)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:left" src="media/left.svg" alt="Left Arrow" />
+					<a href="javascript:void(0);" style="grid-area:left" title="Add the characters from the left/top of the in-game selector to Team 2." onclick='addChar("Grave",2);addChar("Geiger",2);addChar("Setsuki",2);addChar("Rook",2);addChar("Lum",2);addChar("Quince",2)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+					<image class="icon" style="grid-area:right" src="media/right.svg" alt="Right Arrow" />
+					<a href="javascript:void(0);" style="grid-area:right" title="Add the characters from the right/bottom of the in-game selector to Team 2." onclick='addChar("Jaina",2);addChar("Argagarg",2);addChar("Valerie",2);addChar("Midori",2);addChar("Degrey",2);addChar("Onimaru",2)'>
+						<image class="overlay_char" src="media/plus.svg" />
+					</a>
+				</div>
+				
+				<h2 class="title" style="grid-area:team1Title;">Team 1</h2>
+				<div id="team1div" class="teamGrid1"></div>
+				<h2 class="title" style="grid-area:team2Title;">Team 2</h2>
+				<div id="team2div" class="teamGrid2"></div>
+				
+				<a id="submitlink" class="submit" href="javascript:void(0);" style="grid-area:submit;"><button class="submit"><strong class="submit">Submit<br>Teams</strong></button></a>
+			</div>
+		</main>
+		<footer></footer>
+	</body>
+	<script>
         var teams = [[],[]];
         var i = 0;
 
@@ -604,22 +1216,16 @@
             i++;
             
             div = document.createElement("DIV");
-            div.setAttribute("style","position: relative; width: 100px; height: 100px;");
-            div.setAttribute("id","char"+i)
-            
-            div.appendChild(document.getElementById(charName.toLowerCase()).cloneNode());
-            
-            overlay = document.createElement("DIV");
-            overlay.setAttribute("class", "overlay_char_team");
-            div.appendChild(overlay);
+            div.setAttribute("id",i+"char");
+            div.setAttribute("class","icon;");
             
             clicker = document.createElement("A");
             clicker.setAttribute("href", "javascript:void(0);");
-            clicker.setAttribute("id","achar"+i);
             clicker.setAttribute("title", "Remove this "+charName+" from Team "+teamNumber+".");
-            clicker.setAttribute("onclick", "removeChar(this, "+teamNumber+")");
-            overlay.appendChild(clicker);
-            
+            clicker.setAttribute("onclick", 'removeChar("'+i+'char", '+teamNumber+')');
+            clicker.setAttribute("id", i+"char");
+            div.appendChild(clicker);
+            clicker.appendChild(document.getElementById(charName.toLowerCase()).cloneNode());
             clicker.appendChild(document.getElementById("minus").cloneNode());
             
             return div;
@@ -627,26 +1233,22 @@
         function addChar(char, teamNumber) {
             console.log("Add "+char+" to team "+teamNumber+".");
             teams[teamNumber-1] = teams[teamNumber-1].concat(char);
+            
             document.getElementById('team'+teamNumber+'div')
                     .appendChild(createCharElement(char, 1));
             
             if(teams[0].length > 0 && teams[1].length > 0)
                 document.getElementById("submitlink").href = "https://gardenofchaos.xyz/teamdisplay?seed=" + (10000+Math.floor(Math.random()*90000)) + "&team1="+teams[0].join() + "&team2="+teams[1].join();
         }
-        function addRandomChar(teamNumber) {
-            console.log("Add a random character to team "+teamNumber+".");
-            addChar(new Array("Grave","Jaina","Geiger","Argagarg","Setsuki","Valerie","Rook","Midori","Lum","Degrey","Quince","Onimaru")[Math.floor(Math.random()*12)],teamNumber);
-        }
         function removeChar(char, teamNumber) {
-            console.log("Remove char "+char.getAttribute("id").substr(5)+" from team "+teamNumber+".");
-            // teams[teamNumber-1].splice(document.getElementById('team'+teamNumber+'div').children.findIndex(char),1);
-            teams[teamNumber].splice(+char.getAttribute("id").substr(5),1);
-            document.getElementById(char.getAttribute("id").substr(1)).remove();
+            console.log("Remove char "+char+" from team "+teamNumber+".");
+            teams[teamNumber-1].splice(0+char.substr(0,1),1);
+            document.getElementById(char).remove();
         }
         function clearTeam(teamNumber) {
 			console.log("Clear team "+teamNumber+".");
 			teams[teamNumber-1]=[];
 			document.getElementById("team"+teamNumber+"div").innerHTML="";
         }
-    </script>
+	</script>
 </html>
