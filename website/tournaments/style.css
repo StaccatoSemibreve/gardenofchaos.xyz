@@ -11,6 +11,28 @@
 				background-color: #1E1B19;
 				color: #DABA69;
 			}
+			button {
+				font-family: sans-serif;
+				color: #daba69;
+				height: 40px;
+				background-color: #000000;
+				padding: 6px 8px;
+				border-radius: 10px;
+			}
+			.archive {
+				display: grid;
+				background-color: black;
+				grid-template-rows: 100%;
+				grid-template-columns: 50% 50%;
+				height: 300px;
+				grid-template-areas: "video bracket";
+			}
+			.video {
+				grid-area: video;
+			}
+			.bracket {
+				grid-area: bracket;
+			}
 			
 			@media only screen and (min-width:1050px) {
 				div#center-div {
@@ -18,7 +40,7 @@
 					margin: auto;
 				}
 				body {
-					background: linear-gradient(90deg, #0f0d0c, #0f0d0c calc(50% - 525px), #1e1b19 calc(50% - 525px), #1e1b19 calc(50% + 525px), #0f0d0c calc(50% + 525px));
+					background: linear-gradient(90deg, #100e0d, #100e0d calc(50% - 525px), #1e1b19 calc(50% - 525px), #1e1b19 calc(50% + 525px), #100e0d calc(50% + 525px));
 				}
 			}
 			@media only screen and (min-width:850px) and (max-width:1050px) {
@@ -27,7 +49,7 @@
 					margin: auto;
 				}
 				body {
-					background: linear-gradient(90deg, #0f0d0c, #0f0d0c calc(50% - 425px), #1e1b19 calc(50% - 425px), #1e1b19 calc(50% + 425px), #0f0d0c calc(50% + 425px));
+					background: linear-gradient(90deg, #100e0d, #100e0d calc(50% - 425px), #1e1b19 calc(50% - 425px), #1e1b19 calc(50% + 425px), #100e0d calc(50% + 425px));
 				}
 			}
 			@media only screen and (min-width:650px) and (max-width:850px) {
@@ -36,7 +58,7 @@
 					margin: auto;
 				}
 				body {
-					background: linear-gradient(90deg, #0f0d0c, #0f0d0c calc(50% - 325px), #1e1b19 calc(50% - 325px), #1e1b19 calc(50% + 325px), #0f0d0c calc(50% + 325px));
+					background: linear-gradient(90deg, #100e0d, #100e0d calc(50% - 325px), #1e1b19 calc(50% - 325px), #1e1b19 calc(50% + 325px), #100e0d calc(50% + 325px));
 				}
 			}
 			@media only screen and (min-width:500px) and (max-width:650px) {
@@ -45,7 +67,7 @@
 					margin: auto;
 				}
 				body {
-					background: linear-gradient(90deg, #0f0d0c, #0f0d0c calc(50% - 250px), #1e1b19 calc(50% - 250px), #1e1b19 calc(50% + 250px), #0f0d0c calc(50% + 250px));
+					background: linear-gradient(90deg, #100e0d, #100e0d calc(50% - 250px), #1e1b19 calc(50% - 250px), #1e1b19 calc(50% + 250px), #100e0d calc(50% + 250px));
 				}
 			}
 			@media only screen and (min-width:350px) and (max-width:500px) {
@@ -54,7 +76,7 @@
 					margin: auto;
 				}
 				body {
-					background: linear-gradient(90deg, #0f0d0c, #0f0d0c calc(50% - 175px), #1e1b19 calc(50% - 175px), #1e1b19 calc(50% + 175px), #0f0d0c calc(50% + 175px));
+					background: linear-gradient(90deg, #100e0d, #100e0d calc(50% - 175px), #1e1b19 calc(50% - 175px), #1e1b19 calc(50% + 175px), #100e0d calc(50% + 175px));
 				}
 			}
 			@media only screen and (max-width:350px) {
