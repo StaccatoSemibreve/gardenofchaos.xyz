@@ -44,7 +44,7 @@ build-static styles				> ../styles.html
 build-static rulesets				> ../rulesets.html
 build-static resources				> ../resources.html
 build-static commentators			> ../commentators.html
-build-static tournaments			> ../tournaments.html
+build tournaments			> ../tournaments.html
 build random				> ../random.html
 build teams					> ../teams.html
 build teams2				> ../teams2.html
