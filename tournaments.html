@@ -18,6 +18,33 @@
 				background-color: #1E1B19;
 				color: #DABA69;
 			}
+			button {
+				font-family: sans-serif;
+				color: #daba69;
+				height: 40px;
+				background-color: #000000;
+				padding: 6px 8px;
+				border-radius: 10px;
+			}
+			.archive {
+				display: grid;
+				background-color: black;
+				grid-template-rows: 100%;
+				grid-template-columns: 50% 50%;
+				width: 100%;
+				height: 280px;
+				grid-template-areas: "video bracket";
+			}
+			.video {
+				grid-area: video;
+				width: 100%;
+				height: 100%;
+			}
+			.bracket {
+				grid-area: bracket;
+				width: 100%;
+				height: 100%;
+			}
 			
 			@media only screen and (min-width:1050px) {
 				div#center-div {
@@ -80,7 +107,7 @@
 					grid-template-areas:	"navbar"
 											"main";
 					max-width: 2000px;
-					margins: auto;
+					margin: auto;
 				}
 				main {
 					grid-area: main;
@@ -161,12 +188,12 @@
 					grid-template-areas:	"navbar"
 											"main";
 					max-width: 2000px;
-					margins: auto;
+					margin: auto;
 				}
 				main {
 					grid-area: main;
 					max-width: 2000px;
-					margins: auto;
+					margin: auto;
 				}
 				
 				.navbar-div {
@@ -247,12 +274,12 @@
 					grid-template-areas:	"navbar"
 											"main";
 					max-width: 2000px;
-					margins: auto;
+					margin: auto;
 				}
 				main {
 					grid-area: main;
 					max-width: 2000px;
-					margins: auto;
+					margin: auto;
 				}
 				
 				.navbar-div {
@@ -332,12 +359,12 @@
 					display: grid;
 					grid-template-areas: "main";
 					max-width: 2000px;
-					margins: auto;
+					margin: auto;
 				}
 				main {
 					grid-area: main;
 					max-width: 2000px;
-					margins: auto;
+					margin: auto;
 				}
 				
 				.navbar-div {
