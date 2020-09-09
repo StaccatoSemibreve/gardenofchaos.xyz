@@ -1,5 +1,3 @@
-// "<div class=\"archive\" id=\"goc1\"><iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/zlEVTEpSjqc\" frameborder=\"0\" allow=\"encrypted-media; picture-in-picture\" allowfullscreen class=\"video\"></iframe><iframe src=\"https://challonge.com/FSGardenofChaos1/module\" width=\"100%\" height=\"100%\" frameborder=\"0\" scrolling=\"auto\" allowtransparency=\"true\" class=\"bracket\"></iframe></div>"
-
 function addArchive(element, id, videoURL, bracketURL) {
 	archive = document.createElement("DIV");
 	archive.setAttribute("class", "archive");
@@ -23,9 +21,53 @@ function addArchive(element, id, videoURL, bracketURL) {
 	element.setAttribute("onclick", 'removeArchive(this, "'+id+'", "'+videoURL+'", "'+bracketURL+'")');
 	element.innerHTML="Stop Watching Archive (will unload the external content!)";
 }
-
 function removeArchive(element, id, videoURL, bracketURL) {
 	document.getElementById(id).outerHTML="";
 	element.setAttribute("onclick", 'addArchive(this, "'+id+'", "'+videoURL+'", "'+bracketURL+'")');
-	element.innerHTML="Watch Archive (will load external content from YouTube and Challonge!)";
+	element.innerHTML="Watch Archive (will load external content!)";
+}
+
+function addMatch(element, id, videoURL) {
+	archive = document.createElement("DIV");
+	archive.setAttribute("class", "archive");
+	archive.setAttribute("id", id);
+	
+	video = document.createElement("IFRAME");
+	video.setAttribute("class", "big");
+	video.setAttribute("src", videoURL);
+	video.setAttribute("allow", "encrypted-media; picture-in-picture; fullscreen");
+	
+	archive.appendChild(video);
+	element.parentNode.appendChild(archive);
+	
+	element.setAttribute("onclick", 'removeMatch(this, "'+id+'", "'+videoURL+'")');
+	element.innerHTML="Stop Watching Match (will unload the external content!)";
+}
+function removeMatch(element, id, videoURL) {
+	document.getElementById(id).outerHTML="";
+	element.setAttribute("onclick", 'addMatch(this, "'+id+'", "'+videoURL+'")');
+	element.innerHTML="Watch Match (will load external content!)";
+}
+
+function addBracket(element, id, bracketURL) {
+	archive = document.createElement("DIV");
+	archive.setAttribute("class", "archive");
+	archive.setAttribute("id", id);
+	
+	bracket = document.createElement("IFRAME");
+	bracket.setAttribute("class", "big");
+	bracket.setAttribute("src", bracketURL);
+	bracket.setAttribute("scrolling", "auto");
+	bracket.setAttribute("allowtransparency", "true");
+	
+	archive.appendChild(bracket);
+	element.parentNode.appendChild(archive);
+	
+	element.setAttribute("onclick", 'removeBracket(this, "'+id+'", "'+bracketURL+'")');
+	element.innerHTML="Stop Viewing Bracket (will unload the external content!)";
+}
+function removeBracket(element, id, bracketURL) {
+	document.getElementById(id).outerHTML="";
+	element.setAttribute("onclick", 'addBracket(this, "'+id+'", "'+bracketURL+'")');
+	element.innerHTML="View Bracket (will load external content!)";
 }
