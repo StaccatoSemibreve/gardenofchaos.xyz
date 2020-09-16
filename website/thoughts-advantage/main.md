@@ -41,11 +41,19 @@ A major aspect of state is resource management - if you choose to desperately us
 
 **Kill State:**
 
-A notable example of state where your opponent has an amount of health equal to the damage dealt by one of your tools. This gives you huge advantage in any situation where that tool is available. For example, if you're DeGrey and they have 2 health, they need to never be hit by your punches or else they lose that round. This is especially notable if that tool would normally trade in many situations, where that trade will now win you the round. For example, a common strategy as Lum is to use his jackpot super to trade 1 damage with the opponent's attack and knock down the opponent, but if your opponent has 1 health, now instead it's an instant win tool any time that Lum recognises a situation where it will trade. This is why Rook or dragon Midori are so vulnerable at 1 health, because their armoured moves would normally trade but will now instead lose the round.
+A notable example of state where your opponent has an amount of health equal to the damage dealt by one of your tools, giving you huge advantage in any situation where that tool is available. This is especially significant with trades, which will now instead win the round.
 
-In particular, it's possible now for a checkmate tool to exist, where no option they might use will win the round. If only one unsafe option might win the round, that might also be referred to as a checkmate, though victory is less assured - usually these are chip setups. For example, Argagarg has checkmate if the opponent is poisoned, at one health, and has no way to get close enough fast enough to win, or a near checkmate if they have to break through his guard. DeGrey has a chip setup on his oki, where he can use ghost into his air kicks for 3 chip - this would normally be unsafe on block, but if they have only 1 health then them blocking it wins you the round, and instead their only option is a reversal that you can punish if you predict it, making it very close to a checkmate situation!
+In particular, it's possible now for a checkmate tool to exist, where no option they might use will win the round. If only one unsafe option might win the round, that might also be referred to as a checkmate, though victory is less assured - usually these are chip setups.
 
-If you are in a checkmate and near-checkmate situation, you may be forced to "play to your outs", defined as follows: If you only have one way to even possibly win, do it! If something has to go right for you to have any hope of victory, assume it will!
+If you are in a checkmate or near-checkmate situation, you may be forced to "play to your outs", defined as follows: If you only have one way to even possibly win, do it! If something has to go right for you to have any hope of victory, assume it will!
+
+Examples:
+
+* Kill state: If you're DeGrey and your opponent has 2 health then they need to never be hit by your punches, or else they lose that round.
+* Trading to win: A common strategy as Lum is to use his jackpot super to trade for 1 damage and knock down the opponent, but if they have 1 health then now it's an instant win tool any time it can be used to trade.
+* Checkmate: Argagarg has checkmate if the opponent is poisoned, at one health, and has no way to get close enough fast enough to win, or a near checkmate if they have to break through his guard
+* Chip setup for near-checkmate: DeGrey has a chip setup on his oki, where he can use ghost into his air kicks for 3 chip - this would normally be unsafe on block, but if they have only 1 health then them blocking it wins you the round, and instead their only option is a risky reversal!
+* Playing to your outs: Your opponent is DeGrey and is performing his chip setup on your oki - you aren't sure whether they spaced it correctly, so you assume the first air kick will crossup and block the opposite way. If it doesn't work, you lose nothing, but if it does you just salvaged a bad situation!
 
 **Mental advantage:**
 
