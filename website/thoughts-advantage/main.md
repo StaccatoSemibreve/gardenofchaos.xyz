@@ -7,7 +7,7 @@ When you look back on your decisions you should consider the advantage gain or c
 
 Note that this is not the same thing as pressure - applying pressure can be thought of as a way of spending advantage to deal damage.
 
-**Positional advantage:**
+<a href="#position" name="position">**Positional advantage:**</a>
 
 If you've experienced being trapped in the corner by Degrey while he repeatedly punches you, you likely have some idea about this one. It governs how close you are to the corner, which of your opponent's attacks they can get you with, how much you're backing off (are you blocking too early and losing ground? are you backing off from round start while they just walk up to you?). This is why just walking forward can be the most powerful move, or the greatest mistake.
 
@@ -15,7 +15,7 @@ It is heavily impacted by how much "pushback" each character has in a matchup - 
 
 This is especially critical versus Argagarg and Degrey, as both are very good at pushing you into the corner. Lose this by being knocked back by a move, or backing off (eg, to defend), or crossing up into disadvantage (eg, to mixup). Regain this by pushing forward or crossing up into advantage.
 
-**Time advantage:**
+<a href="#time" name="time">**Time advantage:**</a>
 
 Surprisingly, this is not just about the round timer - this is about how much you're taking advantage of every second you get that your opponent isn't attacking you. Are you missing opportunities to toss items as Lum? Are you failing to cancel into your specials as Argagarg? Then you're giving up time advantage. Have you just knocked down your opponent? Then you're taking it back, keep doing that!
 
@@ -23,7 +23,7 @@ This is important for every character, but some care more than others - Valerie 
 
 This is especially critical versus Midori, as he will inevitably reach dragon form. Lose this by spending time doing nothing (eg, to leave yourself open to react), doing useless moves (eg, to cover an opponent's option), and being knocked down. Regain this by hitting or knocking down your opponent.
 
-**Initiative:**
+<a href="#initiative" name="initiative">**Initiative:**</a>
 
 Initiative is a more general one, based on the current state of the game. If you're trading projectiles and they're clashing closer to you than your opponent, that's disadvantaged initiative, if you're knocked down, that's disadvantaged initiative, if you're performing a mixup with positive EV, that's advantaged initiative.
 
@@ -31,7 +31,7 @@ Consider your initiative with every decision you make - advantaged initiative is
 
 Lose this by your opponent hitting you with a move with frame advantage, getting into their character's main attack patterns, or knocking you down. Gain this by doing these things to your opponent.
 
-**State:**
+<a href="#state" name="state">**State:**</a>
 
 State is the general state of the game. Consider whether you have your super available, how much health you have, the state of any meters your character might have. If you're, say, ahead on super meter, that's advantaged state. If you're Grave and have no wind meter, that's less advantaged state.
 
@@ -39,7 +39,7 @@ This is relevant to the outcomes of any given situation - if you're fighting Lum
 
 A major aspect of state is resource management - if you choose to desperately use super at the end of one round and lose, the state will favour you less at the start of the next when you lack super.
 
-**Kill State:**
+<a href="#state-kill" name="state-kill">**Kill State:**</a>
 
 A notable example of state where your opponent has an amount of health equal to the damage dealt by one of your tools, giving you huge advantage in any situation where that tool is available. This is especially significant with trades, which will now instead win the round.
 
@@ -55,7 +55,7 @@ Examples:
 * Chip setup for near-checkmate: DeGrey has a chip setup on his oki, where he can use ghost into his air kicks for 3 chip - this would normally be unsafe on block, but if they have only 1 health then them blocking it wins you the round, and instead their only option is a risky reversal!
 * Playing to your outs: Your opponent is DeGrey and is performing his chip setup on your oki - you aren't sure whether they spaced it correctly, so you assume the first air kick will crossup and block the opposite way. If it doesn't work, you lose nothing, but if it does you just salvaged a bad situation!
 
-**Mental advantage:**
+<a href="#mental" name="mental">**Mental advantage:**</a>
 
 Mental advantage isn't a facet of the game, but rather the player. If you're overwhelmed, desperate, or have decision fatigue, you have mental disadvantage. If your opponent does, you have mental advantage.
 
@@ -63,7 +63,7 @@ This can be manipulated by certain patterns - for example, Lum's items overwhelm
 
 Gain this by confusing the opponent or exhausting them. Lose this by making complicated decisions or going into unfamiliar situations.
 
-**Meditations on advantage:**
+<a href="#meditations" name="meditations">**Meditations on advantage:**</a>
 
 There are multiple situations that perfectly encapsulate specific forms of advantage, and considering these dynamics will hugely aid your understanding of advantage. Here are a few:
 
