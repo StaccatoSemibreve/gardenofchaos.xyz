@@ -4,376 +4,8 @@
 		<meta charset="utf-8">
 		<title>Garden of Chaos: Resources</title>
 		<link rel="icon" type="image/png" href="FSgardenOfChao-196x196.png" sizes="196x196">
-		<style>
-			p, h1, ul, a {
-				font-family: sans-serif;
-				color: #daba69;
-				line-height: 30px;
-			}
-			
-			@media only screen and (min-width:1050px) {
-				div#center-div {
-					max-width: 1000px;
-					margin: auto;
-				}
-				body {
-					background: linear-gradient(90deg, #0f0d0c, #0f0d0c calc(50% - 525px), #1e1b19 calc(50% - 525px), #1e1b19 calc(50% + 525px), #0f0d0c calc(50% + 525px));
-				}
-			}
-			@media only screen and (min-width:850px) and (max-width:1050px) {
-				div#center-div {
-					max-width: 800px;
-					margin: auto;
-				}
-				body {
-					background: linear-gradient(90deg, #0f0d0c, #0f0d0c calc(50% - 425px), #1e1b19 calc(50% - 425px), #1e1b19 calc(50% + 425px), #0f0d0c calc(50% + 425px));
-				}
-			}
-			@media only screen and (min-width:650px) and (max-width:850px) {
-				div#center-div {
-					max-width: 600px;
-					margin: auto;
-				}
-				body {
-					background: linear-gradient(90deg, #0f0d0c, #0f0d0c calc(50% - 325px), #1e1b19 calc(50% - 325px), #1e1b19 calc(50% + 325px), #0f0d0c calc(50% + 325px));
-				}
-			}
-			@media only screen and (min-width:500px) and (max-width:650px) {
-				div#center-div {
-					max-width: 450px;
-					margin: auto;
-				}
-				body {
-					background: linear-gradient(90deg, #0f0d0c, #0f0d0c calc(50% - 250px), #1e1b19 calc(50% - 250px), #1e1b19 calc(50% + 250px), #0f0d0c calc(50% + 250px));
-				}
-			}
-			@media only screen and (min-width:350px) and (max-width:500px) {
-				div#center-div {
-					max-width: 300px;
-					margin: auto;
-				}
-				body {
-					background: linear-gradient(90deg, #0f0d0c, #0f0d0c calc(50% - 175px), #1e1b19 calc(50% - 175px), #1e1b19 calc(50% + 175px), #0f0d0c calc(50% + 175px));
-				}
-			}
-			@media only screen and (max-width:350px) {
-				div#center-div {
-					max-width: 90%;
-					margin: auto;
-				}
-				body {
-					background-color: #1e1b19;
-				}
-			}
-			@media only screen and (min-width:650px) {
-				body {
-					display: grid;
-					grid-template-rows: 150px;
-					grid-template-areas:	"navbar"
-											"main";
-					max-width: 2000px;
-					margin: auto;
-				}
-				main {
-					grid-area: main;
-					max-width: 2000px;
-					margin: auto;
-				}
-				
-				.navbar-div {
-					display: grid;
-					background-color: black;
-					width: 600px;
-					grid-template-columns: 150px 150px 150px 150px;
-					grid-template-rows: 60px 59px;
-					border-radius: 10px;
-					align-content: center center;
-					grid-template-areas:	"home	signup		discord	stream"
-											"rules	rulesets	formats	resources";
-					margin: auto;
-					border: 1px solid #daba69;
-				}
-				.navbar-item {
-					width: 148px;
-					height: 30px;
-					padding-top: 15px;
-					text-align: center;
-					text-decoration: none;
-					line-height: 30px;
-					font-weight: bold;
-					margin: auto;
-					font-family: sans-serif;
-					color: #daba69;
-				}
-				span.navbar-item {
-					position: relative;
-					top: -10px;
-				}
-				.navbar-item-container {
-					width: 150px;
-					height: 59px;
-					position: relative;
-					border-top: 1px solid #daba69;
-					border-left: 1px solid #daba69;
-					position: relative;
-					top: -1px;
-					left: -1px;
-				}
-				.navbar-icon {
-					width: 45px;
-					height: 45px;
-					position: relative;
-					left: -5px;
-					top: 8px;
-				}
-				.navbar-icon#goc-logo {
-					left: -10px;
-				}
-				.navbar-item-container#navbar-home {
-					border-radius: 10px 0px 0px 0px;
-				}
-				.navbar-item-container#navbar-stream {
-					border-radius: 0px 10px 0px 0px;
-				}
-				.navbar-item-container#navbar-resources {
-					border-radius: 0px 0px 10px 0px;
-				}
-				.navbar-item-container#navbar-rules {
-					border-radius: 0px 0px 0px 10px;
-				}
-				.navbar-item-container#navbar-commentators {
-					display: none;
-				}
-			}
-			
-			@media only screen and (min-width:500px) and (max-width: 650px) {
-				body {
-					display: grid;
-					grid-template-rows: 210px;
-					grid-template-areas:	"navbar"
-											"main";
-					max-width: 2000px;
-					margin: auto;
-				}
-				main {
-					grid-area: main;
-					max-width: 2000px;
-					margin: auto;
-				}
-				
-				.navbar-div {
-					display: grid;
-					background-color: black;
-					width: 450px;
-					grid-template-columns: 150px 150px 150px;
-					grid-template-rows: 60px 60px 59px;
-					border-radius: 10px;
-					align-content: center center;
-					grid-template-areas:	"home	rulesets	resources"
-											"rules	formats		commentators"
-											"signup	discord		stream";
-					margin: auto;
-					border: 1px solid #daba69;
-				}
-				.navbar-item {
-					width: 150px;
-					height: 30px;
-					padding-top: 15px;
-					text-align: center;
-					text-decoration: none;
-					line-height: 30px;
-					font-weight: bold;
-					margin: auto;
-					font-family: sans-serif;
-					color: #daba69;
-				}
-				span.navbar-item {
-					position: relative;
-					top: -10px;
-				}
-				span.navbar-item-no-logo {
-					position: relative;
-					top: 20px;
-				}
-				.navbar-item-container {
-					width: 150px;
-					height: 59px;
-					position: relative;
-					border-top: 1px solid #daba69;
-					border-left: 1px solid #daba69;
-					position: relative;
-					top: -1px;
-					left: -1px;
-				}
-				.navbar-icon {
-					width: 45px;
-					height: 45px;
-					position: relative;
-					left: -5px;
-					top: 8px;
-				}
-				.navbar-icon#goc-logo {
-					left: -10px;
-				}
-				.navbar-item-container#navbar-home {
-					border-radius: 10px 0px 0px 0px;
-				}
-				.navbar-item-container#navbar-resources {
-					border-radius: 0px 10px 0px 0px;
-				}
-				.navbar-item-container#navbar-stream {
-					border-radius: 0px 0px 10px 0px;
-				}
-				.navbar-item-container#navbar-signup {
-					border-radius: 0px 0px 0px 10px;
-				}
-				.navbar-item-container#navbar-commentators {
-					display: block;
-				}
-			}
-			
-			@media only screen and (min-width:350px) and (max-width: 500px) {
-				body {
-					display: grid;
-					grid-template-rows: 270px;
-					grid-template-areas:	"navbar"
-											"main";
-					max-width: 2000px;
-					margin: auto;
-				}
-				main {
-					grid-area: main;
-					max-width: 2000px;
-					margin: auto;
-				}
-				
-				.navbar-div {
-					display: grid;
-					background-color: black;
-					width: 300px;
-					grid-template-columns: 150px 150px;
-					grid-template-rows: 60px 60px 60px 60px;
-					border-radius: 10px;
-					align-content: center center;
-					grid-template-areas:	"home	rulesets"
-											"rules	formats"
-											"signup	discord"
-											"stream resources";
-					margin: auto;
-					border: 1px solid #daba69;
-				}
-				.navbar-item {
-					width: 148px;
-					height: 30px;
-					padding-top: 15px;
-					text-align: center;
-					text-decoration: none;
-					line-height: 30px;
-					font-weight: bold;
-					margin: auto;
-					font-family: sans-serif;
-					color: #daba69;
-				}
-				span.navbar-item {
-					position: relative;
-					top: -10px;
-				}
-				span.navbar-item-no-logo {
-					position: relative;
-					top: 20px;
-				}
-				.navbar-item-container {
-					width: 150px;
-					height: 60px;
-					position: relative;
-					border-top: 1px solid #daba69;
-					border-left: 1px solid #daba69;
-					position: relative;
-					top: -1px;
-					left: -1px;
-				}
-				.navbar-icon {
-					width: 45px;
-					height: 45px;
-					position: relative;
-					left: -5px;
-					top: 8px;
-				}
-				.navbar-icon#goc-logo {
-					left: -10px;
-				}
-				.navbar-item-container#navbar-home {
-					border-radius: 10px 0px 0px 0px;
-				}
-				.navbar-item-container#navbar-rulesets {
-					border-radius: 0px 10px 0px 0px;
-				}
-				.navbar-item-container#navbar-resources {
-					border-radius: 0px 0px 10px 0px;
-				}
-				.navbar-item-container#navbar-stream {
-					border-radius: 0px 0px 0px 10px;
-				}
-				.navbar-item-container#navbar-commentators {
-					display: none;
-				}
-			}
-			
-			@media only screen and (max-width: 350px) {
-				body {
-					display: grid;
-					grid-template-areas: "main";
-					max-width: 2000px;
-					margin: auto;
-				}
-				main {
-					grid-area: main;
-					max-width: 2000px;
-					margin: auto;
-				}
-				
-				.navbar-div {
-					display: none;
-				}
-			}
-			
-			.navbar-item-container:hover {
-				background-color: #100e0d;
-			}
-			.navbar-item-container#navbar-home {
-				grid-area: home;
-			}
-			.navbar-item-container#navbar-rules {
-				grid-area: rules;
-			}
-			.navbar-item-container#navbar-rulesets {
-				grid-area: rulesets;
-			}
-			.navbar-item-container#navbar-formats {
-				grid-area: formats;
-			}
-			.navbar-item-container#navbar-signup {
-				grid-area: signup;
-			}
-			.navbar-item-container#navbar-discord {
-				grid-area: discord;
-			}
-			.navbar-item-container#navbar-stream {
-				grid-area: stream;
-			}
-			.navbar-item-container#navbar-resources {
-				grid-area: resources;
-			}
-			.navbar-item-container#navbar-commentators {
-				grid-area: commentators;
-			}
-			.navbar-icon#goc-logo {
-				grid-area: home;
-			}
-			.navbar-icon#discord-logo {
-				grid-area: discord;
-			}
-		</style>
+		<link rel="stylesheet" href="markdown-style.css">
+		<link rel="stylesheet" href="navbar-style.css">
 	</head>
 	<body>
 		<header class="navbar-div">
@@ -387,70 +19,88 @@
 			<div class="navbar-item-container" id="navbar-resources"><a href="resources" class="navbar-item" title="Read up on a bunch of useful Fantasy Strike knowledge!"><div class="navbar-item-container" id="navbar-resources"><div class="navbar-item">Resources</div></div></a></div>
 			<div class="navbar-item-container" id="navbar-commentators"><a href="commentators" class="navbar-item" title="See who our commentators are and what else they do!"><div class="navbar-item-container" id="navbar-commentators"><div class="navbar-item">Commentators</div></div></a></div>
 		</header>
-    <main>
-		<div id="center-div">
-			<h1>Resources</h1>
-			<p>A list of (hopefully useful) Fantasy Strike resources, for those looking to learn, looking to watch tournament archives, or just looking for handy dandy tools!</p>
-
-			<br>
-			<p><strong>Tools:</strong></p>
-			<ul>
+	    <main>
+			<div id="center-div">
+				<a name="Resources"></a>
+				<h1>Resources</h1>
+				
+				<p>A list of (hopefully useful) Fantasy Strike resources, for those looking to learn, looking to watch tournament archives, or just looking for handy dandy tools!</p>
+				
+				<p><br>
+				<a href="#tools" name="tools"><strong>Tools:</strong></a></p>
+				
+				<ul>
 				<li><a href="https://forums.fantasystrike.com/">The Forum:</a> The official Fantasy Strike forum.</li>
+				<li><a href="https://fantasystrike.com/events">Events:</a> The official Fantasy Strike events page.</li>
 				<li><a href="https://discord.gg/FantasyStrike">The Discord:</a> The official Fantasy Strike Discord server.</li>
 				<li><a href="https://www.reddit.com/r/FantasyStrike">The Subreddit:</a> The Fantasy Strike subreddit. (With a <a href="https://reddit.com/r/FantasyStrike/wiki/fantasy-strike-resources">resources page</a> of its own!)</li>
-				<li><a href="https://gardenofchaos.xyz/teams">Custom Team Battle manager:</a> A tool for managing Team Battles between custom teams of Fantasy Strike characters, including any number of non-unique characters, based on <a href="https://danielstretulch.github.io/">Daniel Stretulch's similar tool for all Yomi characters.</a> If you need a version that requires less organisation, <a href="https://gardenofchaos.xyz/teams2">here's one!</a></li>
-				<li><a href="https://github.com/undergroundmonorail/fs_stats">monorail's fs_stats:</a> A python tool for tracking your win-rate.</li>
-				<li><a href="https://twitter.com/trapdoorbeaver/status/1278559863321137153">trapdoorbeaver's safe zone template:</a> A Twitter post containing reference images for where important parts of Fantasy Strike's UI are located.</li>
-			</ul>
-
-			<br>
-			<p><strong>Guides:</strong></p>
-			<ul>
+				<li><a href="teams">Custom Team Battle manager:</a> A tool for managing Team Battles between custom teams of Fantasy Strike characters, including any number of non-unique characters, based on <a href="https://danielstretulch.github.io/">Danielizabeth Stretulch&rsquo;s similar tool for all Yomi characters.</a>
+				
+				<ul>
+				<li>If you need an async version you can entirely determine before the match, <a href="teams2">here&rsquo;s one!</a> It works by picking exactly enough blind picks that you can&rsquo;t run out before the match ends.</li>
+				</ul>
+				</li>
+				<li><a href="https://github.com/undergroundmonorail/fs_stats">monorail&rsquo;s fs_stats:</a> A python tool for tracking your win-rate.</li>
+				<li><a href="https://twitter.com/trapdoorbeaver/status/1278559863321137153">trapdoorbeaver&rsquo;s safe zone template:</a> A Twitter post containing reference images for where important parts of Fantasy Strike&rsquo;s UI are located.</li>
+				</ul>
+				
+				
+				<p><br>
+				<a href="#guides" name="guides"><strong>Guides:</strong></a></p>
+				
+				<ul>
 				<li><a href="http://www.fantasystrike.com/guide">Official Guide:</a> An official guide for the fundamentals of the game.</li>
 				<li><a href="https://forums.fantasystrike.com/t/ports-to-forward-for-online-connection-issues-udp-9991-and-19900">Some help with port forwarding</a></li>
 				<li><a href="https://docs.google.com/document/d/1RBBqG-SRG5H_3yV7KU57YkNinSg3UmztIi_ikB9pgSA/edit">Glossary of Fighting Game Terminology:</a> A useful list of explanations of various terms commonly used in fighting game communities.</li>
 				<li><a href="https://docs.google.com/spreadsheets/d/1Ia4um01P9JMlxckup9qbKXuZgW1CdTshVPeny4-XKEs/edit">Frame Data Spreadsheet:</a> A spreadsheet listing the frame data of every move in Fantasy Strike.</li>
-				<li><a href="https://wiki.gbl.gg/w/Fantasy_Strike">Mizuumi Wiki:</a> A wiki for Fantasy Strike.
-				<li><a href="https://docs.google.com/document/d/1KKsV009d-8hm6XSFiQRy7QCqWtBsLlHzuI_ZvYSQngY/edit">Aphotix's Argagarg Guide:</a> A guide on the fundamentals of playing Argagarg effectively, written by one of the best Argagarg players in the community.</li>
-				<li><a href="https://docs.google.com/document/d/1nVdWoyd4S3Ta6ACE_5p7E3E0963sHO9woq0t_SR4xgQ/edit">Aphotix's Setsuki Guide:</a> A guide on the fundamentals of playing Setsuki effectively, written by one of the best Setsuki players in the community.</li>
-				<li><a href="https://docs.google.com/document/d/1PpEna_htGHitwWtAxEpMI94rlnSWKBwnt7r4hmIANck/edit">Novril's Character Guides:</a> A guide to the basics of each character.</li>
-				<li><a href="https://forums.fantasystrike.com/t/tidazis-thoughts-on-noise-and-a-bit-about-conditioning-and-rook-oki/1716">Tidazi’s thoughts on “Noise” (and a bit about conditioning and Rook oki):</a> A forum post on a notable psychological element of gameplay, written by one of the best Rook players in the community.</li>
-				<li><a href="http://forums.fantasystrike.com/t/fs-matchup-compendium/1718">Hypergrav's Matchup Compendium:</a> A compilation of footage for every matchup in Fantasy Strike, collated by Hypergrav, a prominent member of the community.</li>
-				<li><a href="https://www.reddit.com/r/FantasyStrike/comments/hg2hlf/the_big_list_of_little_things_i_wish_i_knew">"Little things I wish I knew before I started":</a> A huge amount of little useful bits of information that can be extremely useful, put together by ErickDRedd, prominent member of the community and Maker Of Memes.</li>
-				<li>Random Character Thoughts: A collection of pieces of advice for some characters, by Sente and professorplacid.</li>
+				<li><a href="https://wiki.gbl.gg/w/Fantasy_Strike">Mizuumi Wiki:</a> A wiki for Fantasy Strike.</li>
+				<li><a href="https://docs.google.com/document/d/1KKsV009d-8hm6XSFiQRy7QCqWtBsLlHzuI_ZvYSQngY/edit">Aphotix&rsquo;s Argagarg Guide:</a> A guide on the fundamentals of playing Argagarg effectively, written by one of the best Argagarg players in the community.</li>
+				<li><a href="https://docs.google.com/document/d/1nVdWoyd4S3Ta6ACE_5p7E3E0963sHO9woq0t_SR4xgQ/edit">Aphotix&rsquo;s Setsuki Guide:</a> A guide on the fundamentals of playing Setsuki effectively, written by one of the best Setsuki players in the community.</li>
+				<li><a href="https://docs.google.com/document/d/1PpEna_htGHitwWtAxEpMI94rlnSWKBwnt7r4hmIANck/edit">Novril&rsquo;s Character Guides:</a> A guide to the basics of each character.</li>
+				<li><a href="https://forums.fantasystrike.com/t/tidazis-thoughts-on-noise-and-a-bit-about-conditioning-and-rook-oki/1716">Tidazi’s thoughts on “Noise”</a> (and a bit about conditioning and Rook oki): A forum post on a notable psychological element of gameplay, written by one of the best Rook players in the community.</li>
+				<li><a href="http://forums.fantasystrike.com/t/fs-matchup-compendium/1718">Hypergrav&rsquo;s Matchup Compendium:</a> A compilation of footage for every matchup in Fantasy Strike, collated by Hypergrav, a prominent member of the community.</li>
+				<li><a href="https://www.reddit.com/r/FantasyStrike/comments/hg2hlf/the_big_list_of_little_things_i_wish_i_knew">&ldquo;Little things I wish I knew before I started&rdquo;:</a> A huge amount of little useful bits of information that can be extremely useful, put together by ErickDRedd, prominent member of the community and Maker Of Memes.</li>
+				<li>Random Character Thoughts: A collection of pieces of advice for some characters, by Sente and professorplacid.
+				
 				<ul>
-					<li><a href="https://forums.fantasystrike.com/t/random-degrey-thoughts">Random Degrey Thoughts</a></li>
-					<li><a href="https://forums.fantasystrike.com/t/random-lum-thoughts">Random Lum Thoughts</a></li>
-					<li><a href="https://forums.fantasystrike.com/t/random-midori-thoughts">Random Midori Thoughts</a></li>
-					<li><a href="https://forums.fantasystrike.com/t/random-geiger-thoughts">Random Geiger Thoughts</a></li>
-					<li><a href="https://forums.fantasystrike.com/t/random-rook-thoughts">Random Rook Thoughts</a></li>
+				<li><a href="https://forums.fantasystrike.com/t/random-degrey-thoughts">Random Degrey Thoughts</a></li>
+				<li><a href="https://forums.fantasystrike.com/t/random-lum-thoughts">Random Lum Thoughts</a></li>
+				<li><a href="https://forums.fantasystrike.com/t/random-midori-thoughts">Random Midori Thoughts</a></li>
+				<li><a href="https://forums.fantasystrike.com/t/random-geiger-thoughts">Random Geiger Thoughts</a></li>
+				<li><a href="https://forums.fantasystrike.com/t/random-rook-thoughts">Random Rook Thoughts</a></li>
 				</ul>
-				<li><a href="https://gardenofchaos.xyz/thoughts">Janet's Thoughts on Stuff:</a> A (currently very small) collection of brief guides on miscellaneous concepts in Fantasy Strike, put together by Janet who is also the person who made this page!</li>
+				</li>
+				<li><a href="thoughts">Janet&rsquo;s Thoughts on Stuff:</a> A (currently very small) collection of brief guides on miscellaneous concepts in Fantasy Strike, put together by Janet who is also the person who made this page!
+				
 				<ul>
-					<li><a href="/thoughts-advantage">Janet's Thoughts on Advantage</a></li>
-					<li><a href="/thoughts-throws">Janet's Thoughts on Throw Strategy</a></li>
-					<li><a href="/thoughts-dice">Janet's Thoughts on How to Dice</a></li>
-					<li><a href="/thoughts-lumoki">Janet's Thoughts on Lum's Oki</a></li>
+				<li><a href="thoughts-advantage">Janet&rsquo;s Thoughts on Advantage</a></li>
+				<li><a href="thoughts-throws">Janet&rsquo;s Thoughts on Throw Strategy</a></li>
+				<li><a href="thoughts-dice">Janet&rsquo;s Thoughts on How to Dice</a></li>
+				<li><a href="thoughts-lumoki">Janet&rsquo;s Thoughts on Lum&rsquo;s Oki</a></li>
 				</ul>
-				<li><a href="https://docs.google.com/document/d/10Qo5JpuLyJFV4kVWf_UjONFbBZZjiSYBFEhwuQsN-bU/edit">Tidazi's Onimaru Guide:</a> A guide on the fundamentals of playing Onimaru effectively, written by an utterly fantastic Onimaru player.</li>
+				</li>
+				<li><a href="https://docs.google.com/document/d/10Qo5JpuLyJFV4kVWf_UjONFbBZZjiSYBFEhwuQsN-bU/edit">Tidazi&rsquo;s Onimaru Guide:</a> A guide on the fundamentals of playing Onimaru effectively, written by an utterly fantastic Onimaru player.</li>
 				<li>A two-part guide (part <a href="https://reddit.com/r/FantasyStrike/comments/hhbu0f/basics_with_beav_rook_you_like_a_hurricane/">one</a>, part <a href="https://reddit.com/r/FantasyStrike/comments/huee3g/basics_by_beav_rook_2_electric_rookalo_match_ups/">two</a>) by trapdoorbeaver - the first part dealing with his fundamental strategies and toolset, the second part dealing with his matchups.</li>
-			</ul>
-
-			<br>
-			<p><strong>Video Channels</strong> (plus a recommended video or playlist from each):</p>
-			<ul>
-				<li><a href="https://www.youtube.com/channel/UCbEzx3q_NBagrRVLd7vNBZA">Fantasy Strike: </a> The official Fantasy Strike Youtube channel - notably containing a <a href="https://www.youtube.com/playlist?list=PLFhqt7OorJEvR8NGgqjHbLEoUGYRLJ91C">playlist of character spotlights</a> (that can also be found in-game).</li>
-				<li><a href="https://www.youtube.com/channel/UCue7y_ftAmKf36oTgJmri8w">ThyPirateKing Esports:</a> A Youtube channel owned by a major Fantasy Strike tournament organiser - notably containing a <a href="https://www.youtube.com/playlist?list=PLFaWQZl1vaoaqS7MHveb-C8-mZ0BrKrkX">playlist of archives for his weekly tournaments.</a></li>
-				<li><a href="https://www.youtube.com/user/torontotoptiers">Toronto TopTiers:</a> A Youtube channel owned by a Canadian fighting game community which hosts many tournaments (including Fantasy Strike tournaments!) - notably containing a <a href="https://www.youtube.com/playlist?list=PLH4OtSJYW-kbKmsI5y7YiAD3GEKb79u9l">playlist for their online weekly tournaments.</a></li>
-				<li><a href="https://www.youtube.com/channel/UCKVW-6arRYF3nzpvWbwbnUg">Daniel Stretulch:</a> A Youtube channel owned by Daniel Stretulch, a prominent member of the Fantasy Strike community who is a host and commentator for Garden of Chaos - notably containing a <a href="https://www.youtube.com/playlist?list=PLs_4hyqzAO6WlcESsAqtNHWShfQziyQ7y">playlist of archives for Garden of Chaos tournaments.</a></li>
-				<li><a href="https://www.youtube.com/channel/UCHh8puoYhQf4d459Xz_YUFA">Agoners Gaming:</a> A Youtube channel owned by Remy, a Fantasy Strike streamer and blogger - notably containing a <a href="https://www.youtube.com/playlist?list=PLv98WcnKxQljXXa1UWwO8E2cB3ilLqHWA">playlist of ranked matches he's commentated in his streams</a></li>
-				<li><a href="https://www.youtube.com/mrmikelproductions">Mr Mkl:</a> A Youtube channel owned by MrMkl, a prominent member of the Fantasy Strike community, especially in the Toronto TopTiers local fighting game community - notably containing a <a href="https://www.youtube.com/playlist?list=PLn1IUCrpX-nQWuo82GQ3-gVac9u4_0WaH">series of training sequences!</a> (But also check out the playlists and combo videos)</li>
-				<li><a href="https://www.youtube.com/channel/UCpj9deH_-JE-_DskWe2z7Lw">CWheezy:</a> A Youtube channel owned by CWheezy, a prominent and extremely experienced member of the Fantasy Strike community and tournament commentator - notably containing a <a href="https://www.youtube.com/watch?v=ufCC4YvEoyQ">video explaining the Grave vs Valerie matchup in a minute.</a></li>
-				<li><a href="https://www.youtube.com/channel/UCRBSZBLV2dNF7KScF46usZw">Shobbs:</a> A Youtube channel owned by shobbs (aka the rook hugger), a prominent and extremely experienced member of the Fantasy Strike community - notably containing a <a href="https://www.youtube.com/watch?v=fE079_lLiRU">video tutorial on playing Rook.</a></li>
-				<li><a href="https://www.youtube.com/channel/UCIy3dZDnDgqlfS_HfEzK3iA">Simon Braendli:</a> A Youtube channel owned by mysticjuicer, a notable member of the Fantasy Strike community - containing a <a href="https://www.youtube.com/watch?v=k78JUCNarW4">video guide on safe jumping as Rook.</a>
-			</ul>
+				</ul>
+				
+				
+				<p><br>
+				<a href="#video" name="video"><strong>Video Channels</strong></a> (plus a recommended video or playlist from each):</p>
+				
+				<ul>
+				<li><a href="https://www.youtube.com/channel/UCbEzx3q_NBagrRVLd7vNBZA">Fantasy Strike:</a> The official Fantasy Strike Youtube channel - notably containing a <a href="https://www.youtube.com/playlist?list=PLFhqt7OorJEvR8NGgqjHbLEoUGYRLJ91C">playlist of character spotlights</a> (that can also be found in-game).</li>
+				<li><a href="https://www.youtube.com/channel/UCue7y_ftAmKf36oTgJmri8w">ThyPirateKing Esports</a>: A Youtube channel owned by a major Fantasy Strike tournament organiser - notably containing a <a href="https://www.youtube.com/playlist?list=PLFaWQZl1vaoaqS7MHveb-C8-mZ0BrKrkX">playlist of archives</a> for his weekly tournaments.</li>
+				<li><a href="https://www.youtube.com/user/torontotoptiers">Toronto TopTiers:</a> A Youtube channel owned by a Canadian fighting game community which hosts many tournaments (including Fantasy Strike tournaments!) - notably containing a <a href="https://www.youtube.com/playlist?list=PLH4OtSJYW-kbKmsI5y7YiAD3GEKb79u9l">playlist of archives</a> for their online weekly tournaments.</li>
+				<li><a href="https://www.youtube.com/channel/UCKVW-6arRYF3nzpvWbwbnUg">Daniel Stretulch:</a> A Youtube channel owned by Daniel Stretulch, a prominent member of the Fantasy Strike community who is a host and commentator for Garden of Chaos - notably containing a <a href="https://www.youtube.com/playlist?list=PLs_4hyqzAO6WlcESsAqtNHWShfQziyQ7y">playlist of archives</a> for Garden of Chaos tournaments.</li>
+				<li><a href="https://www.youtube.com/channel/UCHh8puoYhQf4d459Xz_YUFA">Agoners Gaming:</a> A Youtube channel owned by Remy, a Fantasy Strike streamer and blogger - notably containing a <a href="https://www.youtube.com/playlist?list=PLv98WcnKxQljXXa1UWwO8E2cB3ilLqHWA">playlist of ranked matches</a> he&rsquo;s commentated in his streams</li>
+				<li><a href="https://www.youtube.com/mrmikelproductions">Mr Mkl:</a> A Youtube channel owned by MrMkl, a prominent member of the Fantasy Strike community, especially in the Toronto TopTiers local fighting game community - notably containing a <a href="https://www.youtube.com/playlist?list=PLn1IUCrpX-nQWuo82GQ3-gVac9u4_0WaH">series of Jaina training sequences!</a> (But also check out the playlists and combo videos)</li>
+				<li><a href="https://www.youtube.com/channel/UCpj9deH_-JE-_DskWe2z7Lw">CWheezy:</a> A Youtube channel owned by CWheezy, a prominent and extremely experienced member of the Fantasy Strike community and tournament commentator - notably containing a <a href="https://www.youtube.com/watch?v=ufCC4YvEoyQ">video explaining</a> the Grave vs Valerie matchup in a minute.</li>
+				<li><a href="https://www.youtube.com/channel/UCRBSZBLV2dNF7KScF46usZw">Shobbs:</a> A Youtube channel owned by shobbs (aka the rook hugger), a prominent and extremely experienced member of the Fantasy Strike community - notably containing a <a href="https://www.youtube.com/watch?v=fE079_lLiRU">video tutorial</a> on playing Rook.</li>
+				<li><a href="https://www.youtube.com/channel/UCIy3dZDnDgqlfS_HfEzK3iA">Simon Braendli:</a> A Youtube channel owned by mysticjuicer, a notable member of the Fantasy Strike community - containing a <a href="https://www.youtube.com/watch?v=k78JUCNarW4">video guide</a> on safe jumping as Rook.</li>
+				</ul>
+				
 		</div>
     </main>
-		<footer></footer>
+	<footer></footer>
 	</body>
 </html>

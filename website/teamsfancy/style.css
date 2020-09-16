@@ -23,7 +23,7 @@
 					display: grid;
 					grid-gap: 10px;
 					grid-template-columns: 400px 180px 400px;
-					grid-template-rows: 80px 50px 300px 40px 300px 40px;
+					grid-template-rows: 80px 50px 300px 40px 300px 40px 400px;
 					grid-template-areas:	"title				title	title"
 											"team1selectTitle	.		team2selectTitle"
 											"team1select		submit	team2select"
@@ -92,7 +92,7 @@
 					display: grid;
 					grid-gap: 10px;
 					grid-template-columns: 300px 180px 300px;
-					grid-template-rows: 70px 80px 400px 40px 400px 40px;
+					grid-template-rows: 70px 80px 400px 40px 400px 40px 500px;
 					grid-template-areas:	"title				title	title"
 											"team1selectTitle	.		team2selectTitle"
 											"team1select		submit	team2select"
@@ -165,7 +165,7 @@
 					display: grid;
 					grid-gap: 10px;
 					grid-template-columns: 200px 80px 200px;
-					grid-template-rows: 80px 110px 600px 40px 500px 40px;
+					grid-template-rows: 80px 110px 600px 40px 500px 40px 700px;
 					grid-template-areas:	"title				title	title"
 											"team1selectTitle	.		team2selectTitle"
 											"team1select		submit	team2select"
@@ -239,109 +239,7 @@
 					direction: rtl;
 				}
 			}
-			@media only screen and (min-width:350px) and (max-width:550px) {
-				div.grid {
-					display: grid;
-					width: 300px;
-					grid-gap: 10px;
-					grid-template-columns: 100px 80px 100px;
-					grid-template-rows: 120px 120px 1200px 80px 1000px 80px;
-					grid-template-areas: "title				title	title"
-										"team1selectTitle	.		team2selectTitle"
-										"team1select		submit	team2select"
-										"team1presetTitle	.		team2presetTitle"
-										"team1preset		.		team2preset"
-										"team1Title			.		team2Title"
-										"team1				.		team2";
-					width: 300px;
-					margin: auto;
-				}
-				
-				div.charSelectGrid1 {
-					grid-area: team1select;
-					display: grid;
-					grid-template-columns: 100px;
-					grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
-					grid-template-areas:	"grave"
-											"jaina"
-											"geiger"
-											"argagarg"
-											"setsuki"
-											"valerie"
-											"rook"
-											"midori"
-											"lum"
-											"degrey"
-											"quince"
-											"onimaru";
-				}
-				div.charSelectGrid2 {
-					grid-area: team2select;
-					display: grid;
-					grid-template-columns: 100px;
-					grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
-					grid-template-areas:	"grave"
-											"jaina"
-											"geiger"
-											"argagarg"
-											"setsuki"
-											"valerie"
-											"rook"
-											"midori"
-											"lum"
-											"degrey"
-											"quince"
-											"onimaru";
-				}
-				
-				div.presetGrid1 {
-					grid-area: team1preset;
-					display: grid;
-					grid-template-columns: 100px;
-					grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
-					grid-template-areas:	"delete"
-											"random"
-											"zoners"
-											"rushdowns"
-											"grapplers"
-											"wildcards"
-											"flagstone"
-											"all"
-											"left"
-											"right";
-				}
-				div.presetGrid2 {
-					grid-area: team2preset;
-					display: grid;
-					grid-template-columns: 100px;
-					grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
-					grid-template-areas:	"delete"
-											"random"
-											"zoners"
-											"rushdowns"
-											"grapplers"
-											"wildcards"
-											"flagstone"
-											"all"
-											"left"
-											"right";
-				}
-				
-				div.teamGrid1 {
-					grid-area: team1;
-					display: grid;
-					grid-template-columns: 100px;
-					grid-auto-rows: 100px;
-				}
-				div.teamGrid2 {
-					grid-area: team2;
-					display: grid;
-					grid-template-columns: 100px;
-					grid-auto-rows: 100px;
-					direction: rtl;
-				}
-			}
-			@media only screen and (min-width:335px) and (max-width:350px) {
+			@media only screen and (min-width:335px) and (max-width:550px) {
 				div.grid {
 					display: grid;
 					grid-gap: 10px;

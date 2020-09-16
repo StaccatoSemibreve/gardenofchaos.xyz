@@ -2,378 +2,10 @@
 <html lang="">
 	<head>
 		<meta charset="utf-8">
-		<title>Garden of Chaos: Formats</title>
+		<title>Garden of Chaos: Tournament Formats</title>
 		<link rel="icon" type="image/png" href="FSgardenOfChao-196x196.png" sizes="196x196">
-		<style>
-			p, h1, ul, a {
-				font-family: sans-serif;
-				color: #daba69;
-				line-height: 30px;
-			}
-			
-			@media only screen and (min-width:1050px) {
-				div#center-div {
-					max-width: 1000px;
-					margin: auto;
-				}
-				body {
-					background: linear-gradient(90deg, #0f0d0c, #0f0d0c calc(50% - 525px), #1e1b19 calc(50% - 525px), #1e1b19 calc(50% + 525px), #0f0d0c calc(50% + 525px));
-				}
-			}
-			@media only screen and (min-width:850px) and (max-width:1050px) {
-				div#center-div {
-					max-width: 800px;
-					margin: auto;
-				}
-				body {
-					background: linear-gradient(90deg, #0f0d0c, #0f0d0c calc(50% - 425px), #1e1b19 calc(50% - 425px), #1e1b19 calc(50% + 425px), #0f0d0c calc(50% + 425px));
-				}
-			}
-			@media only screen and (min-width:650px) and (max-width:850px) {
-				div#center-div {
-					max-width: 600px;
-					margin: auto;
-				}
-				body {
-					background: linear-gradient(90deg, #0f0d0c, #0f0d0c calc(50% - 325px), #1e1b19 calc(50% - 325px), #1e1b19 calc(50% + 325px), #0f0d0c calc(50% + 325px));
-				}
-			}
-			@media only screen and (min-width:500px) and (max-width:650px) {
-				div#center-div {
-					max-width: 450px;
-					margin: auto;
-				}
-				body {
-					background: linear-gradient(90deg, #0f0d0c, #0f0d0c calc(50% - 250px), #1e1b19 calc(50% - 250px), #1e1b19 calc(50% + 250px), #0f0d0c calc(50% + 250px));
-				}
-			}
-			@media only screen and (min-width:350px) and (max-width:500px) {
-				div#center-div {
-					max-width: 300px;
-					margin: auto;
-				}
-				body {
-					background: linear-gradient(90deg, #0f0d0c, #0f0d0c calc(50% - 175px), #1e1b19 calc(50% - 175px), #1e1b19 calc(50% + 175px), #0f0d0c calc(50% + 175px));
-				}
-			}
-			@media only screen and (max-width:350px) {
-				div#center-div {
-					max-width: 90%;
-					margin: auto;
-				}
-				body {
-					background-color: #1e1b19;
-				}
-			}
-			@media only screen and (min-width:650px) {
-				body {
-					display: grid;
-					grid-template-rows: 150px;
-					grid-template-areas:	"navbar"
-											"main";
-					max-width: 2000px;
-					margin: auto;
-				}
-				main {
-					grid-area: main;
-					max-width: 2000px;
-					margin: auto;
-				}
-				
-				.navbar-div {
-					display: grid;
-					background-color: black;
-					width: 600px;
-					grid-template-columns: 150px 150px 150px 150px;
-					grid-template-rows: 60px 59px;
-					border-radius: 10px;
-					align-content: center center;
-					grid-template-areas:	"home	signup		discord	stream"
-											"rules	rulesets	formats	resources";
-					margin: auto;
-					border: 1px solid #daba69;
-				}
-				.navbar-item {
-					width: 148px;
-					height: 30px;
-					padding-top: 15px;
-					text-align: center;
-					text-decoration: none;
-					line-height: 30px;
-					font-weight: bold;
-					margin: auto;
-					font-family: sans-serif;
-					color: #daba69;
-				}
-				span.navbar-item {
-					position: relative;
-					top: -10px;
-				}
-				.navbar-item-container {
-					width: 150px;
-					height: 59px;
-					position: relative;
-					border-top: 1px solid #daba69;
-					border-left: 1px solid #daba69;
-					position: relative;
-					top: -1px;
-					left: -1px;
-				}
-				.navbar-icon {
-					width: 45px;
-					height: 45px;
-					position: relative;
-					left: -5px;
-					top: 8px;
-				}
-				.navbar-icon#goc-logo {
-					left: -10px;
-				}
-				.navbar-item-container#navbar-home {
-					border-radius: 10px 0px 0px 0px;
-				}
-				.navbar-item-container#navbar-stream {
-					border-radius: 0px 10px 0px 0px;
-				}
-				.navbar-item-container#navbar-resources {
-					border-radius: 0px 0px 10px 0px;
-				}
-				.navbar-item-container#navbar-rules {
-					border-radius: 0px 0px 0px 10px;
-				}
-				.navbar-item-container#navbar-commentators {
-					display: none;
-				}
-			}
-			
-			@media only screen and (min-width:500px) and (max-width: 650px) {
-				body {
-					display: grid;
-					grid-template-rows: 210px;
-					grid-template-areas:	"navbar"
-											"main";
-					max-width: 2000px;
-					margin: auto;
-				}
-				main {
-					grid-area: main;
-					max-width: 2000px;
-					margin: auto;
-				}
-				
-				.navbar-div {
-					display: grid;
-					background-color: black;
-					width: 450px;
-					grid-template-columns: 150px 150px 150px;
-					grid-template-rows: 60px 60px 59px;
-					border-radius: 10px;
-					align-content: center center;
-					grid-template-areas:	"home	rulesets	resources"
-											"rules	formats		commentators"
-											"signup	discord		stream";
-					margin: auto;
-					border: 1px solid #daba69;
-				}
-				.navbar-item {
-					width: 150px;
-					height: 30px;
-					padding-top: 15px;
-					text-align: center;
-					text-decoration: none;
-					line-height: 30px;
-					font-weight: bold;
-					margin: auto;
-					font-family: sans-serif;
-					color: #daba69;
-				}
-				span.navbar-item {
-					position: relative;
-					top: -10px;
-				}
-				span.navbar-item-no-logo {
-					position: relative;
-					top: 20px;
-				}
-				.navbar-item-container {
-					width: 150px;
-					height: 59px;
-					position: relative;
-					border-top: 1px solid #daba69;
-					border-left: 1px solid #daba69;
-					position: relative;
-					top: -1px;
-					left: -1px;
-				}
-				.navbar-icon {
-					width: 45px;
-					height: 45px;
-					position: relative;
-					left: -5px;
-					top: 8px;
-				}
-				.navbar-icon#goc-logo {
-					left: -10px;
-				}
-				.navbar-item-container#navbar-home {
-					border-radius: 10px 0px 0px 0px;
-				}
-				.navbar-item-container#navbar-resources {
-					border-radius: 0px 10px 0px 0px;
-				}
-				.navbar-item-container#navbar-stream {
-					border-radius: 0px 0px 10px 0px;
-				}
-				.navbar-item-container#navbar-signup {
-					border-radius: 0px 0px 0px 10px;
-				}
-				.navbar-item-container#navbar-commentators {
-					display: block;
-				}
-			}
-			
-			@media only screen and (min-width:350px) and (max-width: 500px) {
-				body {
-					display: grid;
-					grid-template-rows: 270px;
-					grid-template-areas:	"navbar"
-											"main";
-					max-width: 2000px;
-					margin: auto;
-				}
-				main {
-					grid-area: main;
-					max-width: 2000px;
-					margin: auto;
-				}
-				
-				.navbar-div {
-					display: grid;
-					background-color: black;
-					width: 300px;
-					grid-template-columns: 150px 150px;
-					grid-template-rows: 60px 60px 60px 60px;
-					border-radius: 10px;
-					align-content: center center;
-					grid-template-areas:	"home	rulesets"
-											"rules	formats"
-											"signup	discord"
-											"stream resources";
-					margin: auto;
-					border: 1px solid #daba69;
-				}
-				.navbar-item {
-					width: 148px;
-					height: 30px;
-					padding-top: 15px;
-					text-align: center;
-					text-decoration: none;
-					line-height: 30px;
-					font-weight: bold;
-					margin: auto;
-					font-family: sans-serif;
-					color: #daba69;
-				}
-				span.navbar-item {
-					position: relative;
-					top: -10px;
-				}
-				span.navbar-item-no-logo {
-					position: relative;
-					top: 20px;
-				}
-				.navbar-item-container {
-					width: 150px;
-					height: 60px;
-					position: relative;
-					border-top: 1px solid #daba69;
-					border-left: 1px solid #daba69;
-					position: relative;
-					top: -1px;
-					left: -1px;
-				}
-				.navbar-icon {
-					width: 45px;
-					height: 45px;
-					position: relative;
-					left: -5px;
-					top: 8px;
-				}
-				.navbar-icon#goc-logo {
-					left: -10px;
-				}
-				.navbar-item-container#navbar-home {
-					border-radius: 10px 0px 0px 0px;
-				}
-				.navbar-item-container#navbar-rulesets {
-					border-radius: 0px 10px 0px 0px;
-				}
-				.navbar-item-container#navbar-resources {
-					border-radius: 0px 0px 10px 0px;
-				}
-				.navbar-item-container#navbar-stream {
-					border-radius: 0px 0px 0px 10px;
-				}
-				.navbar-item-container#navbar-commentators {
-					display: none;
-				}
-			}
-			
-			@media only screen and (max-width: 350px) {
-				body {
-					display: grid;
-					grid-template-areas: "main";
-					max-width: 2000px;
-					margin: auto;
-				}
-				main {
-					grid-area: main;
-					max-width: 2000px;
-					margin: auto;
-				}
-				
-				.navbar-div {
-					display: none;
-				}
-			}
-			
-			.navbar-item-container:hover {
-				background-color: #100e0d;
-			}
-			.navbar-item-container#navbar-home {
-				grid-area: home;
-			}
-			.navbar-item-container#navbar-rules {
-				grid-area: rules;
-			}
-			.navbar-item-container#navbar-rulesets {
-				grid-area: rulesets;
-			}
-			.navbar-item-container#navbar-formats {
-				grid-area: formats;
-			}
-			.navbar-item-container#navbar-signup {
-				grid-area: signup;
-			}
-			.navbar-item-container#navbar-discord {
-				grid-area: discord;
-			}
-			.navbar-item-container#navbar-stream {
-				grid-area: stream;
-			}
-			.navbar-item-container#navbar-resources {
-				grid-area: resources;
-			}
-			.navbar-item-container#navbar-commentators {
-				grid-area: commentators;
-			}
-			.navbar-icon#goc-logo {
-				grid-area: home;
-			}
-			.navbar-icon#discord-logo {
-				grid-area: discord;
-			}
-		</style>
+		<link rel="stylesheet" href="markdown-style.css">
+		<link rel="stylesheet" href="navbar-style.css">
 	</head>
 	<body>
 		<header class="navbar-div">
@@ -387,30 +19,34 @@
 			<div class="navbar-item-container" id="navbar-resources"><a href="resources" class="navbar-item" title="Read up on a bunch of useful Fantasy Strike knowledge!"><div class="navbar-item-container" id="navbar-resources"><div class="navbar-item">Resources</div></div></a></div>
 			<div class="navbar-item-container" id="navbar-commentators"><a href="commentators" class="navbar-item" title="See who our commentators are and what else they do!"><div class="navbar-item-container" id="navbar-commentators"><div class="navbar-item">Commentators</div></div></a></div>
 		</header>
-    <main>
-		<div id="center-div">
-			<h1>Tournament Styles</h1>
-			<ul>
-				<li><strong>Deck:</strong> Single battle, best of 3, standard counterpick. Each character can only appear in one match in the tournament, including matches with custom movesets - if you run out of characters, you forfeit.</li>
-				<li><strong>Choose Your Enemy</strong>, aka <strong>Cursed</strong>, aka <strong>Vice Versus:</strong> Team battle, best of 1. At the start of the tournament, you select the team that every one of your opponents will play throughout. [Source: GRAG]</li>
-				<li><strong>Roll the Dice:</strong> Single battle, best of 3, standard counterpick. At the start of the tournament, select six characters and number them from 1 to 6. Each match, roll a d6 (physical or digital) to select your character. The loser of a game can "counterpick" by repeating the process.</li>
-				<li><strong>Democracy:</strong> Single battle, best of 3. At the start of the match, each player chooses their opponent's character, and the loser of a game may counterpick by changing their opponent's character.</li>
-				<li><strong>Mirror Mayhem:</strong> Single battle, best of 3, no counterpicks. Both players must pick the same character, chosen randomly from the cast. Only rulesets that do not contradict this character choice may be played. After losing a game, a player may counterpick by repeating the random selection process for both players.</li>
-				<li><strong>The Many and the Few:</strong> A random number is picked from 1-5 at the start of each match. That is how many characters are in the participants' teams, using <a href="/teams">a team battle manager</a>. If 1, simply do a 1v1 match. Best of 1, unless it's 1v1 in which case best of 3.</li>
-				<li><strong>Simplify:</strong> The winners' bracket has teams of 3. The losers' bracket has teams of 2, using <a href="/teams">a team battle manager</a>. Best of 1. [Source: Daniel Stretulch] [Double Elimination only]</li>
-				<li><strong>Lawful:</strong> Team battle, best of 1. You must play with a ruleset for every match.</li>
-				<li><strong>Chaotic:</strong> Team battle, best of 1. You must play with a ruleset for every match. The ruleset is chosen at random using <a href="/random">a random selector</a> - if the players do not agree on the ruleset selections they may reroll up to 3 times.</li>
-				<li><strong>Teams:</strong> Single battle, best of 3, no counterpicks. All players are grouped into two teams, where they must each play from a given set of characters, chosen on a per-tournament basis. The teams play sequential matches against each other according to <a href="/teams">a custom team battle manager</a> until one team wins.</li>
-				<li><strong>Play Fair:</strong> Single battle, best of 3, standard counterpick. At the start of every match, both players are separately assigned a random (non-mirror) ruleset. Outside of any necessary interaction dictated by that ruleset, they should not tell their opponent what their ruleset is. As part of the counterpick process, a player may also reroll their ruleset. [Source: Ritielko]</li>
-				<li><strong>You Are What You Beat:</strong> Single battle, best of 3, no counterpick. Each player's starting character is chosen at random. Upon completing a game, the player that wins will change to their opponent's character for the next game, and the player that loses rerolls a new character. [Source: fuu buu]</li>
-				<li><strong>Your Own Worst Enemy:</strong> Single battle, best of 3, no counterpick. Each player's starting character is chosen at random. Upon completing a game, the player that loses will change to their opponent's character for the next game, and the player that wins rerolls a new character. [Source: ErickDRedd]</li>
-				<li><strong>Best Three of Four:</strong> Team battle, best of 1. Each match, choose 4 characters - your opponent will remove one of these characters, leaving you with your final team. [Source: EmiSocks]</li>
-				<li><strong>BBBest Tournament:</strong> Single battle, best of 3, standard counterpick. You are not allowed to use your A, C, or super moves. If your B move can be modified by a forbidden button, that's allowed. [Source: Jobert and Remy]</li>
-				<li><strong>Abnormalcy:</strong> Single battle, best of 3, standard counterpick. You are not allowed to use your A button. [Source: grbsh]</li>
-			</ul>
-			<p><a href="/random">Here's</a> a random selector!</p>
+	    <main>
+			<div id="center-div">
+				<a name="Tournament-Styles"></a>
+				<h1>Tournament Styles</h1>
+				
+				<ul>
+				<li><a href="#Deck" name="Deck"><strong>Deck:</strong></a> Single battle, best of 3, standard counterpick. Each character can only appear in one match in the tournament, including matches with custom movesets - if you run out of characters, you forfeit.</li>
+				<li><a href="#Choose Your Enemy, aka Cursed, aka Vice Versus" name="Choose Your Enemy, aka Cursed, aka Vice Versus"><strong>Choose Your Enemy, aka Cursed, aka Vice Versus:</strong></a> Team battle, best of 1. At the start of the tournament, you select the team that every one of your opponents will play throughout. [Source: GRAG]</li>
+				<li><a href="#Roll the Dice" name="Roll the Dice"><strong>Roll the Dice:</strong></a> Single battle, best of 3, standard counterpick. At the start of the tournament, select six characters and number them from 1 to 6. Each match, roll a d6 (physical or digital) to select your character. The loser of a game can &ldquo;counterpick&rdquo; by repeating the process.</li>
+				<li><a href="#Democracy" name="Democracy"><strong>Democracy:</strong></a> Single battle, best of 3. At the start of the match, each player chooses their opponent&rsquo;s character, and the loser of a game may counterpick by changing their opponent&rsquo;s character.</li>
+				<li><a href="#Mirror Mayhem" name="Mirror Mayhem"><strong>Mirror Mayhem:</strong></a> Single battle, best of 3, no counterpicks. Both players must pick the same character, chosen randomly from the cast. Only rulesets that do not contradict this character choice may be played. After losing a game, a player may counterpick by repeating the random selection process for both players.</li>
+				<li><a href="#The Many and the Few" name="The Many and the Few"><strong>The Many and the Few:</strong></a> A random number is picked from 1-5 at the start of each match. That is how many characters are in the participants' teams, using a team battle manager. If 1, simply do a 1v1 match. Best of 1, unless it&rsquo;s 1v1 in which case best of 3.</li>
+				<li><a href="#Simplify" name="Simplify"><strong>Simplify:</strong></a> The winners' bracket has teams of 3. The losers' bracket has teams of 2, using a team battle manager. Best of 1. [Source: Daniel Stretulch] [Double Elimination only]</li>
+				<li><a href="#Lawful" name="Lawful"><strong>Lawful:</strong></a> Team battle, best of 1. You must play with a ruleset for every match.</li>
+				<li><a href="#Chaotic" name="Chaotic"><strong>Chaotic:</strong></a> Team battle, best of 1. You must play with a ruleset for every match. The ruleset is chosen at random using a random selector - if the players do not agree on the ruleset selections they may reroll up to 3 times.</li>
+				<li><a href="#Teams" name="Teams"><strong>Teams:</strong></a> Single battle, best of 3, no counterpicks. All players are grouped into two teams, where they must each play from a given set of characters, chosen on a per-tournament basis. The teams play sequential matches against each other according to a custom team battle manager until one team wins.</li>
+				<li><a href="#Play Fair" name="Play Fair"><strong>Play Fair:</strong></a> Single battle, best of 3, standard counterpick. At the start of every match, both players are separately assigned a random (non-mirror) ruleset. Outside of any necessary interaction dictated by that ruleset, they should not tell their opponent what their ruleset is. As part of the counterpick process, a player may also reroll their ruleset. [Source: Ritielko]</li>
+				<li><a href="#You Are What You Beat" name="You Are What You Beat"><strong>You Are What You Beat:</strong></a> Single battle, best of 3, no counterpick. Each player&rsquo;s starting character is chosen at random. Upon completing a game, the player that wins will change to their opponent&rsquo;s character for the next game, and the player that loses rerolls a new character. [Source: fuu buu]</li>
+				<li><a href="#Your Own Worst Enemy" name="Your Own Worst Enemy"><strong>Your Own Worst Enemy:</strong></a> Single battle, best of 3, no counterpick. Each player&rsquo;s starting character is chosen at random. Upon completing a game, the player that loses will change to their opponent&rsquo;s character for the next game, and the player that wins rerolls a new character. [Source: ErickDRedd]</li>
+				<li><a href="#Best Three of Four" name="Best Three of Four"><strong>Best Three of Four:</strong></a> Team battle, best of 1. Each match, choose 4 characters - your opponent will remove one of these characters, leaving you with your final team. [Source: EmiSocks]</li>
+				<li><a href="#BBBest Tournament" name="BBBest Tournament"><strong>BBBest Tournament:</strong></a> Single battle, best of 3, standard counterpick. You are not allowed to use your A, C, or super moves. If your B move can be modified by a forbidden button, that&rsquo;s allowed. [Source: Jobert and Remy]</li>
+				<li><a href="#Abnormalcy" name="Abnormalcy"><strong>Abnormalcy:</strong></a> Single battle, best of 3, standard counterpick. You are not allowed to use your A button. [Source: grbsh]</li>
+				</ul>
+				
+				
+				<p><a href="random">Here&rsquo;s</a> a random selector!</p>
 		</div>
     </main>
-		<footer></footer>
+	<footer></footer>
 	</body>
 </html>
