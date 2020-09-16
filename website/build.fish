@@ -74,7 +74,7 @@ build teams2						> ../teams2.html
 build teamsfancy					> ../teamsfancy.html
 build teamdisplay					> ../teamdisplay.html
 build-markdown thoughts				> ../thoughts.html
-build-static thoughts-throws		> ../thoughts-throws.html
-build-markdown thoughts-dice			> ../thoughts-dice.html
+build-markdown thoughts-throws		> ../thoughts-throws.html
+build-markdown thoughts-dice		> ../thoughts-dice.html
 build-markdown thoughts-advantage	> ../thoughts-advantage.html
 build-static thoughts-lumoki		> ../thoughts-lumoki.html
