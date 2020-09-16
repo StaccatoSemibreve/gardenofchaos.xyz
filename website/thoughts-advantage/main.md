@@ -73,3 +73,5 @@ There are multiple situations that perfectly encapsulate specific forms of advan
 * In the Midori mirror, who threatens dragon form, who has more time left as a dragon, and so on will control the dynamic of the match. This is a textbook example of state when considering super meter.
 * In Valerie vs Lum, the kill state will appear very often on both sides.
 * Lum's oki utilises mental advantage heavily, and a full understanding of it is required to understand when to use certain tools.
+
+**[Other thoughts on stuff!](/thoughts)**

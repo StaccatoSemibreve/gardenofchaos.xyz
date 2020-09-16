@@ -48,3 +48,5 @@ Thanks to all of this, dice are absurdly powerful (they're quite probably one of
 
 * The distance from the dice when you hit them with nA will affect the speed and trajectory - the further back you stand, the faster and further forward the dice will fly. You can use this in conjunction with the ability to hit dice in midair with jA and jB to do… something. You can also hit a dice in midair with nA to redirect it towards the opponent, which is useful after propelling them upwards with nA to surprise the opponent (potentially after an item toss, and in the process potentially hitting another dice up), and can also catch dice that bounce back to push them forward.
 * Dice don't like to occupy the same space! If they do, they will push each other away and thus roll apart over time.
+
+**[Other thoughts on stuff!](/thoughts)**

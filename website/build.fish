@@ -77,4 +77,4 @@ build-markdown thoughts				> ../thoughts.html
 build-markdown thoughts-throws		> ../thoughts-throws.html
 build-markdown thoughts-dice		> ../thoughts-dice.html
 build-markdown thoughts-advantage	> ../thoughts-advantage.html
-build-static thoughts-lumoki		> ../thoughts-lumoki.html
+build-markdown thoughts-lumoki		> ../thoughts-lumoki.html
