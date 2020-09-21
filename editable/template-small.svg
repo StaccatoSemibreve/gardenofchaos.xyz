@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="56.25">
+    <style>
+        .p { font: normal 4.5px sans-serif;
+			text-align: center;
+			text-anchor: middle;
+			fill: #daba69;
+			line-height: 1.25;
+			}
+        .s { font: normal 3px sans-serif;
+			text-align: center;
+			text-anchor: middle;
+			fill: #daba69;
+			line-height: 1.25;
+			}
+    </style>
+    <rect fill="#1e1b19" stroke="none" width="100" height="56.25" />
+    <path fill="#daba69" transform="translate(5,1)" d="m 69.934218,9.4362 -2.50642,-0.31728 0.6093,2.45185 -1.84125,-1.72992 -0.94822,2.34173 -0.47278,-2.4818 -2.14357,1.33715 1.07628,-2.28571 -2.52013,-0.17818 2.21423,-1.21655 -1.9341,-1.62546 2.50642,0.31728 -0.6093,-2.45185 1.84125,1.72992 0.94823,-2.34173 0.47277,2.4818 2.14357,-1.33715 -1.07628,2.28571 2.52014,0.17818 -2.21424,1.21656 z" />
+	<g height="101.78" width="101.78" transform="translate(39,13) scale(0.2161524857535862,0.2161524857535862)">
+		<defs><linearGradient id="g" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#daba69" stop-opacity="1" /><stop offset="10%" stop-color="#daba69" stop-opacity="1" /><stop offset="25%" stop-color="#daba69" stop-opacity="0.75" /><stop offset="60%" stop-color="#daba69" stop-opacity="0" /></linearGradient></defs>
+		<circle stroke-width="1.78" fill="black" stroke="none" r="48.22" cy="50.89" cx="50.89" />
+		<path fill="url(#g)" stroke="#daba69" stroke-width="2" d="M 20.35,80 C 22.25,41.65 37.7,54.69 50.89,33.4 C 64.08,54.69 79.53,41.65 81.43,80" />
+		<ellipse stroke="#daba69" stroke-width="4" fill="none" rx="6.6" ry="9.7" cx="37.4" cy="74.6" />
+		<path stroke="#daba69" stroke-width="4" fill="none" d="m 31,74.8 13,0"/>
+		<ellipse stroke="#daba69" stroke-width="4" fill="none" rx="6.6" ry="9.7" cx="64.38" cy="74.6" />
+		<path stroke="#daba69" stroke-width="4" fill="none" d="m 70.78,74.8 -13,0"/>
+		<path fill="#daba69" stroke="#daba69" stroke-width="1.2" d="m 55.89,84.28 c -1.5,8.5 -8.5,8.5 -10,0 3.5,2 6.5,2 10,0 z" />
+		<g stroke-width="1.2">
+			<path fill="#daba69" stroke="black" d="m 16,84 c 8.2,-12.93 14.23,0.44 20.5,9 L 35.14,96.92 A 50 50 0 0 1 16,84 z" />
+			<path fill="#daba69" stroke="black" d="m 85.78,84 c -8.2,-12.93 -14.23,0.44 -20.5,9 L 66.64,96.92 A 50 50 0 0 0 85.78,84 z" />
+			<path fill="#daba69" stroke="black" d="m 35.14,96.72 1.51,-3.59 28.48,0 1.51,3.59 A 50 50 0 0 1 35.14,96.72 z" />
+		</g>
+		<path fill="#daba69" stroke="#daba69" stroke-width="1.19232" d="m 50.89,32 c -24.919548,-11.801421 -19.737767,-38.7892848 0,-21.846821 c 19.737767,-16.9424638 24.919548,10.0454 0,21.846821 z"/>
+		<circle stroke-width="1.78" fill="none" stroke="black" cx="50.89" cy="50.89" r="50" />
+		<circle stroke-width="1.78" fill="none" stroke="#daba69" r="48.22" cy="50.89" cx="50.89" />
+	</g>
+	<text x="50" y="10" class="p">Garden of Chaos<tspan style="fill:none">_.</tspan><tspan style="fill:#1e1b19; font-size:3.5px;">12</tspan></text>
+    <text x="50" y="40" class="p">Silly Ruleset Fantasy Strike Tournament</text>
+    <text x="50" y="46" class="p">Thursday, September 17th</text>
+    <text x="50" y="52" class="p">1pm PDT | 4pm EDT | 9pm BST</text>
+    <rect x="61.5" y="16.5" ry="3" width="37.5" height="15" fill="black" stroke="none" />
+    <text x="80.5" y="21" class="s">You Are What You Beat</text>
+    <text x="80.5" y="26" class="s">Swap characters</text>
+    <text x="80.5" y="29" class="s">when you win!</text>
+    <rect x="1" y="20" ry="3" width="37.5" height="8" fill="black" stroke="none" />
+	<text x="20" y="25" class="s">Janet and Danielizabeth</text>
+</svg>

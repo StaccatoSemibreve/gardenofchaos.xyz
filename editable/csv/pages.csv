@@ -1,0 +1,19 @@
+index.html|Garden of Chaos: Home|editable/index.md|markdown
+rules.html|Garden of Chaos: Rules|editable/rules.md|markdown
+styles.html|Garden of Chaos: Formats|editable/formats.md|markdown
+rulesets.html|Garden of Chaos: Rulesets|editable/rulesets.md|markdown
+commentators.html|Garden of Chaos: Commentators|editable/commentators.md|markdown
+
+tournaments.html|Garden of Chaos: Tournament Archive|editable/non-static/tournaments/style.css|editable/non-static/tournaments/main.html|editable/non-static/tournaments/script.js|script
+random.html|Garden of Chaos: Random|editable/non-static/random/style.css|editable/non-static/random/main.html|editable/non-static/random/script.js|script
+
+teams.html|Garden of Chaos: Team Battle Manager|editable/non-static/teams/style.css|editable/non-static/teams/main.html|editable/non-static/teams/script.js|script
+teams2.html|Garden of Chaos: Async Teams Tool|editable/non-static/teams2/style.css|editable/non-static/teams2/main.html|editable/non-static/teams2/script.js|script
+teamsfancy.html|Garden of Chaos: Team Selector|editable/non-static/teamsfancy/style.css|editable/non-static/teamsfancy/main.html|editable/non-static/teamsfancy/script.js|script
+teamdisplay.html|Garden of Chaos: Team Battle|editable/non-static/teamdisplay/style.css|editable/non-static/teamdisplay/main.html|editable/non-static/teamdisplay/script.js|script
+
+thoughts.html|Janet's Thoughts on Stuff™|editable/thoughts.md|markdown
+thoughts-throws.html|Janet's Thoughts on Throws|editable/thoughts-throws.md|markdown
+thoughts-dice.html|Janet's Thoughts on Dice|editable/thoughts-dice.md|markdown
+thoughts-advantage.html|Janet's Thoughts on Advantage|editable/thoughts-advantage.md|markdown
+thoughts-lumoki.html|Janet's Thoughts on Lum's Oki|editable/thoughts-lumoki.md|markdown
