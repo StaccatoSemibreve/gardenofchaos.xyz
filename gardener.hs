@@ -127,7 +127,7 @@ main = do
     
     do putStrLn ""
     do putStrLn "All done, now remember to do the announcements by editing the svg with a text editor (just ctrl-f the different bits of text, maybe shuffle some line spacing about if needed) and export at 1000px wide using inkscape, commit it to git, and push that commit!"
-    putStrLn "You can find the text to post to reddit and discord in announce.txt, send Leontes the big announcement image, and send safety_man the small one!"
+    putStrLn "Send Leontes the big announcement image, and send safety_man the small one!"
     
     where
         -- get all csv files from the editable/csv directory, in the form of a list of pairs of the name of each csv, and the corresponding contents of that csv
