@@ -16,7 +16,8 @@ A list of (hopefully useful) Fantasy Strike resources, for those looking to lear
   
 <a name="guides"> [**Guides:**](#guides) </a>
 
-* [Official Guide:](http://www.fantasystrike.com/guide) An official guide for the fundamentals of the game.
+* [Official Guide:](https://www.fantasystrike.com/guide) An official guide for the fundamentals of the game.
+* [Playing to Win:](https://www.sirlin.net/ptw/) Playing to Win, a book (free to read online) about how to approach fighting games.
 * [Some help with port forwarding](https://forums.fantasystrike.com/t/ports-to-forward-for-online-connection-issues-udp-9991-and-19900)
 * [Glossary of Fighting Game Terminology:](https://docs.google.com/document/d/1RBBqG-SRG5H_3yV7KU57YkNinSg3UmztIi_ikB9pgSA/edit) A useful list of explanations of various terms commonly used in fighting game communities.
 * [Frame Data Spreadsheet:](https://docs.google.com/spreadsheets/d/1Ia4um01P9JMlxckup9qbKXuZgW1CdTshVPeny4-XKEs/edit) A spreadsheet listing the frame data of every move in Fantasy Strike.
