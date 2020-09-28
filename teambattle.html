@@ -20,7 +20,7 @@ button, input {
 		background: linear-gradient(90deg, #0f0d0c, #0f0d0c calc(50% - 550px), #1e1b19 calc(50% - 550px), #1e1b19 calc(50% + 550px), #0f0d0c calc(50% + 550px));
 	}
 }
-@media only screen and (max-width:350px) {
+@media only screen and (max-width:450px) {
 	main {
 		display: none;
 	}
@@ -29,7 +29,7 @@ button, input {
 div.grid {
 	display: grid;
 	grid-gap: 10px;
-	grid-template-rows: 80px 40px 100px 30px 100px 20px 100px 20px 100px 20px;
+	grid-template-rows: 80px 40px 100px 40px 100px 20px 100px 20px 100px 20px;
 	grid-template-areas:	"title"
 							"team1Title"
 							"team1"
@@ -42,6 +42,7 @@ div.grid {
 							"."
 							"archive";
 	width: 95%;
+	min-width: 450px;
 	margin: auto;
 }
 .title {
