@@ -1,0 +1,5 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512">
+	<rect stroke-width="1.78" fill="black" stroke="none" x="0" y="0" width="100%" height="100%" />
+	<polygon transform="translate(256,256) scale(0.9,0.9) translate(-256,-256)" style="fill:#DABA69;" points="202.624,478.016 0,291.36 70.512,214.8 191.968,326.656 431.44,33.984 512,99.904 "/>
+    <rect stroke-width="1.78%" fill="none" stroke="#daba69" x="1.78%" y="1.78%" width="96.44%" height="96.44%" />
+</svg>

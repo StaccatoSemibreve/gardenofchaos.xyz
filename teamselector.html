@@ -1,554 +1,552 @@
-<!DOCTYPE HTML><html><head><title>Garden of Chaos: Team Selector</title><meta charset="utf-8"><link href="FSgardenOfChao-196x196.png" type="image/png" rel="icon" sizes="196x196"><link href="navbar-style.css" rel="stylesheet"><style>			body {
-				background-color: #1e1b19;
-			}
-			
-			h1, h2 {
-				font-family: sans-serif;
-				color: #daba69;
-				line-height: 30px;
-			}
-			
-			button {
-				font-family: sans-serif;
-				background-color: #000000;
-				color: #daba69;
-				border-radius: 10px;
-			}
+<!DOCTYPE HTML><html><head><title>Garden of Chaos: Teams Selector</title><meta charset="utf-8"><link href="FSgardenOfChao-196x196.png" type="image/png" rel="icon" sizes="196x196"><link href="navbar-style.css" rel="stylesheet"><style>body {
+	background-color: #1e1b19;
+}
 
-			@media only screen and (min-width:1050px) {
-				body {
-					background: linear-gradient(90deg, #0f0d0c, #0f0d0c calc(50% - 550px), #1e1b19 calc(50% - 550px), #1e1b19 calc(50% + 550px), #0f0d0c calc(50% + 550px));
-				}
-				div.grid {
-					display: grid;
-					grid-gap: 10px;
-					grid-template-columns: 400px 180px 400px;
-					grid-template-rows: 80px 50px 300px 40px 300px 40px 400px;
-					grid-template-areas:	"title				title	title"
-											"team1selectTitle	.		team2selectTitle"
-											"team1select		submit	team2select"
-											"team1presetTitle	.		team2presetTitle"
-											"team1preset		.		team2preset"
-											"team1Title			.		team2Title"
-											"team1				.		team2";
-					width: 1000px;
-					margin: auto;
-				}
-				
-				div.charSelectGrid1 {
-					grid-area: team1select;
-					display: grid;
-					grid-template-columns: 100px 100px 100px 100px;
-					grid-template-rows: 100px 100px 100px;
-					grid-template-areas:	"grave jaina geiger argagarg"
-											"setsuki valerie rook midori"
-											"lum degrey quince onimaru";
-				}
-				div.charSelectGrid2 {
-					grid-area: team2select;
-					display: grid;
-					grid-template-columns: 100px 100px 100px 100px;
-					grid-template-rows: 100px 100px 100px;
-					grid-template-areas:	"argagarg geiger jaina grave"
-											"midori rook valerie setsuki"
-											"onimaru quince degrey lum";
-				}
-				
-				div.presetGrid1 {
-					grid-area: team1preset;
-					display: grid;
-					grid-template-columns: 100px 100px 100px 100px;
-					grid-template-rows: 100px 100px 100px;
-					grid-template-areas:	"delete random zoners rushdowns"
-											"grapplers wildcards flagstone all"
-											". left right .";
-				}
-				div.presetGrid2 {
-					grid-area: team2preset;
-					display: grid;
-					grid-template-columns: 100px 100px 100px 100px;
-					grid-template-rows: 100px 100px 100px;
-					grid-template-areas:	"rushdowns zoners random delete"
-											"all flagstone wildcards grapplers"
-											". left right .";
-				}
-				
-				div.teamGrid1 {
-					grid-area: team1;
-					display: grid;
-					grid-template-columns: 100px 100px 100px 100px;
-					grid-auto-rows: 100px;
-				}
-				div.teamGrid2 {
-					grid-area: team2;
-					display: grid;
-					grid-template-columns: 100px 100px 100px 100px;
-					grid-auto-rows: 100px;
-					direction: rtl;
-				}
-			}
-			@media only screen and (min-width:850px) and (max-width:1050px) {
-				div.grid {
-					display: grid;
-					grid-gap: 10px;
-					grid-template-columns: 300px 180px 300px;
-					grid-template-rows: 70px 80px 400px 40px 400px 40px 500px;
-					grid-template-areas:	"title				title	title"
-											"team1selectTitle	.		team2selectTitle"
-											"team1select		submit	team2select"
-											"team1presetTitle	.		team2presetTitle"
-											"team1preset		.		team2preset"
-											"team1Title			.		team2Title"
-											"team1				.		team2";
-					width: 800px;
-					margin: auto;
-				}
-				
-				div.charSelectGrid1 {
-					grid-area: team1select;
-					display: grid;
-					grid-template-columns: 100px 100px 100px;
-					grid-template-rows: 100px 100px 100px 100px;
-					grid-template-areas:	"grave jaina valerie"
-											"geiger argagarg setsuki"
-											"rook degrey quince"
-											"midori lum onimaru";
-				}
-				div.charSelectGrid2 {
-					grid-area: team2select;
-					display: grid;
-					grid-template-columns: 100px 100px 100px;
-					grid-template-rows: 100px 100px 100px 100px;
-					grid-template-areas:	"valerie jaina grave"
-											"setsuki argagarg geiger"
-											"quince degrey rook"
-											"onimaru lum midori";
-				}
-				
-				div.presetGrid1 {
-					grid-area: team1preset;
-					display: grid;
-					grid-template-columns: 50px 50px 50px 50px 50px 50px;
-					grid-template-rows: 100px 100px 100px 100px;
-					grid-template-areas:	". delete delete random random ."
-											"zoners zoners rushdowns rushdowns grapplers grapplers"
-											"wildcards wildcards flagstone flagstone all all"
-											". left left right right .";
-				}
-				div.presetGrid2 {
-					grid-area: team2preset;
-					display: grid;
-					grid-template-columns: 50px 50px 50px 50px 50px 50px;
-					grid-template-rows: 100px 100px 100px 100px;
-					grid-template-areas:	". random random delete delete ."
-											"grapplers grapplers rushdowns rushdowns zoners zoners"
-											"all all flagstone flagstone wildcards wildcards"
-											". left left right right .";
-				}
-				
-				div.teamGrid1 {
-					grid-area: team1;
-					display: grid;
-					grid-template-columns: 100px 100px 100px;
-					grid-auto-rows: 100px;
-				}
-				div.teamGrid2 {
-					grid-area: team2;
-					display: grid;
-					grid-template-columns: 100px 100px 100px;
-					grid-auto-rows: 100px;
-					direction: rtl;
-				}
-			}
-			@media only screen and (min-width:550px) and (max-width:850px) {
-				div.grid {
-					display: grid;
-					grid-gap: 10px;
-					grid-template-columns: 200px 80px 200px;
-					grid-template-rows: 80px 110px 600px 40px 500px 40px 700px;
-					grid-template-areas:	"title				title	title"
-											"team1selectTitle	.		team2selectTitle"
-											"team1select		submit	team2select"
-											"team1presetTitle	.		team2presetTitle"
-											"team1preset		.		team2preset"
-											"team1Title			.		team2Title"
-											"team1				.		team2";
-					width: 500px;
-					margin: auto;
-				}
-				
-				div.charSelectGrid1 {
-					grid-area: team1select;
-					display: grid;
-					grid-template-columns: 100px 100px;
-					grid-template-rows: 100px 100px 100px 100px 100px 100px;
-					grid-template-areas:	"grave jaina"
-											"geiger argagarg"
-											"setsuki valerie"
-											"rook midori"
-											"lum degrey"
-											"quince onimaru";
-				}
-				div.charSelectGrid2 {
-					grid-area: team2select;
-					display: grid;
-					grid-template-columns: 100px 100px;
-					grid-template-rows: 100px 100px 100px 100px 100px 100px;
-					grid-template-areas:	"jaina grave"
-											"argagarg geiger"
-											"valerie setsuki"
-											"midori rook"
-											"degrey lum"
-											"onimaru quince";
-				}
-				
-				div.presetGrid1 {
-					grid-area: team1preset;
-					display: grid;
-					grid-template-columns: 100px 100px;
-					grid-template-rows: 100px 100px 100px 100px 100px;
-					grid-template-areas:	"delete random"
-											"zoners rushdowns"
-											"grapplers wildcards"
-											"flagstone all"
-											"left right";
-				}
-				div.presetGrid2 {
-					grid-area: team2preset;
-					display: grid;
-					grid-template-columns: 100px 100px;
-					grid-template-rows: 100px 100px 100px 100px 100px;
-					grid-template-areas:	"random delete"
-											"rushdowns zoners"
-											"wildcards grapplers"
-											"all flagstone"
-											"left right";
-				}
-				
-				div.teamGrid1 {
-					grid-area: team1;
-					display: grid;
-					grid-template-columns: 100px 100px;
-					grid-auto-rows: 100px;
-				}
-				div.teamGrid2 {
-					grid-area: team2;
-					display: grid;
-					grid-template-columns: 100px 100px;
-					grid-auto-rows: 100px;
-					direction: rtl;
-				}
-			}
-			@media only screen and (min-width:335px) and (max-width:550px) {
-				div.grid {
-					display: grid;
-					grid-gap: 10px;
-					grid-template-columns: 300px;
-					grid-template-rows: 120px 80px 80px 400px 40px 400px 80px 400px 40px 400px;
-					grid-template-areas: "title"
-										"submit"
-										"team1selectTitle"
-										"team1select"
-										"team1presetTitle"
-										"team1preset"
-										"team2selectTitle"
-										"team2select"
-										"team2presetTitle"
-										"team2preset"
-										"team1Title"
-										"team1"
-										"team2Title"
-										"team2";
-					width: 300px;
-					margin: auto;
-				}
-				
-				div.charSelectGrid1 {
-					grid-area: team1select;
-					display: grid;
-					grid-template-columns: 100px 100px 100px;
-					grid-template-rows: 100px 100px 100px 100px;
-					grid-template-areas:	"grave jaina valerie"
-											"geiger argagarg setsuki"
-											"rook degrey quince"
-											"midori lum onimaru";
-				}
-				div.charSelectGrid2 {
-					grid-area: team2select;
-					display: grid;
-					grid-template-columns: 100px 100px 100px;
-					grid-template-rows: 100px 100px 100px 100px;
-					grid-template-areas:	"grave jaina valerie"
-											"geiger argagarg setsuki"
-											"rook degrey quince"
-											"midori lum onimaru";
-				}
-				
-				div.presetGrid1 {
-					grid-area: team1preset;
-					display: grid;
-					grid-template-columns: 50px 50px 50px 50px 50px 50px;
-					grid-template-rows: 100px 100px 100px 100px;
-					grid-template-areas:	". delete delete random random ."
-											"zoners zoners rushdowns rushdowns grapplers grapplers"
-											"wildcards wildcards flagstone flagstone all all"
-											". left left right right .";
-				}
-				div.presetGrid2 {
-					grid-area: team2preset;
-					display: grid;
-					grid-template-columns: 50px 50px 50px 50px 50px 50px;
-					grid-template-rows: 100px 100px 100px 100px;
-					grid-template-areas:	". delete delete random random ."
-											"zoners zoners rushdowns rushdowns grapplers grapplers"
-											"wildcards wildcards flagstone flagstone all all"
-											". left left right right .";
-				}
-				
-				div.teamGrid1 {
-					grid-area: team1;
-					display: grid;
-					grid-template-columns: 100px 100px 100px;
-					grid-auto-rows: 100px;
-				}
-				div.teamGrid2 {
-					grid-area: team2;
-					display: grid;
-					grid-template-columns: 100px 100px 100px;
-					grid-auto-rows: 100px;
-				}
-			}
-			@media only screen and (min-width:225px) and (max-width:335px) {
-				div.grid {
-					display: grid;
-					grid-gap: 10px;
-					grid-template-columns: 200px;
-					grid-template-rows: 150px 80px 120px 600px 40px 500px 120px 600px 40px 500px;
-					grid-template-areas: "title"
-										"submit"
-										"team1selectTitle"
-										"team1select"
-										"team1presetTitle"
-										"team1preset"
-										"team2selectTitle"
-										"team2select"
-										"team2presetTitle"
-										"team2preset"
-										"team1Title"
-										"team1"
-										"team2Title"
-										"team2";
-					width: 200px;
-					margin: auto;
-				}
-				
-				div.charSelectGrid1 {
-					grid-area: team1select;
-					display: grid;
-					grid-template-columns: 100px 100px;
-					grid-template-rows: 100px 100px 100px 100px 100px 100px;
-					grid-template-areas:	"grave jaina"
-											"geiger argagarg"
-											"setsuki valerie"
-											"rook midori"
-											"lum degrey"
-											"quince onimaru";
-				}
-				div.charSelectGrid2 {
-					grid-area: team2select;
-					display: grid;
-					grid-template-columns: 100px 100px;
-					grid-template-rows: 100px 100px 100px 100px 100px 100px;
-					grid-template-areas:	"jaina grave"
-											"argagarg geiger"
-											"valerie setsuki"
-											"midori rook"
-											"degrey lum"
-											"onimaru quince";
-				}
-				
-				div.presetGrid1 {
-					grid-area: team1preset;
-					display: grid;
-					grid-template-columns: 100px 100px;
-					grid-template-rows: 100px 100px 100px 100px 100px;
-					grid-template-areas:	"delete random"
-											"zoners rushdowns"
-											"grapplers wildcards"
-											"flagstone all"
-											"left right";
-				}
-				div.presetGrid2 {
-					grid-area: team2preset;
-					display: grid;
-					grid-template-columns: 100px 100px;
-					grid-template-rows: 100px 100px 100px 100px 100px;
-					grid-template-areas:	"random delete"
-											"rushdowns zoners"
-											"wildcards grapplers"
-											"all flagstone"
-											"left right";
-				}
-				
-				div.teamGrid1 {
-					grid-area: team1;
-					display: grid;
-					grid-template-columns: 100px 100px;
-					grid-auto-rows: 100px;
-				}
-				div.teamGrid2 {
-					grid-area: team2;
-					display: grid;
-					grid-template-columns: 100px 100px;
-					grid-auto-rows: 100px;
-				}
-			}
-			@media only screen and (min-width:125px) and (max-width:225px) {
-				div.grid {
-					display: grid;
-					grid-gap: 10px;
-					grid-template-columns: 100px;
-					grid-template-rows: 250px 80px 100px 1200px 80px 1000px 100px 1200px 80px 1000px;
-					grid-template-areas:	"title"
-											"submit"
-											"team1selectTitle"
-											"team1select"
-											"team1presetTitle"
-											"team1preset"
-											"team2selectTitle"
-											"team2select"
-											"team2presetTitle"
-											"team2preset"
-											"team1Title"
-											"team1"
-											"team2Title"
-											"team2";
-					width: 100px;
-					margin: auto;
-				}
-				
-				div.charSelectGrid1 {
-					grid-area: team1select;
-					display: grid;
-					grid-template-columns: 100px;
-					grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
-					grid-template-areas:	"grave"
-											"jaina"
-											"geiger"
-											"argagarg"
-											"setsuki"
-											"valerie"
-											"rook"
-											"midori"
-											"lum"
-											"degrey"
-											"quince"
-											"onimaru";
-				}
-				div.charSelectGrid2 {
-					grid-area: team2select;
-					display: grid;
-					grid-template-columns: 100px;
-					grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
-					grid-template-areas:	"grave"
-											"jaina"
-											"geiger"
-											"argagarg"
-											"setsuki"
-											"valerie"
-											"rook"
-											"midori"
-											"lum"
-											"degrey"
-											"quince"
-											"onimaru";
-				}
-				
-				div.presetGrid1 {
-					grid-area: team1preset;
-					display: grid;
-					grid-template-columns: 100px;
-					grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
-					grid-template-areas:	"delete"
-											"random"
-											"zoners"
-											"rushdowns"
-											"grapplers"
-											"wildcards"
-											"flagstone"
-											"all"
-											"left"
-											"right";
-				}
-				div.presetGrid2 {
-					grid-area: team2preset;
-					display: grid;
-					grid-template-columns: 100px;
-					grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
-					grid-template-areas:	"delete"
-											"random"
-											"zoners"
-											"rushdowns"
-											"grapplers"
-											"wildcards"
-											"flagstone"
-											"all"
-											"left"
-											"right";
-				}
-				
-				div.teamGrid1 {
-					grid-area: team1;
-					display: grid;
-					grid-template-columns: 100px;
-					grid-auto-rows: 100px;
-				}
-				div.teamGrid2 {
-					grid-area: team2;
-					display: grid;
-					grid-template-columns: 100px;
-					grid-auto-rows: 100px;
-				}
-			}
-			@media only screen and (max-width:125px) {
-				main {
-					display: none;
-				}
-			}
-			
-			@media only screen and (min-width:125px) {
-				.title {
-					text-align:center;
-				}
-				.icon {
-					width:100px;
-					height:100px;
-				}
-				.overlay_char {
-					position: relative;
-					width: 100px;
-					height: 100px;
-					opacity: 0;
-					transition: .3s ease;
-					background-color: green;
-					color: white;
-				}
-				.overlay_char#minus {
-					background-color: red;
-					top: -104px;
-				}
-				.overlay_char:hover {
-					opacity:60%;
-				}
-			
-				.submit {
-					line-height: 20px;
-					width: 80px;
-					height: 80px;
-					align-self: center;
-					justify-self: center;
-				}
-			}
+h1, h2 {
+	font-family: sans-serif;
+	color: #daba69;
+	line-height: 30px;
+}
+
+button {
+	font-family: sans-serif;
+	background-color: #000000;
+	color: #daba69;
+	border-radius: 10px;
+}
+
+@media only screen and (min-width:1050px) {
+	body {
+		background: linear-gradient(90deg, #0f0d0c, #0f0d0c calc(50% - 550px), #1e1b19 calc(50% - 550px), #1e1b19 calc(50% + 550px), #0f0d0c calc(50% + 550px));
+	}
+	div.grid {
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: 400px 180px 400px;
+		grid-template-rows: 80px 50px 300px 40px 300px 40px 400px;
+		grid-template-areas:	"title				title	title"
+								"team1selectTitle	.		team2selectTitle"
+								"team1select		submit	team2select"
+								"team1presetTitle	.		team2presetTitle"
+								"team1preset		.		team2preset"
+								"team1Title			.		team2Title"
+								"team1				.		team2";
+		width: 1000px;
+		margin: auto;
+	}
+	
+	div.charSelectGrid1 {
+		grid-area: team1select;
+		display: grid;
+		grid-template-columns: 100px 100px 100px 100px;
+		grid-template-rows: 100px 100px 100px;
+		grid-template-areas:	"grave jaina geiger argagarg"
+								"setsuki valerie rook midori"
+								"lum degrey quince onimaru";
+	}
+	div.charSelectGrid2 {
+		grid-area: team2select;
+		display: grid;
+		grid-template-columns: 100px 100px 100px 100px;
+		grid-template-rows: 100px 100px 100px;
+		grid-template-areas:	"argagarg geiger jaina grave"
+								"midori rook valerie setsuki"
+								"onimaru quince degrey lum";
+	}
+	
+	div.presetGrid1 {
+		grid-area: team1preset;
+		display: grid;
+		grid-template-columns: 100px 100px 100px 100px;
+		grid-template-rows: 100px 100px 100px;
+		grid-template-areas:	"delete random zoners rushdowns"
+								"grapplers wildcards flagstone all"
+								". left right .";
+	}
+	div.presetGrid2 {
+		grid-area: team2preset;
+		display: grid;
+		grid-template-columns: 100px 100px 100px 100px;
+		grid-template-rows: 100px 100px 100px;
+		grid-template-areas:	"rushdowns zoners random delete"
+								"all flagstone wildcards grapplers"
+								". left right .";
+	}
+	
+	div.teamGrid1 {
+		grid-area: team1;
+		display: grid;
+		grid-template-columns: 100px 100px 100px 100px;
+		grid-auto-rows: 100px;
+	}
+	div.teamGrid2 {
+		grid-area: team2;
+		display: grid;
+		grid-template-columns: 100px 100px 100px 100px;
+		grid-auto-rows: 100px;
+		direction: rtl;
+	}
+}
+@media only screen and (min-width:850px) and (max-width:1050px) {
+	div.grid {
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: 300px 180px 300px;
+		grid-template-rows: 70px 80px 400px 40px 400px 40px 500px;
+		grid-template-areas:	"title				title	title"
+								"team1selectTitle	.		team2selectTitle"
+								"team1select		submit	team2select"
+								"team1presetTitle	.		team2presetTitle"
+								"team1preset		.		team2preset"
+								"team1Title			.		team2Title"
+								"team1				.		team2";
+		width: 800px;
+		margin: auto;
+	}
+	
+	div.charSelectGrid1 {
+		grid-area: team1select;
+		display: grid;
+		grid-template-columns: 100px 100px 100px;
+		grid-template-rows: 100px 100px 100px 100px;
+		grid-template-areas:	"grave jaina valerie"
+								"geiger argagarg setsuki"
+								"rook degrey quince"
+								"midori lum onimaru";
+	}
+	div.charSelectGrid2 {
+		grid-area: team2select;
+		display: grid;
+		grid-template-columns: 100px 100px 100px;
+		grid-template-rows: 100px 100px 100px 100px;
+		grid-template-areas:	"valerie jaina grave"
+								"setsuki argagarg geiger"
+								"quince degrey rook"
+								"onimaru lum midori";
+	}
+	
+	div.presetGrid1 {
+		grid-area: team1preset;
+		display: grid;
+		grid-template-columns: 50px 50px 50px 50px 50px 50px;
+		grid-template-rows: 100px 100px 100px 100px;
+		grid-template-areas:	". delete delete random random ."
+								"zoners zoners rushdowns rushdowns grapplers grapplers"
+								"wildcards wildcards flagstone flagstone all all"
+								". left left right right .";
+	}
+	div.presetGrid2 {
+		grid-area: team2preset;
+		display: grid;
+		grid-template-columns: 50px 50px 50px 50px 50px 50px;
+		grid-template-rows: 100px 100px 100px 100px;
+		grid-template-areas:	". random random delete delete ."
+								"grapplers grapplers rushdowns rushdowns zoners zoners"
+								"all all flagstone flagstone wildcards wildcards"
+								". left left right right .";
+	}
+	
+	div.teamGrid1 {
+		grid-area: team1;
+		display: grid;
+		grid-template-columns: 100px 100px 100px;
+		grid-auto-rows: 100px;
+	}
+	div.teamGrid2 {
+		grid-area: team2;
+		display: grid;
+		grid-template-columns: 100px 100px 100px;
+		grid-auto-rows: 100px;
+		direction: rtl;
+	}
+}
+@media only screen and (min-width:550px) and (max-width:850px) {
+	div.grid {
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: 200px 80px 200px;
+		grid-template-rows: 80px 110px 600px 40px 500px 40px 700px;
+		grid-template-areas:	"title				title	title"
+								"team1selectTitle	.		team2selectTitle"
+								"team1select		submit	team2select"
+								"team1presetTitle	.		team2presetTitle"
+								"team1preset		.		team2preset"
+								"team1Title			.		team2Title"
+								"team1				.		team2";
+		width: 500px;
+		margin: auto;
+	}
+	
+	div.charSelectGrid1 {
+		grid-area: team1select;
+		display: grid;
+		grid-template-columns: 100px 100px;
+		grid-template-rows: 100px 100px 100px 100px 100px 100px;
+		grid-template-areas:	"grave jaina"
+								"geiger argagarg"
+								"setsuki valerie"
+								"rook midori"
+								"lum degrey"
+								"quince onimaru";
+	}
+	div.charSelectGrid2 {
+		grid-area: team2select;
+		display: grid;
+		grid-template-columns: 100px 100px;
+		grid-template-rows: 100px 100px 100px 100px 100px 100px;
+		grid-template-areas:	"jaina grave"
+								"argagarg geiger"
+								"valerie setsuki"
+								"midori rook"
+								"degrey lum"
+								"onimaru quince";
+	}
+	
+	div.presetGrid1 {
+		grid-area: team1preset;
+		display: grid;
+		grid-template-columns: 100px 100px;
+		grid-template-rows: 100px 100px 100px 100px 100px;
+		grid-template-areas:	"delete random"
+								"zoners rushdowns"
+								"grapplers wildcards"
+								"flagstone all"
+								"left right";
+	}
+	div.presetGrid2 {
+		grid-area: team2preset;
+		display: grid;
+		grid-template-columns: 100px 100px;
+		grid-template-rows: 100px 100px 100px 100px 100px;
+		grid-template-areas:	"random delete"
+								"rushdowns zoners"
+								"wildcards grapplers"
+								"all flagstone"
+								"left right";
+	}
+	
+	div.teamGrid1 {
+		grid-area: team1;
+		display: grid;
+		grid-template-columns: 100px 100px;
+		grid-auto-rows: 100px;
+	}
+	div.teamGrid2 {
+		grid-area: team2;
+		display: grid;
+		grid-template-columns: 100px 100px;
+		grid-auto-rows: 100px;
+		direction: rtl;
+	}
+}
+@media only screen and (min-width:335px) and (max-width:550px) {
+	div.grid {
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: 300px;
+		grid-template-rows: 120px 80px 80px 400px 40px 400px 80px 400px 40px 400px;
+		grid-template-areas: "title"
+							"submit"
+							"team1selectTitle"
+							"team1select"
+							"team1presetTitle"
+							"team1preset"
+							"team2selectTitle"
+							"team2select"
+							"team2presetTitle"
+							"team2preset"
+							"team1Title"
+							"team1"
+							"team2Title"
+							"team2";
+		width: 300px;
+		margin: auto;
+	}
+	
+	div.charSelectGrid1 {
+		grid-area: team1select;
+		display: grid;
+		grid-template-columns: 100px 100px 100px;
+		grid-template-rows: 100px 100px 100px 100px;
+		grid-template-areas:	"grave jaina valerie"
+								"geiger argagarg setsuki"
+								"rook degrey quince"
+								"midori lum onimaru";
+	}
+	div.charSelectGrid2 {
+		grid-area: team2select;
+		display: grid;
+		grid-template-columns: 100px 100px 100px;
+		grid-template-rows: 100px 100px 100px 100px;
+		grid-template-areas:	"grave jaina valerie"
+								"geiger argagarg setsuki"
+								"rook degrey quince"
+								"midori lum onimaru";
+	}
+	
+	div.presetGrid1 {
+		grid-area: team1preset;
+		display: grid;
+		grid-template-columns: 50px 50px 50px 50px 50px 50px;
+		grid-template-rows: 100px 100px 100px 100px;
+		grid-template-areas:	". delete delete random random ."
+								"zoners zoners rushdowns rushdowns grapplers grapplers"
+								"wildcards wildcards flagstone flagstone all all"
+								". left left right right .";
+	}
+	div.presetGrid2 {
+		grid-area: team2preset;
+		display: grid;
+		grid-template-columns: 50px 50px 50px 50px 50px 50px;
+		grid-template-rows: 100px 100px 100px 100px;
+		grid-template-areas:	". delete delete random random ."
+								"zoners zoners rushdowns rushdowns grapplers grapplers"
+								"wildcards wildcards flagstone flagstone all all"
+								". left left right right .";
+	}
+	
+	div.teamGrid1 {
+		grid-area: team1;
+		display: grid;
+		grid-template-columns: 100px 100px 100px;
+		grid-auto-rows: 100px;
+	}
+	div.teamGrid2 {
+		grid-area: team2;
+		display: grid;
+		grid-template-columns: 100px 100px 100px;
+		grid-auto-rows: 100px;
+	}
+}
+@media only screen and (min-width:225px) and (max-width:335px) {
+	div.grid {
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: 200px;
+		grid-template-rows: 150px 80px 120px 600px 40px 500px 120px 600px 40px 500px;
+		grid-template-areas: "title"
+							"submit"
+							"team1selectTitle"
+							"team1select"
+							"team1presetTitle"
+							"team1preset"
+							"team2selectTitle"
+							"team2select"
+							"team2presetTitle"
+							"team2preset"
+							"team1Title"
+							"team1"
+							"team2Title"
+							"team2";
+		width: 200px;
+		margin: auto;
+	}
+	
+	div.charSelectGrid1 {
+		grid-area: team1select;
+		display: grid;
+		grid-template-columns: 100px 100px;
+		grid-template-rows: 100px 100px 100px 100px 100px 100px;
+		grid-template-areas:	"grave jaina"
+								"geiger argagarg"
+								"setsuki valerie"
+								"rook midori"
+								"lum degrey"
+								"quince onimaru";
+	}
+	div.charSelectGrid2 {
+		grid-area: team2select;
+		display: grid;
+		grid-template-columns: 100px 100px;
+		grid-template-rows: 100px 100px 100px 100px 100px 100px;
+		grid-template-areas:	"jaina grave"
+								"argagarg geiger"
+								"valerie setsuki"
+								"midori rook"
+								"degrey lum"
+								"onimaru quince";
+	}
+	
+	div.presetGrid1 {
+		grid-area: team1preset;
+		display: grid;
+		grid-template-columns: 100px 100px;
+		grid-template-rows: 100px 100px 100px 100px 100px;
+		grid-template-areas:	"delete random"
+								"zoners rushdowns"
+								"grapplers wildcards"
+								"flagstone all"
+								"left right";
+	}
+	div.presetGrid2 {
+		grid-area: team2preset;
+		display: grid;
+		grid-template-columns: 100px 100px;
+		grid-template-rows: 100px 100px 100px 100px 100px;
+		grid-template-areas:	"random delete"
+								"rushdowns zoners"
+								"wildcards grapplers"
+								"all flagstone"
+								"left right";
+	}
+	
+	div.teamGrid1 {
+		grid-area: team1;
+		display: grid;
+		grid-template-columns: 100px 100px;
+		grid-auto-rows: 100px;
+	}
+	div.teamGrid2 {
+		grid-area: team2;
+		display: grid;
+		grid-template-columns: 100px 100px;
+		grid-auto-rows: 100px;
+	}
+}
+@media only screen and (min-width:125px) and (max-width:225px) {
+	div.grid {
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: 100px;
+		grid-template-rows: 250px 80px 100px 1200px 80px 1000px 100px 1200px 80px 1000px;
+		grid-template-areas:	"title"
+								"submit"
+								"team1selectTitle"
+								"team1select"
+								"team1presetTitle"
+								"team1preset"
+								"team2selectTitle"
+								"team2select"
+								"team2presetTitle"
+								"team2preset"
+								"team1Title"
+								"team1"
+								"team2Title"
+								"team2";
+		width: 100px;
+		margin: auto;
+	}
+	
+	div.charSelectGrid1 {
+		grid-area: team1select;
+		display: grid;
+		grid-template-columns: 100px;
+		grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+		grid-template-areas:	"grave"
+								"jaina"
+								"geiger"
+								"argagarg"
+								"setsuki"
+								"valerie"
+								"rook"
+								"midori"
+								"lum"
+								"degrey"
+								"quince"
+								"onimaru";
+	}
+	div.charSelectGrid2 {
+		grid-area: team2select;
+		display: grid;
+		grid-template-columns: 100px;
+		grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+		grid-template-areas:	"grave"
+								"jaina"
+								"geiger"
+								"argagarg"
+								"setsuki"
+								"valerie"
+								"rook"
+								"midori"
+								"lum"
+								"degrey"
+								"quince"
+								"onimaru";
+	}
+	
+	div.presetGrid1 {
+		grid-area: team1preset;
+		display: grid;
+		grid-template-columns: 100px;
+		grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+		grid-template-areas:	"delete"
+								"random"
+								"zoners"
+								"rushdowns"
+								"grapplers"
+								"wildcards"
+								"flagstone"
+								"all"
+								"left"
+								"right";
+	}
+	div.presetGrid2 {
+		grid-area: team2preset;
+		display: grid;
+		grid-template-columns: 100px;
+		grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+		grid-template-areas:	"delete"
+								"random"
+								"zoners"
+								"rushdowns"
+								"grapplers"
+								"wildcards"
+								"flagstone"
+								"all"
+								"left"
+								"right";
+	}
+	
+	div.teamGrid1 {
+		grid-area: team1;
+		display: grid;
+		grid-template-columns: 100px;
+		grid-auto-rows: 100px;
+	}
+	div.teamGrid2 {
+		grid-area: team2;
+		display: grid;
+		grid-template-columns: 100px;
+		grid-auto-rows: 100px;
+	}
+}
+@media only screen and (max-width:125px) {
+	main {
+		display: none;
+	}
+}
+
+.title {
+	text-align:center;
+}
+.icon {
+	width:100px;
+	height:100px;
+}
+.overlay_char {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	opacity: 0;
+	transition: .3s ease;
+	background-color: green;
+	color: white;
+}
+.overlay_char#minus {
+	background-color: red;
+	top: -104px;
+}
+.overlay_char:hover {
+	opacity:60%;
+}
+
+.submit {
+	line-height: 20px;
+	width: 80px;
+	height: 80px;
+	align-self: center;
+	justify-self: center;
+}
 </style></head><body><header class="navbar-div"><div class="big1 medium1 small1 navbar-item-container"><a href="/" title="Return unto the homepage!!!" class="navbar-item"><div class="big1 medium1 small1 navbar-item-container"><img src="media/logo-optimised.svg" id="goc-logo" class="navbar-icon" alt="A logo of a happy chao in a circle, in the colours of the Fantasy Strike logo."><span class="navbar-item">Home</span></div></a></div><div class="big5 medium4 small4 navbar-item-container"><a href="rules" title="View the tournament rules!" class="navbar-item"><div class="big5 medium4 small4 navbar-item-container"><div class="navbar-item">Rules</div></div></a></div><div class="big6 medium2 small2 navbar-item-container"><a href="rulesets" title="View the silly rulesets you can choose to play under!" class="navbar-item"><div class="big6 medium2 small2 navbar-item-container"><div class="navbar-item">Rulesets</div></div></a></div><div class="big7 medium5 small3 navbar-item-container"><a href="styles" title="View potential future tournament formats!" class="navbar-item"><div class="big7 medium5 small3 navbar-item-container"><div class="navbar-item">Formats</div></div></a></div><div class="big2 medium7 small5 navbar-item-container"><a href="bracket" title="Join this week&#39;s tournament bracket!" class="navbar-item"><div class="big2 medium7 small5 navbar-item-container"><img src="media/challonge.svg" id="challonge-logo" class="navbar-icon" alt="The challonge logo in a circle, in the colours of the Fantasy Strike logo."><span class="navbar-item">Signup</span></div></a></div><div class="big3 medium8 small6 navbar-item-container"><a href="https://discord.gg/abWADS7" title="Join the discord server!" class="navbar-item"><div class="big3 medium8 small6 navbar-item-container"><img src="media/discord.svg" id="discord-logo" class="navbar-icon" alt="The Discord logo in a circle, in the colours of the Fantasy Strike logo."><span class="navbar-item">Discord</span></div></a></div><div class="big4 medium9 small7 navbar-item-container"><a href="stream" title="Watch the tournament live!" class="navbar-item"><div class="big4 medium9 small7 navbar-item-container"><img src="media/twitch.svg" id="twitch-logo" class="navbar-icon" alt="The Twitch logo in a circle, in the colours of the Fantasy Strike logo."><span class="navbar-item">Stream</span></div></a></div><div class="big8 medium3 small8 navbar-item-container"><a href="resources" title="Read up on a bunch of useful Fantasy Strike knowledge!" class="navbar-item"><div class="big8 medium3 small8 navbar-item-container"><div class="navbar-item">Resources</div></div></a></div><div class="big0 medium6 small0 navbar-item-container"><a href="commentators" title="See who our commentators are and what else they do!" class="navbar-item"><div class="big0 medium6 small0 navbar-item-container"><div class="navbar-item">Commentators</div></div></a></div></header><main>
     <div style="display:none;">
         <image src="media/delete.svg" alt="X" />
@@ -561,23 +559,23 @@
         <image src="media/all.svg" alt="100%" />
         <image src="media/left.svg" alt="Left Arrow" />
         <image src="media/right.svg" alt="Right Arrow" />
-        <image class="icon" src="media/grave.png" alt="Grave" id="grave" />
-        <image class="icon" src="media/jaina.png" alt="Jaina" id="jaina" />
-        <image class="icon" src="media/geiger.png" alt="Geiger" id="geiger" />
-        <image class="icon" src="media/argagarg.png" alt="Argagarg" id="argagarg" />
-        <image class="icon" src="media/setsuki.png" alt="Setsuki" id="setsuki" />
-        <image class="icon" src="media/valerie.png" alt="Valerie" id="valerie" />
-        <image class="icon" src="media/rook.png" alt="Rook" id="rook" />
-        <image class="icon" src="media/midori.png" alt="Midori" id="midori" />
-        <image class="icon" src="media/lum.png" alt="Lum" id="lum" />
-        <image class="icon" src="media/degrey.png" alt="Degrey" id="degrey" />
-        <image class="icon" src="media/quince.png" alt="Quince" id="quince" />
-        <image class="icon" src="media/onimaru.png" alt="Onimaru" id="onimaru" />
+        <image class="icon" src="media/grave.png" alt="Grave" id="Grave" />
+        <image class="icon" src="media/jaina.png" alt="Jaina" id="Jaina" />
+        <image class="icon" src="media/geiger.png" alt="Geiger" id="Geiger" />
+        <image class="icon" src="media/argagarg.png" alt="Argagarg" id="Argagarg" />
+        <image class="icon" src="media/setsuki.png" alt="Setsuki" id="Setsuki" />
+        <image class="icon" src="media/valerie.png" alt="Valerie" id="Valerie" />
+        <image class="icon" src="media/rook.png" alt="Rook" id="Rook" />
+        <image class="icon" src="media/midori.png" alt="Midori" id="Midori" />
+        <image class="icon" src="media/lum.png" alt="Lum" id="Lum" />
+        <image class="icon" src="media/degrey.png" alt="DeGrey" id="DeGrey" />
+        <image class="icon" src="media/quince.png" alt="Quince" id="Quince" />
+        <image class="icon" src="media/onimaru.png" alt="Onimaru" id="Onimaru" />
         <image class="overlay_char" src="media/minus.svg" id="minus" />
         <image src="media/plus.svg" id="plus" />
     </div>
     <div class="grid">
-        <h1 class="title" style="grid-area:title">The Garden of Chaos<br>Team Battle Tool</h1>
+        <h1 class="title" style="grid-area:title">The Garden of Chaos<br>Teams Selector</h1>
         
         <h2 class="title" style="grid-area:team1selectTitle">Team 1 Character Select</h2>
         <div class="charSelectGrid1">
@@ -617,8 +615,8 @@
             <a href="javascript:void(0);" style="grid-area:lum;" title="Add Lum to Team 1." onclick='addChar("Lum",1)'>
                 <image class="overlay_char" src="media/plus.svg" />
             </a>
-            <image class="icon" style="grid-area:degrey;" src="media/degrey.png" alt="Degrey" />
-            <a href="javascript:void(0);" style="grid-area:degrey;" title="Add Degrey to Team 1." onclick='addChar("Degrey",1)'>
+            <image class="icon" style="grid-area:degrey;" src="media/degrey.png" alt="DeGrey" />
+            <a href="javascript:void(0);" style="grid-area:degrey;" title="Add DeGrey to Team 1." onclick='addChar("DeGrey",1)'>
                 <image class="overlay_char" src="media/plus.svg" />
             </a>
             <image class="icon" style="grid-area:quince;" src="media/quince.png" alt="Quince" />
@@ -668,8 +666,8 @@
             <a href="javascript:void(0);" style="grid-area:lum;" title="Add Lum to Team 2." onclick='addChar("Lum",2)'>
                 <image class="overlay_char" src="media/plus.svg" />
             </a>
-            <image class="icon" style="grid-area:degrey;" src="media/degrey.png" alt="Degrey" />
-            <a href="javascript:void(0);" style="grid-area:degrey;" title="Add Degrey to Team 2." onclick='addChar("Degrey",2)'>
+            <image class="icon" style="grid-area:degrey;" src="media/degrey.png" alt="DeGrey" />
+            <a href="javascript:void(0);" style="grid-area:degrey;" title="Add DeGrey to Team 2." onclick='addChar("DeGrey",2)'>
                 <image class="overlay_char" src="media/plus.svg" />
             </a>
             <image class="icon" style="grid-area:quince;" src="media/quince.png" alt="Quince" />
@@ -780,20 +778,26 @@
 </body><script>var teams = [[],[]];
 var i = 0;
 
+function updateTeams() {
+	if(teams[0].length > 0 && teams[1].length > 0)
+		document.getElementById("submitlink").href = "teamdisplay?seed=" + (10000+Math.floor(Math.random()*90000)) + "&team1="+teams[0].filter(n=>n!==undefined).join() + "&team2="+teams[1].filter(n=>n!==undefined).join();
+	else
+		document.getElementById("submitlink").href = "javascript:void(0);";
+}
 function createCharElement(charName, teamNumber) {
     i++;
     
     div = document.createElement("DIV");
-    div.setAttribute("id",i+"char");
-    div.setAttribute("class","icon;");
+    div.setAttribute("id",teamNumber+""+teams[teamNumber-1].length);
+    div.setAttribute("class","icon");
     
     clicker = document.createElement("A");
     clicker.setAttribute("href", "javascript:void(0);");
     clicker.setAttribute("title", "Remove this "+charName+" from Team "+teamNumber+".");
-    clicker.setAttribute("onclick", 'removeChar("'+i+'char", '+teamNumber+')');
+    clicker.setAttribute("onclick", 'removeChar("'+teamNumber+teams[teamNumber-1].length+'", '+teamNumber+')');
     clicker.setAttribute("id", i+"char");
     div.appendChild(clicker);
-    clicker.appendChild(document.getElementById(charName.toLowerCase()).cloneNode());
+    clicker.appendChild(document.getElementById(charName).cloneNode());
     clicker.appendChild(document.getElementById("minus").cloneNode());
     
     return div;
@@ -803,19 +807,21 @@ function addChar(char, teamNumber) {
     teams[teamNumber-1] = teams[teamNumber-1].concat(char);
     
     document.getElementById('team'+teamNumber+'div')
-            .appendChild(createCharElement(char, 1));
+            .appendChild(createCharElement(char, teamNumber));
     
-    if(teams[0].length > 0 && teams[1].length > 0)
-        document.getElementById("submitlink").href = "https://gardenofchaos.xyz/teamdisplay?seed=" + (10000+Math.floor(Math.random()*90000)) + "&team1="+teams[0].join() + "&team2="+teams[1].join();
+    updateTeams();
 }
 function removeChar(char, teamNumber) {
     console.log("Remove char "+char+" from team "+teamNumber+".");
-    teams[teamNumber-1].splice(0+char.substr(0,1),1);
+    delete teams[teamNumber-1][+char.substring(1)-1]
     document.getElementById(char).remove();
+    
+    updateTeams();
 }
 function clearTeam(teamNumber) {
     console.log("Clear team "+teamNumber+".");
     teams[teamNumber-1]=[];
     document.getElementById("team"+teamNumber+"div").innerHTML="";
+	updateTeams();
 }
 </script></html>
