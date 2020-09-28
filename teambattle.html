@@ -298,7 +298,7 @@ function winGame(winningTeam) {
 	archiveGame(winningTeam);
 	teams.forEach(function(team, teamNumber) {
 		if(teamNumber+1 == winningTeam) {
-			document.getElementById("team"+(teamNumber+1)+"member"+(games[teamNumber][0][1]-1)).setAttribute("style", `width:${100/team.length}%; opacity: 25%;`);
+			document.getElementById("team"+(teamNumber+1)+"member"+(games[teamNumber][0][1]-1)).setAttribute("style", `width:${100/team.length}%; opacity: 15%;`);
 			games[teamNumber] = games[teamNumber].filter(char => char[1] != games[teamNumber][0][1]);
 		}
 		else {
