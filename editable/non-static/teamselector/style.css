@@ -22,7 +22,7 @@ button {
 	div.grid {
 		display: grid;
 		grid-gap: 10px;
-		grid-template-columns: 400px 180px 400px;
+		grid-template-coLumns: 400px 180px 400px;
 		grid-template-rows: 80px 50px 300px 40px 300px 40px 400px;
 		grid-template-areas:	"title				title	title"
 								"team1selectTitle	.		team2selectTitle"
@@ -38,26 +38,26 @@ button {
 	div.charSelectGrid1 {
 		grid-area: team1select;
 		display: grid;
-		grid-template-columns: 100px 100px 100px 100px;
+		grid-template-coLumns: 100px 100px 100px 100px;
 		grid-template-rows: 100px 100px 100px;
-		grid-template-areas:	"grave jaina geiger argagarg"
-								"setsuki valerie rook midori"
-								"lum degrey quince onimaru";
+		grid-template-areas:	"Grave Jaina Geiger Argagarg"
+								"Setsuki Valerie Rook Midori"
+								"Lum DeGrey Quince Onimaru";
 	}
 	div.charSelectGrid2 {
 		grid-area: team2select;
 		display: grid;
-		grid-template-columns: 100px 100px 100px 100px;
+		grid-template-coLumns: 100px 100px 100px 100px;
 		grid-template-rows: 100px 100px 100px;
-		grid-template-areas:	"argagarg geiger jaina grave"
-								"midori rook valerie setsuki"
-								"onimaru quince degrey lum";
+		grid-template-areas:	"Argagarg Geiger Jaina Grave"
+								"Midori Rook Valerie Setsuki"
+								"Onimaru Quince DeGrey Lum";
 	}
 	
 	div.presetGrid1 {
 		grid-area: team1preset;
 		display: grid;
-		grid-template-columns: 100px 100px 100px 100px;
+		grid-template-coLumns: 100px 100px 100px 100px;
 		grid-template-rows: 100px 100px 100px;
 		grid-template-areas:	"delete random zoners rushdowns"
 								"grapplers wildcards flagstone all"
@@ -66,7 +66,7 @@ button {
 	div.presetGrid2 {
 		grid-area: team2preset;
 		display: grid;
-		grid-template-columns: 100px 100px 100px 100px;
+		grid-template-coLumns: 100px 100px 100px 100px;
 		grid-template-rows: 100px 100px 100px;
 		grid-template-areas:	"rushdowns zoners random delete"
 								"all flagstone wildcards grapplers"
@@ -76,13 +76,13 @@ button {
 	div.teamGrid1 {
 		grid-area: team1;
 		display: grid;
-		grid-template-columns: 100px 100px 100px 100px;
+		grid-template-coLumns: 100px 100px 100px 100px;
 		grid-auto-rows: 100px;
 	}
 	div.teamGrid2 {
 		grid-area: team2;
 		display: grid;
-		grid-template-columns: 100px 100px 100px 100px;
+		grid-template-coLumns: 100px 100px 100px 100px;
 		grid-auto-rows: 100px;
 		direction: rtl;
 	}
@@ -91,7 +91,7 @@ button {
 	div.grid {
 		display: grid;
 		grid-gap: 10px;
-		grid-template-columns: 300px 180px 300px;
+		grid-template-coLumns: 300px 180px 300px;
 		grid-template-rows: 70px 80px 400px 40px 400px 40px 500px;
 		grid-template-areas:	"title				title	title"
 								"team1selectTitle	.		team2selectTitle"
@@ -107,28 +107,28 @@ button {
 	div.charSelectGrid1 {
 		grid-area: team1select;
 		display: grid;
-		grid-template-columns: 100px 100px 100px;
+		grid-template-coLumns: 100px 100px 100px;
 		grid-template-rows: 100px 100px 100px 100px;
-		grid-template-areas:	"grave jaina valerie"
-								"geiger argagarg setsuki"
-								"rook degrey quince"
-								"midori lum onimaru";
+		grid-template-areas:	"Grave Jaina Valerie"
+								"Geiger Argagarg Setsuki"
+								"Rook DeGrey Quince"
+								"Midori Lum Onimaru";
 	}
 	div.charSelectGrid2 {
 		grid-area: team2select;
 		display: grid;
-		grid-template-columns: 100px 100px 100px;
+		grid-template-coLumns: 100px 100px 100px;
 		grid-template-rows: 100px 100px 100px 100px;
-		grid-template-areas:	"valerie jaina grave"
-								"setsuki argagarg geiger"
-								"quince degrey rook"
-								"onimaru lum midori";
+		grid-template-areas:	"Valerie Jaina Grave"
+								"Setsuki Argagarg Geiger"
+								"Quince DeGrey Rook"
+								"Onimaru Lum Midori";
 	}
 	
 	div.presetGrid1 {
 		grid-area: team1preset;
 		display: grid;
-		grid-template-columns: 50px 50px 50px 50px 50px 50px;
+		grid-template-coLumns: 50px 50px 50px 50px 50px 50px;
 		grid-template-rows: 100px 100px 100px 100px;
 		grid-template-areas:	". delete delete random random ."
 								"zoners zoners rushdowns rushdowns grapplers grapplers"
@@ -138,7 +138,7 @@ button {
 	div.presetGrid2 {
 		grid-area: team2preset;
 		display: grid;
-		grid-template-columns: 50px 50px 50px 50px 50px 50px;
+		grid-template-coLumns: 50px 50px 50px 50px 50px 50px;
 		grid-template-rows: 100px 100px 100px 100px;
 		grid-template-areas:	". random random delete delete ."
 								"grapplers grapplers rushdowns rushdowns zoners zoners"
@@ -149,13 +149,13 @@ button {
 	div.teamGrid1 {
 		grid-area: team1;
 		display: grid;
-		grid-template-columns: 100px 100px 100px;
+		grid-template-coLumns: 100px 100px 100px;
 		grid-auto-rows: 100px;
 	}
 	div.teamGrid2 {
 		grid-area: team2;
 		display: grid;
-		grid-template-columns: 100px 100px 100px;
+		grid-template-coLumns: 100px 100px 100px;
 		grid-auto-rows: 100px;
 		direction: rtl;
 	}
@@ -164,7 +164,7 @@ button {
 	div.grid {
 		display: grid;
 		grid-gap: 10px;
-		grid-template-columns: 200px 80px 200px;
+		grid-template-coLumns: 200px 80px 200px;
 		grid-template-rows: 80px 110px 600px 40px 500px 40px 700px;
 		grid-template-areas:	"title				title	title"
 								"team1selectTitle	.		team2selectTitle"
@@ -180,32 +180,32 @@ button {
 	div.charSelectGrid1 {
 		grid-area: team1select;
 		display: grid;
-		grid-template-columns: 100px 100px;
+		grid-template-coLumns: 100px 100px;
 		grid-template-rows: 100px 100px 100px 100px 100px 100px;
-		grid-template-areas:	"grave jaina"
-								"geiger argagarg"
-								"setsuki valerie"
-								"rook midori"
-								"lum degrey"
-								"quince onimaru";
+		grid-template-areas:	"Grave Jaina"
+								"Geiger Argagarg"
+								"Setsuki Valerie"
+								"Rook Midori"
+								"Lum DeGrey"
+								"Quince Onimaru";
 	}
 	div.charSelectGrid2 {
 		grid-area: team2select;
 		display: grid;
-		grid-template-columns: 100px 100px;
+		grid-template-coLumns: 100px 100px;
 		grid-template-rows: 100px 100px 100px 100px 100px 100px;
-		grid-template-areas:	"jaina grave"
-								"argagarg geiger"
-								"valerie setsuki"
-								"midori rook"
-								"degrey lum"
-								"onimaru quince";
+		grid-template-areas:	"Jaina Grave"
+								"Argagarg Geiger"
+								"Valerie Setsuki"
+								"Midori Rook"
+								"DeGrey Lum"
+								"Onimaru Quince";
 	}
 	
 	div.presetGrid1 {
 		grid-area: team1preset;
 		display: grid;
-		grid-template-columns: 100px 100px;
+		grid-template-coLumns: 100px 100px;
 		grid-template-rows: 100px 100px 100px 100px 100px;
 		grid-template-areas:	"delete random"
 								"zoners rushdowns"
@@ -216,7 +216,7 @@ button {
 	div.presetGrid2 {
 		grid-area: team2preset;
 		display: grid;
-		grid-template-columns: 100px 100px;
+		grid-template-coLumns: 100px 100px;
 		grid-template-rows: 100px 100px 100px 100px 100px;
 		grid-template-areas:	"random delete"
 								"rushdowns zoners"
@@ -228,13 +228,13 @@ button {
 	div.teamGrid1 {
 		grid-area: team1;
 		display: grid;
-		grid-template-columns: 100px 100px;
+		grid-template-coLumns: 100px 100px;
 		grid-auto-rows: 100px;
 	}
 	div.teamGrid2 {
 		grid-area: team2;
 		display: grid;
-		grid-template-columns: 100px 100px;
+		grid-template-coLumns: 100px 100px;
 		grid-auto-rows: 100px;
 		direction: rtl;
 	}
@@ -243,7 +243,7 @@ button {
 	div.grid {
 		display: grid;
 		grid-gap: 10px;
-		grid-template-columns: 300px;
+		grid-template-coLumns: 300px;
 		grid-template-rows: 120px 80px 80px 400px 40px 400px 80px 400px 40px 400px;
 		grid-template-areas: "title"
 							"submit"
@@ -266,28 +266,28 @@ button {
 	div.charSelectGrid1 {
 		grid-area: team1select;
 		display: grid;
-		grid-template-columns: 100px 100px 100px;
+		grid-template-coLumns: 100px 100px 100px;
 		grid-template-rows: 100px 100px 100px 100px;
-		grid-template-areas:	"grave jaina valerie"
-								"geiger argagarg setsuki"
-								"rook degrey quince"
-								"midori lum onimaru";
+		grid-template-areas:	"Grave Jaina Valerie"
+								"Geiger Argagarg Setsuki"
+								"Rook DeGrey Quince"
+								"Midori Lum Onimaru";
 	}
 	div.charSelectGrid2 {
 		grid-area: team2select;
 		display: grid;
-		grid-template-columns: 100px 100px 100px;
+		grid-template-coLumns: 100px 100px 100px;
 		grid-template-rows: 100px 100px 100px 100px;
-		grid-template-areas:	"grave jaina valerie"
-								"geiger argagarg setsuki"
-								"rook degrey quince"
-								"midori lum onimaru";
+		grid-template-areas:	"Grave Jaina Valerie"
+								"Geiger Argagarg Setsuki"
+								"Rook DeGrey Quince"
+								"Midori Lum Onimaru";
 	}
 	
 	div.presetGrid1 {
 		grid-area: team1preset;
 		display: grid;
-		grid-template-columns: 50px 50px 50px 50px 50px 50px;
+		grid-template-coLumns: 50px 50px 50px 50px 50px 50px;
 		grid-template-rows: 100px 100px 100px 100px;
 		grid-template-areas:	". delete delete random random ."
 								"zoners zoners rushdowns rushdowns grapplers grapplers"
@@ -297,7 +297,7 @@ button {
 	div.presetGrid2 {
 		grid-area: team2preset;
 		display: grid;
-		grid-template-columns: 50px 50px 50px 50px 50px 50px;
+		grid-template-coLumns: 50px 50px 50px 50px 50px 50px;
 		grid-template-rows: 100px 100px 100px 100px;
 		grid-template-areas:	". delete delete random random ."
 								"zoners zoners rushdowns rushdowns grapplers grapplers"
@@ -308,13 +308,13 @@ button {
 	div.teamGrid1 {
 		grid-area: team1;
 		display: grid;
-		grid-template-columns: 100px 100px 100px;
+		grid-template-coLumns: 100px 100px 100px;
 		grid-auto-rows: 100px;
 	}
 	div.teamGrid2 {
 		grid-area: team2;
 		display: grid;
-		grid-template-columns: 100px 100px 100px;
+		grid-template-coLumns: 100px 100px 100px;
 		grid-auto-rows: 100px;
 	}
 }
@@ -322,7 +322,7 @@ button {
 	div.grid {
 		display: grid;
 		grid-gap: 10px;
-		grid-template-columns: 200px;
+		grid-template-coLumns: 200px;
 		grid-template-rows: 150px 80px 120px 600px 40px 500px 120px 600px 40px 500px;
 		grid-template-areas: "title"
 							"submit"
@@ -345,32 +345,32 @@ button {
 	div.charSelectGrid1 {
 		grid-area: team1select;
 		display: grid;
-		grid-template-columns: 100px 100px;
+		grid-template-coLumns: 100px 100px;
 		grid-template-rows: 100px 100px 100px 100px 100px 100px;
-		grid-template-areas:	"grave jaina"
-								"geiger argagarg"
-								"setsuki valerie"
-								"rook midori"
-								"lum degrey"
-								"quince onimaru";
+		grid-template-areas:	"Grave Jaina"
+								"Geiger Argagarg"
+								"Setsuki Valerie"
+								"Rook Midori"
+								"Lum DeGrey"
+								"Quince Onimaru";
 	}
 	div.charSelectGrid2 {
 		grid-area: team2select;
 		display: grid;
-		grid-template-columns: 100px 100px;
+		grid-template-coLumns: 100px 100px;
 		grid-template-rows: 100px 100px 100px 100px 100px 100px;
-		grid-template-areas:	"jaina grave"
-								"argagarg geiger"
-								"valerie setsuki"
-								"midori rook"
-								"degrey lum"
-								"onimaru quince";
+		grid-template-areas:	"Jaina Grave"
+								"Argagarg Geiger"
+								"Valerie Setsuki"
+								"Midori Rook"
+								"DeGrey Lum"
+								"Onimaru Quince";
 	}
 	
 	div.presetGrid1 {
 		grid-area: team1preset;
 		display: grid;
-		grid-template-columns: 100px 100px;
+		grid-template-coLumns: 100px 100px;
 		grid-template-rows: 100px 100px 100px 100px 100px;
 		grid-template-areas:	"delete random"
 								"zoners rushdowns"
@@ -381,7 +381,7 @@ button {
 	div.presetGrid2 {
 		grid-area: team2preset;
 		display: grid;
-		grid-template-columns: 100px 100px;
+		grid-template-coLumns: 100px 100px;
 		grid-template-rows: 100px 100px 100px 100px 100px;
 		grid-template-areas:	"random delete"
 								"rushdowns zoners"
@@ -393,13 +393,13 @@ button {
 	div.teamGrid1 {
 		grid-area: team1;
 		display: grid;
-		grid-template-columns: 100px 100px;
+		grid-template-coLumns: 100px 100px;
 		grid-auto-rows: 100px;
 	}
 	div.teamGrid2 {
 		grid-area: team2;
 		display: grid;
-		grid-template-columns: 100px 100px;
+		grid-template-coLumns: 100px 100px;
 		grid-auto-rows: 100px;
 	}
 }
@@ -407,7 +407,7 @@ button {
 	div.grid {
 		display: grid;
 		grid-gap: 10px;
-		grid-template-columns: 100px;
+		grid-template-coLumns: 100px;
 		grid-template-rows: 250px 80px 100px 1200px 80px 1000px 100px 1200px 80px 1000px;
 		grid-template-areas:	"title"
 								"submit"
@@ -430,44 +430,44 @@ button {
 	div.charSelectGrid1 {
 		grid-area: team1select;
 		display: grid;
-		grid-template-columns: 100px;
+		grid-template-coLumns: 100px;
 		grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
-		grid-template-areas:	"grave"
-								"jaina"
-								"geiger"
-								"argagarg"
-								"setsuki"
-								"valerie"
-								"rook"
-								"midori"
-								"lum"
-								"degrey"
-								"quince"
-								"onimaru";
+		grid-template-areas:	"Grave"
+								"Jaina"
+								"Geiger"
+								"Argagarg"
+								"Setsuki"
+								"Valerie"
+								"Rook"
+								"Midori"
+								"Lum"
+								"DeGrey"
+								"Quince"
+								"Onimaru";
 	}
 	div.charSelectGrid2 {
 		grid-area: team2select;
 		display: grid;
-		grid-template-columns: 100px;
+		grid-template-coLumns: 100px;
 		grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
-		grid-template-areas:	"grave"
-								"jaina"
-								"geiger"
-								"argagarg"
-								"setsuki"
-								"valerie"
-								"rook"
-								"midori"
-								"lum"
-								"degrey"
-								"quince"
-								"onimaru";
+		grid-template-areas:	"Grave"
+								"Jaina"
+								"Geiger"
+								"Argagarg"
+								"Setsuki"
+								"Valerie"
+								"Rook"
+								"Midori"
+								"Lum"
+								"DeGrey"
+								"Quince"
+								"Onimaru";
 	}
 	
 	div.presetGrid1 {
 		grid-area: team1preset;
 		display: grid;
-		grid-template-columns: 100px;
+		grid-template-coLumns: 100px;
 		grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
 		grid-template-areas:	"delete"
 								"random"
@@ -483,7 +483,7 @@ button {
 	div.presetGrid2 {
 		grid-area: team2preset;
 		display: grid;
-		grid-template-columns: 100px;
+		grid-template-coLumns: 100px;
 		grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
 		grid-template-areas:	"delete"
 								"random"
@@ -500,13 +500,13 @@ button {
 	div.teamGrid1 {
 		grid-area: team1;
 		display: grid;
-		grid-template-columns: 100px;
+		grid-template-coLumns: 100px;
 		grid-auto-rows: 100px;
 	}
 	div.teamGrid2 {
 		grid-area: team2;
 		display: grid;
-		grid-template-columns: 100px;
+		grid-template-coLumns: 100px;
 		grid-auto-rows: 100px;
 	}
 }
