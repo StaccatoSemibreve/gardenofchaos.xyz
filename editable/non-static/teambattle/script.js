@@ -18,10 +18,11 @@ teams.forEach(function(chars, team) {
 	chars.forEach(function(char, index) {
 		div = document.createElement("DIV");
 		div.setAttribute("id", `team${team+1}member${index}`);
-		div.setAttribute("style", `width:${100/chars.length}%;`);
+		div.setAttribute("style", `width: ${100/chars.length}%;`);
 		
 		charIcon = document.getElementById(char[0]).cloneNode();
 		charIcon.setAttribute("style", `width:100%`);
+		charIcon.setAttribute("id", `team${team+1}icon${index}`);
 		div.appendChild(charIcon);
 		
 		checkIcon = document.getElementById("check2").cloneNode();
@@ -66,12 +67,12 @@ function createCharElement(char, teamNumber) {
     
     div = document.createElement("DIV");
     div.setAttribute("class","icon");
-	div.setAttribute("id", "team"+teamNumber+"charicon");
+	div.setAttribute("id", `team${teamNumber}charicon`);
     
     clicker = document.createElement("A");
     clicker.setAttribute("href", "javascript:void(0);");
-    clicker.setAttribute("title", "Team " + teamNumber + "'s " + char + " wins!");
-    clicker.setAttribute("onclick", 'winGame("' + teamNumber+'")');
+    clicker.setAttribute("title", `Team ${teamNumber}'s ${char} wins!`);
+    clicker.setAttribute("onclick", `winGame("${teamNumber}")`);
     div.appendChild(clicker);
 	
     clicker.appendChild(document.getElementById(char).cloneNode());
@@ -83,7 +84,7 @@ function createCharElement(char, teamNumber) {
 function startMatch() {
 	teams.forEach(function(team, teamNumber) {
 		team.forEach(function(char, index) {
-			document.getElementById("team"+(teamNumber+1)+"member"+index).setAttribute("style", `width:${100/team.length}%; opacity: 50%;`);
+			document.getElementById("team"+(teamNumber+1)+"icon"+index).setAttribute("style", `width: 100%; opacity: 50%;`);
 		});
 	});
 	
@@ -96,7 +97,7 @@ function nextGame() {
 	teams.forEach(function(team, teamNumber) {
 		team.forEach(function(char, index) {
 			if(index == chars[teamNumber][1]-1)
-				document.getElementById("team"+(teamNumber+1)+"member"+index).setAttribute("style", `width:${100/team.length}%;`);
+				document.getElementById("team"+(teamNumber+1)+"icon"+index).setAttribute("style", "width: 100%;");
 		});
 	});
 	document.getElementById("team1char").innerHTML = "";
@@ -109,12 +110,12 @@ function winGame(winningTeam) {
 	archiveGame(winningTeam);
 	teams.forEach(function(team, teamNumber) {
 		if(teamNumber+1 == winningTeam) {
-			document.getElementById("team"+(teamNumber+1)+"member"+(games[teamNumber][0][1]-1)).setAttribute("style", `width:${100/team.length}%; opacity: 50%;`);
+			document.getElementById("team"+(teamNumber+1)+"icon"+(games[teamNumber][0][1]-1)).setAttribute("style", `width: 100%; opacity: 50%;`);
 			document.getElementById(`team${teamNumber+1}check${games[teamNumber][0][1]-1}`).removeAttribute("style");
 			games[teamNumber] = games[teamNumber].filter(char => char[1] != games[teamNumber][0][1]);
 		}
 		else {
-			document.getElementById("team"+(teamNumber+1)+"member"+(games[teamNumber][0][1]-1)).setAttribute("style", `width:${100/team.length}%; opacity: 50%;`);
+			document.getElementById("team"+(teamNumber+1)+"icon"+(games[teamNumber][0][1]-1)).setAttribute("style", `width: 100%; opacity: 50%;`);
 			games[teamNumber] = games[teamNumber].splice(1);
 		}
 	});

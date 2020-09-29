@@ -109,6 +109,7 @@ div.grid {
 .check {
 	position: relative;
 	top: -50%;
+	opacity: 100%;
 }
 .team {
 	display: flex;
