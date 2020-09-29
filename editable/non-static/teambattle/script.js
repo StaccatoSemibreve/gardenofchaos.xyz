@@ -16,10 +16,19 @@ console.log("seed = " + seed);
 
 teams.forEach(function(chars, team) {
 	chars.forEach(function(char, index) {
+		div = document.createElement("DIV");
+		div.setAttribute("id", `team${team+1}member${index}`);
+		div.setAttribute("style", `width:${100/chars.length}%;`);
+		
 		charIcon = document.getElementById(char[0]).cloneNode();
-		charIcon.setAttribute("id", `team${team+1}member${index}`);
-		charIcon.setAttribute("style", `width:${100/chars.length}%;`);
-		document.getElementById(`team${team+1}`).appendChild(charIcon);
+		charIcon.setAttribute("style", `width:100%`);
+		div.appendChild(charIcon);
+		
+		checkIcon = document.getElementById("check2").cloneNode();
+		checkIcon.setAttribute("id", `team${team+1}check${index}`);
+		div.appendChild(checkIcon);
+		
+		document.getElementById(`team${team+1}`).appendChild(div);
 	});
 });
 
@@ -100,7 +109,8 @@ function winGame(winningTeam) {
 	archiveGame(winningTeam);
 	teams.forEach(function(team, teamNumber) {
 		if(teamNumber+1 == winningTeam) {
-			document.getElementById("team"+(teamNumber+1)+"member"+(games[teamNumber][0][1]-1)).setAttribute("style", `width:${100/team.length}%; opacity: 15%;`);
+			document.getElementById("team"+(teamNumber+1)+"member"+(games[teamNumber][0][1]-1)).setAttribute("style", `width:${100/team.length}%; opacity: 50%;`);
+			document.getElementById(`team${teamNumber+1}check${games[teamNumber][0][1]-1}`).removeAttribute("style");
 			games[teamNumber] = games[teamNumber].filter(char => char[1] != games[teamNumber][0][1]);
 		}
 		else {
@@ -132,20 +142,10 @@ function archiveGame(winningTeam) {
 	char1 = document.getElementById(games[0][0][0]).cloneNode();
 	char2 = document.getElementById(games[1][0][0]).cloneNode();
 	
-	vs = document.createElement("DIV");//<div id="vsdiv" class="vs"><h2 id="vs" class="vs">vs</h2></div>
-	vs.setAttribute("id", "vsdiv");
-	vs.setAttribute("class", "vs");
-	vstext = document.createElement("H2");
-	vstext.setAttribute("id", "vs");
-	vstext.setAttribute("class", "vs");
-	vstext.innerHTML = "vs";
-	vs.appendChild(vstext);
-	
 	div = document.createElement("DIV");
 	div.setAttribute("class", "archive");
 	div.appendChild(sign1);
 	div.appendChild(char1);
-	div.appendChild(vs);
 	div.appendChild(char2);
 	div.appendChild(sign2);
 	
@@ -154,6 +154,6 @@ function archiveGame(winningTeam) {
 
 function winMatch(winningTeam) {
 	console.log(`Team ${winningTeam} wins!`);
-	document.getElementById("versus").innerHTML=`<h2 class="title" style="grid-area: all;">Team ${winningTeam} wins!!!</h2>`;
+	document.getElementById("versus").innerHTML=`<h1 class="title" style="grid-area: all;">Team ${winningTeam} wins!!!</h1>`;
 	document.getElementById("versus").setAttribute("id", "versuswin");
 }

@@ -42,7 +42,7 @@ div.grid {
 							"."
 							"archive";
 	width: 95%;
-	min-width: 450px;
+	min-width: 400px;
 	margin: auto;
 }
 .title {
@@ -106,6 +106,10 @@ div.grid {
 	max-width: 100px;
 	object-fit: contain;
 }
+.check {
+	position: relative;
+	top: -50%;
+}
 .team {
 	display: flex;
 	flex-flow:row nowrap;
@@ -136,12 +140,6 @@ div.grid {
 	overflow:hidden;
 	margin: auto;
 }
-.spoiler > div {
-	-webkit-transition: all 0.2s ease;
-	-moz-transition: margin 0.2s ease;
-	-o-transition: all 0.2s ease;
-	transition: margin 0.2s ease;
-}
 .spoilerbutton[value="Show Past Games"] + .spoiler > div {
 	display: none;
 }
@@ -151,6 +149,8 @@ div.grid {
 }
 .archive {
 	display: grid;
-	grid-template-columns: 100px 100px 50px 100px 100px;
-	grid-template-areas: "left team1 vs team2 right";
+	grid-template-columns: 100px 100px 100px 100px;
+	grid-template-rows: 100px;
+	grid-template-areas: "left team1 team2 right";
+	height: 100px;
 }
