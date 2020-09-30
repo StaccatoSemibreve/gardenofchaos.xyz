@@ -8,7 +8,8 @@ A list of (hopefully useful) Fantasy Strike resources, for those looking to lear
 * [Events:](https://fantasystrike.com/events) The official Fantasy Strike events page.
 * [The Discord:](https://discord.gg/FantasyStrike) The official Fantasy Strike Discord server.
 * [The Subreddit:](https://www.reddit.com/r/FantasyStrike) The Fantasy Strike subreddit. (With a [resources page](https://reddit.com/r/FantasyStrike/wiki/fantasy-strike-resources) of its own!)
-* [Custom Team Battle manager:](teams) A tool for managing Team Battles between custom teams of Fantasy Strike characters, including any number of non-unique characters, based on [Danielizabeth Stretulch's similar tool for all Yomi characters.](https://danielstretulch.github.io/)
+* [Mizuumi Wiki:](https://wiki.gbl.gg/w/Fantasy_Strike) A wiki for Fantasy Strike.
+* [Custom Team Battle manager:](teamselector) A tool for managing Team Battles between custom teams of Fantasy Strike characters, including any number of non-unique characters, based on [Danielizabeth Stretulch's similar tool for all Yomi characters.](https://danielstretulch.github.io/)
 	* If you need an async version you can entirely determine before the match, [here's one!](teams2) It works by picking exactly enough blind picks that you can't run out before the match ends.
 * [monorail's fs_stats:](https://github.com/undergroundmonorail/fs_stats) A python tool for tracking your win-rate.
 * [trapdoorbeaver's safe zone template:](https://twitter.com/trapdoorbeaver/status/1278559863321137153) A Twitter post containing reference images for where important parts of Fantasy Strike's UI are located.
@@ -21,7 +22,6 @@ A list of (hopefully useful) Fantasy Strike resources, for those looking to lear
 * [Some help with port forwarding](https://forums.fantasystrike.com/t/ports-to-forward-for-online-connection-issues-udp-9991-and-19900)
 * [Glossary of Fighting Game Terminology:](https://docs.google.com/document/d/1RBBqG-SRG5H_3yV7KU57YkNinSg3UmztIi_ikB9pgSA/edit) A useful list of explanations of various terms commonly used in fighting game communities.
 * [Frame Data Spreadsheet:](https://docs.google.com/spreadsheets/d/1Ia4um01P9JMlxckup9qbKXuZgW1CdTshVPeny4-XKEs/edit) A spreadsheet listing the frame data of every move in Fantasy Strike.
-* [Mizuumi Wiki:](https://wiki.gbl.gg/w/Fantasy_Strike) A wiki for Fantasy Strike.
 * [Aphotix's Argagarg Guide:](https://docs.google.com/document/d/1KKsV009d-8hm6XSFiQRy7QCqWtBsLlHzuI_ZvYSQngY/edit) A guide on the fundamentals of playing Argagarg effectively, written by one of the best Argagarg players in the community.
 * [Aphotix's Setsuki Guide:](https://docs.google.com/document/d/1nVdWoyd4S3Ta6ACE_5p7E3E0963sHO9woq0t_SR4xgQ/edit) A guide on the fundamentals of playing Setsuki effectively, written by one of the best Setsuki players in the community.
 * [Novril's Character Guides:](https://docs.google.com/document/d/1PpEna_htGHitwWtAxEpMI94rlnSWKBwnt7r4hmIANck/edit) A guide to the basics of each character.
