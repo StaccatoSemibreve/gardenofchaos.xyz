@@ -4,10 +4,9 @@ import Data.Char
 import Text.Printf
 import qualified Data.Text as T
 import qualified Data.Text.IO as IO
-import CMark (optUnsafe, commonmarkToNode)
+import CMarkGFM (optUnsafe, extStrikethrough, extTable, extTaskList, commonmarkToHtml)
 import Lucid
 import Lucid.Base (termRaw)
-import CMark.Lucid (renderNode)
 import Data.List (isSuffixOf, zip4)
 import System.FilePath (makeValid)
 import System.Directory (listDirectory)
@@ -74,14 +73,6 @@ printerOneliner _ "JsArrayHead" formats = do
                     | c == '\''                                                                              = "\\'"
                     | otherwise                                                                             = T.singleton c
 printerOneliner _ "JsOptionsHead" formats = "\'" `T.append` (foldl T.append "" . map (uncurry . sformat $ ("<option value=\"" % stext % "\">" % stext % "</option>")) . map (\x -> (x,x)) . map head $ formats) `T.append` "\'"
---     zipWith T.append . map (\(x,y) -> sformat ("<option value=\"" % stext % "\">" % stext % "</option>") x y) . map (\x -> (x,x)) . map (esc . head) $ formats
---     where
---         esc :: T.Text -> T.Text
---         esc = T.foldl (\text c -> text `T.append` (charEncode c)) T.empty
---             where
---                 charEncode c
---                     | c == '\''                                                                              = "\\'"
---                     | otherwise                                                                             = T.singleton c
 
 printerOneliner _ _ _ = ""
     
@@ -97,8 +88,7 @@ pageMarkdown navbar title markdown = doctypehtml_ $ do
     body_ $ do
         navbar
         div_ [id_ "center-div"] $ do
-            -- convert from markdown to cmark's nodes to lucid's nodes
-            renderNode [optUnsafe] $ commonmarkToNode [optUnsafe] markdown
+            Lucid.toHtmlRaw $ commonmarkToHtml [optUnsafe] [extStrikethrough, extTable, extTaskList] markdown
 
 pageNonStatic :: Html () -> T.Text -> T.Text -> T.Text -> T.Text -> Html ()
 pageNonStatic navbar title style body script = doctypehtml_ $ do
