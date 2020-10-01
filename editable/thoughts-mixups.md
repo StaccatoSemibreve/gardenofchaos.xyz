@@ -4,7 +4,7 @@ To mix or not to mix, that is the question! Whether 'tis nobler in the mindgames
 
 There are lots of decisions to make in Fantasy Strike, and one of the most important ones that will often decide entire rounds is whether or not to use a mixup. You heard that right, the decision at play is not which side of the mixup to go for, it's whether to perform the mixup at all!
 
-For clarity, any situation where you force your opponent to make a decision, where that decision dictates whether they win or lose the interaction, is a mixup.
+Any situation where you force your opponent to make a decision on what they expect you to do, where that decision dictates the outcome of that interaction, is a mixup.
 
 <a name="sum-parts">[**Greater than the sum of its parts:**](#sum-parts)</a>
 
@@ -28,11 +28,11 @@ This is what makes Rook so strong up close - his basic mixup is between strike, 
 
 To use a marvellous turn of phrase coined by ErickDRedd, Rook plays rock paper scissors against you with two hands.
 
-| Attack        | Defense                         |
-| ------------: | :------------------------------ |
-| Strike        | Block or take 1 damage and kd   |
-| Throw         | Yomi or take 2 damage and kd    |
-| Command Throw | Jump or take 2 damage and kd    |
+| Attack        | Defense                                                     |
+| ------------: | :---------------------------------------------------------- |
+| Strike        | Block or take 1-2 damage and kd (depending on which strike) |
+| Throw         | Yomi or take 2 damage and kd                                |
+| Command Throw | Jump or take 2 damage and kd                                |
 
 <a name="ev">[**Expected Value:**](#ev)</a>
 
@@ -56,7 +56,7 @@ The final, and perhaps most underrated, descriptive value mixups have is varianc
 | -------: | :------------------------------------------------------------------------| :----------- |
 | High     | If you win the interaction, awesome! If you lose, oh no! Decides rounds. | Quince gB    |
 | Low      | If you win the interaction, nice. If you don't, who cares? Very common.  | Strike/Throw |
-| Zero     | … Is this a mixup? Are you sure?????                                     | … Chipout?   |
+| Zero     | This isn't a thing.                                                      | Stop it.     |
 
 <a name="weights">[**Weights:**](#weights)</a>
 
