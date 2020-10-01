@@ -6,7 +6,7 @@ There are lots of decisions to make in Fantasy Strike, and one of the most impor
 
 For clarity, any situation where you force your opponent to make a decision, where that decision dictates whether they win or lose the interaction, is a mixup.
 
-**Greater than the sum of its parts:**
+<a name="sum-parts">[**Greater than the sum of its parts:**](#sum-parts)</a>
 
 Mixups are a tool to create an opening in your opponent's defenses. Let's use the most basic mixup, strike/throw, as an example: if you always attack, they always block - if you always throw, they always yomi counter! Each option, taken on its own, is just kinda rubbish.
 
@@ -34,7 +34,7 @@ To use a marvellous turn of phrase coined by ErickDRedd, Rook plays rock paper s
 | Throw         | Yomi or take 2 damage and kd    |
 | Command Throw | Jump or take 2 damage and kd    |
 
-**Expected Value:**
+<a name="ev">[**Expected Value:**](#ev)</a>
 
 Each mixup has a certain “expected value”, often shortened to “EV”, which is a fancy term borrowed from probability to describe how good it is on average. An EV of 1 just means that, on average, you'll get 1 damage out of it, or at least 1 more damage than you'll take - this struggles to account for discrete factors like knockdowns that lack a clear amount of value to translate into damage, but it summarises how good a mixup is very effectively despite that!
 
@@ -58,7 +58,7 @@ The final, and perhaps most underrated, descriptive value mixups have is varianc
 | Low      | If you win the interaction, nice. If you don't, who cares? Very common.  | Strike/Throw |
 | Zero     | … Is this a mixup? Are you sure?????                                     | … Chipout?   |
 
-**Weights:**
+<a name="weights">[**Weights:**](#weights)</a>
 
 Each option in a mixup has a particular “weight”, which is higher the better it works when it works, lower the worse it works when it doesn't, and then shifted about by your general preferences. This is… vague, but as a general rule, it's most easily figured out by how you expect your opponent to defend. This starts simple, then gets more complicated, but you only need to worry about the simple bit.
 
@@ -78,7 +78,7 @@ Looking at this, how do you think your opponent will defend against it? The answ
 
 Supplementary material you can, and probably should, skip: [weights, the complicated bit!](thoughts-weights)
 
-**To mixup or not to mixup:**
+<a name="decision">[**To mixup or not to mixup:**](#decision)</a>
 
 Okay, now that you know about what you get out of mixups, you can learn *why* to mixup. A mixup is a way to break through your opponent's defenses, as I mentioned earlier, but they're more than that: they're a decision point which introduces far more possible outcomes in the match! You'll know what that means soon, if I do my job properly.
 
@@ -92,7 +92,7 @@ If you're confident you can win the round without introducing decision points, d
 
 In place of mixups on oki, the winning player uses safejumps. In place of unsafe mixups to open up the opponent's guard, the winning player aims for chip and forcing errors with minimal risk. Because if they can achieve this without returning to neutral, then they have already won.
 
-**An interesting note:**
+<a name="note">[**An interesting note:**](#note)</a>
 
 A very noteworthy example of a mixup is DeGrey's callouts against Valerie's cyan magenta yellow/rainbow mixup! It's not great for DeGrey, but it's a fascinating progression of tactics.
 
@@ -104,7 +104,9 @@ As you can see, before DeGrey threatens those options, Valerie is free to do wha
 
 Dynamics like this are everywhere when you look close enough, and I recommend you do!
 
-**Further reading:**
+<a name="reading">[**Further reading:**](#reading)</a>
 * [“Critical Points”](https://www.sirlin.net/ptw-book/8-critical-points), a chapter from Sirlin's ‘Play to Win‘
 * The Dustloop wiki's [article on mixups](https://www.dustloop.com/wiki/index.php?title=Mixup)
 * DHD's [guide on opening people up](https://docs.google.com/document/d/1R1iAKVb-5rjPbX5CXkp75L3L7-P3Ef3_fgA1Xk6rHV0)
+
+**[Other thoughts on stuff!](/thoughts)**
