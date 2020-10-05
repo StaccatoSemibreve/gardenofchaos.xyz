@@ -1,166 +1,106 @@
 # Janet's Thoughts on Lum's Oki Tools
+
 A fundamental part of this genre of fighting game is "oki", short for okizeme, which is a set of strategies to follow when you have your opponent knocked down to make use of that advantaged state. If your character has strong oki tools, that will allow you to make very good use of any knockdown, and will make knowing those tools extremely valuable. Lum is a character with strong oki tools.
 
 In particular, Lum has a very versatile set of oki tools, letting you adjust according to your opponent's habits and levels of confusion and decision paralysis very effectively. I'll attempt to summarise them here, both for Lum players and their victims. Unless specified otherwise, assume these are spaced off forward throw.
 
 If at any point you don't understand any of these, I recommend going into practise mode and trying them out! They're much easier to perform than to describe.
 
-<a href="#item" name="item">**Item toss oki**</a> (the Long One):
+<a name="basics" />
+
+## [The basics:](#basics)
+
+<a name="okis" />
+
+| [**Summary of Okis**](#okis)        | Forward Throw | Back Throw      | Yomi Counter | Other  | Notes                                 |
+| ----------------------------------: | :-----------: | :-------------: | :----------: | :----: | :------------------------------------ |
+| **Strike/Throw**                    | Yes           | Yes             | Yes          | Yes    | Very reliable                         |
+| [**Item Toss**](#item)              | Yes           | Yes (far)       | Yes (late)   | Rarely |                                       |
+| [**Crossup Roll**](#roll)           | Yes           | Yes             | Yes          | Yes    | Crossup is throwable on hit           |
+| [**Crossup jA**](#jump)             | Yes           | No              | Yes          | Rarely | Weak without items, strong with items |
+| [**Safemelon**](#safemelon)         | Yes           | Yes (back jump) | Yes          | Yes    | Safejump, combo on hit, item on block |
+| [**Whiff Roll**](#whiffroll)        | Yes           | Yes             | Yes          | Yes    | Needs mental advantage                |
+| [**Corner Whiff Roll**](#whiffroll) | Yes           | Yes             | Yes          | Rarely | Knowledge test, fun sideswitching     |
+
+<a name="juggle-corner" />
+
+| [**Juggling from Corner**](#juggle-corner) | Outcome                            | Notes |
+| -----------------------------------------: | :--------------------------------- | :----------------------------------------------------------------- |
+| nAxB                                       | 1 damage + meaty ambiguous crossup | Unsafe on crossup, meaty can be blocked                            |
+| nAxC                                       | 1 damage + item                    | Safe                                                               |
+| nAxC T                                     | 1 damage + item + throw            | Risky tick throw                                                   |
+| jA                                         | 1 damage                           | On prediction                                                      |
+| jA gB                                      | 2 damage + KD                      | Needs jA to hit high                                               |
+| jA nAxB                                    | 2 damage + meaty ambiguous crossup | Needs jA to hit very high, unsafe on crossup, meaty can be blocked |
+| jA nAxC                                    | 2 damage + item                    | Needs jA to hit very high, *slightly* negative                     |
+| jC                                         | 1 damage                           | On prediction, combo on hit, item on block                         |
+
+**Note:** This was primarily tested using a cloud in the corner. Other juggling situations may be too low for certain options.
+
+---
+
+<a name="item" />
+
+## [Item toss oki:](#item)
 
 Upon knocking down the opponent, toss an item then decide what to do based on that item. Usually go for throw after this, as the opponent will most likely be pushing buttons, but some players will respond correctly at which point you must decide how to adjust. Your key options are: throw, nA comboed into either roll or another item toss, or if you threw them in the corner, an ambiguous crossup roll (note that the crossup is reactably unsafe on hit, so you will be thrown! only use the crossup if it's to kill or will combo)!
 
 This is his classic oki, and mathematically the best one around - unless your opponent or circumstances give you a reason not to, go for this! This can be used at a very basic level of "throw almost every time" which will be effective at anything but high levels of play, and at the highest level of play knowing how to adapt this properly is still extremely powerful. Throwing is also the one you "want" to do most of the time as, while it does less damage, it lets you repeat the oki. Note that for brevity I'm not including the risks of parries and reversals, as they should be fairly clear and would make this… pretty long. Here I will attempt to detail the various options from each item:
 
-<a href="#notation" name="notation">**Notation:**</a>
+<a name="item-summary" />
 
-* T: throw
-* HR: nA into B (hit roll)
-* HI: nA into C (hit item)
-* R: crossup roll in the corner
-* H: nA (hit)
+| [**In General**](#item-summary) | Best Case       | Worst Case | Beats         | Notes                                                    |
+| ------------------------------: | :-------------- | :--------- | :------------ | :------------------------------------------------------- |
+| Throw                           | 1 damage + oki  | Yomi       | Blocking      | Loops, confuses, most likely                             |
+| nAxB                            | 2 damage        | 1 chip     | Yomi          | Too risky vs Valerie                                     |
+| nAxC                            | 1 damage + item | Item       | Yomi          | Throwable from close                                     |
+| Corner roll                     | 1 damage        | 1 chip     | Yomi, crossup | Surprises, always throwable after crossup (even on hit!) |
 
-<a href="#item-coin" name="item-coin">**Coin:**</a> after a throw, this will not hit them as it will land before they stand up, but after a yomi counter it will
+**Note:** Details from the summary will be excluded in the [details section](#item-details) for brevity.
 
-* T for 1 damage + oki - risks yomi - beats blocking - most effective as they will likely try to block the coin
-* HR for 2 damage (except against valerie if the roll will not kill, it's too high risk) - risks 0 damage + 1 chip - beats yomi
-* HI for 1 damage + item (throwable!) - risks 0 damage + item (throwable!!!) - beats yomi
-* R for 1 damage (throwable on crossup!) - risks 0 damage + 1 chip (throwable on crossup!) - beats yomi, beats blocking wrongly
+---
 
-<a href="#item-cherry" name="item-cherry">**Cherry:**</a> you have 1 more health now, but this has limited offensive usage
+<a name="safemelon" />
 
-* T for 1 health + 1 damage + oki - risks yomi - beats blocking - the looping gives a chance for a better item
-* HR for 1 health + 2 damage - risks 1 health + 0 damage + 1 chip - beats yomi
-* HI for 1 health + 1 damage + item (throwable!) - risks 1 health + 0 damage + item
-* R for 1 health + 1 damage (throwable on crossup!) - risks 1 health + 0 damage + 1 chip (throwable on crossup!) - beats yomi, beats blocking wrongly
+## [Safemelon:](#safemelon)
 
-<a href="#item-cake" name="item-cake">**Cake:**</a> you now have 50% more super, consider using your super soon
+After a forward throw or yomi counter, wait a brief moment, jump, and immediately throw a melon. They have to block it! If they reversal, you will land and be able to block them, then punish accordingly. This means you can always get 1 free chip.
 
-* T for 1 damage + oki - risks yomi - beats blocking - the looping gives an opportunity to repeat the oki or to use either super, given that your opponent has no way to beat your super after they wakeup (eg, Grave using his gS, dragonheart, to beat your gS, jackpot)
-* HR for 2 damage (except against valerie if the roll will not kill, it's too high risk) - risks 0 damage + 1 chip - beats yomi
-* HI for 1 damage + item (throwable!) - risks 0 damage + item (throwable!!!) - beats yomi
-* R for 2 damage (throwable on crossup! If they don't throw ) - risks 0 damage + 1 chip (throwable on crossup!) - beats yomi, beats blocking wrongly
+You can also always safely get an item toss after any blocked melon - caveats:
 
-<a href="#item-bomb" name="item-bomb">**Bomb:**</a>
+* Versus Grave, it must be at max range so you outspace dragonheart
+* Versus Valerie, it must be a low melon so you outspeed chromatic orb
+* Versus Onimaru, it must either outspace nA or be a low melon to outspeed his reversal options
 
-* T for 1 damage + oki - risks yomi - beats blocking
-* HR is not an option, as you will be hit by the bomb - even if you land the 2 damage, you'll lose oki as your opponent will stand up at the same time as you!
-* HI is not an option, as you will be hit by the bomb - even if you land the 1 damage, you'll lose oki as your opponent will stand up at the same time as you, and if the item is a cake or cherry you just helped them!
-* H for 2 damage + oki - risks 0 damage + 1 chip - beats yomi
-* R for 1 damage (throwable on crossup!), if you crossed up this acts as a double crossup potentially getting 1 more damage using the bomb - risks 0 damage + 1 chip (throwable on crossup!) - beats yomi, beats blocking wrongly
-	* Against Rook and dragon Midori, you can immediately forward jump into jA to not be hit by the bomb and combo with it if the bomb hits, knocking down or juggling with nA into a reset (beware, this leaves them in plus frames, they might throw you if they're not too confused to!), and with this reset if you press B at the first opportunity you will perform another crossup roll, or if you throw them you can get oki again - this seems complicated, but you'll see what's happening if you go into practise mode as lum vs rook, set yourself to always throw bombs, go to the corner, and just mash this sequence of buttons: T, C, B, J, A, then experiment from there
+<a name="safemelon2" />
 
-<a href="#item-fireworks" name="item-fireworks">**Fireworks:**</a> most setups will be unaffected by fireworks, if you manage to loop into oki again then that will allow the fireworks to interact - I will describe this case after this
+## [Corner Safemelon:](#safemelon2)
 
-* T for 1 damage + modified oki - risks yomi - beats blocking - gets you [the "second go round" oki!](#item-setup-fireworks)
-* HR for 2 damage (except against valerie if the roll will not kill, it's too high risk) - risks 0 damage + 1 chip - beats yomi
-* HI is not an option, as you can't throw an item while the fireworks are out
-* R for 1 damage (throwable on crossup!) - risks 0 damage + 1 chip (throwable on crossup!) - beats yomi, beats blocking wrongly
+In particular, a safemelon after a forward throw in the corner let's you item toss (or blockstring/combo with melon?) completely safely, and even gives you an opportunity to go for a tick throw afterwards, or combo into nA if they don't block! Note that this is too far to combo into roll unless you use fjC, which requires a slight delay before the item toss.
 
-<a href="#item-setup-fireworks" name="item-setup-fireworks">**Fireworks, the second go round:**</a> you won't be able to throw an item to start, and I have included some additional oki setups that will have more detail given later on
+So if they have an invincible reversal, decide whether you expect them to use it (if so, safemelon into item toss into block), else decide whether you expect a yomi counter and thus whether you will perform the tick throw or use your nAxB / nAxC accordingly.
 
-* T for 1 damage + oki - risks yomi - beats blocking - pretty effective, as an incorrect yomi counter would result in heavy damage from the fireworks
-* HR for 4 damage - risks 0 damage + 3 chip - beats yomi - unlikely to work, but must be used on occasion to break the pattern of always throwing
-* HI is not an option, as you can't throw an item while the fireworks are out
-* R is not an option, as you can't throw an item while the fireworks are out - the midscreen crossup roll from later is very effective though, and will get 2-4 damage, though it will risk being throwable if it's a crossup
-* Whiff roll oki into yomi counter oki is safe, as if they hit you they get hit back with fireworks that you can combo out of, if they throw you you yomi counter, if they block you can add to the chip or do a hit/throw mixup out of their blockstun
-* Ambiguous jA oki is very effective, as it will combo for a huge amount of damage on hit, or a large amount of chip damage on block
-* A very early cartwheel will act as an ambiguous crossup for 4 damage / 4 chip.
+This is generally your safest option in the corner, and gives you plenty of chances to toss out items while keeping them in the corner so you can eventually get a favourable item for your item toss into ambiguous crossup roll oki, while dealing chip, while threatening a mixup each time. Here are some tips on what you should do based on the item:
 
-<a href="#item-cloud" name="item-cloud">**Cloud:**</a>
+<a name="melon-minilum" />
 
-* T for 1 damage + oki - risks yomi - beats blocking
-* HR for 3 damage + far knockdown - risks 0 damage + 2 chip - beats yomi
-* HI is not an option, as you can't throw an item while the cloud is out
-* R for 2 damage - risks 0 damage + 2 chip - beats yomi, beats blocking wrongly - can juggle with nA for 3 damage, leaving you at a safe distance, and able to risk cancelling into roll or item toss from the nA.
+| [**SM: Minilum**](#melon-minilum) | Best Case         | Worst Case    | Notes                                                           |
+| --------------------------------: | :---------------- | :------------ | :-------------------------------------------------------------- |
+| Tick Throw                        | 1 damage + oki    | Yomi          | Causes yomis, leads to ["so this is fun"](#item-setup-minilum3) |
+| nAxB                              | 4 damage          | 3 chip        |                                                                 |
+| jA nAxB                           | 1+4 damage        | 3 chip        | Crossup on fjC, sameside on njC                                 |
+| jA nAxC                           | 1+3 damage + item | 3 chip + item | Crossup on fjC, sameside on njC                                 |
+| jC nAxB                           | 1+4 damage        | 4 chip        | Beware the gap before the melon                                 |
+| jC nAxC                           | 1+3 damage + item | 3 chip        | Beware the gap before the melon                                 |
 
-<a href="#item-minilum" name="item-minilum">**Minilum:**</a>
+**Note:** Details from the summary will be excluded in the [details section](melon-details) for brevity.
 
-* T for 1 damage + modified oki - risks yomi - beats blocking - gets you [the "in position" oki!](#item-setup-minilum)
-* HR for 2 damage + safe position - risks 0 damage + 1 chip + safe position - beats yomi
-* HI for 1 damage + item (throwable!) - risks 0 damage + item (throwable!!!) - beats yomi
-* R for 2 damage - risks 0 damage + 2 chip - beats yomi, beats blocking wrongly - puts you in a strong position for Shenanigans™ (eg, crossup jA!)
+---
 
-<a href="#item-setup-minilum" name="item-setup-minilum">**Minilum, in position:**</a> you won't be able to throw an item to start, and I have included some additional oki setups that will have more detail given later on
+<a name="roll" />
 
-* T for 1 damage + modified oki - risks yomi - beats blocking - gets you [the "ultimate position" oki!](#item-setup-minilum2)
-* HR for 3 damage - risks 0 damage + 2 chip - beats yomi
-* HI for 2 damage + item - risks 0 damage + 1 chip + item - beats yomi
-* R for 2 damage + modified by whatever you threw (potentially throwable on crossup!) - risks 0 damage + 2 chip + potentially throwable - beats yomi, beats blocking wrongly - gets you [the "so this is fun" setup!](#item-setup-minilum3)
+## [Ambiguous Crossup Roll:](#roll)
 
-<a href="#item-setup-minilum2" name="item-setup-minilum2">**Minilum, ultimate position:**</a> you just threw them, tossed out a minilum, threw them again, and tossed out another item
-
-* Coin: T for 1 damage + oki, eh (they probably will be blocking though!) - HR for 3 damage, heck yeah - HI for 2 damage + item, heck yeah
-* Cherry: T for 1 health + 1 damage + oki, eh - HR for 1 health + 3 damage, heck yeah - HI for 1 health + 2 damage + item, heck yeah
-* Cake: T for 50% super + 1 damage + oki, decent to then use super - HR for 50% super + 3 damage, heck yeah - HI for 50% super + 2 damage + item, heck yeah
-* Bomb: T for 1 damage + oki, they almost certainly blocked, this is the best you're getting - HR is not an option - HI is not an option - H is an eh option, it doesn't combo!
-* Fireworks: T for 1 damage + oki (see "the second go round"), good - HR for 3 damage + fireworks soon, good - HI is not an option
-* Cloud: T for 1 damage + oki (probably blocking), eh - HR for 4 damage + far knockdown, heck yeah - HI is not an option
-* Minilum: T for 1 damage + a seriously ridiculous oki, if they fail to block whatever you do next they get hit by both, wonderful
-	* HR for 3 damage + protected by minilum, heck yeah
-	* HI for 2 damage + item + protected by minilum, heck yeah
-	* This is basically ideal, all your mixup options are great!
-* Minirook: minilum but stronger, you know the minirook's deal!
-
-<a href="#item-setup-minilum3" name="item-setup-minilum3">**Minilum, so this is fun:**</a> you just threw them into the corner, tossed out a minilum, threw them again, tossed out another item, and pressed B - this is what you can expect, depending on what that item was!
-
-* Coin: 2 damage, throwable if crossup, if you threw a coin just don't press B (or at least delay it a moment!), do something else
-* Cherry: coin + 1 health
-* Cake: coin + 50% super
-* Bomb: coin + the setup from the bomb R oki if they don't throw you and happen to be Rook or dragon Midori!
-* Fireworks: coin + fireworks coming down to protect you later on
-* Cloud: 3 damage, unthrowable even if they block, knocks down, can reset with nA for 4 damage
-* Minilum: 3 damage, combos into nA for 4 then roll for 5 or item for pure chaos against a terrified opponent
-* Minirook: 2 damage, throwable on block if crossup, but if they don't or can't throw you they're in trouble as they're trapped in the corner with a minirook closing in on them
-
-<a href="#item-minirook" name="item-minirook">**Minirook:**</a> this isn't the strongest oki, but now you have a minirook so who cares
-
-* T for 1 damage + modified oki (similar to "in position") - risks yomi - beats blocking
-* HR for 2 damage - risks 0 damage + 1 chip - beats yomi
-* HI for 1 damage + item - risks 0 damage + item - beats yomi
-* R for 1 damage + impending minirook that will protect you from throws! - risks 2 chip + oh no now you're throwable - beats yomi, beats blocking wrongly - consider throwing them into the corner again instead of rolling, getting [the "minirook, wheee" oki](#item-setup-minirook)
-
-<a href="#item-setup-minirook" name="item-setup-minirook">**Minirook, wheee:**</a> okay, you've got them waking up into a minirook, now what?
-
-* Item toss: from here, you're probably aiming for chip - you can't throw, you can't mix them up outside of the R setup, which I will describe the consequences of in ["minirook, wheeeeeeeeeee"](#item-setup-minirook2) - if you use HR, you get 4 damage if it hits, but it shouldn't, so pile on the chip instead, you're safe! - if you use HI, you just threw another item at them, you big meanie, this is great!
-* Ambiguous crossup jA: same side gives 4 damage on hit, 2 chip on block - crossup gives 5 damage on hit, 2 chip on block - if they block, you can throw them and put yourself back at the start of "wheee"! >:D
-* Whiff roll: this will put you to their right, then immediately as they stand up you'll be back on their left - you are safe, this is a knowledge test, it will deal 1 damage and leave you ready to combo into HR for 4 damage total if they do not block correctly, else you have a mixup between hitting (for 3 if they try to yomi, else for 1 extra chip adding to 2 total and leaving you safe) and throwing!
-
-<a href="#item-setup-minirook2" name="item-setup-minirook2">**Minirook, wheeeeeeeeeee:**</a> wow, you've sure put them in a painful spot huh!
-
-* Coin: see ["minilum, so this is fun"](#item-setup-minilum3)
-* Cherry: see ["minilum, so this is fun"](#item-setup-minilum3)
-* Cake: see ["minilum, so this is fun"](#item-setup-minilum3)
-* Bomb: see ["minilum, so this is fun"](#item-setup-minilum3)
-* Fireworks: see ["minilum, so this is fun"](#item-setup-minilum3)
-* Cloud: see ["minilum, so this is fun"](#item-setup-minilum3), plus 1 damage and the minirook is still around to cause trouble later >:D
-* Minilum: … on hit, combo into HR for 6 damage, on block you are unthrowable and will get lots of chip
-* Minirook: wow you're lucky! If, against all odds, they block rather than forfeit the round, hit them a few times then once the minirooks are distant, throw them and perform oki - I'll leave this up to you, you're the one who got the 1 in 40000 odds and have 2 minilums in their face, so you get the homework! Else. you risk being thrown on crossup roll, but you have so many combo opportunities and you should be able to see the gaps where you can throw pretty clearly. That throw will give you oki that you can only dream of! Mwahahahahahaaaa!!!
-* Note: all of these except R are also options after a yomi counter!
-
-Okay, that was the item toss oki, you got all that? Luckily, most of this looks like what you'd expect in the moment, so you can figure it out through improvisation, and also just throwing should work most of the time!
-
-<a href="#whiffroll" name="whiffroll">**Whiff roll oki:**</a>
-
-Next, we have the whiff roll oki, or the "Janet special" as Remy calls it (because I adore using this one!). It is mathematically eh, but it makes use of mental advantage (see [my thoughts on advantage](/thoughts-advantage)) to be extremely powerful.
-
-**Instructions:** After a forward throw or a yomi counter, just press roll. Immediately. Do nothing else. From there, stand still and wait.
-
-Many opponents will try to throw you, either because they throw when they panic or because they reacted as if you hit them, because throwing is the correct response to a crossup roll. Now you've just got a free yomi counter, giving you a free 1 damage, oki, and full super meter. You can mix and match with other oki tools, such as HR, to make sure they never get the hang of this. Use it lots to show off, annoy them, and give them a chance to learn. You could even fuzzy guard here!
-
-Note that technically, it's probably better to go for HR here if you expect a throw, which will counterhit the throw, but you don't get to loop it, you don't get free super meter, and you don't get the style points. Also, versus exclusively human Midori, if they try to throw you can neutral jump into jA into HR, for 3 damage!
-
-There is, of course, more to it - of course there is, it's psychological! I'll describe the likely responses per-character per-type-of-person here, but note that if they respond correctly then you should stop using it immediately.
-
-* Panic-throwers: these people will always throw! Every time! Note that if they're Rook or dragon Midori, they probably favour a command throw over a normal throw
-	* This category includes most Rooks, Midoris, Lums, Jainas, Quinces, and Onimarus
-	
-* Panic-reversallers: if they have a reversal, they will use it! Including Rook and Grave's ground supers, so use this to waste their super meter and get a free punish, it's great
-	* This category includes most Graves, Rooks, Valeries, Geigers, and DeGreys.
-	
-* Correct-thrower: these people are responding correctly to something you're not doing - a crossup roll! They'll learn eventually, so use it sparingly, mostly for when you really want super meter or for the last health point, or if they're panicking slightly
-	* This category includes most intermediate-to-high skilled players - the worst players haven't built this muscle memory, the best recognise that you didn't hit. Some very high skilled players may still fall for this if you use it rarely!
-
-<a href="#roll" name="roll">**Ambiguous crossup roll:**</a>
 
 After a forward throw or yomi counter, wait X amount of time (you'll have to figure it out for yourself in practise mode) and roll, or if they're in the corner, time it by throwing an item first! (If you already have an item out, this will take too long, time it manually)
 
@@ -172,59 +112,430 @@ Also, it can combo into items for extra damage and *maybe* becoming safe on hit.
 
 Basically, this is your kill move, though you can abuse it against anyone who doesn't know what to do against it!
 
-<a href="#jump" name="jump">**Ambiguous crossup jA:**</a>
+---
+
+<a name="jump" />
+
+## [Ambiguous Crossup jA:](#jump)
 
 After a forward throw or yomi counter, walk forward for X amount of time, forward jump, and use jA - this is an ambiguous crossup! They have to guess right or you'll combo for 3 damage, if they do you can deal 1 chip or throw out an item if you don't expect them to punish the item toss. I admit, I barely use this one as it can never loop, it's kinda hard to space right, and a skilled opponent is often very good at blocking ambiguous crossups consistently, but it's good if you've got items around to confuse them or make it more powerful.
 
-<a href="#safemelon" name="safemelon">**Safemelon:**</a>
+---
 
-After a forward throw or yomi counter, wait a brief moment, jump, and immediately throw a melon. They have to block it! If they reversal, you will land and be able to block them, then punish accordingly. This means you can always get 1 free chip.
+<a name="whiffroll" />
 
-You can also always safely get an item toss after any blocked melon - caveats:
+## <a href="#whiffroll" name="whiffroll">Whiff Roll:</a>
 
-* Versus Grave, it must be at max range so you outspace dragonheart
-* Versus Valerie, it must be a low melon so you outspeed chromatic orb
-* Versus Onimaru, it must either outspace nA or be a low melon to outspeed his reversal options
+Next, we have the whiff roll oki, or the "Janet special" as Remy calls it (because I adore using this one!). It is mathematically eh, but it makes use of mental advantage (see [my thoughts on advantage](/thoughts-advantage)) to be extremely powerful.
 
-<a href="#safemelon2" name="safemelon2">**Corner Safemelon:**</a>
+**Instructions:** After a forward throw or a yomi counter, just press roll. Immediately. Do nothing else. From there, stand still and wait. Note that if you roll into the corner, you'll leave the corner automatically unless you delay!
 
-In particular, a safemelon after a forward throw in the corner let's you item toss (or blockstring/combo with melon?) completely safely, and even gives you an opportunity to go for a tick throw afterwards, or combo into nA if they don't block! (Note that this is too far to combo into roll…) So if they have an invincible reversal, decide whether you expect them to use it (if so, safemelon into item toss into block), else decide whether you expect a yomi counter and thus whether you will perform the tick throw or use your HR accordingly.
+Many opponents will try to throw you, either because they throw when they panic or because they reacted as if you hit them, because throwing is the correct response to a crossup roll. Now you've just got a free yomi counter, giving you a free 1 damage, oki, and full super meter. You can mix and match with other oki tools, such as HR, to make sure they never get the hang of this. Use it lots to show off, annoy them, and give them a chance to learn. You could even fuzzy guard here!
 
-This is generally your safest option in the corner, and gives you plenty of chances to toss out items while keeping them in the corner so you can eventually get a favourable item for your item toss into ambiguous crossup roll oki, while dealing chip, while threatening a mixup each time. Here are some tips on what you should do based on the item:
+Note that it's better to go for HR here if you expect a throw, which will counterhit the throw, but you don't get to loop it, you don't get free super meter, and you don't get the style points. Also, versus exclusively human Midori, if they try to throw you can neutral jump into jA into HR, for 3 damage!
 
-<a href="#melon-coin" name="melon-coin">**Coin:**</a> beware, there is a brief moment before the coin lands where they may reversal! Throw is too slow and will either get hit by or whiff because of whichever option you take, however.
+There is, of course, more to it - of course there is, it's psychological! I'll describe the likely responses per-character per-type-of-person here, but note that if they respond correctly then you should stop using it immediately.
 
-* Throw: deals 1 damage and loops, similar to Geiger's delayed time spiral oki
-* HR: combos for 3 damage and leaves them in the corner, on block deals 3 chip in a blockstring
-* Jump-in: combos for 4 damage, only works if they're overwhelmed, on block deals 3 chip in a blockstring
-* Melon: combos for 4 damage (note you must jump forward for this melon to combo!), on block deals 4 chip in a blockstring
+<a name="players" />
 
-<a href="#melon-cherry" name="melon-cherry">**Cherry:**</a> sorry, your opponent just picked this up, cancelling out your throw damage. :c
+| [Player Type](#players) | Description                                                                                                   | Likely Players                                                    |
+| ----------------------: | :------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------- |
+| Panic Throwers          | They will always throw! Grapplers favour command throws.                                                      | Rook, Midori, Lum, Jaina, Quince, Onimaru                         |
+| Panic Reversallers      | If they have a reversal, they will use it! Including supers, use this to waste their super meter and punish.  | Rook, Midori, Lum, Jaina, Quince, Onimaru                         |
+| Correct Throwers        | They're reacting to the fake crossup roll! Use it sparingly or else they'll learn, for the last health point. | Intermediate-to-High-Skilled Players (not lowest, rarely highest) |
 
-<a href="#melon-cake" name="melon-cake">**Cake:**</a> sorry, your opponent just picked this up, hope it's not Midori!
+---
 
-<a href="#melon-bomb" name="melon-bomb">**Bomb:**</a>
+<a name="item-details" />
 
-* Throw: deals 1 damage and loops
-* HR: combos for 3 damage and escapes the blast radius, but the roll must be a hit-confirm! If they block the nA, roll will leave you in the blast radius, but you may perform a mixup between a microwalk throw or letting the bomb hit for a total of 2 chip, or you may jump back and melon for 3 chip but no mixup!
+## [Per-Item Details: Item Toss](#item-details)
 
-<a href="#melon-fireworks" name="melon-fireworks">**Fireworks:**</a> after HR you deal 2 damage on hit or 1 chip on block, so we're gonna throw here! This is basically "fireworks, the second go round" with much better spacing and already having dealt chip or damage:
+<a name="item-minilum" />
 
-* Ambiguous crossup roll into HR: 6 damage on hit, 6 chip on block, leaves you in the corner on crossup
-* Safemelon into HR: 6 damage on hit, 6 chip on block
-* Ambiguous crossup cartwheel into HR: 6 damage on hit, 6 chip on block, leaves you in the corner every time - looks like the safemelon option at first, perform the ambiguous crossup by pressing B either at or slightly after the apex of your jump!
+| [**IT: Minilum**](#item-minilum) | Best Case               | Worst Case    | Notes                                              |
+| -------------------------------: | :---------------------- | :------------ | :------------------------------------------------- |
+| Throw                            | 1 damage + modified oki | Yomi          | Leads to ["In Position" oki!](#item-setup-minilum) |
+| nAxB                             | 2 damage + safe         | 1 chip + safe |                                                    |
+| nAxC                             | 1 damage + item         | Item          |                                                    |
+| Corner roll                      | 2 damage                | 2 chip        | Strong for Shenanigans™ (eg, crossup jA!)          |
 
-<a href="#melon-cloud" name="melon-cloud">**Cloud:**</a>
+<a name="item-coin" />
 
-* Throw: deals 1 damage and loops
-* HR: deals 3 damage and loops on hit, deals 3 chip on block
-* Cartwheel: always hits sameside (unsafely but confusingly!) but leaves you in the corner, dealing 4 chip on block or, if it hits, 2 damage and a knockdown with non-corner oki.
+| [**IT: Coin**](#item-coin) | Best Case       | Worst Case |
+| -------------------------: | :-------------- | :--------- |
+| Throw                      | 1 damage + oki  | Yomi       |
+| nAxB                       | 2 damage        | 1 chip     |
+| nAxC                       | 1 damage + item | Item       |
+| Corner roll                | 1 damage        | 1 chip     |
 
-<a href="#melon-minilum" name="melon-minilum">**Minilum:**</a> throw deals 1 damage and gives you "minilum: so this is fun" (or stronger chip if you choose instead to safemelon), otherwise this is the same as coin.
+**Note:** The coin can hit immediately after a yomi counter, but not a throw - for where it hits, see [delayed coin](#item-coin-delay).
 
-<a href="#melon-minirook" name="melon-minirook">**Minirook:**</a> no specific strong combos or blockstrings, but you can combo the safemelon into nA, and then continuously threaten a throw mixup while the minirook approaches
+<a name="item-coin-delay" />
 
-<a href="#closing" name="closing">**Closing thoughts:**</a>
+| [**IT: Delay Coin**](#item-coin-delay) | Best Case       | Worst Case    |
+| -------------------------------------: | :-------------- | :------------ |
+| Throw                                  | 1 damage + oki  | Yomi          |
+| nAxB                                   | 3 damage        | 2 chip        |
+| nAxC                                   | 2 damage + item | 1 chip + item |
+| Corner roll                            | 2 damage        | 1 chip        |
+
+**Note:** This is the only significantly different item from a minor delay, but also now the corner roll can never crossup (they may not realise you delayed though!)
+
+<a name="item-bomb" />
+
+| [**IT: Bomb**](#item-bomb) | Best Case      | Worst Case | Notes                                     |
+| -------------------------: | :------------- | :--------- | :---------------------------------------- |
+| Throw                      | 1 damage + oki | Yomi       | Can delay to threaten bomb                |
+| nA                         | 2 damage + oki | 1 chip     | Can throw or melon before bomb explodes   |
+| Corner roll                | 1 damage       | 1 chip     | Double crossup on crossup, leads to Fun™! |
+
+**Notes on Fun™:** Versus Rook and dragon Midori, immediately fjA to dodge the bomb and combo with it, knocking down or juggling.
+
+<a name="item-cloud" />
+
+| [**IT: Cloud**](#item-cloud) | Best Case                           | Worst Case |
+| ---------------------------: | :---------------------------------- | :--------- |
+| Throw                        | 1 damage + oki                      | Yomi       |
+| nAxB                         | 3 damage + fullscreen KD            | 2 chip     |
+| Corner roll                  | 2 damage + [juggle](#juggle-corner) | 2 chip     |
+
+<a name="item-cherry" />
+
+| [**IT: Cherry**](#item-cherry) | Best Case                  | Worst Case      |
+| -----------------------------: | :------------------------- | :-------------- |
+| Throw                          | 1 health + 1 damage + oki  | Yomi            |
+| nAxB                           | 1 health + 2 damage        | 1 chip          |
+| nAxC                           | 1 health + 1 damage + item | 1 health + item |
+| Corner roll                    | 1 health + 1 damage        | 1 chip          |
+
+**Note:** Yay, +1 health! Aw, boring oki.
+
+<a name="item-cake" />
+
+| [**IT: Cake**](#item-cake) | Best Case       | Worst Case | Notes                |
+| -------------------------: | :-------------- | :--------- | :------------------- |
+| Throw                      | 1 damage + oki  | Yomi       | Opportunity to super |
+| nAxB                       | 2 damage        | 1 chip     |                      |
+| nAxC                       | 1 damage + item | Item       |                      |
+| Corner roll                | 1 damage        | 1 chip     |                      |
+
+**Note:** Enjoy the +50% super! Alas, boring oki.
+
+<a name="item-fireworks" />
+
+| [**IT: Fireworks**](#item-fireworks) | Best Case               | Worst Case | Notes                                                    |
+| -----------------------------------: | :---------------------- | :--------- | :------------------------------------------------------- |
+| Throw                                | 1 damage + modified oki | Yomi       | Leads to ["Second Go Round" oki!](#item-setup-fireworks) |
+| nAxB                                 | 2 damage                | 1 chip     |                                                          |
+| Corner roll                          | 1 damage                | 1 chip     |                                                          |
+
+**Note:** The fireworks are too delayed to affect things immediately.
+
+<a name="item-minirook" />
+
+| [**IT: Minirook**](#item-minirook) | Best Case               | Worst Case         | Notes                                        |
+| ---------------------------------: | :---------------------- | :----------------- | :------------------------------------------- |
+| Throw                              | 1 damage + modified oki | Yomi               | Leads to ["Wheee" oki](#item-setup-minirook) |
+| nAxB                               | 2 damage                | 1 chip             |                                              |
+| nAxC                               | 1 damage + item         | Item               |                                              |
+| Corner roll                        | 1 damage + minirook     | 2 chip + throwable | Use throw instead                            |
+
+---
+
+<a name="melon-details" />
+
+## [Per-Item Details: Corner Safemelon](#melon-details)
+
+<a name="melon-coin" />
+
+| [**SM: Coin**](#melon-coin) | Best Case         | Worst Case    | Notes                                                           |
+| --------------------------: | :---------------- | :------------ | :-------------------------------------------------------------- |
+| Tick Throw                  | 1 damage + oki    | Yomi          | Causes yomis                                                    |
+| nAxB                        | 3 damage          | 3 chip        |                                                                 |
+| jA nAxB                     | 1+4 damage        | 3 chip        | Crossup on fjC, sameside on njC                                 |
+| jA nAxC                     | 1+3 damage + item | 3 chip + item | Crossup on fjC, sameside on njC                                 |
+| jC nAxB                     | 1+4 damage        | 4 chip        | Beware the gap before the melon                                 |
+| jC nAxC                     | 1+3 damage + item | 3 chip        | Beware the gap before the melon                                 |
+
+**Note:** The coin whiffs after fjC, no combo from melon after njC
+
+<a name="melon-bomb" />
+
+| [**SM: Bomb**](#melon-bomb)    | Best Case         | Worst Case    | Notes                                                           |
+| -----------------------------: | :---------------- | :------------ | :-------------------------------------------------------------- |
+| Tick Throw                     | 1 damage + oki    | Yomi          | Causes yomis                                                    |
+| nAxB                           | 3 damage          | 3 chip        | Hitconfirm! You can block the blast!                            |
+| nA Throw/Block                 | 1 damage + oki    | Yomi          | If they blocked, mix between throw and blast                    |
+| jC jC [juggle](#juggle-corner) | 3 damage + juggle | 3 chip        | The first jC is just to fill time, delay the second slightly    |
+
+**Note:** A rare time when the bomb gives a clear set of options, hurrah!
+
+<a name="melon-cloud" />
+
+| [**SM: Cloud**](#melon-cloud) | Best Case         | Worst Case             | Notes                                                           |
+| ----------------------------: | :---------------- | :--------------------- | :-------------------------------------------------------------- |
+| Tick Throw                    | 1 damage + oki    | Yomi                   | Causes yomis                                                    |
+| nAxB [juggle](#juggle-corner) | 4 damage + juggle | 3 chip                 |                                                                 |
+| jB                            | 2 damage + oki    | 3 chip + item / 4 chip | Crossup on fjC, sameside on njC, nAxB/C on block                |
+| jA [juggle](#juggle-corner)   | 4 damage          | 3 chip                 | 4 damage on njC, 3 damage on fjC                                |
+
+**Note:** After fjC, the cloud only hits if they enter hitstun
+
+<a name="melon-cherry" />
+
+| [**SM: Cherry**](#melon-cherry) | Best Case       | Worst Case    | Notes                                                           |
+| ------------------------------: | :-------------- | :------------ | :-------------------------------------------------------------- |
+| Tick Throw                      | Oki             | Yomi          | Causes yomis                                                    |
+| nAxB                            | 2 damage        | 3 chip        |                                                                 |
+| jA nAxB                         | 3 damage        | 3 chip        | Crossup on fjC, sameside on njC                                 |
+| jA nAxC                         | 3 damage + item | 3 chip + item | Crossup on fjC, sameside on njC                                 |
+| jC nAxB                         | 4 damage        | 4 chip        | Beware the gap before the melon                                 |
+| jC nAxC                         | 3 damage + item | 3 chip        | Beware the gap before the melon                                 |
+
+**Note:** They picked it up. :c
+
+<a name="melon-cake" />
+
+| [**SM: Cake**](#melon-cake) | Best Case         | Worst Case    | Notes                                                           |
+| --------------------------: | :---------------- | :------------ | :-------------------------------------------------------------- |
+| Tick Throw                  | 1 damage + oki    | Yomi          | Causes yomis                                                    |
+| nAxB                        | 3 damage          | 3 chip        |                                                                 |
+| jA nAxB                     | 1+3 damage        | 3 chip        | Crossup on fjC, sameside on njC                                 |
+| jA nAxC                     | 1+2 damage + item | 3 chip + item | Crossup on fjC, sameside on njC                                 |
+| jC nAxB                     | 1+3 damage        | 4 chip        | Beware the gap before the melon                                 |
+| jC nAxC                     | 1+2 damage + item | 3 chip        | Beware the gap before the melon                                 |
+
+**Note:** Fear the reversal super, for they gained meter.
+
+<a name="melon-fireworksboring" />
+
+| [**SM: Fireworks (Boring)**](#melon-fireworksboring) | Best Case               | Worst Case | Notes                                      |
+| ---------------------------------------------------: | :---------------------- | :--------- | :----------------------------------------- |
+| Tick Throw                                           | 1 damage + modified oki | Yomi       | Gives [a wonderful oki!](#melon-fireworks) |
+| nAxB                                                 | 2 damage + fireworks    | 1 chip     | Eh, go for the tick throw                  |
+
+<a name="melon-fireworks" />
+
+| [**SM: Fireworks**](#melon-fireworks) | Best Case         | Worst Case    | Notes                                                           |
+| ------------------------------------: | :---------------- | :------------ | :-------------------------------------------------------------- |
+| Throw                                 | 1 damage + oki    | Yomi          | Causes yomis, but… :c                                           |
+| jC nAB                                | 5-6 damage        | 5-6 chip      |                                                                 |
+| jC nAB                                | 6-7 damage        | 5-6 chip      | Whoa                                                            |
+| Crossup jA nAB                        | 5-6 damage        | 4-5 chip      | Leaves you in the corner on crossup                             |
+| Crossup gB nAB                        | 5-6 damage        | 5-6 chip      | Leaves you in the corner on crossup                             |
+| Crossup jB nAB                        | 5-6 damage        | 5-6 chip      | Leaves you in the corner - B at or after apex to mixup!         |
+
+**Notes:**
+* You have a chance to ToD Rook. Take it, for you are blessed.
+* The damage variation comes from the positioning of the fireworks.
+
+<a href="#melon-minirook" name="melon-minirook">**Minirook:**</a> no specific strong combos or blockstrings, but you can hitconfirm combo the safemelon into nA, and then continuously threaten a throw mixup while the minirook approaches!
+
+---
+
+<a name="setups" />
+
+## [Common Setups](#setups)
+
+<a name="item-setup-fireworks" />
+
+| [**Fireworks, the Second Go Round**](#item-setup-fireworks) | Best Case      | Worst Case | Notes                                |
+| ----------------------------------------------------------: | :------------- | :--------- | :----------------------------------- |
+| Throw                                                       | 1 damage + oki | Yomi       | Very safe                            |
+| nAxB                                                        | 4 damage       | 3 chip     | Unlikely to work, they're blocking   |
+| Crossup roll                                                | 2-4 damage     | 1 chip     | You can yomi counter or add pressure |
+| Whiff roll                                                  | 5 damage       | 3 chip     | Add pressure freely, very safe       |
+| Crossup jA                                                  | 4-6 damage     | 3-4 chip   | Effective, easy                      |
+| Cartwheel                                                   | 4 damage       | 4 chip     | Start very early                     |
+
+**Note:** No item toss, as fireworks are out.
+
+<a name="item-setup-minilum" />
+
+| [**Minilum, In Position**](#item-setup-minilum) | Best Case               | Worst Case    | Notes                                                     |
+| ----------------------------------------------: | :---------------------- | :------------ | :-------------------------------------------------------- |
+| Throw                                           | 1 damage + modified oki | Yomi          | Leads to ["Ultimate Position" oki!](#item-setup-minilum2) |
+| nAxB                                            | 3 damage                | 2 chip        |                                                           |
+| nAxC                                            | 2 damage + item         | 1 chip + item |                                                           |
+| Corner roll                                     | 2 damage + chaos        | 2 chip        | Leads to ["So This Is Fun" setup!](#item-setup-minilum3)  |
+
+**Notes:**
+* You just threw them and tossed out a minilum. Add 1 damage from the throw!
+* No item toss to start.
+
+<a name="item-setup-minilum2" />
+
+| [**Minilum, Ultimate Position**](#item-setup-minilum2) | Best Case       | Worst Case    | Notes                           |
+| -----------------------------------------------------: | :-------------- | :------------ | :------------------------------ |
+| Throw                                                  | 1 damage + oki  | Yomi          | Eh, but likely                  |
+| nAxB                                                   | 3 damage        | 2 chip        | Heck yeah                       |
+| nAxC                                                   | 2 damage + item | 1 chip + item | Heck yeah                       |
+| Corner roll                                            | 2 damage        | 2 chip        | Eh, risky                       |
+| [Crossup Roll](#roll)                                  | 2 damage        | 2 chip        | Eh, risky                       |
+| [Crossup jA](#jump)                                    | 4 damage        | 2 chip        | Safe                            |
+| [Safemelon](#safemelon)                                | 4 damage        | 2 chip + item | Heck yeah                       |
+| [Corner Safemelon](#safemelon2)                        | 4 damage + item | 2 chip + item | Delay item toss slightly if fjC |
+
+**Notes:**
+* You've got them waking up into a minilum.
+* These are the baselines to expect from this setup, specific items will be described too in the "UP" tables.
+* In item toss setups (the first 4), each item is good if it improves upon this significantly, but kinda boring if it doesn't.
+
+<a name="item-setup-minilum2-minilum" />
+
+| [**UP: Minilum**](#item-setup-minilum2-minilum) | Best Case              | Worst Case    | Notes           |
+| ----------------------------------------------: | :--------------------- | :------------ | :-------------- |
+| Throw                                           | 1 damage + oki         | Yomi          | Ridiculous oki! |
+| nAxB                                            | 3 damage + safe        | 2 chip        |                 |
+| nAxC                                            | 2 damage + item + safe | 1 chip + item |                 |
+| Corner roll                                     | 5 damage               | 4 chip        | Holy heck       |
+
+**Note:** The new minilum will defend you outside of the corner, but add to the combos in the corner.
+
+<a name="item-setup-minilum2-coin" />
+
+| [**UP: Coin**](#item-setup-minilum2-coin) | Best Case       | Worst Case    |
+| ----------------------------------------: | :-------------- | :------------ |
+| Throw                                     | 1 damage + oki  | Yomi          |
+| nAxB                                      | 3 damage        | 2 chip        |
+| nAxC                                      | 2 damage + item | 1 chip + item |
+| Corner roll                               | 2 damage        | 2 chip        |
+
+**Notes:**
+* The coin doesn't hit, but the minilum does!
+* The coin makes them more likely to block.
+
+<a name="item-setup-minilum2-coin-delay" />
+
+| [**UP: Delayed Coin**](#item-setup-minilum2-coin) | Best Case       | Worst Case    | Notes         |
+| ------------------------------------------------: | :-------------- | :------------ | :------------ |
+| Throw                                             | 1 damage + oki  | Yomi          |               |
+| nAxB                                              | 4 damage        | 3 chip        |               |
+| nAxC                                              | 3 damage + item | 1 chip + item |               |
+| Corner roll                                       | 2 damage        | 1 chip        | Can't crossup |
+
+**Note:** This coin *does* hit, have fun!
+
+<a name="item-setup-minilum2-bomb" />
+
+| [**UP: Bomb**](#item-setup-minilum2-bomb) | Best Case      | Worst Case | Notes                                |
+| ----------------------------------------: | :------------- | :--------- | :----------------------------------- |
+| Throw                                     | 1 damage + oki | Yomi       | Probably the best you're getting?    |
+| Threaten                                  | 1 damage + oki | ???        | Just kinda stand ominously           |
+| [Crossup jA](#jump)                       | 2 damage + oki | 2 chip     | Jump over them as the bomb detonates |
+| Melon                                     | 2 damage + oki | 2 chip     | Yeah bombs are awkward               |
+
+<a name="item-setup-minilum2-cherry" />
+
+| [**UP: Cherry**](#item-setup-minilum2-cherry) | Best Case                  | Worst Case               |
+| --------------------------------------------: | :------------------------- | :----------------------- |
+| Throw                                         | 1 damage + oki + 1 health  | Yomi + 1 health          |
+| nAxB                                          | 3 damage + 1 health        | 2 chip + 1 health        |
+| nAxC                                          | 2 damage + item + 1 health | 1 chip + item + 1 health |
+| Corner roll                                   | 2 damage + 1 health        | 2 chip + 1 health        |
+
+<a name="item-setup-minilum2-cake" />
+
+| [**UP: Cake**](#item-setup-minilum2-cake) | Best Case                   | Worst Case                |
+| ----------------------------------------: | :-------------------------- | :------------------------ |
+| Throw                                     | 1 damage + oki + 50% super  | Yomi + 50% super          |
+| nAxB                                      | 3 damage + 50% super        | 2 chip + 50% super        |
+| nAxC                                      | 2 damage + item + 50% super | 1 chip + item + 50% super |
+| Corner roll                               | 2 damage + 50% super        | 2 chip + 50% super        |
+
+<a name="item-setup-minilum2-cloud" />
+
+| [**UP: Cloud**](#item-setup-minilum2-cloud) | Best Case                           | Worst Case |
+| ------------------------------------------: | :---------------------------------- | :--------- |
+| Throw                                       | 1 damage + oki                      | Yomi       |
+| nAxB                                        | 4 damage + fullscreen kd            | 2 chip     |
+| Corner roll                                 | 3 damage + [juggle](#juggle-corner) | 2 chip     |
+
+<a name="item-setup-minilum2-fireworks" />
+
+| [**UP: Fireworks**](#item-setup-minilum2-fireworks) | Best Case               | Worst Case | Notes                                                    |
+| --------------------------------------------------: | :---------------------- | :--------- | :------------------------------------------------------- |
+| Throw                                               | 1 damage + modified oki | Yomi       | Leads to ["Second Go Round" oki!](#item-setup-fireworks) |
+| nAxB                                                | 3 damage + fireworks    | 2 chip     |                                                          |
+| Corner roll                                         | 2 damage + fireworks    | 2 chip     |                                                          |
+
+**Note:** The fireworks are too delayed to affect things immediately.
+
+<a name="item-setup-minilum2-minirook" />
+
+| [**UP: Minirook**](#item-setup-minilum2-minirook) | Best Case       | Worst Case    |
+| ------------------------------------------------: | :-------------- | :------------ |
+| Throw                                             | 1 damage + oki  | Yomi          |
+| nAxB                                              | 3 damage        | 2 chip        |
+| nAxC                                              | 2 damage + item | 1 chip + item |
+| Corner roll                                       | 2 damage        | 2 chip        |
+
+<a name="item-setup-minilum2-safemelon2" />
+
+| [**UP: Corner Safemelon**](#item-setup-minilum2-minirook) | Best Case (fjC)                               | Best Case (njC)      | Worst Case             | Notes                     |
+| --------------------------------------------------------: | :-------------------------------------------- | :------------------- | :---------             | :------------------------ |
+| Whiff                                                     | 4 damage                                      | NA                   | 3 chip / 2 chip + item |                           |
+| Minilum                                                   | 5 damage                                      | 5 damage             | 4 chip                 | Can throw before 4th chip |
+| Coin                                                      | 4 damage + item                               | 4 damage + item      | 2 chip + item          | Roll only on fjC          |
+| Bomb                                                      | 4 damage + bomb                               | 2 damage + bomb      | 3 chip                 | No bombo :c               |
+| Cloud                                                     | 5 damage + [juggle](#juggle-corner)           | 2 damage + cloud     | 3 chip                 | Tick throw after cloud!   |
+| Cherry                                                    | 3 damage                                      | 1 damage             | -1 damage + 2 chip     | :c                        |
+| Cake                                                      | 4 damage                                      | 2 damage             | 2 chip                 | Gave 50% super :c         |
+| Fireworks                                                 | 4 damage + [fireworks](#item-setup-fireworks) | 2 damage + fireworks | 3 chip + fireworks     |                           |
+| Minirook                                                  | 5 damage + minirook                           | 3 damage + minirook  | 3 chip + fireworks     | Yay, corner minirook!     |
+
+**Notes:**
+* Item toss must be delayed slightly on fjC, else it will whiff.
+* Rolls without hitstun from an item only combo on fjC.
+* Lowest possible melon combos into nA! But only a blockstring if fjC.
+
+<a name="item-setup-minilum3" />
+
+| [**Minilum, So This Is Fun**](#item-setup-minilum3) | Hit                                           | Blocked                | Notes                               |
+| --------------------------------------------------: | :-------------------------------------------- | :--------------------- | :---------------------------------- |
+| Minilum                                             | 5 damage / 4 damage + item                    | 4 chip / 3 chip + item | Unthrowable                         |
+| Coin                                                | 2 damage                                      | 2 chip                 | Don't roll…                         |
+| Bomb                                                | 2 damage                                      | 2 chip                 | See [bomb corner roll](#item-bomb)  |
+| Cloud                                               | 3 damage + [juggle](#juggle-corner)           | 3 chip                 | Unthrowable                         |
+| Cherry                                              | 2 damage + 1 health                           | 2 chip + 1 health      | Don't roll…                         |
+| Cake                                                | 2 damage + 50% super                          | 2 chip + 50% super     | Don't roll…                         |
+| Fireworks                                           | 2 damage + [fireworks](#item-setup-fireworks) | 2 chip + fireworks     |                                     |
+| Minirook                                            | 2 damage + minirook                           | 2 chip + minirook      | Yay, corner minirook!               |
+
+**Notes:**
+* You've got them waking up into a minilum and a corner roll.
+* You can choose whether to corner roll on reaction to the item.
+
+<a name="item-setup-minirook" />
+
+| [**Minirook, Wheee**](#item-setup-minirook) | Best Case       | Worst Case   | Notes                                             |
+| ------------------------------------------: | :-------------- | :----------- | :------------------------------------------------ |
+| gC nAxB                                     | 4 damage        | So much chip | They're blocking                                  |
+| gC nAxC                                     | 3 damage + item | So much chip | Woo!!!                                            |
+| Corner Roll                                 | Safe chaos      | Thrown       | Leads to ["wheeeeeeeeeee"](#item-setup-minirook2) |
+| Sameside jA                                 | 4 damage        | 2 chip       | Throw them after block to loop                    |
+| Crossup jA                                  | 5 damage        | 2 chip       | Throw them after block to loop                    |
+| Whiff Roll                                  | 4 damage        | Strike/Throw | They're terrified                                 |
+| Corner Whiff Roll                           | 4 damage        | Strike/Throw | They're terrified and so confused                 |
+
+<a name="item-setup-minirook2" />
+
+| [**Minirook, Wheeeeeeeeeee**](#item-setup-minirook2) | Hit                                            | Blocked                | Notes                               |
+| ---------------------------------------------------: | :--------------------------------------------- | :--------------------- | :---------------------------------- |
+| Minilum                                              | 6 damage                                       | So much chip           | Unthrowable                         |
+| Coin                                                 | 2 damage                                       | 2 chip                 | Don't roll…                         |
+| Bomb                                                 | 2 damage                                       | 2 chip                 | See [bomb corner roll](#item-bomb)  |
+| Cloud                                                | 4 damage + [juggle](#juggle-corner) + minirook | 3 chip                 | Unthrowable                         |
+| Cherry                                               | 2 damage + 1 health                            | 2 chip + 1 health      | Don't roll…                         |
+| Cake                                                 | 2 damage + 50% super                           | 2 chip + 50% super     | Don't roll…                         |
+| Fireworks                                            | 2 damage + [fireworks](#item-setup-fireworks)  | 2 chip + fireworks     |                                     |
+| Minirook                                             | Unspeakable                                    | Incomprehensible       | I bet they forfeit. 1/40 000 odds!  |
+
+---
+
+<a name="closing" />
+
+## [Closing Thoughts:](#closing)
 
 As you have no doubt noticed, Lum has some… rather complex oki tools. However, most Lum players will never learn them in as much detail as they're written here - there's a reason for this: you don't have to learn these by heart!
 

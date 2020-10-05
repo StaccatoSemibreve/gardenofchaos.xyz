@@ -6,7 +6,6 @@ import qualified Data.Text as T
 import qualified Data.Text.IO as IO
 import CMarkGFM (optUnsafe, extStrikethrough, extTable, extTaskList, commonmarkToHtml)
 import Lucid
-import Lucid.Base (termRaw)
 import Data.List (isSuffixOf, zip4)
 import System.FilePath (makeValid)
 import System.Directory (listDirectory)

@@ -1,13 +1,18 @@
-p, h1, ul, ol, a, blockquote, table {
+p, h1, h2, h3, ul, ol, a, blockquote, table {
 	font-family: sans-serif;
 	color: #daba69;
 	line-height: 30px;
+}
+
+hr {
+    border: 1px solid #daba69;
 }
 
 table {
 	border-collapse: collapse;
 	width: 100%;
 	background-color: #0f0d0c;
+	margin-top: 20px;
 	margin-bottom: 20px;
 }
 th {
