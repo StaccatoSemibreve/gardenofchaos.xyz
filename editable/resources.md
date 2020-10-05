@@ -40,6 +40,7 @@ A list of (hopefully useful) Fantasy Strike resources, for those looking to lear
 	* [Janet's Thoughts on How to Dice](thoughts-dice)
 	* [Janet's Thoughts on Lum's Oki](thoughts-lumoki)
 	* [Janet's Thoughts on Reactions](thoughts-reactions)
+	* [Janet's Thoughts on Mixups](thoughts-mixups)
 * [Tidazi's Onimaru Guide:](https://docs.google.com/document/d/10Qo5JpuLyJFV4kVWf_UjONFbBZZjiSYBFEhwuQsN-bU/edit) A guide on the fundamentals of playing Onimaru effectively, written by an utterly fantastic Onimaru player.
 * A two-part guide (part [one](https://reddit.com/r/FantasyStrike/comments/hhbu0f/basics_with_beav_rook_you_like_a_hurricane/), part [two](https://reddit.com/r/FantasyStrike/comments/huee3g/basics_by_beav_rook_2_electric_rookalo_match_ups/)) by trapdoorbeaver - the first part dealing with his fundamental strategies and toolset, the second part dealing with his matchups.
 
