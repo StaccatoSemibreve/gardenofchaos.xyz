@@ -8,6 +8,6 @@ This week's tournament format is:
 
 Commentated this week by: [Janet and Danielizabeth!](commentators)
 
-**Skill Coin Prize** (given to a random participant, courtesy of ErickDRedd): Beat Hazard 2!
+**Skill Coin Prize** (given to a random participant, courtesy of ErickDRedd): Vampire: The Masquerade - Coteries of New York
 
 [Click here](tournaments) for a record of past tournaments, along with links to the videos!
