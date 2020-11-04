@@ -35,12 +35,12 @@
 	</g>
 	<text x="50" y="10" class="p">Garden of Chaos<tspan style="fill:none">_.</tspan><tspan style="fill:#1e1b19; font-size:3.5px;">14</tspan></text>
     <text x="50" y="40" class="p">Silly Ruleset Fantasy Strike Tournament</text>
-    <text x="50" y="46" class="p">Thursday, October 29th</text>
-    <text x="50" y="52" class="p">1pm PDT | 4pm EDT | 9pm BST</text>
+    <text x="50" y="46" class="p">Thursday, November 12th</text>
+    <text x="50" y="52" class="p">1pm PST | 4pm EST | 9pm GMT</text>
     <rect x="61.5" y="16.5" ry="3" width="37.5" height="15" fill="black" stroke="none" />
-    <text x="80.5" y="21" class="s">Mirror Mayhem</text>
-    <text x="80.5" y="26" class="s">Many miscellaneous</text>
-    <text x="80.5" y="29" class="s">mirrors!</text>
+    <text x="80.5" y="21" class="s">The Many and the Few</text>
+    <text x="80.5" y="26" class="s">Team battle???</text>
+    <text x="80.5" y="29" class="s"></text>
     <rect x="1" y="20" ry="3" width="37.5" height="8" fill="black" stroke="none" />
 	<text x="20" y="25" class="s">Janet and Danielizabeth</text>
 </svg>

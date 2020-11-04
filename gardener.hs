@@ -191,4 +191,4 @@ main = do
                         div_ [class_ " navbar-item-container", class_ pos] $ do
                             div_ [class_ "navbar-item"] $ toHtml name
                 navbarItem _ = do
-                error "invalid navbar item"
+                    error "invalid navbar item"
