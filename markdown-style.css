@@ -4,6 +4,16 @@ p, h1, h2, h3, ul, ol, a, blockquote, table {
 	line-height: 30px;
 }
 
+pre, code {
+	font-family: monospace;
+	color: #daba69;
+	line-height: 30px;
+	background-color: #000000;
+	padding: 1px 8px;
+	border-radius: 10px;
+    white-space: pre-wrap;
+}
+
 hr {
     border: 1px solid #daba69;
 }
@@ -15,6 +25,7 @@ table {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
+
 th {
 	border: 1px solid #daba69;
 	background-color: black;
