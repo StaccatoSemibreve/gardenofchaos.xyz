@@ -1,7 +1,7 @@
 <!DOCTYPE HTML><html><head><title>Janet&#39;s Thoughts on Mixups: Supplementary Material (Weights)</title><meta charset="utf-8"><link href="FSgardenOfChao-196x196.png" type="image/png" rel="icon" sizes="196x196"><link href="markdown-style.css" rel="stylesheet"><link href="navbar-style.css" rel="stylesheet"></head><body><header class="navbar-div"><div class="big1 medium1 small1 navbar-item-container"><a href="/" title="Return unto the homepage!!!" class="navbar-item"><div class="big1 medium1 small1 navbar-item-container"><img src="media/logo-optimised.svg" id="goc-logo" class="navbar-icon" alt="A logo of a happy chao in a circle, in the colours of the Fantasy Strike logo."><span class="navbar-item">Home</span></div></a></div><div class="big5 medium4 small4 navbar-item-container"><a href="rules" title="View the tournament rules!" class="navbar-item"><div class="big5 medium4 small4 navbar-item-container"><div class="navbar-item">Rules</div></div></a></div><div class="big6 medium2 small2 navbar-item-container"><a href="rulesets" title="View the silly rulesets you can choose to play under!" class="navbar-item"><div class="big6 medium2 small2 navbar-item-container"><div class="navbar-item">Rulesets</div></div></a></div><div class="big7 medium5 small3 navbar-item-container"><a href="styles" title="View potential future tournament formats!" class="navbar-item"><div class="big7 medium5 small3 navbar-item-container"><div class="navbar-item">Formats</div></div></a></div><div class="big2 medium7 small5 navbar-item-container"><a href="bracket" title="Join this week&#39;s tournament bracket!" class="navbar-item"><div class="big2 medium7 small5 navbar-item-container"><img src="media/challonge.svg" id="challonge-logo" class="navbar-icon" alt="The challonge logo in a circle, in the colours of the Fantasy Strike logo."><span class="navbar-item">Signup</span></div></a></div><div class="big3 medium8 small6 navbar-item-container"><a href="https://discord.gg/abWADS7" title="Join the discord server!" class="navbar-item"><div class="big3 medium8 small6 navbar-item-container"><img src="media/discord.svg" id="discord-logo" class="navbar-icon" alt="The Discord logo in a circle, in the colours of the Fantasy Strike logo."><span class="navbar-item">Discord</span></div></a></div><div class="big4 medium9 small7 navbar-item-container"><a href="stream" title="Watch the tournament live!" class="navbar-item"><div class="big4 medium9 small7 navbar-item-container"><img src="media/twitch.svg" id="twitch-logo" class="navbar-icon" alt="The Twitch logo in a circle, in the colours of the Fantasy Strike logo."><span class="navbar-item">Stream</span></div></a></div><div class="big8 medium3 small8 navbar-item-container"><a href="resources" title="Read up on a bunch of useful Fantasy Strike knowledge!" class="navbar-item"><div class="big8 medium3 small8 navbar-item-container"><div class="navbar-item">Resources</div></div></a></div><div class="big0 medium6 small0 navbar-item-container"><a href="commentators" title="See who our commentators are and what else they do!" class="navbar-item"><div class="big0 medium6 small0 navbar-item-container"><div class="navbar-item">Commentators</div></div></a></div></header><div id="center-div"><h1>Weights, the Complicated Bit</h1>
 <p>Beware, for here be maths. <a href="thoughts-mixups">Click here</a> to return. This is my second write-up of The Maths, because there is a neat piece of information that makes the maths side of things a lot simpler than it otherwise would be. If you're curious to see what I wrote up before I was aware of this, <a href="thoughts-weights">here it is</a>, but beware even more, for there be overcomplicated incorrect maths!</p>
-<p>Here is the key piece of information: if your opponent plays suboptimally, or in other words they favour some option more than they should, the optimal response (ignoring that a human opponent will adapt to your behaviour) is to always, 100% of the time, assume they will use that option. In my earlier work I came across inklings of this, but always assumed I had messed up in my model somewhere!</p>
-<p>In game theory, this suboptimal behaviour is better called &quot;exploitable behaviour&quot;, a name which indicates what it really means to play suboptimally - to play exploitably is to play in a way where they get higher EV out of one option than any other, and thus should always choose that option. Optimal behaviour is to play unexploitably, such that your opponent can do nothing to gain an upper hand - other options may have higher EV, but if they are exploitable (which they are), then they are suboptimal under this definition.</p>
+<p>Here is the key piece of information: if your opponent plays suboptimally, or in other words they favour some option more than they should and thus increase the usefulness of its responses, the optimal response (ignoring that a human opponent will adapt to your behaviour) is to always, 100% of the time, use your newly highest EV options (with the caveat that a human opponent who isn't a mathematical model of unchanging probabilities would adapt to this, so realistically you should just use those more often). In my earlier work I came across inklings of this, but always assumed I had messed up in my model somewhere!</p>
+<p>In game theory, this suboptimal behaviour is better called &quot;exploitable behaviour&quot;, a name which indicates what it really means to play suboptimally - to play exploitably is to play in a way where they get higher EV out of some option than others, and thus should never choose those others. Optimal behaviour is to play unexploitably, such that your opponent can do nothing to gain an upper hand - other options may have higher EV, but if they are exploitable (which they are), then they are suboptimal under this definition.</p>
 <p>As such, unexploitable behaviour is when no option has higher EV than any other, meaning they all have equal EV. This is called &quot;game theory optimal&quot;, or GTO, and enables a very useful technique to discover what this unexploitable behaviour is, using information such as the following!</p>
 <table>
 <thead>
@@ -103,7 +103,7 @@ x + 6(1-x) = 3x - 3(1-x)
 </ul>
 <p>These typically occur when the attacker has more options, equal options, and fewer options, respectively - note that options that are equivalent to another combination of options don't count here, as they add zero information to the system.</p>
 <p>However, we don't care about this, we care whether it's calculable! The first two cases absolutely are, and it turns out that the vast majority of the time, systems where the defender has more options than the attacker are still calculable. And very conveniently, whenever it is calculable, the pseudoinverse (yes this is a real thing, I know it sounds silly) does the job for us!</p>
-<p>It's probably better for me to show you, through the language of linear algebra. In the following, M is a matrix, N is that matrix's pseudoinverse, w is the vertical vector of weights, E is the EV, O is a vertical vector of 1s that is the correct length for the calculation, and Ot is similar but horizontal. First, we shall calculate w, then we shall calculate E in terms of w.</p>
+<p>It's probably better for me to show you, through the language of linear algebra. In the following, M is the matrix of values, where each row represents a defensive option (ie, an option by the player whose weights we are not calculating), N is that matrix's pseudoinverse, w is the vertical vector of weights for the attacker (well, for the player whose options are represented by the columns of M), E is the EV, O is a vertical vector of 1s that is the correct length for the calculation, and Ot is similar but horizontal. First, we shall calculate w, then we shall calculate E in terms of w.</p>
 <pre><code>M×w = ev×O
 N×M×w = N×ev×O [multiply both sides by the pseudoinverse on the left]
 w = ev×N×O [cancel on the left, rearrange on the right because ev is a scalar]
@@ -116,8 +116,12 @@ ev = 1/(Ot×N×O) [rearrange to get ev, note that Ot×N×O is a scalar]
 <p>Anyway, yay, now we have formulae that, while awkward to do by hand (they involve calculating the inverse of a matrix), require minimal analysis and thus you can just throw them at a computer! Which is exactly what I've done for any results from here on out.</p>
 <p>Interesting notes:</p>
 <ul>
-<li>Rearranging the matrix rows and columns doesn't change the results, but does reorder the weights.</li>
-<li>The transpose of the matrix (flipping it across its diagonal) gives the weights for the defender, but gives the same EV (and, later, variance and standard deviation).</li>
+<li>Rearranging the matrix rows and columns doesn't change the results, but rearranging the columns does reorder the weights.</li>
+<li>The transpose of the matrix (flipping it across its diagonal) gives the weights for the defender, but gives the same EV (and, later, variance and standard deviation).
+<ul>
+<li>Note that the pseudoinverse of the transpose is the transpose of the pseudoinverse, so we don't have to calculate that twice!</li>
+</ul>
+</li>
 <li>Multiplying the matrix by a constant gives the same weights, but does scale the EV and standard deviation by that factor.</li>
 <li>A stronger option will generally have a reduced weight.</li>
 <li>If one side has more options than the other, they receive an infinite set of options, with new options calculated from old ones.
@@ -143,17 +147,17 @@ function var = Var( m, v = zeros(columns(m),1) )
 endfunction
 </code></pre>
 <p><a name="example"><a href="#example"><strong>A Notable Example</strong></a></a></p>
-<p>Let's take a particular interaction (that I love to use as an example because it's fascinating) between Valerie and DeGrey, and see what it really means to play exploitably. After DeGrey blocks Valerie's magenta, Valerie has a certain set of options, bB/nB/fB/gC, and DeGrey <em>technically</em> has a truly ridiculous number of options (including both directions of blocking), b/f/nA/gB/gC/gS. Analytically, we can see that everything but blocking and parry are disastrous when they fail, so we should also consider the mixup where DeGrey only has b/f/gS, and technically he also doesn't always have parry, but that isn't as educational to consider so it won't be in this section.</p>
+<p>Let's take a particular interaction (that I love to use as an example because it's fascinating) between Valerie and DeGrey, and see what it really means to play exploitably. After DeGrey blocks Valerie's magenta, Valerie has a certain set of options, bB/nB/fB/gC, and DeGrey <em>technically</em> has a truly ridiculous number of options (including both directions of blocking), b/f/nA/gB/gC/gS. Analytically, we can see that everything but blocking and parry are disastrous when they fail, so we should also consider the mixup where DeGrey only has b/f/gS, and technically he also doesn't always have parry, which will also be listed in the final table of mixups.</p>
 <p>First, the big one! We find that the weight for Valerie's nB options in the big one is… negative? Huh, I guess it's technically strictly worse than some combination of other options here, so we'll exclude that and treat its weight as zero. When DeGrey is doing all these predictive punish options, never use sameside yellow, I guess.</p>
-<p>Okay, apart from that weirdness it seems relatively normal, each move has a reasonable weight, but DeGrey should almost never block if he wants to play unexploitably. He should mostly nA, then gB, then gC (surprisingly, considering that only makes backstep awkward and otherwise takes 3 damage, but Valerie is backstepping nearly two thirds of the time!), then gS, and then finally at a combined 12% of the time should he block in either direction. It has an overall EV of 1.0 in DeGrey's favour, and that's depending on having super available, so it's pretty great for Valerie!</p>
-<p>Next, the simplified one. Immediately, we see that the EV is now 0.3 in Valerie's favour - less than half as good as a basic throw mixup! That's a huge change, and this is still with no possible exploitation from Valerie - without parry, she should now never backstep, sameside yellow one time out of two, and crossup yellow one times out of two. With parry, it's similar for those three, but backstep happens 40% of the time, hence the lower EV. How do we explain this? Technically this is a subset of the bigger set of options, so it should be a possible result surely? Well, honestly I dunno, we're doing weird things with linear algebra and I'm somewhat out of my depth, so let's just say that restricting the option set will change the results, and remind you that optimal play and unexploitable play are two different things. Also, maybe optimising this involves optimising a six-dimensional function, but I'm not even sure that would work, so let's just leave it at that! Even calculating anything for cases like this took some wizardry.</p>
+<p>Okay, apart from that weirdness it seems relatively normal, each move has a reasonable weight, but DeGrey should almost never block if he wants to play unexploitably. He should mostly nA, then gB, then gC (surprisingly, considering that only makes backstep awkward and otherwise takes 3 damage, but Valerie is backstepping nearly two thirds of the time!), then gS, and then finally at a combined 12% of the time should he block in either direction. It has an overall EV of 1.0 in Valerie's favour, and that's even worse at 1.1 without super available, so it's pretty great for Valerie!</p>
+<p>Next, the simplified one. Immediately, we see that the EV is now 0.3 in Valerie's favour - less than half as good as a basic throw mixup! That's a huge change, and this is still with no possible exploitation from Valerie - without parry, she should now never backstep, sameside yellow one time out of two, and crossup yellow one times out of two. With parry, it's similar for those three, but backstep happens 40% of the time, hence the lower EV. How do we explain this? Technically this is a subset of the bigger set of options, so it should be a possible result surely? Well, honestly I dunno, we're doing weird things with linear algebra and I'm somewhat out of my depth, so let's just say that restricting the option set will change the results, and remind you that optimal play and unexploitable play are two different things. Besides, even calculating anything for cases like this took some wizardry.</p>
 <p>What I choose to take from it is that DeGrey has to actively choose not to exploit Valerie's play with those additional moves (which he could start doing at any point) in order to keep the EV low. While it would benefit DeGrey in the short term to act in such a way, as soon as Valerie catches on (and she will, it involves entirely new moves) the EV rockets upward to the point where this interaction will lose entire rounds for DeGrey.</p>
 <p>Anyway, what makes this so interesting is that this means Valerie is always goading DeGrey into exploiting her play using those moves, at which point the nature of the game changes to heavily favour her. Meanwhile, DeGrey can, at any point, use one of those moves as a one-off to punish a predictable choice between yellow and rainbow. So every neutral yellow in that matchup needs to sometimes be the nearly equivalent rainbow instead, to avoid this! Her choice of moves is altered by the mere existence of an option DeGrey would rather avoid.</p>
 <p>So choose your options wisely!</p>
 <p><a name="summary"><a href="#summary"><strong>Summary of Mixups</strong></a></a></p>
 <p>Finally, here's the table of different mixups, not accounting for the different okis they give and such. To resolve it with okis, treat each given oki as a variable, and calculate it separately for when they are at key low health values (eg, Degrey oki vs a 1 hp opponent), calculating the limits when it comes to looping okis. I will not be doing that, because effort and because oh no limits of weird functions. Strictly speaking, these also vary per opponent, especially when it comes to new defensive options like reversals. This is only a summary, a fully comprehensive list would be huge!!! Multiple mixups for each of the 144 (well, 169, dragon Midori exists) characters.</p>
 <p>I do invite others to take on such a project, though!</p>
-<p>Oh, and remember, this is only <em>unexploitable</em> play, it is totally possible for exploitable play to have higher EV (as shall be demonstrated by removing nA and gB from DeGrey's options in the Val BBB DeGrey mixup).</p>
+<p>Oh, and remember, this is only <em>unexploitable</em> play, it is totally possible for exploitable play to have higher EV (as demonstrated by the Val BB DeGrey mixup).</p>
 <table>
 <thead>
 <tr>
@@ -170,45 +174,63 @@ endfunction
 <tr>
 <td align="right">Throw</td>
 <td align="left">Strike/Throw</td>
-<td align="left">6:5</td>
+<td align="left">55%:45%</td>
 <td align="left">Block/Yomi</td>
-<td align="left">9:2</td>
+<td align="left">82%:18%</td>
 <td align="left">0.6</td>
 <td align="left">0.7</td>
 </tr>
 <tr>
+<td align="right">Throw (2HP)</td>
+<td align="left">Strike/Throw</td>
+<td align="left">33%:67%</td>
+<td align="left">Block/Yomi</td>
+<td align="left">67%:33%</td>
+<td align="left">∞</td>
+<td align="left">∞</td>
+</tr>
+<tr>
+<td align="right">Throw (2HP, no oki off throw)</td>
+<td align="left">Strike/Throw</td>
+<td align="left">0%:100%</td>
+<td align="left">Block/Yomi</td>
+<td align="left">0%:100%</td>
+<td align="left">1</td>
+<td align="left">1.1</td>
+</tr>
+<tr>
 <td align="right">Throw (Rook)</td>
 <td align="left">Sweep/Throw/Cmd</td>
-<td align="left">45:10:6</td>
+<td align="left">74%:16%:10%</td>
 <td align="left">Block/Yomi/Jump</td>
-<td align="left">21:25:15</td>
+<td align="left">34%:41%:25%</td>
 <td align="left">0.8</td>
 <td align="left">0.9</td>
 </tr>
 <tr>
 <td align="right">Throw (Rook, super)</td>
 <td align="left">Sweep/Throw/Cmd/gS</td>
-<td align="left">9:2:0:1</td>
+<td align="left">75%:17%:0%:8%</td>
 <td align="left">Block/Yomi/Jump</td>
-<td align="left">9:14:13</td>
+<td align="left">25%:39%:36%</td>
 <td align="left">0.8</td>
 <td align="left">1</td>
 </tr>
 <tr>
 <td align="right">Throw (Midori)</td>
 <td align="left">Strike/Throw</td>
-<td align="left">12:5</td>
+<td align="left">71%:29%</td>
 <td align="left">Block/Yomi</td>
-<td align="left">12:5</td>
+<td align="left">71%:29%</td>
 <td align="left">0.8</td>
 <td align="left">1.2</td>
 </tr>
 <tr>
 <td align="right">Throw (Dragon Midori)</td>
 <td align="left">Strike/Throw/Cmd</td>
-<td align="left">9:5:3</td>
+<td align="left">53%:29%:18%</td>
 <td align="left">Block/Yomi/Jump</td>
-<td align="left">9:5:3</td>
+<td align="left">53%:29%:18%</td>
 <td align="left">1.1</td>
 <td align="left">1.2</td>
 </tr>
@@ -224,47 +246,50 @@ endfunction
 <tr>
 <td align="right">Val BB DeGrey</td>
 <td align="left">bB/nB/fB/gC</td>
-<td align="left">47:0:19:34</td>
+<td align="left">47%:0%:19%:34%</td>
 <td align="left">b/f/nA/gB/gC</td>
-<td align="left">4:6:42:32:15</td>
+<td align="left">4%:6%:42%:33%:15%</td>
 <td align="left">1.1</td>
 <td align="left">1.6</td>
 </tr>
 <tr>
 <td align="right">Val BB DeGrey (Parry)</td>
 <td align="left">bB/nB/fB/gC</td>
-<td align="left">32:0:5:13</td>
+<td align="left">64%:0%:10%:26%</td>
 <td align="left">b/f/nA/gB/gC/gS</td>
-<td align="left">5:7:31:25:22:10</td>
+<td align="left">5%:7%:31%:25%:22%:10%</td>
 <td align="left">1.0</td>
 <td align="left">1.5</td>
 </tr>
 <tr>
 <td align="right">Val BB DeGrey (Simplified)</td>
 <td align="left">bB/nB/fB</td>
-<td align="left">0:1:1</td>
+<td align="left">0%:50%:50%</td>
 <td align="left">b/f</td>
-<td align="left">1:1</td>
+<td align="left">50%:50%</td>
 <td align="left">0.7</td>
 <td align="left">0.3</td>
 </tr>
 <tr>
 <td align="right">Val BB DeGrey (Simplified, Parry)</td>
 <td align="left">bB/nB/fB</td>
-<td align="left">4:3:3</td>
+<td align="left">40%:30%:30%</td>
 <td align="left">b/f/gS</td>
-<td align="left">3:3:1</td>
+<td align="left">43%:43%:14%</td>
 <td align="left">0.3</td>
 <td align="left">0.8</td>
 </tr>
 </tbody>
 </table>
-<p>Missing: Onimaru stance (too opponent-dependent), mixups vs reversal characters, Lum's everything (too overwhelming and too nested), Quince's everything (see Onimaru, see Lum), Grave's other options out of jA (nested), many others I'm sorry but it's a pain to come up with and type in a meaningful matrix for each of them when every part of the scoring is arbitrary (seriously, I could choose to only count damage dealt and notdamage taken, and I haven't touched less easily quantified things like spacing)</p>
+<p>Missing: Onimaru stance (too opponent-dependent), mixups vs reversal characters, Lum's everything (too overwhelming and too nested), Quince's everything (see Onimaru, see Lum), Grave's other options out of jA (nested), Setsuki's everything (would be pointless without accounting for kd, as she has no reversal), many others, I'm sorry but it's a pain to come up with and type in a meaningful matrix for each of them when every part of the scoring is arbitrary (seriously, I could choose to only count damage dealt and not damage taken, and I haven't touched less easily quantified things like spacing, and technically the mixup should be redone whenever some scores are really infinite because they win rounds)</p>
+<p>Note that, for the 2HP throw, I calculated that the EV for specifically the successful throw was half of whatever huge number I put in to represent an autowin, so I put in half of the huge number I had to represent an autowin in the strike mixup - if throw did not give oki, thus was only 1 damage, the system gave weiiird numbers, because infinity is weird and computers struggle with big finite numbers too.</p>
+<p>The general rule here is &quot;the stronger a move is, the less often you should do it but the more they should guard against it&quot;.</p>
 <p>Thanks to BillyTheBanana for pointing out and explaining the concept of GTO play to me, prompting this entire writeup in the first place!</p>
 <p><a href="thoughts-mixups">Click here to return to mixups, probably confused, but hopefully with stuff to think about.</a></p>
 <p><a name="reading"><a href="#reading"><strong>Further reading:</strong></a></a></p>
 <ul>
 <li><a href="https://www.lalaheadpats.com/2019/09/22/poke-at-fighting-games-with-game-theory.html">A poke at fighting games with game theory</a></li>
-<li><a href="http://alexspuffstuff.blogspot.com/2017/01/gto-and-exploitive-play.html">GTO and Exploitative Play</a></li>
+<li><a href="httpd://alexspuffstuff.blogspot.com/2017/01/gto-and-exploitive-play.html">GTO and Exploitative Play</a></li>
+<li><a href="https://eqcalc.jounin.jp/eq_calc/1_0/index.html?q=SSFVDUBlocksWW9taSBDb3VudGVyDVAttackUThrowkLjMzMwDCA">Online GTO calculator</a></li>
 </ul>
 </div></body></html>
