@@ -28,14 +28,14 @@
 		<circle stroke-width="1.78" fill="none" stroke="black" cx="50.89" cy="50.89" r="50" />
 		<circle stroke-width="1.78" fill="none" stroke="#daba69" r="48.22" cy="50.89" cx="50.89" />
 	</g>
-	<text x="50" y="10" class="text">Garden of Chaos<tspan style="fill:none">_.</tspan><tspan style="fill:#1e1b19; font-size:3.5px;">14</tspan></text>
+	<text x="50" y="10" class="text">Garden of Chaos<tspan style="fill:none">_.</tspan><tspan style="fill:#1e1b19; font-size:3.5px;">15</tspan></text>
     <text x="50" y="42" class="text">Silly Ruleset Fantasy Strike Tournament</text>
-    <text x="50" y="49" class="text">Thursday, November 12th</text>
+    <text x="50" y="49" class="text">Thursday, November 26th</text>
     <text x="50" y="56" class="text">1pm PST | 4pm EST | 9pm GMT</text>
     <rect x="18" y="58" ry="5" width="64" height="21" fill="black" stroke="none" />
-    <text x="50" y="66" class="text">The Many and the Few</text>
-    <text x="50" y="73" class="text">Team battle???</text>
-    <text x="50" y="76" class="text"></text>
+    <text x="50" y="65" class="text">Play Fair</text>
+    <text x="50" y="71" class="text">Secret ruleset</text>
+    <text x="50" y="76" class="text">battle!</text>
     <text x="50" y="84" class="text">Stream: twitch.tv/danielstretulch</text>
     <text x="50" y="91" class="text">Rules and Signup: gardenofchaos.xyz</text>
 </svg>

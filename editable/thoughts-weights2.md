@@ -66,13 +66,13 @@ However, we don't care about this, we care whether it's calculable! The first tw
 It's probably better for me to show you, through the language of linear algebra. In the following, M is the matrix of values, where each row represents a defensive option (ie, an option by the player whose weights we are not calculating), N is that matrix's pseudoinverse, w is the vertical vector of weights for the attacker (well, for the player whose options are represented by the columns of M), E is the EV, O is a vertical vector of 1s that is the correct length for the calculation, and Ot is similar but horizontal. First, we shall calculate w, then we shall calculate E in terms of w.
 
 ```
-M×w = ev×O
-N×M×w = N×ev×O [multiply both sides by the pseudoinverse on the left]
-w = ev×N×O [cancel on the left, rearrange on the right because ev is a scalar]
+M×w = E×O
+N×M×w = N×E×O [multiply both sides by the pseudoinverse on the left]
+w = E×N×O [cancel on the left, rearrange on the right because ev is a scalar]
 
-Ot × w = ev×Ot×N×O
-1 = ev×Ot×N×O [multiplying a vector by another vector of 1s is equivalent to summing its elements, which we know to equal 1 because it's a complete set of probabilities]
-ev = 1/(Ot×N×O) [rearrange to get ev, note that Ot×N×O is a scalar]
+Ot × w = E×Ot×N×O
+1 = E×Ot×N×O [multiplying a vector by another vector of 1s is equivalent to summing its elements, which we know to equal 1 because it's a complete set of probabilities]
+E = 1/(Ot×N×O) [rearrange to get ev, note that Ot×N×O is a scalar]
 ```
 
 Note that this is only possible to evaluate because we know the total sum of the weights, and this assumes that no weights are negative. This can be false when calculated if one option should never be used, so be careful to verify your results and remove any such options from the calculation should they appear!
