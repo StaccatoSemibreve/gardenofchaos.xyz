@@ -13,4 +13,8 @@ Choose one or more of these to play for part of or the entirety of a match! The 
 
 !!!rulesets-format|ruleset-list
 
+<a name="heading-playfair">[**Play Fair Rulesets**](#heading-playfair) (Versions of rulesets to be used by only one player in a match):</a>
+
+!!!rulesets-playfair|ruleset-list
+
 [Here's](random) a random selector!

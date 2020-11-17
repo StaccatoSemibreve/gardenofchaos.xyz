@@ -56,6 +56,7 @@
 					<option value="Tournament Style">Tournament Style</option>
 					<option value="Character">Character</option>
 					<option value="Ruleset">Ruleset</option>
+					<option value="Play Fair">Ruleset (Play Fair)</option>
 				</select>
 				<input type="text" id="result" placeholder="Result" size="42"></input>
 				<input type="submit" id="gen" value="Generate!" onclick='generate()'></input>
@@ -75,6 +76,9 @@ var rulesets = [
 ,
 'Deck', 'Choose Your Enemy, aka Cursed, aka Vice Versus', 'Roll the Dice', 'Democracy', 'Mirror Mayhem', 'The Many and the Few', 'Simplify', 'Lawful', 'Chaotic', 'Teams', 'Play Fair', 'You Are What You Beat', 'Your Own Worst Enemy', 'Best Three of Four', 'BBBest Match', 'Abnormalcy'
 ];
+var playfair = [
+'Gravity (Play Fair)', 'Holly\'s Motherboard (Play Fair)', 'Jaywalking Is Illegal (Play Fair)', 'Play by Feel (Play Fair)', 'Aerial Assault (Play Fair)', 'Stop Spamming!!! (Play Fair)', 'Lightweight Hitter (Play Fair)', 'I Have the High Ground (Play Fair)', 'The Floor Is Lava (Play Fair)', 'Gauge Overcharge (Play Fair)', 'Not Even My Final Form (Play Fair)', 'No Longer My Final Form (Play Fair)'
+];
 
 function generate() {
     var operator = document.getElementById("operator").value;
@@ -89,6 +93,9 @@ function generate() {
         break;
         case "Ruleset":
         textArray = rulesets;
+        break;
+        case "Play Fair":
+        textArray = playfair;
         break;
         default:
         textArray = ["uhhhh"];

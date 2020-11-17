@@ -11,6 +11,9 @@ var rulesets = [
 ,
 !!!rulesets-format||JsArrayHead
 ];
+var playfair = [
+!!!rulesets-playfair||JsArrayHead
+];
 
 function generate() {
     var operator = document.getElementById("operator").value;
@@ -25,6 +28,9 @@ function generate() {
         break;
         case "Ruleset":
         textArray = rulesets;
+        break;
+        case "Play Fair":
+        textArray = playfair;
         break;
         default:
         textArray = ["uhhhh"];
