@@ -1,0 +1,378 @@
+<!DOCTYPE HTML><html><head><title>Garden of Chaos: カスタムチームバトル</title><meta charset="utf-8"><link href="FSgardenOfChao-196x196.png" type="image/png" rel="icon" sizes="196x196"><link href="navbar-style.css" rel="stylesheet"><style>body {
+	background-color: #1e1b19;
+}
+
+p, h1, h2 {
+	font-family: sans-serif;
+	color: #daba69;
+	line-height: 30px;
+}
+
+button, input {
+	font-family: sans-serif;
+	background-color: #000000;
+	color: #daba69;
+	border-radius: 10px;
+}
+
+@media only screen and (min-width:1050px) {
+	body {
+		background: linear-gradient(90deg, #0f0d0c, #0f0d0c calc(50% - 550px), #1e1b19 calc(50% - 550px), #1e1b19 calc(50% + 550px), #0f0d0c calc(50% + 550px));
+	}
+}
+@media only screen and (max-width:450px) {
+	main {
+		display: none;
+	}
+}
+
+div.grid {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-rows: 80px 40px 100px 40px 100px 20px 100px 20px 100px 20px;
+	grid-template-areas:	"title"
+							"team1Title"
+							"team1"
+							"team2Title"
+							"team2"
+							"."
+							"start"
+							"."
+							"versus"
+							"."
+							"archive";
+	width: 95%;
+	min-width: 400px;
+	margin: auto;
+}
+.title {
+	text-align: center;
+}
+#titleGoc {
+	grid-area: title;
+}
+#titleTeam1 {
+	grid-area: team1Title;
+}
+#titleTeam2 {
+	grid-area: team2Title;
+}
+#versus {
+	grid-area: versus;
+	display: grid;
+	grid-template-columns: 100px 50px 100px;
+	height: 100px;
+	grid-template-areas: "team1 vs team2";
+	margin: auto;
+}
+#versuswin {
+	grid-area: versus;
+	display: grid;
+	grid-template-columns: 100px 50px 100px;
+	height: 100px;
+	grid-template-areas: "all all all";
+	margin: auto;
+}
+.vs#team1 {
+	grid-area: team1;
+}
+.vs#vs {
+	text-align: center;
+	margin: auto;
+}
+.vs#vsdiv {
+	grid-area: vs;
+	margin: auto;
+	margin-top: 35px;
+	height: 100px;
+}
+.vs#team2 {
+	grid-area: team2;
+}
+#start {
+	grid-area: start;
+	display: grid;
+	grid-template-rows: 40px 100px;
+	grid-template-areas:	"button"
+							"text";
+	margin: 0 auto;
+}
+#startbutton {
+	width: 200px;
+	margin: 0 auto;
+}
+.icon {
+	width: auto;
+	max-width: 100px;
+	object-fit: contain;
+}
+.check {
+	position: relative;
+	top: -50%;
+	opacity: 100%;
+}
+.team {
+	display: flex;
+	flex-flow:row nowrap;
+	margin:auto;
+	max-width: 90%;
+}
+.overlay_char {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	opacity: 0;
+	transition: .3s ease;
+	background-color: green;
+	color: white;
+	top: -104px;
+}
+.overlay_char:hover {
+	opacity:60%;
+}
+
+.spoilerbutton {
+	display:block;
+	margin:auto;
+	width: 200px;
+	height: 40px;
+}
+.spoiler {
+	overflow:hidden;
+	margin: auto;
+}
+.spoilerbutton[value="Show Past Games"] + .spoiler > div {
+	display: none;
+}
+#archive-spoiler {
+	grid-area: archive;
+	margin: auto;
+}
+.archive {
+	display: grid;
+	grid-template-columns: 100px 100px 100px 100px;
+	grid-template-rows: 100px;
+	grid-template-areas: "left team1 team2 right";
+	height: 100px;
+}
+</style></head><body><header class="navbar-div"><div class="big1 medium1 small1 navbar-item-container"><a href="/" title="Return unto the homepage!!!" class="navbar-item"><div class="big1 medium1 small1 navbar-item-container"><img src="media/logo-optimised.svg" id="goc-logo" class="navbar-icon" alt="A logo of a happy chao in a circle, in the colours of the Fantasy Strike logo."><span class="navbar-item">Home</span></div></a></div><div class="big5 medium4 small4 navbar-item-container"><a href="rules" title="View the tournament rules!" class="navbar-item"><div class="big5 medium4 small4 navbar-item-container"><div class="navbar-item">Rules</div></div></a></div><div class="big6 medium2 small2 navbar-item-container"><a href="rulesets" title="View the silly rulesets you can choose to play under!" class="navbar-item"><div class="big6 medium2 small2 navbar-item-container"><div class="navbar-item">Rulesets</div></div></a></div><div class="big7 medium5 small3 navbar-item-container"><a href="styles" title="View potential future tournament formats!" class="navbar-item"><div class="big7 medium5 small3 navbar-item-container"><div class="navbar-item">Formats</div></div></a></div><div class="big2 medium7 small5 navbar-item-container"><a href="bracket" title="Join this week&#39;s tournament bracket!" class="navbar-item"><div class="big2 medium7 small5 navbar-item-container"><img src="media/challonge.svg" id="challonge-logo" class="navbar-icon" alt="The challonge logo in a circle, in the colours of the Fantasy Strike logo."><span class="navbar-item">Signup</span></div></a></div><div class="big3 medium8 small6 navbar-item-container"><a href="https://discord.gg/abWADS7" title="Join the discord server!" class="navbar-item"><div class="big3 medium8 small6 navbar-item-container"><img src="media/discord.svg" id="discord-logo" class="navbar-icon" alt="The Discord logo in a circle, in the colours of the Fantasy Strike logo."><span class="navbar-item">Discord</span></div></a></div><div class="big4 medium9 small7 navbar-item-container"><a href="stream" title="Watch the tournament live!" class="navbar-item"><div class="big4 medium9 small7 navbar-item-container"><img src="media/twitch.svg" id="twitch-logo" class="navbar-icon" alt="The Twitch logo in a circle, in the colours of the Fantasy Strike logo."><span class="navbar-item">Stream</span></div></a></div><div class="big8 medium3 small8 navbar-item-container"><a href="resources" title="Read up on a bunch of useful Fantasy Strike knowledge!" class="navbar-item"><div class="big8 medium3 small8 navbar-item-container"><div class="navbar-item">Resources</div></div></a></div><div class="big0 medium6 small0 navbar-item-container"><a href="commentators" title="See who our commentators are and what else they do!" class="navbar-item"><div class="big0 medium6 small0 navbar-item-container"><div class="navbar-item">Commentators</div></div></a></div></header>﻿<main>
+	<div id="chars" style="display:none;">
+<image src="media/Grave.png" alt="Grave" id="Grave" class="icon" />
+<image src="media/Jaina.png" alt="Jaina" id="Jaina" class="icon" />
+<image src="media/Geiger.png" alt="Geiger" id="Geiger" class="icon" />
+<image src="media/Argagarg.png" alt="Argagarg" id="Argagarg" class="icon" />
+<image src="media/Setsuki.png" alt="Setsuki" id="Setsuki" class="icon" />
+<image src="media/Valerie.png" alt="Valerie" id="Valerie" class="icon" />
+<image src="media/Rook.png" alt="Rook" id="Rook" class="icon" />
+<image src="media/Midori.png" alt="Midori" id="Midori" class="icon" />
+<image src="media/Lum.png" alt="Lum" id="Lum" class="icon" />
+<image src="media/DeGrey.png" alt="DeGrey" id="DeGrey" class="icon" />
+<image src="media/Quince.png" alt="Quince" id="Quince" class="icon" />
+<image src="media/Onimaru.png" alt="Onimaru" id="Onimaru" class="icon" />
+
+		<image src="media/checkmark.svg" alt="Checkmark" id="check" class="overlay_char" />
+		<image src="media/checkmark.svg" alt="Checkmark" id="check2" class="check" style="display:none;" />
+		<image src="media/checkbox.svg" alt="Checkmark" id="check-sign" class="icon" />
+		<image src="media/delete.svg" alt="X" id="x-sign" class="icon" />
+	</div>
+	
+	<div class="grid">
+		<h1 class="title" id="titleGoc">The Garden of Chaos<br>カスタムチームバトル</h1>
+		<h2 class="title" id="titleTeam1">チーム1</h2>
+		<div class="team" id="team1"></div>
+		<h2 class="title" id="titleTeam2">チーム2</h2>
+		<div class="team" id="team2"></div>
+		
+		<div id="start">
+			<button onclick="this.setAttribute('disabled', ''); startMatch();" id="startbutton"><strong>チームバトルスタート</strong></button>
+			<p style="max-width:400px; text-align:center;">表示された組合の試合をして、<br>勝ったキャラを選んでください。</p>
+		</div>
+		
+		<div id="versus">
+			<div id="team1char"><image src="media/random.svg" alt="Unknown character" id="team1charicon" class="icon vs" /></div>
+			<div id="vsdiv" class="vs"><h2 id="vs" class="vs">vs</h2></div>
+			<div id="team2char"><image src="media/random.svg" alt="Unknown character" id="team2charicon" class="icon vs" /></div>
+		</div>
+		<div id="archive-spoiler">
+			<input class="spoilerbutton" type="button" value="前の試合を表示" onclick="this.value=this.value=='前の試合を表示'?'前の試合を非表示':'前の試合を表示';">
+			<div class="spoiler"><div id="archive"></div></div>
+		</div>
+	</div>
+</main>
+</body><script>﻿var i = 0;
+var params = (new URL(document.location)).searchParams;
+
+var teams = [[],[]];
+if (params.get("team1"))
+	teams[0] = params.get("team1").split(",").map(function(e, i) {return [e, i+1];});
+if (params.get("team2"))
+	teams[1] = params.get("team2").split(",").map(function(e, i) {return [e, i+1];});
+console.log("team 1: " + teams[0]);
+console.log("team 2: " + teams[1]);
+
+var seed = 13645143;
+if (params.get("seed"))
+	seed = +params.get("seed");
+console.log("seed = " + seed);
+
+teams.forEach(function(chars, team) {
+	chars.forEach(function(char, index) {
+		div = document.createElement("DIV");
+		div.setAttribute("id", `team${team+1}member${index}`);
+		div.setAttribute("style", `width: ${100/chars.length}%;`);
+		
+		charIcon = document.getElementById(char[0]).cloneNode();
+		charIcon.setAttribute("style", `width:100%`);
+		charIcon.setAttribute("id", `team${team+1}icon${index}`);
+		div.appendChild(charIcon);
+		
+		checkIcon = document.getElementById("check2").cloneNode();
+		checkIcon.setAttribute("id", `team${team+1}check${index}`);
+		div.appendChild(checkIcon);
+		
+		document.getElementById(`team${team+1}`).appendChild(div);
+	});
+});
+
+games = [shufflify(teams[0], teams[1].length), shufflify(teams[1], teams[0].length)]
+console.log(games);
+prevGamesStates = [];
+prevPageStates = [];
+
+function seededRandom(min, max) {
+    max = max || 1;
+    min = min || 0;
+
+    seed = (seed * 9301 + 49297) % 233280;
+    var rnd = seed / 233280;
+
+    return min + rnd * (max - min);
+}
+function shuffle(a) {
+    var j, x, i;
+    for (i = a.length - 1; i > 0; i--) {
+        j = Math.floor(seededRandom(0,i+1));
+        x = a[i];
+        a[i] = a[j];
+        a[j] = x;
+    }
+    return a;
+}
+function shufflify(team, size) {
+    var result = [];
+    while(result.length < team.length*size)
+        result = result.concat(shuffle(team.slice(0)));
+	return result;
+}
+
+function createCharElement(char, teamNumber) {
+    i++;
+    
+    div = document.createElement("DIV");
+    div.setAttribute("class","icon");
+	div.setAttribute("id", `team${teamNumber}charicon`);
+    
+    clicker = document.createElement("A");
+    clicker.setAttribute("href", "javascript:void(0);");
+    clicker.setAttribute("title", `チーム${teamNumber}の${char}の勝ち！`);
+    clicker.setAttribute("onclick", `winGame("${teamNumber}")`);
+    div.appendChild(clicker);
+	
+    clicker.appendChild(document.getElementById(char).cloneNode());
+    clicker.appendChild(document.getElementById("check").cloneNode());
+    
+    return div;
+}
+
+function startMatch() {
+    document.getElementById("startbutton").innerHTML = "試合の勝利を取り戻す";
+    document.getElementById("startbutton").setAttribute("onclick", "undo()");
+	teams.forEach(function(team, teamNumber) {
+		team.forEach(function(char, index) {
+			document.getElementById("team"+(teamNumber+1)+"icon"+index).setAttribute("style", `width: 100%; opacity: 50%;`);
+		});
+	});
+	
+	nextGame();
+}
+
+function nextGame() {
+	chars = [games[0][0], games[1][0]];
+	console.log(chars.join(" vs "));
+	teams.forEach(function(team, teamNumber) {
+		team.forEach(function(char, index) {
+			if(index == chars[teamNumber][1]-1)
+				document.getElementById("team"+(teamNumber+1)+"icon"+index).setAttribute("style", "width: 100%;");
+		});
+	});
+	document.getElementById("team1char").innerHTML = "";
+	document.getElementById("team1char").appendChild(createCharElement(chars[0][0], 1));
+	document.getElementById("team2char").innerHTML = "";
+	document.getElementById("team2char").appendChild(createCharElement(chars[1][0], 2));
+}
+
+function winGame(winningTeam) {
+    prevGamesStates.push(games.slice().map((x) => x.slice()));
+    prevPageStates.push(document.body.innerHTML);
+    document.getElementById("startbutton").removeAttribute("disabled");
+	archiveGame(winningTeam);
+	teams.forEach(function(team, teamNumber) {
+		if(teamNumber+1 == winningTeam) {
+			document.getElementById("team"+(teamNumber+1)+"icon"+(games[teamNumber][0][1]-1)).setAttribute("style", `width: 100%; opacity: 50%;`);
+			document.getElementById(`team${teamNumber+1}check${games[teamNumber][0][1]-1}`).removeAttribute("style");
+			games[teamNumber] = games[teamNumber].filter(char => char[1] != games[teamNumber][0][1]);
+		}
+		else {
+			document.getElementById("team"+(teamNumber+1)+"icon"+(games[teamNumber][0][1]-1)).setAttribute("style", `width: 100%; opacity: 50%;`);
+			games[teamNumber] = games[teamNumber].splice(1);
+		}
+	});
+	console.log(games);
+	
+	if(games[0].length == 0)
+		winMatch(1);
+	else if(games[1].length == 0)
+		winMatch(2);
+	else
+		nextGame();
+}
+
+function undo() {
+    console.log('undo!');
+    console.log(prevGamesStates);
+    console.log(prevPageStates);
+    games = prevGamesStates.pop();
+    document.body.innerHTML = prevPageStates.pop();
+	console.log(games);
+}
+
+function archiveGame(winningTeam) {
+	var sign1;
+	var sign2;
+	if (winningTeam == 1) {
+		sign1 = document.getElementById("check-sign").cloneNode();
+		sign2 = document.getElementById("x-sign").cloneNode();
+	}
+	else {
+		sign1 = document.getElementById("x-sign").cloneNode();
+		sign2 = document.getElementById("check-sign").cloneNode();
+	}
+	char1 = document.getElementById(games[0][0][0]).cloneNode();
+	char2 = document.getElementById(games[1][0][0]).cloneNode();
+	
+	div = document.createElement("DIV");
+	div.setAttribute("class", "archive");
+	div.appendChild(sign1);
+	div.appendChild(char1);
+	div.appendChild(char2);
+	div.appendChild(sign2);
+	
+	document.getElementById("archive").appendChild(div);
+}
+
+function winMatch(winningTeam) {
+	console.log(`Team ${winningTeam} wins!`);
+	document.getElementById("versus").innerHTML=`<h1 class="title" style="grid-area: all;">チーム${winningTeam}の勝ち！</h1>`;
+	document.getElementById("versus").setAttribute("id", "versuswin");
+}
+</script></html>
