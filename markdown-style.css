@@ -2,6 +2,7 @@ p, h1, h2, h3, ul, ol, a, blockquote, table {
 	font-family: sans-serif;
 	color: #daba69;
 	line-height: 30px;
+    overflow-wrap: anywhere;
 }
 
 pre, code {
