@@ -33,14 +33,14 @@
 		<circle stroke-width="1.78" fill="none" stroke="black" cx="50.89" cy="50.89" r="50" />
 		<circle stroke-width="1.78" fill="none" stroke="#daba69" r="48.22" cy="50.89" cx="50.89" />
 	</g>
-	<text x="50" y="10" class="p">Garden of Chaos<tspan style="fill:none">_.</tspan><tspan style="fill:#1e1b19; font-size:3.5px;">17</tspan></text>
+	<text x="50" y="10" class="p">Garden of Chaos<tspan style="fill:none">_.</tspan><tspan style="fill:#1e1b19; font-size:3.5px;">18</tspan></text>
     <text x="50" y="40" class="p">Silly Ruleset Fantasy Strike Tournament</text>
-    <text x="50" y="46" class="p">Thursday, February 11th</text>
+    <text x="50" y="46" class="p">Thursday, February 25th</text>
     <text x="50" y="52" class="p">12pm PST | 3pm EST | 8pm GMT</text>
     <rect x="61.5" y="16.5" ry="3" width="37.5" height="15" fill="black" stroke="none" />
-    <text x="80.5" y="21" class="s">Chaotic</text>
-    <text x="80.5" y="26" class="s">Really random</text>
-    <text x="80.5" y="29" class="s">rulesets!</text>
+    <text x="80.5" y="21" class="s">Roll the Dice</text>
+    <text x="80.5" y="26" class="s">Semi random</text>
+    <text x="80.5" y="29" class="s">characters!</text>
     <rect x="1" y="20" ry="3" width="37.5" height="8" fill="black" stroke="none" />
-	<text x="20" y="25" class="s">Janet and NEWTU</text>
+	<text x="20" y="25" class="s">Janet and Danielizabeth</text>
 </svg>
