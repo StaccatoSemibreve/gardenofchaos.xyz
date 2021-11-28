@@ -33,14 +33,17 @@
 		<circle stroke-width="1.78" fill="none" stroke="black" cx="50.89" cy="50.89" r="50" />
 		<circle stroke-width="1.78" fill="none" stroke="#daba69" r="48.22" cy="50.89" cx="50.89" />
 	</g>
-	<text x="50" y="10" class="p">Garden of Chaos<tspan style="fill:none">_.</tspan><tspan style="fill:#1e1b19; font-size:3.5px;">25</tspan></text>
+	<text x="50" y="10" class="p">Garden of Chaos<tspan style="fill:none">_.</tspan><tspan style="fill:#1e1b19; font-size:3.5px;">26</tspan></text>
     <text x="50" y="40" class="p">Silly Ruleset Fantasy Strike Tournament</text>
-    <text x="50" y="46" class="p">Thursday, September 30th</text>
+    <text x="50" y="46" class="p">Thursday, October 14th</text>
     <text x="50" y="52" class="p">12pm PST | 3pm EST | 8pm BST</text>
     <rect x="61.5" y="16.5" ry="3" width="37.5" height="15" fill="black" stroke="none" />
-    <text x="80.5" y="21" class="s">Deck</text>
-    <text x="80.5" y="26" class="s">Single use</text>
-    <text x="80.5" y="29" class="s">characters!</text>
+    <text x="80.5" y="21" class="s"></text>
+    <text x="80.5" y="24" class="s"></text>
+    <text x="80.5" y="27" class="s"></text>
+    <text x="80.5" y="22" class="s">Choose Your Enemy</text>
+    <text x="80.5" y="25.5" class="s">AKA Cursed</text>
+    <text x="80.5" y="29" class="s">AKA Vice Versus</text>
     <rect x="1" y="20" ry="3" width="37.5" height="8" fill="black" stroke="none" />
 	<text x="20" y="25" class="s">Janet and Danielizabeth</text>
 </svg>
